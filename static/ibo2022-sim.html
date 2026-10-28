@@ -3,52 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>IBO 2022 Bioinformatics – Full Exam Simulation (Final Fix)</title>
+    <title>IBO 2022 Bioinformatics Exam Simulation | BiOGuide</title>
     <style>
+        :root {
+            --sim-paper: #fdfbf6;
+            --sim-ink: #1a1a2e;
+            --sim-muted: #55607a;
+            --sim-line: rgba(74, 50, 110, 0.16);
+            --sim-line-strong: rgba(74, 50, 110, 0.32);
+            --sim-accent: #6b4a9e;
+            --sim-accent-2: #4a6a47;
+            --sim-gold: #a87c14;
+            --sim-rose: #c2456b;
+            --sim-surface: #ffffff;
+            --sim-tint-a: rgba(137, 101, 196, 0.13);
+            --sim-tint-b: rgba(92, 122, 88, 0.1);
+            --sim-grid: rgba(74, 50, 110, 0.05);
+            --sim-shadow: 0 22px 54px -34px rgba(60, 40, 110, 0.4);
+            --sim-serif: "Cormorant Garamond", Georgia, serif;
+            --sim-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+            --sim-ease: cubic-bezier(0.22, 1, 0.36, 1);
+        }
         * { box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Roboto, sans-serif; background: #eef2f7; margin: 0; padding: 20px; }
-        .exam-container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.1); overflow: hidden; }
-        .tabs { display: flex; flex-wrap: wrap; background: #f8fafc; border-bottom: 1px solid #cbd5e1; padding: 0 20px; }
-        .tab-btn { background: none; border: none; padding: 14px 20px; font-size: 0.9rem; font-weight: 600; color: #334155; cursor: pointer; transition: 0.2s; border-bottom: 3px solid transparent; }
-        .tab-btn.active { color: #1e40af; border-bottom-color: #1e40af; background: #ffffff; }
-        .tab-content { display: none; padding: 24px; animation: fade 0.2s ease; }
+        html { background: var(--sim-paper); }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 24px 20px 40px;
+            color: var(--sim-ink);
+            line-height: 1.6;
+        }
+        .exam-container {
+            position: relative;
+            max-width: 1400px;
+            margin: 0 auto;
+            border: 1px solid var(--sim-line);
+            border-radius: 26px;
+            background:
+                radial-gradient(72% 90% at 0% 0%, var(--sim-tint-a), transparent 62%),
+                radial-gradient(72% 90% at 100% 100%, var(--sim-tint-b), transparent 62%),
+                repeating-linear-gradient(0deg, var(--sim-grid) 0, var(--sim-grid) 1px, transparent 1px, transparent 32px),
+                repeating-linear-gradient(90deg, var(--sim-grid) 0, var(--sim-grid) 1px, transparent 1px, transparent 32px),
+                var(--sim-surface);
+            box-shadow: var(--sim-shadow);
+            overflow: hidden;
+        }
+        .exam-container::after {
+            content: "";
+            position: absolute;
+            top: 1.1rem;
+            right: 1.1rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-top: 1px solid var(--sim-accent);
+            border-right: 1px solid var(--sim-accent);
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .exam-head {
+            padding: 2.2rem 1.75rem 1.4rem;
+        }
+        .exam-kicker {
+            margin: 0 0 0.55rem;
+            font-family: var(--sim-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--sim-accent);
+        }
+        .exam-title {
+            margin: 0;
+            padding-bottom: 0.9rem;
+            font-family: var(--sim-serif);
+            font-size: clamp(1.9rem, 4vw, 2.9rem);
+            font-weight: 500;
+            line-height: 1.02;
+            letter-spacing: -0.02em;
+            background: linear-gradient(90deg, var(--sim-accent), var(--sim-accent-2)) left bottom / 4.5rem 2px no-repeat;
+        }
+        .exam-lede {
+            max-width: 46rem;
+            margin: 0.9rem 0 0;
+            font-size: 0.95rem;
+            color: var(--sim-muted);
+        }
+        .tabs {
+            display: flex;
+            gap: 1.4rem;
+            padding: 0 1.75rem;
+            border-bottom: 1px solid var(--sim-line);
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .tabs::-webkit-scrollbar { display: none; }
+        .tab-btn {
+            flex: none;
+            margin: 0;
+            padding: 0.85rem 0;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            background: none;
+            font-family: var(--sim-mono);
+            font-size: 0.74rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            color: var(--sim-muted);
+            cursor: pointer;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .tab-btn:hover { color: var(--sim-ink); }
+        .tab-btn.active {
+            border-bottom-color: var(--sim-accent);
+            background: none;
+            color: var(--sim-accent);
+        }
+        .tab-content { display: none; padding: 1.75rem; animation: fade 0.35s var(--sim-ease); }
         .tab-content.active { display: block; }
-        @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-        .question-block { background: #f9fafb; border-left: 4px solid #3b82f6; padding: 16px; margin-bottom: 24px; border-radius: 12px; }
-        .question-title { font-weight: 700; font-size: 1.1rem; margin-bottom: 12px; color: #1e293b; }
-        .options { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
-        .option { display: flex; align-items: center; gap: 8px; }
-        button { background: #2c7da0; border: none; color: white; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.2s; margin-right: 10px; margin-bottom: 10px; }
-        button:hover { background: #1f5e7a; }
-        .btn-secondary { background: #475569; }
-        .gene-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-        .gene-table th, .gene-table td { border: 1px solid #cbd5e1; padding: 8px; text-align: center; }
-        .gene-table th { background: #e2e8f0; }
-        .fc-input { width: 80px; text-align: center; }
-        .info-text { background: #e6f0fa; padding: 10px; border-radius: 8px; font-size: 0.85rem; margin: 10px 0; }
-        canvas { border: 1px solid #ccc; background: #fefefe; display: block; margin: 10px 0; max-width: 100%; height: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+        .question-block {
+            position: relative;
+            padding: 1.4rem 1.5rem 1.2rem;
+            margin-bottom: 1.4rem;
+            border: 1px solid var(--sim-line);
+            border-radius: 18px;
+            background: var(--sim-surface);
+        }
+        .question-block::after {
+            content: "";
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-top: 1px solid var(--sim-accent);
+            border-right: 1px solid var(--sim-accent);
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .question-title {
+            margin-bottom: 0.9rem;
+            padding-right: 1.4rem;
+            font-family: var(--sim-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.18;
+            letter-spacing: -0.01em;
+            color: var(--sim-ink);
+        }
+        .question-block p { color: var(--sim-muted); font-size: 0.92rem; }
+        .options { display: flex; flex-direction: column; gap: 0.55rem; margin: 0.9rem 0; }
+        .option { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.92rem; }
+        .option input { margin-top: 0.3rem; accent-color: var(--sim-accent); }
+        .btn-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.9rem; }
+        button {
+            margin: 0 0.5rem 0.5rem 0;
+            padding: 0.6rem 1.3rem;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            background: var(--sim-accent);
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.86rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.35s var(--sim-ease), border-color 0.3s ease;
+        }
+        .btn-row button { margin: 0; }
+        button:hover { background: var(--sim-accent-2); }
+        .btn-secondary {
+            border-color: var(--sim-line-strong);
+            background: transparent;
+            color: var(--sim-ink);
+        }
+        .btn-secondary:hover {
+            border-color: var(--sim-accent);
+            background: var(--sim-tint-a);
+            color: var(--sim-ink);
+        }
+        button:focus-visible { outline: 2px solid var(--sim-accent); outline-offset: 2px; }
+        .gene-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.1rem 0;
+            font-size: 0.88rem;
+        }
+        .gene-table th, .gene-table td {
+            border: 0;
+            border-bottom: 1px solid var(--sim-line);
+            padding: 0.6rem 0.7rem;
+            text-align: center;
+        }
+        .gene-table th {
+            background: none;
+            font-family: var(--sim-mono);
+            font-size: 0.68rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--sim-muted);
+        }
+        .gene-table tbody tr:nth-child(odd) { background: color-mix(in srgb, var(--sim-accent) 4%, transparent); }
+        .gene-table tbody td:first-child { font-weight: 600; text-align: left; }
+        .gene-table tbody td:not(:first-child) { font-family: var(--sim-mono); font-size: 0.82rem; }
+        input[type="number"], input[type="text"], input:not([type]), select {
+            padding: 0.4rem 0.7rem;
+            border: 1px solid var(--sim-line-strong);
+            border-radius: 12px;
+            background: var(--sim-surface);
+            font-family: var(--sim-mono);
+            font-size: 0.84rem;
+            color: var(--sim-ink);
+        }
+        input:focus-visible, select:focus-visible {
+            border-color: var(--sim-accent);
+            outline: 2px solid color-mix(in srgb, var(--sim-accent) 35%, transparent);
+            outline-offset: 1px;
+        }
+        .fc-input { width: 84px; text-align: center; }
+        .info-text {
+            margin: 0.8rem 0;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--sim-line);
+            border-radius: 14px;
+            background: var(--sim-tint-a);
+            font-size: 0.86rem;
+            color: var(--sim-ink);
+        }
+        .info-text:empty { display: none; }
+        canvas {
+            display: block;
+            margin: 0.9rem 0;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--sim-line);
+            border-radius: 18px;
+            background: var(--sim-surface);
+            box-shadow: none;
+        }
+        #networkCanvas { cursor: crosshair; }
+        hr, .section-rule {
+            border: 0;
+            border-top: 1px solid var(--sim-line);
+            margin: 1.8rem 0;
+        }
+        @media (max-width: 720px) {
+            body { padding: 14px 12px 28px; }
+            .exam-container { border-radius: 18px; }
+            .exam-head { padding: 1.6rem 1.1rem 1rem; }
+            .tabs { gap: 1rem; padding: 0 1.1rem; }
+            .tab-content { padding: 1.1rem; }
+            .question-block { padding: 1.1rem 1rem 0.9rem; }
+            .question-title { font-size: 1.28rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .tab-content { animation: none; }
+            button { transition: none; }
+        }
     </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="exam-container">
+    <div class="exam-head">
+        <p class="exam-kicker">BiOrchive / Bioinformatics practical</p>
+        <h1 class="exam-title">IBO 2022 Bioinformatics</h1>
+        <p class="exam-lede">The full Yerevan bioinformatics practical, rebuilt to be worked through rather than read. Construct the signalling network, map expression onto the KEGG pathway, answer the written items, and check the alignment problems against the official key.</p>
+    </div>
     <div class="tabs">
         <button class="tab-btn active" data-tab="network">🔗 Network Construction (1.1.1)</button>
-        <button class="tab-btn" data-tab="kegg">🧬 KEGG Pathway (1.2–1.4)</button>
+        <button class="tab-btn" data-tab="kegg">🧬 KEGG Pathway (1.2-1.4)</button>
         <button class="tab-btn" data-tab="exam">📝 Exam Questions</button>
         <button class="tab-btn" data-tab="alignment">🧬 Alignment (Part 2)</button>
     </div>
 
     <div id="network" class="tab-content active">
         <div class="question-block">
-            <div class="question-title">Problem 1.1.1 – Construct chemokine signalling pathway (22 points)</div>
+            <div class="question-title">Problem 1.1.1: Construct chemokine signalling pathway (22 points)</div>
             <p>Based on Appendix 1 sentences, add edges between nodes. Click a node, then another, choose type & state. Click on an edge to delete it. Submit to see your score.</p>
-            <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+            <div class="btn-row">
                 <button id="submitNetworkBtn">✅ Submit Network & Score</button>
                 <button id="resetNetworkBtn">🗑️ Reset All Edges</button>
                 <button id="listEdgesBtn">📋 List My Edges</button>
             </div>
             <div id="networkScore" class="info-text" style="display:none;"></div>
-            <canvas id="networkCanvas" width="1000" height="650" style="border:1px solid #aaa; background:#fefefe; cursor:crosshair;"></canvas>
+            <canvas id="networkCanvas" width="1000" height="650"></canvas>
             <p class="info-text">💡 <strong>Instructions:</strong> Click a node (highlighted), then click another node → choose interaction type (Activation/Inhibition/Dissociation) and state (Direct/Indirect). Click on an edge line to delete it. Drag nodes to rearrange. Submit to check against official answer key.</p>
         </div>
     </div>
@@ -56,21 +296,21 @@
     <div id="kegg" class="tab-content">
         <div class="question-block">
             <div class="question-title">Chemokine Signalling Pathway (KEGG view)</div>
-            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+            <div class="btn-row">
                 <button id="mapControlExpr">📊 Map control expression</button>
                 <button id="mapCaseExpr">📈 Map case expression</button>
                 <button id="mapFCvalues">🎨 Map FC values</button>
                 <button id="calcPSF">⚙️ Calculate PSF (Signal values)</button>
                 <button id="recalcDefaultPSF">⟳ Recalc default PSF</button>
             </div>
-            <canvas id="keggCanvas" width="1100" height="700" style="border:1px solid #aaa; background:#fcfcfc;"></canvas>
-            <hr>
-            <div class="question-title">Gene expression & FC simulation (Q1.2.4, Q1.3.1, Q1.4.2–1.4.4)</div>
+            <canvas id="keggCanvas" width="1100" height="700"></canvas>
+            <hr class="section-rule">
+            <div class="question-title">Gene expression & FC simulation (Q1.2.4, Q1.3.1, Q1.4.2-1.4.4)</div>
             <table class="gene-table" id="geneTable">
                 <thead><tr><th>Gene</th><th>Control expr</th><th>Case expr</th><th>FC (calculated)</th><th>Editable FC (for simulation)</th></tr></thead>
                 <tbody id="geneTableBody"></tbody>
             </table>
-            <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <div class="btn-row" style="margin-top: 1rem;">
                 <button id="applyFCchanges">🔄 Apply edited FC values & recalc PSF</button>
                 <button id="resetFCtoDefault">🔁 Reset FC to default (from Table 1)</button>
             </div>
@@ -79,24 +319,52 @@
     </div>
 
     <div id="exam" class="tab-content">
-        <div class="question-block"><div class="question-title">Q1.2.1 (8 points) – True/False</div><div class="options" id="q121"></div><button class="btn-secondary" onclick="checkAnswers('q121')">Check my answers</button><div id="q121Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.2.2 (8 points) – True/False</div><div class="options" id="q122"></div><button class="btn-secondary" onclick="checkAnswers('q122')">Check answers</button><div id="q122Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.2.3 (8 points) – True/False</div><div class="options" id="q123"></div><button class="btn-secondary" onclick="checkAnswers('q123')">Check answers</button><div id="q123Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.3.2 (2 points) – Which gene(s) have FC ≥ 2?</div><div class="options" id="q132"></div><button class="btn-secondary" onclick="checkAnswers('q132')">Check</button><div id="q132Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.4.1 (4 points) – Which process is suppressed?</div><div class="options" id="q141"></div><button class="btn-secondary" onclick="checkAnswers('q141')">Check</button><div id="q141Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.4.2 (4 points) – Gene whose mutation has least consequence</div><div class="options" id="q142"></div><button class="btn-secondary" onclick="checkAnswers('q142')">Check</button><div id="q142Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.4.3 (4 points) – Effect of Compound A (Akt inhibitor)</div><div class="options" id="q143"></div><button class="btn-secondary" onclick="checkAnswers('q143')">Check</button><div id="q143Result" class="info-text"></div></div>
-        <div class="question-block"><div class="question-title">Q1.4.4 (8 points) – Best compound to restore suppressed process</div><div class="options" id="q144"></div><button class="btn-secondary" onclick="checkAnswers('q144')">Check</button><div id="q144Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.2.1 (8 points): True/False</div><div class="options" id="q121"></div><button class="btn-secondary" onclick="checkAnswers('q121')">Check my answers</button><div id="q121Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.2.2 (8 points): True/False</div><div class="options" id="q122"></div><button class="btn-secondary" onclick="checkAnswers('q122')">Check answers</button><div id="q122Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.2.3 (8 points): True/False</div><div class="options" id="q123"></div><button class="btn-secondary" onclick="checkAnswers('q123')">Check answers</button><div id="q123Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.3.2 (2 points): Which gene(s) have FC ≥ 2?</div><div class="options" id="q132"></div><button class="btn-secondary" onclick="checkAnswers('q132')">Check</button><div id="q132Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.4.1 (4 points): Which process is suppressed?</div><div class="options" id="q141"></div><button class="btn-secondary" onclick="checkAnswers('q141')">Check</button><div id="q141Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.4.2 (4 points): Gene whose mutation has least consequence</div><div class="options" id="q142"></div><button class="btn-secondary" onclick="checkAnswers('q142')">Check</button><div id="q142Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.4.3 (4 points): Effect of Compound A (Akt inhibitor)</div><div class="options" id="q143"></div><button class="btn-secondary" onclick="checkAnswers('q143')">Check</button><div id="q143Result" class="info-text"></div></div>
+        <div class="question-block"><div class="question-title">Q1.4.4 (8 points): Best compound to restore suppressed process</div><div class="options" id="q144"></div><button class="btn-secondary" onclick="checkAnswers('q144')">Check</button><div id="q144Result" class="info-text"></div></div>
     </div>
 
     <div id="alignment" class="tab-content">
-        <div class="question-block"><div class="question-title">Problem 2.1 – Dot plot identification</div><p>Q2.1.1: Unknown gene is: <select id="q211"><option value="">Select</option><option value="APOE">APOE</option><option value="GABAA1">GABAA1</option><option value="ADGRG2">ADGRG2</option><option value="ORC2">ORC2</option></select></p><button onclick="checkQ211()">Check answer</button><div id="q211Result"></div><p>Q2.1.2 (True/False):</p><div id="q212"></div><button onclick="checkQ212()">Check</button><div id="q212Result"></div></div>
-        <div class="question-block"><div class="question-title">Problem 2.2 – Dynamic programming (AGTAC vs GCAC)</div><p>Alignment score: <input type="number" id="dpScore" placeholder="Enter score"> <button onclick="checkDP()">Check</button></p><p>Alignment result (e.g., AGTAC-GCAC): <input id="dpAlign" placeholder="e.g., AGTAC-GCAC"> <button onclick="checkAlign()">Check</button></p><div id="dpResult"></div></div>
-        <div class="question-block"><div class="question-title">Problem 2.3 – Taq polymerase gene search</div><p>Q2.3.1: Alignment type (local/global): <select id="q231"><option value="">Select</option><option value="local">Local</option><option value="global">Global</option></select></p><button onclick="checkQ231()">Check</button><div id="q231Result"></div><p>Q2.3.2 (True/False):</p><div id="q232"></div><button onclick="checkQ232()">Check</button><div id="q232Result"></div></div>
+        <div class="question-block"><div class="question-title">Problem 2.1: Dot plot identification</div><p>Q2.1.1: Unknown gene is: <select id="q211"><option value="">Select</option><option value="APOE">APOE</option><option value="GABAA1">GABAA1</option><option value="ADGRG2">ADGRG2</option><option value="ORC2">ORC2</option></select></p><button onclick="checkQ211()">Check answer</button><div id="q211Result"></div><p>Q2.1.2 (True/False):</p><div id="q212"></div><button onclick="checkQ212()">Check</button><div id="q212Result"></div></div>
+        <div class="question-block"><div class="question-title">Problem 2.2: Dynamic programming (AGTAC vs GCAC)</div><p>Alignment score: <input type="number" id="dpScore" placeholder="Enter score"> <button onclick="checkDP()">Check</button></p><p>Alignment result (e.g., AGTAC-GCAC): <input id="dpAlign" placeholder="e.g., AGTAC-GCAC"> <button onclick="checkAlign()">Check</button></p><div id="dpResult"></div></div>
+        <div class="question-block"><div class="question-title">Problem 2.3: Taq polymerase gene search</div><p>Q2.3.1: Alignment type (local/global): <select id="q231"><option value="">Select</option><option value="local">Local</option><option value="global">Global</option></select></p><button onclick="checkQ231()">Check</button><div id="q231Result"></div><p>Q2.3.2 (True/False):</p><div id="q232"></div><button onclick="checkQ232()">Check</button><div id="q232Result"></div></div>
     </div>
 </div>
 
 <script>
+
+    const SIM = {
+        accent: '#6b4a9e',
+        accent2: '#4a6a47',
+        gold: '#a87c14',
+        rose: '#c2456b',
+        ink: '#1a1a2e',
+        outline: 'rgba(74, 50, 110, 0.45)',
+        protein: '#efe8f8',
+        smallMolecule: '#fdf6e6',
+        dna: '#eaf1f8',
+        process: '#e9f0e6',
+        label: '600 13px system-ui, "Segoe UI", sans-serif',
+        labelSmall: '600 11px system-ui, "Segoe UI", sans-serif'
+    };
+
+    function edgeColor(type) {
+        if (type === 'Inhibition') return SIM.rose;
+        if (type === 'Dissociation') return SIM.gold;
+        return SIM.accent;
+    }
+
+    function nodeFill(type) {
+        if (type === 'smallMolecule') return SIM.smallMolecule;
+        if (type === 'dna') return SIM.dna;
+        if (type === 'process') return SIM.process;
+        return SIM.protein;
+    }
 
     const tabs = document.querySelectorAll('.tab-btn');
     const contents = document.querySelectorAll('.tab-content');
@@ -173,7 +441,7 @@
             ctxNet.beginPath();
             ctxNet.moveTo(src.x, src.y);
             ctxNet.lineTo(tgt.x, tgt.y);
-            ctxNet.strokeStyle = edge.type === 'Activation' ? '#2c7da0' : (edge.type === 'Inhibition' ? '#dc3545' : '#fd7e14');
+            ctxNet.strokeStyle = edgeColor(edge.type);
             ctxNet.setLineDash(edge.state === 'Indirect' ? [6,6] : []);
             ctxNet.lineWidth = 2.5;
             ctxNet.stroke();
@@ -194,19 +462,19 @@
         for (let node of nodes) {
             ctxNet.save();
             ctxNet.shadowBlur = 0;
-            ctxNet.strokeStyle = '#333';
+            ctxNet.strokeStyle = SIM.outline;
             ctxNet.lineWidth = 1.5;
 
             if (node.type === 'protein') {
                 ctxNet.beginPath();
                 ctxNet.ellipse(node.x, node.y, 32, 22, 0, 0, 2*Math.PI);
-                ctxNet.fillStyle = '#d9eaf7';
+                ctxNet.fillStyle = nodeFill('protein');
             } else if (node.type === 'smallMolecule') {
-                ctxNet.fillStyle = '#fef9e6';
+                ctxNet.fillStyle = nodeFill('smallMolecule');
                 ctxNet.fillRect(node.x-25, node.y-15, 50, 30);
                 ctxNet.strokeRect(node.x-25, node.y-15, 50, 30);
             } else if (node.type === 'dna') {
-                ctxNet.fillStyle = '#e1f5fe';
+                ctxNet.fillStyle = nodeFill('dna');
                 ctxNet.beginPath();
                 ctxNet.moveTo(node.x-25, node.y-15);
                 ctxNet.lineTo(node.x+25, node.y-15);
@@ -215,7 +483,7 @@
                 ctxNet.fill();
                 ctxNet.stroke();
             } else {
-                ctxNet.fillStyle = '#e8f5e9';
+                ctxNet.fillStyle = nodeFill('process');
                 ctxNet.beginPath();
                 ctxNet.moveTo(node.x, node.y-18);
                 ctxNet.lineTo(node.x+25, node.y);
@@ -230,8 +498,8 @@
                 ctxNet.stroke();
             }
 
-            ctxNet.fillStyle = '#1e1e2f';
-            ctxNet.font = 'bold 13px "Segoe UI"';
+            ctxNet.fillStyle = SIM.ink;
+            ctxNet.font = SIM.label;
             ctxNet.textAlign = 'center';
             ctxNet.textBaseline = 'middle';
             ctxNet.fillText(node.label, node.x, node.y);
@@ -239,7 +507,7 @@
             if (selectedNode === node.id) {
                 ctxNet.beginPath();
                 ctxNet.arc(node.x, node.y, 28, 0, 2*Math.PI);
-                ctxNet.strokeStyle = '#ffaa33';
+                ctxNet.strokeStyle = SIM.gold;
                 ctxNet.lineWidth = 3;
                 ctxNet.stroke();
             }
@@ -395,19 +663,25 @@
             keggCtx.beginPath();
             keggCtx.moveTo(src.x, src.y);
             keggCtx.lineTo(tgt.x, tgt.y);
-            keggCtx.strokeStyle = edge[2]==='Activation'?'#2c7da0':'#dc3545';
+            keggCtx.strokeStyle = edgeColor(edge[2]);
+            keggCtx.lineWidth = 1.6;
             keggCtx.setLineDash(edge[3]==='Indirect'?[6,6]:[]);
             keggCtx.stroke();
         }
         keggCtx.setLineDash([]);
         for (let node of keggNodes) {
-            keggCtx.fillStyle = node.type === 'process' ? '#e8f5e9' : (node.type === 'smallMolecule' ? '#fef9e6' : '#d9eaf7');
+            keggCtx.fillStyle = nodeFill(node.type);
+            keggCtx.strokeStyle = SIM.outline;
+            keggCtx.lineWidth = 1;
             keggCtx.beginPath();
             keggCtx.ellipse(node.x, node.y, 30, 20, 0, 0, 2*Math.PI);
             keggCtx.fill();
-            keggCtx.fillStyle = '#1e293b';
-            keggCtx.font = 'bold 11px "Segoe UI"';
-            keggCtx.fillText(node.label, node.x-20, node.y-8);
+            keggCtx.stroke();
+            keggCtx.fillStyle = SIM.ink;
+            keggCtx.font = SIM.labelSmall;
+            keggCtx.textAlign = 'center';
+            keggCtx.textBaseline = 'middle';
+            keggCtx.fillText(node.label, node.x, node.y);
         }
     }
     drawKEGG();
@@ -441,9 +715,9 @@
     document.getElementById('recalcDefaultPSF').onclick = () => document.getElementById('psfStatus').innerHTML = "PSF reset to default.";
 
     function arraysEqual(a,b) { return a.length===b.length && a.every((v,i)=>v===b[i]); }
-    const q121Statements = ["1. Phosphorylation always leads to protein activation","2. Interaction chemokine–chemokineR is crucial","3. Indirect activation of Raf by PI3K IA involves at least 2 intermediates","4. IP3 binds ER receptor → increased Ca²⁺ flow"];
+    const q121Statements = ["1. Phosphorylation always leads to protein activation","2. Interaction chemokine-chemokineR is crucial","3. Indirect activation of Raf by PI3K IA involves at least 2 intermediates","4. IP3 binds ER receptor → increased Ca²⁺ flow"];
     const q121Answers = [false, true, true, true];
-    const q122Statements = ["1. Mutation in cytoplasmic domain of chemokineR prevents chemokine binding","2. Inactivation mutations in Gai affect all final processes","3. ROCK inactivation fully suppresses actin regulation","4. Mutation preventing PI3K IA–Ras interaction does not inhibit any final process"];
+    const q122Statements = ["1. Mutation in cytoplasmic domain of chemokineR prevents chemokine binding","2. Inactivation mutations in Gai affect all final processes","3. ROCK inactivation fully suppresses actin regulation","4. Mutation preventing PI3K IA-Ras interaction does not inhibit any final process"];
     const q122Answers = [false, false, false, true];
     const q123Statements = ["1. Low expression always due to mutation","2. Tiam1 is limiting factor for Tiam1-Par-PRKcz complex (expr: 7.3,8,10.3)","3. Change in Gai activity directly changes Src expression","4. Decreased Akt expression increases Cytokine production"];
     const q123Answers = [false, true, false, true];

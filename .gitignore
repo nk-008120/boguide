@@ -19,3 +19,4 @@ data/bioclash/*.yaml
 supabase/.temp/
 tests/*/node_modules/
 emails/
+image-sources.md
