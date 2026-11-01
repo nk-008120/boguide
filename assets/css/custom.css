@@ -4305,6 +4305,10 @@ nav.hextra-max-navbar-width button.hextra-nav-menu-toggle > span:has(> img[class
   font-weight: 700;
   color: #8965c4;
 }
+.hero-country-note {
+  font-weight: 700;
+  color: #8965c4;
+}
 html.dark .hero-country-badge {
   color: #94a3b8;
   border-color: rgba(201, 183, 232, 0.25);
@@ -4419,6 +4423,23 @@ html.dark .reach-country-visitors {
 }
 html.dark .community-reach-updated {
   color: #64748b;
+}
+.community-reach-note {
+  max-width: 56ch;
+  margin: 0.6rem auto 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+.community-reach-note strong {
+  font-weight: 600;
+  color: #475569;
+}
+html.dark .community-reach-note {
+  color: #94a3b8;
+}
+html.dark .community-reach-note strong {
+  color: #cbd5e1;
 }
 @media (max-width: 640px) {
   .reach-number {

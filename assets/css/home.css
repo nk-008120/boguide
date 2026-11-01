@@ -711,6 +711,9 @@ html.hv-js .home-v2 [data-lines] {
 .home-v2 .hv .hero-country-badge b {
   color: var(--fx-accent);
 }
+.home-v2 .hv .hero-country-note {
+  color: var(--fx-accent);
+}
 
 .home-v2 .hv-cta {
   display: flex;

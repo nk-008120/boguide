@@ -73,6 +73,19 @@ As of August 8 2026, this website has been a one man project. Now, we are about 
   <div class="community-reach-hero" id="community-reach-hero"></div>
   <div class="community-reach-grid" id="community-reach-grid"></div>
   <p class="community-reach-updated" id="community-reach-updated"></p>
+  <p class="community-reach-note">
+    <strong>* Why this number got smaller.</strong> Until 18 October 2026 this
+    figure counted page views, so a student who read ten pages of notes counted
+    ten times. It now counts visits, which Umami records as sessions, so that
+    same student counts once. No traffic was lost and nothing was removed: only
+    the definition changed. Page views run roughly three to four times visits on
+    this site, and that is the whole of the gap between the 27,814 shown here on
+    18 October and the smaller figure above. Visits actually rose over the same
+    period, from 7,220 on 26 October. We switched because visits are the stricter
+    and the more honest count of how many students really came. The source has
+    not changed: our own Umami instance, read once a day, counted over the whole
+    life of the site rather than a trailing 30 days.
+  </p>
 </div>
 
 Now, thanks for visiting! Let's talk a bit about why we built BiOGuide.
