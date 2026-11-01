@@ -20,3 +20,4 @@ supabase/.temp/
 tests/*/node_modules/
 emails/
 image-sources.md
+static/kmavat.png
