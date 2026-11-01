@@ -62,6 +62,13 @@ attack we hadn't considered is still worth reporting:
   not secrets, since staff status is public, and users cannot change the
   flag on their own profile. Later staff changes are made directly in the
   database and are not committed.
+- **The repository is public, including during BiOClash rounds.** This is
+  a deliberate choice, not an oversight, and it is explained in
+  `ARCHITECTURE.md` under "The repository is public, and that is a
+  decision". Papers are tracked only as encrypted envelopes, keys are
+  environment variables, and RLS is what protects account data. A report
+  that the repository is readable, or that old commits can be cloned, will
+  be closed as known.
 
 One thing that is a real gap and not a design choice: for MB-01 the paper
 file sat in plaintext in a public repository until shortly before the

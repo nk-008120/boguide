@@ -216,7 +216,7 @@ cd boguide
 hugo server --disableFastRender
 ```
 
-The repository is private while a BiOClash round is open, so the clone will fail for anyone outside the team during those weeks. It is public the rest of the time.
+The repository is public, including while a BiOClash round is open, and cloning works for anyone at any time. Earlier rounds were run with it temporarily private, because a paper file was tracked in plaintext; papers are now committed only as encrypted envelopes, so there is nothing in the working tree that going private would protect. The keys that open a paper live in `BIOCLASH_PAPER_KEYS` and are not in the repository, so a clone gives you the site and the code, not the exams.
 
 Visit `http://localhost:1313`. A full build takes a few minutes because of the size of the paper archive. Serverless functions and Supabase features need environment variables that are not in the repo; `.env.example` lists every one of them and says where each is read.
 

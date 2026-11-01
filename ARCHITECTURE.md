@@ -47,6 +47,38 @@ exam), that action goes through a Vercel function using the
 service-role client instead, which bypasses RLS deliberately and
 re-derives or re-validates the result server-side.
 
+## The repository is public, and that is a decision
+
+BiOGuide is public on GitHub on purpose, under MIT for the code and a
+separate licence for the content. The reasoning is that a student-run
+project asking other students to trust it with their attempt history and
+their email address should be inspectable, and that most of what is here
+is only useful to anyone else if they can read it.
+
+Nothing in the tree depends on the repository being hard to reach. The
+things that would hurt if they leaked are held somewhere else:
+
+- Account data and attempt history are in Postgres behind Row Level
+  Security, which is the real boundary and is tested in `tests/rls/`.
+- BiOClash papers are committed only as encrypted envelopes. The master
+  keys are in `BIOCLASH_PAPER_KEYS` in the Vercel environment and have
+  never been in Git.
+- Every other credential is an environment variable. `.env.example` names
+  them all and says where each is read, with no values.
+
+The repository was private for a stretch around the MB-01 round, between
+roughly 2026-10-09 and 2026-10-18, as a containment measure after a paper was
+found tracked in plaintext. That was a reaction to a specific mistake, not
+a standing policy, and it is not how later rounds are protected. The vault
+replaced it. Rounds from here on run with the repository open.
+
+One thing that period does not undo: the Git history still contains the
+plaintext MB-01 paper from before it was encrypted, so it is readable by
+anyone who clones. Going private again would not change that, and
+rewriting history would invalidate the commit hashes recorded in
+`AI_INVOLVEMENT_LOG.csv` and in the release tags. It is written up under
+"What went wrong with MB-01, and what we decided".
+
 ## BiOClash: anti-cheat and scoring
 
 BiOClash's exam content (`data/bioclash/*.yaml`) never reaches the browser
@@ -173,7 +205,7 @@ own `localStorage` as the grader works. Nothing in this tool touches
 holding an admin credential; the actual privileged call always happens in
 the grader's own terminal, never in the browser.
 
-## BiOClash: keeping papers out of the public repository
+## BiOClash: keeping papers unreadable in a public repository
 
 A BiOClash paper file holds its answer keys, so it cannot sit in a public
 repository as plaintext, and `.gitignore` alone is not a fix. `vercel.json`
@@ -233,7 +265,10 @@ discover it. Two things were exposed before the MB-01 round opened on
 - `data/bioclash/mb-01.yaml`, the full paper with its auto-graded answer
   keys, was tracked in plaintext from 2026-08-10 and readable on the public
   GitHub repository until the repository was made private around
-  2026-10-09. It is still in the Git history.
+  2026-10-09. The repository is public again, and the file is still in the
+  Git history, so that plaintext remains readable to anyone who clones.
+  The encryption below stops this recurring; it does not retract what was
+  already published.
 - The paper's figures (`static/MB-01PICS/` and the `mb01-fig*` files in
   `static/BIOCLASHPICS/`) are ordinary static files. Anyone who knows or
   guesses a file name can fetch them from the live site without being on
