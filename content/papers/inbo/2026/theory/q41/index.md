@@ -3,7 +3,7 @@ title: "Q41 - Bohr and Haldane Effects in Fetal-Maternal Gas Exchange"
 description: "Respiratory Physiology: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/respiratory-physiology/">Respiratory Physiology</a>

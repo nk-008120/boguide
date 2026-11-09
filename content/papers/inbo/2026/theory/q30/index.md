@@ -3,7 +3,7 @@ title: "Q30 - Plant Biomolecular Composition Matching"
 description: "Carbohydrate Chemistry & Biology: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/carbohydrate-chemistry-biology/">Carbohydrate Chemistry & Biology</a>

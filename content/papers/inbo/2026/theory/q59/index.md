@@ -3,7 +3,7 @@ title: "Q59 - Animal Phylogeny Evolutionary Traits"
 description: "Phylogenetic Trees & Cladistics: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/4-biosystematics/phylogenetic-trees-cladistics/">Phylogenetic Trees & Cladistics</a>

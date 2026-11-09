@@ -3,7 +3,7 @@ title: "Q36 - Mammalian Vision: Skull Morphology and Retinal Composition"
 description: "Mammalian Comparative Anatomy: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/2-animal-anatomy/mammalian-comparative-anatomy/">Mammalian Comparative Anatomy</a>

@@ -3,7 +3,7 @@ title: "Q56 - Cichlid Fish Agonistic Behavior and Weight Asymmetry"
 description: "Aggression, Territoriality & Social Structure: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/9-ethology/aggression-territoriality-social-structure/">Aggression, Territoriality & Social Structure</a>

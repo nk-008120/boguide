@@ -3,7 +3,7 @@ title: "Q21 - Convergent Evolution in Desert Plants"
 description: "Evidence for Evolution: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/15-evolution/evidence-for-evolution/">Evidence for Evolution</a>

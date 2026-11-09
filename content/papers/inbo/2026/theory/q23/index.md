@@ -3,7 +3,7 @@ title: "Q23 - Gene Size, Introns and mRNA Analysis"
 description: "Transcription & RNA Processing: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
-{{< problem-meta category="Theory" >}}
+{{< problem-meta category="Theory" note="Real exam question" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/transcription-rna-processing/">Transcription & RNA Processing</a>
