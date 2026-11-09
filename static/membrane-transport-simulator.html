@@ -80,7 +80,7 @@
     var membraneY1 = 55, membraneY2 = 85;
     var rect = document.createElementNS(ns,'rect');
     rect.setAttribute('x',0);rect.setAttribute('y',membraneY1);rect.setAttribute('width',400);rect.setAttribute('height',membraneY2-membraneY1);
-    rect.setAttribute('fill','#fde68a'); rect.setAttribute('opacity','0.6');
+    rect.setAttribute('fill','#fee3a7'); rect.setAttribute('opacity','0.6');
     svg.appendChild(rect);
 
     var passiveDir = grad > 0 ? 1 : -1;
@@ -117,7 +117,7 @@
     function drawProtein(){
       var p = document.createElementNS(ns,'rect');
       p.setAttribute('x',190);p.setAttribute('y',membraneY1-5);p.setAttribute('width',20);p.setAttribute('height',(membraneY2-membraneY1)+10);
-      p.setAttribute('fill','#7c3aed');p.setAttribute('rx','6');
+      p.setAttribute('fill','#6b0686');p.setAttribute('rx','6');
       svg.appendChild(p);
     }
 
@@ -132,7 +132,7 @@
 
     var note = document.getElementById('energyNote');
     note.textContent = energyReq + ' ' + rateLabel;
-    note.style.background = mode === 'active' ? '#fef9c3' : '#dcfce7';
+    note.style.background = mode === 'active' ? '#fff6e3' : '#dcfce7';
     note.style.color = mode === 'active' ? '#92400e' : '#166534';
   }
 

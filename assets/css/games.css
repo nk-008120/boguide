@@ -206,7 +206,7 @@ html.dark .bio-ludo-setup-btn {
 
 .bio-ludo-turn-indicator--red { background: #d64545; }
 .bio-ludo-turn-indicator--green { background: #3f9142; }
-.bio-ludo-turn-indicator--yellow { background: #d1a316; }
+.bio-ludo-turn-indicator--yellow { background: #fdcb58; color: #1a1a2e; }
 .bio-ludo-turn-indicator--blue { background: #3b6fd6; }
 
 .bio-ludo-dice-area {
@@ -365,7 +365,7 @@ html.dark .bio-ludo-setup-btn {
 
 .bio-ludo-yard--red { background: rgba(214, 69, 69, 0.18); }
 .bio-ludo-yard--green { background: rgba(63, 145, 66, 0.18); }
-.bio-ludo-yard--yellow { background: rgba(209, 163, 22, 0.18); }
+.bio-ludo-yard--yellow { background: rgba(253, 203, 88, 0.34); }
 .bio-ludo-yard--blue { background: rgba(59, 111, 214, 0.18); }
 
 .bio-ludo-yard-slots {
@@ -388,7 +388,7 @@ html.dark .bio-ludo-setup-btn {
 }
 
 .bio-ludo-center {
-  background: conic-gradient(#d64545 0deg 90deg, #3f9142 90deg 180deg, #3b6fd6 180deg 270deg, #d1a316 270deg 360deg);
+  background: conic-gradient(#d64545 0deg 90deg, #3f9142 90deg 180deg, #3b6fd6 180deg 270deg, #fdcb58 270deg 360deg);
   border-radius: var(--radius-sm);
 }
 
@@ -445,7 +445,7 @@ html.dark .bio-ludo-setup-btn {
 
 .bio-ludo-cell--home-red { background: rgba(214, 69, 69, 0.2); }
 .bio-ludo-cell--home-green { background: rgba(63, 145, 66, 0.2); }
-.bio-ludo-cell--home-yellow { background: rgba(209, 163, 22, 0.2); }
+.bio-ludo-cell--home-yellow { background: rgba(253, 203, 88, 0.38); }
 .bio-ludo-cell--home-blue { background: rgba(59, 111, 214, 0.2); }
 
 .bio-ludo-piece-stack {
@@ -476,7 +476,7 @@ html.dark .bio-ludo-setup-btn {
 
 .bio-ludo-piece--red { background: #d64545; }
 .bio-ludo-piece--green { background: #3f9142; }
-.bio-ludo-piece--yellow { background: #d1a316; }
+.bio-ludo-piece--yellow { background: #fdcb58; color: #1a1a2e; border-color: rgba(26, 26, 46, 0.55); }
 .bio-ludo-piece--blue { background: #3b6fd6; }
 
 .bio-ludo-piece.is-knocked-out {

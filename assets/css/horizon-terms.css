@@ -55,7 +55,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-pop-name {
   margin: 0 0 0.3rem;
@@ -87,7 +87,7 @@
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #5a3f8a;
+  color: #6b0686;
   text-decoration: none;
   transition: background 0.15s ease, color 0.15s ease;
 }
@@ -126,7 +126,7 @@
   border-radius: 14px;
   border: 1.5px solid rgba(137, 101, 196, 0.35);
   background: rgba(137, 101, 196, 0.09);
-  color: #5a3f8a;
+  color: #6b0686;
   text-decoration: none;
   transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }

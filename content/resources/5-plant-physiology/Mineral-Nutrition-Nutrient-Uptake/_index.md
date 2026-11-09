@@ -132,10 +132,10 @@ In both types the fungus receives photosynthate from the plant in exchange for e
       var isMobile = btn.dataset.mobile === '1';
       var el = btn.textContent;
       if (isMobile){
-        old.querySelectorAll('ellipse').forEach(function(e){ e.setAttribute('fill','#fde68a'); });
+        old.querySelectorAll('ellipse').forEach(function(e){ e.setAttribute('fill','#fee3a7'); });
         note.textContent = el + ' is phloem-mobile: it is resorbed from older leaves and relocated to new growth when supply is short, so deficiency symptoms (chlorosis) appear first in older leaves.';
       } else {
-        young.querySelectorAll('ellipse').forEach(function(e){ e.setAttribute('fill','#fde68a'); });
+        young.querySelectorAll('ellipse').forEach(function(e){ e.setAttribute('fill','#fee3a7'); });
         note.textContent = el + ' is immobile, once incorporated it cannot be relocated, so deficiency symptoms appear first in younger, actively growing tissue.';
       }
     });
@@ -157,12 +157,12 @@ In both types the fungus receives photosynthate from the plant in exchange for e
     <circle cx="260" cy="40" r="9" fill="#1d70a2" id="pmfSymporter"/>
     <text x="260" y="44" font-size="7" text-anchor="middle" fill="#fff">Sym</text>
     <path id="hInArrow" d="M260 20 L260 40" stroke="#b91c1c" stroke-width="3" opacity="0" marker-end="url(#pmfArrow)"/>
-    <path id="ionInArrow" d="M275 20 L275 40" stroke="#7c3aed" stroke-width="3" opacity="0" marker-end="url(#pmfArrowPurple)"/>
-    <text id="ionLabel" x="300" y="18" font-size="11" fill="#7c3aed" opacity="0">mineral ion in</text>
+    <path id="ionInArrow" d="M275 20 L275 40" stroke="#6b0686" stroke-width="3" opacity="0" marker-end="url(#pmfArrowPurple)"/>
+    <text id="ionLabel" x="300" y="18" font-size="11" fill="#6b0686" opacity="0">mineral ion in</text>
     <text id="gradientLabel" x="190" y="70" text-anchor="middle" font-size="11" fill="#334155" opacity="0">pH / voltage gradient</text>
     <defs>
       <marker id="pmfArrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b91c1c"/></marker>
-      <marker id="pmfArrowPurple" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/></marker>
+      <marker id="pmfArrowPurple" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b0686"/></marker>
     </defs>
   </svg>
   <div style="text-align:center;">

@@ -27,7 +27,7 @@ html:has(.fr-shell) {
   cursor: pointer;
   font-weight: 700;
   font-size: 0.9rem;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-toc-title {
   display: none;
@@ -77,7 +77,7 @@ html:has(.fr-shell) {
 .fr-toc nav a.is-active {
   opacity: 1;
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
   background: rgba(137, 101, 196, 0.16);
 }
 .fr-toc nav ul ul {
@@ -106,7 +106,7 @@ html:has(.fr-shell) {
   padding: 0.3rem 0.6rem;
   font-size: 0.76rem;
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
   text-decoration: none !important;
 }
 
@@ -136,7 +136,7 @@ html:has(.fr-shell) {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #5a3f8a;
+    color: #6b0686;
   }
   .fr-toc-inner {
     padding: 0;

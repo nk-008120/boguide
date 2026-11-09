@@ -162,7 +162,7 @@ A **three-chambered heart** (two atria, one ventricle): a structural improvement
 
 <script>
 (function(){
-  var deoxy = '#1f5c99', oxy = '#c0392b', mixed = '#7a3f96', gradient = 'linear-gradient(90deg, #1f5c99, #c0392b)';
+  var deoxy = '#1f5c99', oxy = '#c0392b', mixed = '#6b0686', gradient = 'linear-gradient(90deg, #1f5c99, #c0392b)';
   function box(label, color){ return '<div style="padding:10px 12px; border-radius:10px; background:' + color + '; text-align:center; min-width:100px;">' + label + '</div>'; }
   function arrow(){ return '<div style="color:#374151; font-size:1.2rem;">→</div>'; }
 

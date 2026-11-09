@@ -138,8 +138,8 @@ Beyond constitutive deterrents like tannins, many species mount **induced** anti
     <text id="prIcon1" x="220" y="50" text-anchor="middle" font-size="14" opacity="0">&#128737;&#65039;</text>
     <ellipse cx="230" cy="100" rx="38" ry="24" fill="#8fbf8f" stroke="#2d6a4f" stroke-width="2"/>
     <text id="prIcon2" x="230" y="105" text-anchor="middle" font-size="14" opacity="0">&#128737;&#65039;</text>
-    <circle id="signalDot1" cx="115" cy="70" r="5" fill="#7c3aed" opacity="0"/>
-    <circle id="signalDot2" cx="115" cy="70" r="5" fill="#7c3aed" opacity="0"/>
+    <circle id="signalDot1" cx="115" cy="70" r="5" fill="#6b0686" opacity="0"/>
+    <circle id="signalDot2" cx="115" cy="70" r="5" fill="#6b0686" opacity="0"/>
   </svg>
   <div style="text-align:center;">
     <button id="hrInfectBtn" style="background:#b91c1c; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;">Infect leaf 1</button>

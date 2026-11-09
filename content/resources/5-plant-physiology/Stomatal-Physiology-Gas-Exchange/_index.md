@@ -78,18 +78,18 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
     <g id="ionsIn" opacity="0">
       <text x="90" y="60" font-size="13" fill="#1d70a2">K&#8314;</text>
       <text x="180" y="45" font-size="13" fill="#b45309">Cl&#8315;</text>
-      <text x="280" y="60" font-size="13" fill="#7c3aed">malate&#178;&#8315;</text>
+      <text x="280" y="60" font-size="13" fill="#6b0686">malate&#178;&#8315;</text>
       <path d="M85 65 L80 85" stroke="#1d70a2" stroke-width="2" marker-end="url(#arrIn)"/>
       <path d="M185 50 L200 78" stroke="#b45309" stroke-width="2" marker-end="url(#arrIn)"/>
-      <path d="M285 65 L300 85" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrIn)"/>
+      <path d="M285 65 L300 85" stroke="#6b0686" stroke-width="2" marker-end="url(#arrIn)"/>
     </g>
     <g id="ionsOut" opacity="0">
       <text x="90" y="150" font-size="13" fill="#1d70a2">K&#8314;</text>
       <text x="180" y="165" font-size="13" fill="#b45309">Cl&#8315;</text>
-      <text x="280" y="150" font-size="13" fill="#7c3aed">malate&#178;&#8315;</text>
+      <text x="280" y="150" font-size="13" fill="#6b0686">malate&#178;&#8315;</text>
       <path d="M80 115 L85 140" stroke="#1d70a2" stroke-width="2" marker-end="url(#arrOut)"/>
       <path d="M200 122 L185 155" stroke="#b45309" stroke-width="2" marker-end="url(#arrOut)"/>
-      <path d="M300 115 L285 140" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrOut)"/>
+      <path d="M300 115 L285 140" stroke="#6b0686" stroke-width="2" marker-end="url(#arrOut)"/>
     </g>
     <defs>
       <marker id="arrIn" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#334155"/></marker>

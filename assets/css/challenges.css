@@ -38,7 +38,7 @@ html.dark .challenge-cta-text {
   padding: 0.35rem 0.9rem;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #6d4fa3;
+  color: #6b0686;
   background: rgba(137, 101, 196, 0.1);
   border: 1px solid rgba(137, 101, 196, 0.3);
   border-radius: var(--radius-pill, 999px);
@@ -122,9 +122,9 @@ html.dark .challenge-difficulty-easy {
   border-color: rgba(158, 212, 161, 0.35);
 }
 html.dark .challenge-difficulty-medium {
-  color: #e8c778;
-  background: rgba(232, 199, 120, 0.14);
-  border-color: rgba(232, 199, 120, 0.35);
+  color: #fdcb58;
+  background: rgba(253, 203, 88, 0.13);
+  border-color: rgba(253, 203, 88, 0.34);
 }
 html.dark .challenge-difficulty-hard {
   color: #e29a8a;
@@ -312,7 +312,7 @@ html.dark .page-rating-avg {
 .page-rating-your {
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #6d4fa3;
+  color: #6b0686;
 }
 html.dark .page-rating-your {
   color: #c9b7e8;
@@ -323,7 +323,7 @@ html.dark .page-rating-your {
 .page-rating-login-link {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #6d4fa3;
+  color: #6b0686;
   text-decoration: none;
 }
 .page-rating-login-link:hover {

@@ -8,7 +8,7 @@
 .fr-viz h3 {
   margin: 0 0 0.3rem;
   font-size: 1.2rem;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-viz-intro {
   margin: 0 0 1rem;
@@ -35,7 +35,7 @@
   border-radius: var(--radius-pill);
   border: 1.5px solid rgba(137, 101, 196, 0.5);
   background: transparent;
-  color: #5a3f8a;
+  color: #6b0686;
   font-family: inherit;
   font-size: 0.82rem;
   font-weight: 700;
@@ -62,7 +62,7 @@
 }
 .fr-viz-slider output {
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-viz-slider input[type="range"] {
   width: 100%;

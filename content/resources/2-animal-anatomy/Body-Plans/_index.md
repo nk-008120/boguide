@@ -95,7 +95,7 @@ graph TD;
       </ul>
     </div>
     <div class="germ-col" data-layer="endoderm" style="flex:1; min-width:180px; border-radius:16px; padding:0.8rem; background:#f1e9f5; border:2px solid transparent; transition:opacity 0.25s, border-color 0.25s;">
-      <div class="germ-header" style="cursor:pointer; font-weight:700; color:#7a3f96; padding:4px 8px; border-radius:8px; margin-bottom:0.5rem;">Endoderm</div>
+      <div class="germ-header" style="cursor:pointer; font-weight:700; color:#6b0686; padding:4px 8px; border-radius:8px; margin-bottom:0.5rem;">Endoderm</div>
       <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.4rem;">
         <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Lining of digestive tract</li>
         <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Lining of respiratory tract</li>

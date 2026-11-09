@@ -25,7 +25,7 @@
 }
 
 .badge-custom {
-  background-color: #fef3c7;
+  background-color: #fef1d4;
   color: #92400e;
   border-radius: var(--radius-pill);
   padding: 4px 12px;
@@ -35,12 +35,12 @@
 }
 html.dark .badge-custom {
   background-color: rgba(245, 158, 11, 0.2);
-  color: #fbbf24;
+  color: #fdcb58;
 }
 
 .topic-meta-link.badge-custom {
   background-color: rgba(137, 101, 196, 0.12);
-  color: #6d4fa3;
+  color: #6b0686;
   border: 1px solid rgba(137, 101, 196, 0.3);
   text-decoration: none;
 }
@@ -1031,11 +1031,11 @@ html.dark .country-published:hover {
   fill: #a48ad6;
 }
 .country-coming-soon {
-  fill: #f0cf5f;
+  fill: #fdcb58;
   cursor: default;
 }
 .country-coming-soon:hover {
-  fill: #e6c04a;
+  fill: #fdcb58;
 }
 html.dark .country-coming-soon {
   fill: #6b5a26;
@@ -1121,7 +1121,7 @@ html.dark .olympiad-map-tooltip {
   color: #b8860b;
 }
 html.dark .olympiad-tooltip-status.coming {
-  color: #e6c76e;
+  color: #fdcb58;
 }
 
 .olympiad-map-legend {
@@ -1147,7 +1147,7 @@ html.dark .olympiad-tooltip-status.coming {
   background: #8965c4;
 }
 .olympiad-legend-coming {
-  background: #f0cf5f;
+  background: #fdcb58;
 }
 .olympiad-legend-outline {
   background: #5f9b64;
@@ -1635,7 +1635,7 @@ html.dark .content table tbody tr:hover {
     background: linear-gradient(135deg, rgba(137, 101, 196, 0.09), rgba(92, 122, 88, 0.07)) !important;
     border: 1px solid rgba(137, 101, 196, 0.25) !important;
     border-radius: var(--radius-pill) !important;
-    color: #6d4fa3 !important;
+    color: #6b0686 !important;
     transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
   .hextra-search-trigger:hover {
@@ -1657,7 +1657,7 @@ html.dark .content table tbody tr:hover {
 .hextra-search-trigger-kbd {
   background: rgba(137, 101, 196, 0.08) !important;
   border-color: rgba(137, 101, 196, 0.3) !important;
-  color: #6d4fa3 !important;
+  color: #6b0686 !important;
 }
 html.dark .hextra-search-trigger-kbd {
   background: rgba(201, 183, 232, 0.1) !important;
@@ -1734,8 +1734,8 @@ html.dark .hextra-search-input-wrapper {
   --papers-border: #e0d6bc;
   --papers-border-strong: #c9b98d;
   --papers-fg-muted: rgb(107 114 128);
-  --papers-primary: #6d4fa3;
-  --papers-primary-strong: #5a3f8a;
+  --papers-primary: #6b0686;
+  --papers-primary-strong: #6b0686;
   --papers-primary-tint: #ece3f7;
   --papers-accent: #8a6512;
   --papers-accent-dim: #a9895a;
@@ -2016,7 +2016,7 @@ html.dark .papers-difficulty-easy {
   color: #9ed4a1;
 }
 html.dark .papers-difficulty-medium {
-  color: #e8c778;
+  color: #fdcb58;
 }
 html.dark .papers-difficulty-hard {
   color: #e29a8a;
@@ -2583,7 +2583,7 @@ html.dark .attempt-last-report {
 .attempt-palette-btn.answered { border-color: #16a34a; background: rgba(22, 163, 74, 0.15); }
 .attempt-palette-btn.marked { box-shadow: inset 0 0 0 2px var(--papers-primary); }
 html.dark .attempt-palette-btn.answered { background: rgba(74, 222, 128, 0.15); border-color: #4ade80; }
-html.dark .attempt-palette-btn.partial { background: rgba(251, 191, 36, 0.15); border-color: #fbbf24; }
+html.dark .attempt-palette-btn.partial { background: rgba(253, 203, 88, 0.14); border-color: #fdcb58; }
 
 .attempt-main {
   flex: 1 1 480px;
@@ -2823,7 +2823,7 @@ html.dark .team-avatar {
 .team-role {
   font-weight: 600;
   font-size: 0.85rem;
-  color: #6d4fa3;
+  color: #6b0686;
   margin: 0 0 0.5rem !important;
 }
 html.dark .team-role {
@@ -2840,7 +2840,7 @@ html.dark .team-role {
   margin-top: 0.75rem;
 }
 .team-links a {
-  color: #6d4fa3;
+  color: #6b0686;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.85rem;
@@ -2850,9 +2850,9 @@ html.dark .team-role {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 .team-links a:hover {
-  background: #6d4fa3;
+  background: #6b0686;
   color: #fff;
-  border-color: #6d4fa3;
+  border-color: #6b0686;
 }
 html.dark .team-links a {
   color: #c9b7e8;
@@ -3077,7 +3077,7 @@ html:-ms-fullscreen .focus-reader-root {
   font-size: 1.2rem !important;
   font-weight: 400 !important;
   line-height: 1 !important;
-  color: #6d4fa3 !important;
+  color: #6b0686 !important;
   flex-shrink: 0 !important;
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }

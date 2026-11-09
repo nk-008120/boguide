@@ -177,7 +177,7 @@ body.fx .hextra-alert[data-alert="caution"] { --fx-tone: #dc2626; }
 html.dark body.fx .hextra-alert[data-alert="note"] { --fx-tone: #60a5fa; }
 html.dark body.fx .hextra-alert[data-alert="tip"] { --fx-tone: #4ade80; }
 html.dark body.fx .hextra-alert[data-alert="important"] { --fx-tone: #c084fc; }
-html.dark body.fx .hextra-alert[data-alert="warning"] { --fx-tone: #fbbf24; }
+html.dark body.fx .hextra-alert[data-alert="warning"] { --fx-tone: #fdcb58; }
 html.dark body.fx .hextra-alert[data-alert="caution"] { --fx-tone: #f87171; }
 
 body.fx .testimonial-quote-block {
@@ -201,7 +201,7 @@ body.fx .biolab-archive-framing-note {
   border-radius: 16px;
 }
 html.dark body.fx .biolab-archive-framing-note {
-  border-color: rgba(251, 191, 36, 0.4);
+  border-color: rgba(253, 203, 88, 0.38);
 }
 
 body.fx .biolab-hub-card,
@@ -233,10 +233,10 @@ body.fx .biolab-hub-status .biolab-status-dot {
   background: #d97706;
 }
 html.dark body.fx .biolab-hub-status {
-  color: #fbbf24;
+  color: #fdcb58;
 }
 html.dark body.fx .biolab-hub-status .biolab-status-dot {
-  background: #fbbf24;
+  background: #fdcb58;
 }
 body.fx .biolab-hub-glow {
   background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--fx-accent) 30%, #ffffff), var(--fx-accent) 75%);

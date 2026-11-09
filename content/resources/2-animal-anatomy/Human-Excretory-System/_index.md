@@ -65,7 +65,7 @@ graph LR;
   var segments = [
     { key: 'pct', name: 'PCT', color: '#2d6a4f', desc: 'Reabsorbs ~65% of filtered water and ions, and essentially all filtered glucose and amino acids. Brush border + high mitochondrial density signal high-throughput active reabsorption.' },
     { key: 'desc', name: 'Descending Limb', color: '#1f5c99', desc: 'Highly permeable to water (reabsorbed into the hypertonic medullary interstitium) but not solutes. Filtrate becomes progressively more concentrated as it descends.' },
-    { key: 'asc', name: 'Ascending Limb', color: '#7a3f96', desc: 'Impermeable to water; actively transports Na⁺/K⁺/Cl⁻ out into the interstitium. Filtrate becomes progressively more dilute as it ascends. This asymmetric permeability is the structural basis of the countercurrent multiplier.' },
+    { key: 'asc', name: 'Ascending Limb', color: '#6b0686', desc: 'Impermeable to water; actively transports Na⁺/K⁺/Cl⁻ out into the interstitium. Filtrate becomes progressively more dilute as it ascends. This asymmetric permeability is the structural basis of the countercurrent multiplier.' },
     { key: 'dct', name: 'DCT', color: '#b1650f', desc: 'Shorter, fewer microvilli than the PCT. Site of regulated, hormonally controlled reabsorption, fine-tunes final urine composition.' },
     { key: 'cd', name: 'Collecting Duct', color: '#c0392b', desc: "Receives filtrate from many nephrons. Water permeability is variably regulated by ADH acting on aquaporin channels, the kidney's main water-balance control point." }
   ];
@@ -153,7 +153,7 @@ Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomer
 
       var traceInterstitial = { x: xs, y: interstitialY, mode: 'lines', name: 'Interstitial fluid', line: { color: '#9ca3af', width: 3, dash: 'dash' } };
       var traceDesc = { x: xs, y: descY, mode: 'lines', name: 'Descending limb fluid', line: { color: '#1f5c99', width: 3 } };
-      var traceAsc = { x: xs, y: ascY, mode: 'lines', name: 'Ascending limb fluid', line: { color: '#7a3f96', width: 3 } };
+      var traceAsc = { x: xs, y: ascY, mode: 'lines', name: 'Ascending limb fluid', line: { color: '#6b0686', width: 3 } };
 
       var layout = {
         xaxis: { range: [0, 100], title: 'Depth into medulla (% from cortex to papilla)' },

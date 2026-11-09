@@ -186,7 +186,7 @@ One full heartbeat comprises **systole** (contraction) and **diastole** (relaxat
     function render() {
       var t = parseFloat(slider.value);
 
-      var traceAtrial = { x: xs, y: atrialY, mode: 'lines', name: 'Atrial pressure', line: { color: '#7a3f96', width: 2 }, xaxis: 'x', yaxis: 'y' };
+      var traceAtrial = { x: xs, y: atrialY, mode: 'lines', name: 'Atrial pressure', line: { color: '#6b0686', width: 2 }, xaxis: 'x', yaxis: 'y' };
       var traceVent = { x: xs, y: ventY, mode: 'lines', name: 'Ventricular pressure', line: { color: '#c0392b', width: 2 }, xaxis: 'x', yaxis: 'y' };
       var traceAortic = { x: xs, y: aorticY, mode: 'lines', name: 'Aortic pressure', line: { color: '#1f5c99', width: 2 }, xaxis: 'x', yaxis: 'y' };
       var traceVolume = { x: xs, y: volumeY, mode: 'lines', name: 'Ventricular volume', line: { color: '#2d6a4f', width: 2 }, fill: 'tozeroy', fillcolor: 'rgba(45,106,79,0.1)', xaxis: 'x2', yaxis: 'y2' };

@@ -85,15 +85,15 @@
       svg.appendChild(t);
     }
     rect(20,50,40,20,'#e2e8f0'); label(40,64,'CAP site',8);
-    rect(70,50,40,20,'#fde68a'); label(90,64,'Promoter',8);
+    rect(70,50,40,20,'#fee3a7'); label(90,64,'Promoter',8);
     rect(120,50,40,20,'#fca5a5'); label(140,64,'Operator',8);
     rect(170,50,180,20,'#bbf7d0'); label(260,64,'lacZ-Y-A',9);
 
     if (capBound){
       var cap = document.createElementNS(ns,'circle');
-      cap.setAttribute('cx',40);cap.setAttribute('cy',35);cap.setAttribute('r',9);cap.setAttribute('fill','#7c3aed');
+      cap.setAttribute('cx',40);cap.setAttribute('cy',35);cap.setAttribute('r',9);cap.setAttribute('fill','#6b0686');
       svg.appendChild(cap);
-      label(40,20,'CAP (active)',8,'#7c3aed');
+      label(40,20,'CAP (active)',8,'#6b0686');
     }
     if (repressorBound){
       var rep = document.createElementNS(ns,'circle');
@@ -123,7 +123,7 @@
       out.style.background = '#dcfce7'; out.style.color = '#166534';
     } else if (!repressorBound && !capBound){
       out.textContent = 'Operon: OFF (repressor released, but CAP inactive)';
-      out.style.background = '#fef9c3'; out.style.color = '#92400e';
+      out.style.background = '#fff6e3'; out.style.color = '#92400e';
     } else {
       out.textContent = 'Operon: OFF (repressor bound)';
       out.style.background = '#fee2e2'; out.style.color = '#991b1b';

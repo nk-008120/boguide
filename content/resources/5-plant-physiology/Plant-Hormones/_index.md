@@ -87,7 +87,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
     <path id="coTip" d="M100 60 L100 45" stroke="#1a472a" stroke-width="10" fill="none" stroke-linecap="round"/>
     <rect id="coCap" x="90" y="35" width="20" height="14" rx="4" fill="#334155" opacity="0"/>
     <rect id="coBaseShield" x="85" y="150" width="30" height="20" fill="#334155" opacity="0"/>
-    <rect id="coAgarBlock" x="60" y="55" width="16" height="10" fill="#fde68a" stroke="#92400e" opacity="0"/>
+    <rect id="coAgarBlock" x="60" y="55" width="16" height="10" fill="#fee3a7" stroke="#92400e" opacity="0"/>
   </svg>
   <div style="text-align:center;">
     <select id="coCondition" style="padding:6px 10px; border-radius:8px; border:1px solid #94a3b8; font-size:0.85rem;">

@@ -158,7 +158,7 @@
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.05rem;
   font-weight: 500;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fp-card p,
 .fp-mini p {
@@ -342,7 +342,7 @@ a.fp-report:hover {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.25;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fp-report-text {
   font-size: 0.86rem;
@@ -356,14 +356,14 @@ a.fp-report:hover {
   margin-top: 0.2rem;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fp-badge {
   align-self: flex-start;
   padding: 0.18rem 0.6rem;
   border-radius: var(--radius-pill);
   border: 1.5px solid rgba(137, 101, 196, 0.45);
-  color: #5a3f8a;
+  color: #6b0686;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.04em;

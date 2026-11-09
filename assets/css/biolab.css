@@ -63,9 +63,9 @@ html.dark .biolab-subtitle {
   box-shadow: var(--shadow-sm);
 }
 html.dark .biolab-status-pill {
-  background: rgba(251, 191, 36, 0.14);
-  color: #fbbf24;
-  border-color: rgba(251, 191, 36, 0.3);
+  background: rgba(253, 203, 88, 0.13);
+  color: #fdcb58;
+  border-color: rgba(253, 203, 88, 0.28);
 }
 .biolab-status-dot {
   width: 8px;
@@ -76,7 +76,7 @@ html.dark .biolab-status-pill {
   animation: biolab-dot-pulse 2s ease-in-out infinite;
 }
 html.dark .biolab-status-dot {
-  background: #fbbf24;
+  background: #fdcb58;
 }
 @keyframes biolab-dot-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.45); }
@@ -177,10 +177,10 @@ html.dark .biolab-credit-box {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #fbbf24;
+  color: #fdcb58;
 }
 .biolab-hub-status .biolab-status-dot {
-  background: #fbbf24;
+  background: #fdcb58;
 }
 .biolab-hub-core {
   position: relative;
@@ -451,11 +451,11 @@ html.dark .biolab-discuss-lede {
   margin: 0;
 }
 html.dark .biolab-caution-box {
-  border-color: rgba(251, 191, 36, 0.35);
-  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(253, 203, 88, 0.33);
+  background: rgba(253, 203, 88, 0.08);
 }
 html.dark .biolab-caution-label {
-  color: #fbbf24;
+  color: #fdcb58;
 }
 
 .biolab-feedback-question {
@@ -609,8 +609,8 @@ html.dark .biolab-archive-card:hover {
   border: 1.5px dashed rgba(217, 119, 6, 0.6);
 }
 html.dark .biolab-badge-community {
-  color: #fbbf24;
-  border-color: rgba(251, 191, 36, 0.55);
+  color: #fdcb58;
+  border-color: rgba(253, 203, 88, 0.52);
 }
 .biolab-badge-sm {
   font-size: 0.66rem;
@@ -914,9 +914,9 @@ html.dark .biolab-archive-capture-box {
   margin: 0 0 0.7rem;
 }
 html.dark .biolab-archive-framing-note {
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
-  border-left-color: rgba(251, 191, 36, 0.5);
+  color: #fdcb58;
+  background: rgba(253, 203, 88, 0.09);
+  border-left-color: rgba(253, 203, 88, 0.48);
 }
 .biolab-archive-privacy-note {
   font-size: 0.85rem;

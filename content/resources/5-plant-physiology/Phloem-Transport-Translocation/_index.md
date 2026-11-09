@@ -100,7 +100,7 @@ graph LR;
     <g id="apoplasticRoute">
       <path d="M120 90 H140" stroke="#b45309" stroke-width="3" marker-end="url(#ldArrow)"/>
       <path d="M200 90 H215" stroke="#b45309" stroke-width="3" marker-end="url(#ldArrow)"/>
-      <circle cx="207" cy="90" r="9" fill="#fde68a" stroke="#92400e" stroke-width="1.5"/>
+      <circle cx="207" cy="90" r="9" fill="#fee3a7" stroke="#92400e" stroke-width="1.5"/>
       <text x="207" y="94" font-size="7" text-anchor="middle" fill="#92400e">H+/Suc</text>
       <path d="M305 90 H320" stroke="#b45309" stroke-width="3" marker-end="url(#ldArrow)"/>
       <text x="150" y="165" font-size="10.5" fill="#92400e" text-anchor="middle">sucrose crosses apoplast,</text>

@@ -79,7 +79,7 @@ Unlike tropisms, **nastic movements** are non-directional, the response's form i
   <svg viewBox="0 0 200 200" width="180" height="180" style="display:block; margin:0 auto;">
     <text x="30" y="30" font-size="20" text-anchor="middle">&#9728;&#65039;</text>
     <path id="phStem" d="M100 170 L100 60" stroke="#2d6a4f" stroke-width="14" fill="none" stroke-linecap="round"/>
-    <circle id="phReceptor" cx="100" cy="55" r="6" fill="#fde68a" stroke="#92400e" stroke-width="1.5" opacity="0"/>
+    <circle id="phReceptor" cx="100" cy="55" r="6" fill="#fee3a7" stroke="#92400e" stroke-width="1.5" opacity="0"/>
     <path id="phPinArrow" d="M108 90 L92 90" stroke="#1d70a2" stroke-width="3" opacity="0" marker-end="url(#phArrow)"/>
     <ellipse id="phAuxinGlow" cx="88" cy="90" rx="10" ry="30" fill="#b45309" opacity="0"/>
     <defs>
@@ -130,9 +130,9 @@ Unlike tropisms, **nastic movements** are non-directional, the response's form i
   <svg viewBox="0 0 200 200" width="180" height="180" style="display:block; margin:0 auto;">
     <g id="stTiltGroup" transform="rotate(0 100 100)">
       <ellipse cx="100" cy="100" rx="60" ry="70" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-      <circle id="stDot1" cx="90" cy="145" r="6" fill="#7c3aed"/>
-      <circle id="stDot2" cx="105" cy="150" r="6" fill="#7c3aed"/>
-      <circle id="stDot3" cx="100" cy="158" r="6" fill="#7c3aed"/>
+      <circle id="stDot1" cx="90" cy="145" r="6" fill="#6b0686"/>
+      <circle id="stDot2" cx="105" cy="150" r="6" fill="#6b0686"/>
+      <circle id="stDot3" cx="100" cy="158" r="6" fill="#6b0686"/>
       <path id="stAuxinArrow" d="M40 100 H15" stroke="#b45309" stroke-width="4" marker-end="url(#stArrow)"/>
     </g>
     <text x="100" y="20" text-anchor="middle" font-size="11" fill="#334155" font-weight="600">g &#8595;</text>

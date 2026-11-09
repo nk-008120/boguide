@@ -4,7 +4,7 @@
   --fx-globe-land: rgba(26, 26, 46, 0.13);
   --fx-globe-border: rgba(26, 26, 46, 0.2);
   --fx-globe-grid: rgba(26, 26, 46, 0.06);
-  --fx-globe-soon: rgba(240, 207, 95, 0.6);
+  --fx-globe-soon: rgba(253, 203, 88, 0.61);
   --fx-globe-live: #7450b8;
   --fx-globe-hover: #5a3a9a;
   --fx-globe-outline: rgba(70, 128, 74, 0.8);
@@ -18,7 +18,7 @@ html.dark .home-v2 {
   --fx-globe-land: rgba(255, 255, 255, 0.12);
   --fx-globe-border: rgba(255, 255, 255, 0.2);
   --fx-globe-grid: rgba(255, 255, 255, 0.05);
-  --fx-globe-soon: rgba(190, 160, 70, 0.55);
+  --fx-globe-soon: rgba(253, 203, 88, 0.42);
   --fx-globe-live: #c9b7e8;
   --fx-globe-hover: #e6dbf7;
   --fx-globe-outline: rgba(130, 190, 135, 0.82);

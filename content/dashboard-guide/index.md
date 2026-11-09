@@ -143,9 +143,9 @@ Bhavyaa clicks through to [her Dashboard](/dashboard/). Here is what she sees:
 <div class="guide-mockup">
 <div style="font-size:0.78rem;font-weight:600;margin-bottom:0.3rem;">Enzyme Kinetics & Regulation</div>
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:0.5rem;">
-<span style="background:#fef3c7;color:#92400e;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">Advanced</span>
-<span style="background:rgba(137,101,196,0.12);color:#6d4fa3;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">IBO</span>
-<span style="background:rgba(137,101,196,0.12);color:#6d4fa3;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">USABO</span>
+<span style="background:#fef1d4;color:#92400e;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">Advanced</span>
+<span style="background:rgba(137,101,196,0.12);color:#6b0686;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">IBO</span>
+<span style="background:rgba(137,101,196,0.12);color:#6b0686;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">USABO</span>
 <span style="background:rgba(220,38,38,0.1);color:#dc2626;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">Critical 25%</span>
 </div>
 <div style="font-size:0.68rem;color:#64748b;">Based on 12 statements across 1 attempt</div>

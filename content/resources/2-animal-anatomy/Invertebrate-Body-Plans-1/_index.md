@@ -141,14 +141,14 @@ The defining structural feature of the phylum is the **cnidocyte**, a specialize
     <div style="flex:0 0 280px;">
       <svg id="nemaSvg" viewBox="0 0 280 140" style="width:100%; max-width:280px; display:block; margin:0 auto;">
         <ellipse cx="60" cy="70" rx="35" ry="28" fill="#f2b6ad" stroke="#c0392b" stroke-width="3"/>
-        <path id="nema-coil" d="M 50 70 Q 60 55, 70 70 Q 80 85, 65 85 Q 50 85, 55 72" fill="none" stroke="#7a3f96" stroke-width="3"/>
+        <path id="nema-coil" d="M 50 70 Q 60 55, 70 70 Q 80 85, 65 85 Q 50 85, 55 72" fill="none" stroke="#6b0686" stroke-width="3"/>
         <g id="nema-operculum" style="transform-origin: 88px 70px; transition: transform 0.3s;">
           <line x1="88" y1="55" x2="88" y2="85" stroke="#1a472a" stroke-width="4"/>
         </g>
         <line x1="45" y1="45" x2="35" y2="25" stroke="#374151" stroke-width="2" id="nema-cnidocil" style="cursor:pointer;"/>
         <circle cx="35" cy="25" r="5" fill="#374151" id="nema-cnidocilHandle" style="cursor:pointer;"/>
         <text x="10" y="18" font-size="9" fill="#374151">cnidocil (click)</text>
-        <line id="nema-thread" x1="90" y1="70" x2="270" y2="70" stroke="#7a3f96" stroke-width="3" stroke-linecap="round"/>
+        <line id="nema-thread" x1="90" y1="70" x2="270" y2="70" stroke="#6b0686" stroke-width="3" stroke-linecap="round"/>
         <circle id="nema-barb" cx="270" cy="70" r="5" fill="#c0392b" opacity="0"/>
       </svg>
     </div>

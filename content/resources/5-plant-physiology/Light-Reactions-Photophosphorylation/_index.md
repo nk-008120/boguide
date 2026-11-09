@@ -162,14 +162,14 @@ When a chloroplast's NADPH supply is already saturated relative to its ATP deman
     <path id="cPathToPSI" d="M230 80 H290" stroke="#1d70a2" stroke-width="3" marker-end="url(#cArrow)"/>
     <rect x="290" y="60" width="70" height="40" rx="6" fill="#8fbf8f" stroke="#2d6a4f" stroke-width="2"/>
     <text x="325" y="84" text-anchor="middle" font-size="11" fill="#1a472a">PSI</text>
-    <path id="cPathToFd" d="M325 60 V25 H340" stroke="#7c3aed" stroke-width="3" marker-end="url(#cArrowPurple)"/>
-    <text x="330" y="18" font-size="9" fill="#7c3aed">Fd</text>
-    <path id="cPathToNADPH" d="M360 25 H385" stroke="#7c3aed" stroke-width="3" marker-end="url(#cArrowPurple)"/>
-    <text id="cNADPHLabel" x="365" y="15" font-size="9" fill="#7c3aed">NADPH</text>
+    <path id="cPathToFd" d="M325 60 V25 H340" stroke="#6b0686" stroke-width="3" marker-end="url(#cArrowPurple)"/>
+    <text x="330" y="18" font-size="9" fill="#6b0686">Fd</text>
+    <path id="cPathToNADPH" d="M360 25 H385" stroke="#6b0686" stroke-width="3" marker-end="url(#cArrowPurple)"/>
+    <text id="cNADPHLabel" x="365" y="15" font-size="9" fill="#6b0686">NADPH</text>
     <path id="cCyclicReturn" d="M325 25 Q195 5 195 60" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="4 3" opacity="0" marker-end="url(#cArrowOrange)"/>
     <defs>
       <marker id="cArrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1d70a2"/></marker>
-      <marker id="cArrowPurple" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/></marker>
+      <marker id="cArrowPurple" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b0686"/></marker>
       <marker id="cArrowOrange" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b45309"/></marker>
     </defs>
   </svg>

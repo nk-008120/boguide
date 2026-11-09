@@ -69,7 +69,7 @@
   function polSvg(x){
     var g = document.createElementNS(ns,'g');
     var c = document.createElementNS(ns,'circle');
-    c.setAttribute('cx',x);c.setAttribute('cy',70);c.setAttribute('r',12);c.setAttribute('fill','#7c3aed');c.setAttribute('id','polDot');
+    c.setAttribute('cx',x);c.setAttribute('cy',70);c.setAttribute('r',12);c.setAttribute('fill','#6b0686');c.setAttribute('id','polDot');
     g.appendChild(c);
     svg.appendChild(g);
   }
@@ -94,7 +94,7 @@
       if (!capAdded && pos > geneStart + 15){
         capAdded = true;
         var cap = document.createElementNS(ns,'circle');
-        cap.setAttribute('cx',geneStart);cap.setAttribute('cy',110);cap.setAttribute('r',6);cap.setAttribute('fill','#fbbf24');
+        cap.setAttribute('cx',geneStart);cap.setAttribute('cy',110);cap.setAttribute('r',6);cap.setAttribute('fill','#fdcb58');
         svg.appendChild(cap);
         note.textContent = "5' cap added immediately after initiation begins.";
       } else if (pos > intronEnd && !splicedShown){

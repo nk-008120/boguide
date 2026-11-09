@@ -56,7 +56,7 @@
   var motors = {
     myosin: { color: '#d9534f', dir: 1, label: 'toward the plus (barbed) end', filamentLabel: 'Actin filament' },
     kinesin: { color: '#1d70a2', dir: 1, label: 'toward the plus end (outward, anterograde)', filamentLabel: 'Microtubule' },
-    dynein: { color: '#7c3aed', dir: -1, label: 'toward the minus end (inward, retrograde)', filamentLabel: 'Microtubule' }
+    dynein: { color: '#6b0686', dir: -1, label: 'toward the minus end (inward, retrograde)', filamentLabel: 'Microtubule' }
   };
   var current = 'myosin';
   var timer = null;
@@ -88,7 +88,7 @@
     cargo.setAttribute('id', 'cargoDot');
     cargo.setAttribute('cy', 30);
     cargo.setAttribute('r', 6);
-    cargo.setAttribute('fill', '#fbbf24');
+    cargo.setAttribute('fill', '#fdcb58');
     cargo.setAttribute('cx', m.dir === 1 ? 40 : 360);
     svg.appendChild(cargo);
   }

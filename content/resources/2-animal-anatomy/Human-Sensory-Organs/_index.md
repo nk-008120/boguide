@@ -47,10 +47,10 @@ Two photoreceptor types, with a direct structure-function distribution pattern: 
   <svg id="accomSvg" viewBox="0 0 300 200" style="width:100%; max-width:360px; display:block; margin:0 auto;">
     <ellipse id="accom-ciliaryL" cy="100" rx="20" ry="34" fill="#e8a04c"/>
     <ellipse id="accom-ciliaryR" cy="100" rx="20" ry="34" fill="#e8a04c"/>
-    <line id="accom-zoneL1" y1="80" y2="90" stroke="#7a3f96" stroke-width="2"/>
-    <line id="accom-zoneL2" y1="120" y2="110" stroke="#7a3f96" stroke-width="2"/>
-    <line id="accom-zoneR1" y1="80" y2="90" stroke="#7a3f96" stroke-width="2"/>
-    <line id="accom-zoneR2" y1="120" y2="110" stroke="#7a3f96" stroke-width="2"/>
+    <line id="accom-zoneL1" y1="80" y2="90" stroke="#6b0686" stroke-width="2"/>
+    <line id="accom-zoneL2" y1="120" y2="110" stroke="#6b0686" stroke-width="2"/>
+    <line id="accom-zoneR1" y1="80" y2="90" stroke="#6b0686" stroke-width="2"/>
+    <line id="accom-zoneR2" y1="120" y2="110" stroke="#6b0686" stroke-width="2"/>
     <ellipse id="accom-lens" cx="150" cy="100" rx="45" ry="22" fill="#a8d8ea" stroke="#1f5c99" stroke-width="1.5"/>
   </svg>
   <input type="range" id="accomSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">

@@ -165,7 +165,7 @@
   white-space: nowrap;
 }
 .fr-table a {
-  color: #5a3f8a;
+  color: #6b0686;
 }
 
 .fr-story {
@@ -232,7 +232,7 @@
   color: var(--accent);
 }
 .fr-story a {
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-ref {
   font-size: 0.7em;
@@ -297,7 +297,7 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 0.92rem;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-think > div {
   padding: 0 1.1rem 0.5rem;
@@ -458,7 +458,7 @@ html.dark .fr-ref a {
 .fr-lab h3 {
   margin: 0 0 0.3rem;
   font-size: 1.2rem;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-lab-intro {
   margin: 0 0 1rem;
@@ -501,7 +501,7 @@ html.dark .fr-ref a {
 }
 .fr-lab-slider output {
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-lab-slider input[type="range"] {
   width: 100%;
@@ -520,7 +520,7 @@ html.dark .fr-ref a {
   border-radius: var(--radius-pill);
   border: 1.5px solid rgba(137, 101, 196, 0.5);
   background: transparent;
-  color: #5a3f8a;
+  color: #6b0686;
   font-family: inherit;
   font-size: 0.82rem;
   font-weight: 700;
@@ -712,7 +712,7 @@ html:has(.fr-shell) {
   cursor: pointer;
   font-weight: 700;
   font-size: 0.9rem;
-  color: #5a3f8a;
+  color: #6b0686;
 }
 .fr-toc-title {
   display: none;
@@ -762,7 +762,7 @@ html:has(.fr-shell) {
 .fr-toc nav a.is-active {
   opacity: 1;
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
   background: rgba(137, 101, 196, 0.16);
 }
 .fr-toc nav ul ul {
@@ -791,7 +791,7 @@ html:has(.fr-shell) {
   padding: 0.3rem 0.6rem;
   font-size: 0.76rem;
   font-weight: 700;
-  color: #5a3f8a;
+  color: #6b0686;
   text-decoration: none !important;
 }
 
@@ -821,7 +821,7 @@ html:has(.fr-shell) {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #5a3f8a;
+    color: #6b0686;
   }
   .fr-toc-inner {
     padding: 0;

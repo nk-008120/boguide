@@ -87,17 +87,17 @@
     none: { name: 'No epistasis (independent genes)', groups: [
       { classes: ['A_B_'], label: 'A_B_', color: '#dcfce7' },
       { classes: ['A_bb'], label: 'A_bb', color: '#bfdbfe' },
-      { classes: ['aaB_'], label: 'aaB_', color: '#fef9c3' },
+      { classes: ['aaB_'], label: 'aaB_', color: '#fff6e3' },
       { classes: ['aabb'], label: 'aabb', color: '#fee2e2' }
     ], explain: 'Each gene controls its own trait independently - all four phenotype classes stay distinguishable, giving the standard 9:3:3:1.' },
     recessive: { name: 'Recessive epistasis (9:3:4)', groups: [
       { classes: ['A_B_'], label: 'A_B_ - e.g. black', color: '#dcfce7' },
       { classes: ['A_bb'], label: 'A_bb - e.g. chocolate', color: '#bfdbfe' },
-      { classes: ['aaB_','aabb'], label: 'aa__ - e.g. yellow (bb genotype no longer distinguishable once aa masks it)', color: '#fef9c3' }
+      { classes: ['aaB_','aabb'], label: 'aa__ - e.g. yellow (bb genotype no longer distinguishable once aa masks it)', color: '#fff6e3' }
     ], explain: 'Homozygous recessive at the epistatic gene (aa) masks the second gene\'s phenotype entirely, merging aaB_ and aabb into one class - like Labrador coat color.' },
     dominant: { name: 'Dominant epistasis (12:3:1)', groups: [
       { classes: ['A_B_','A_bb'], label: 'A___ - e.g. white (dominant A masks gene 2)', color: '#dcfce7' },
-      { classes: ['aaB_'], label: 'aaB_ - e.g. yellow', color: '#fef9c3' },
+      { classes: ['aaB_'], label: 'aaB_ - e.g. yellow', color: '#fff6e3' },
       { classes: ['aabb'], label: 'aabb - e.g. green', color: '#fee2e2' }
     ], explain: 'A single dominant allele at the epistatic gene (A_) is enough to mask the second gene, merging A_B_ and A_bb into one class - like summer squash color.' },
     duprec: { name: 'Duplicate recessive epistasis (9:7)', groups: [

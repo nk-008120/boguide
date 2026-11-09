@@ -37,8 +37,8 @@ A short list of synapomorphies (shared derived traits) distinguishes mammals fro
         <text x="210" y="15" text-anchor="middle" font-size="10" fill="#1a472a">Skull</text>
         <line x1="20" y1="140" x2="200" y2="140" stroke="#8b5e34" stroke-width="10" stroke-linecap="round"/>
         <text x="60" y="160" font-size="10" fill="#1a472a">Dentary (lower jaw)</text>
-        <circle cx="255" cy="55" r="6" fill="#7a3f96"/>
-        <text x="255" y="40" text-anchor="middle" font-size="9" fill="#7a3f96">Stapes</text>
+        <circle cx="255" cy="55" r="6" fill="#6b0686"/>
+        <text x="255" y="40" text-anchor="middle" font-size="9" fill="#6b0686">Stapes</text>
         <line id="jawEar-meckel" x1="200" y1="140" x2="200" y2="140" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4,3"/>
         <circle id="jawEar-articular" cx="200" cy="140" r="10" fill="#c0392b"/>
         <text id="jawEar-articularLabel" x="200" y="165" text-anchor="middle" font-size="9" fill="#c0392b">Articular</text>

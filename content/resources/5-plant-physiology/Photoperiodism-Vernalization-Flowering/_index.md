@@ -87,7 +87,7 @@ graph TD;
 <div id="phyto-timer-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 300 90" width="100%" style="max-width:320px; display:block; margin:0 auto;">
     <rect x="10" y="20" width="280" height="24" rx="4" fill="#1e293b"/>
-    <rect id="ptPfrBar" x="10" y="20" width="280" height="24" rx="4" fill="#fde68a"/>
+    <rect id="ptPfrBar" x="10" y="20" width="280" height="24" rx="4" fill="#fee3a7"/>
     <line x1="150" y1="10" x2="150" y2="60" stroke="#b91c1c" stroke-width="2" stroke-dasharray="3 2"/>
     <text x="150" y="72" text-anchor="middle" font-size="9" fill="#b91c1c">critical threshold</text>
     <text x="10" y="14" font-size="9" fill="#4b5563">dusk (Pfr high)</text>
@@ -143,7 +143,7 @@ graph TD;
     <path d="M240 120 L240 40" stroke="#2d6a4f" stroke-width="8" fill="none" stroke-linecap="round"/>
     <text id="recipientTop" x="240" y="35" text-anchor="middle" font-size="16">&#127807;</text>
     <path id="graftLine" d="M80 90 H240" stroke="#94a3b8" stroke-width="3" stroke-dasharray="4 3" opacity="0"/>
-    <circle id="signalDot" cx="80" cy="90" r="7" fill="#7c3aed" opacity="0"/>
+    <circle id="signalDot" cx="80" cy="90" r="7" fill="#6b0686" opacity="0"/>
   </svg>
   <div style="text-align:center;">
     <button id="graftBtn" style="background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;">Graft donor to recipient</button>

@@ -220,7 +220,7 @@ Both gonads' hormone-producing structures, Leydig cells and the follicle/corpus 
 
       var traceFSH = { x: xs, y: fshY, mode: 'lines', name: 'FSH', line: { color: '#1f5c99', width: 3 } };
       var traceLH = { x: xs, y: lhY, mode: 'lines', name: 'LH', line: { color: '#c0392b', width: 3 } };
-      var traceEstrogen = { x: xs, y: estrogenY, mode: 'lines', name: 'Estrogen', line: { color: '#7a3f96', width: 3 } };
+      var traceEstrogen = { x: xs, y: estrogenY, mode: 'lines', name: 'Estrogen', line: { color: '#6b0686', width: 3 } };
       var traceProgesterone = { x: xs, y: progesteroneY, mode: 'lines', name: 'Progesterone', line: { color: '#2d6a4f', width: 3 } };
 
       var layout = {

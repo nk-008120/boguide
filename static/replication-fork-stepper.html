@@ -88,14 +88,14 @@
     label(15, 30, "Parental DNA", 10, '#64748b');
     if (show.indexOf('helicase') !== -1){
       var hx = document.createElementNS(ns,'circle');
-      hx.setAttribute('cx',180);hx.setAttribute('cy',50);hx.setAttribute('r',12);hx.setAttribute('fill','#7c3aed');
+      hx.setAttribute('cx',180);hx.setAttribute('cy',50);hx.setAttribute('r',12);hx.setAttribute('fill','#6b0686');
       svg.appendChild(hx);
-      label(160,80,'Helicase',10,'#7c3aed');
+      label(160,80,'Helicase',10,'#6b0686');
     }
     if (show.indexOf('ssb') !== -1){
       [200,220,240].forEach(function(x,i){
         var c = document.createElementNS(ns,'circle');
-        c.setAttribute('cx',x);c.setAttribute('cy',20+i*3);c.setAttribute('r',5);c.setAttribute('fill','#fbbf24');
+        c.setAttribute('cx',x);c.setAttribute('cy',20+i*3);c.setAttribute('r',5);c.setAttribute('fill','#fdcb58');
         svg.appendChild(c);
       });
       label(200,105,'SSB proteins',10,'#b45309');

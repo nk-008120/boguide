@@ -74,7 +74,7 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
         <rect x="0" y="320" width="300" height="80" fill="#f7e2b8" class="skin-hotspot" data-key="hypodermis" style="cursor:pointer;"/>
         <circle cx="230" cy="118" r="8" fill="#2d6a4f" class="skin-hotspot" data-key="merkel" style="cursor:pointer;"/>
         <circle cx="70" cy="142" r="9" fill="#1f5c99" class="skin-hotspot" data-key="meissner" style="cursor:pointer;"/>
-        <circle cx="200" cy="240" r="10" fill="#7a3f96" class="skin-hotspot" data-key="ruffini" style="cursor:pointer;"/>
+        <circle cx="200" cy="240" r="10" fill="#6b0686" class="skin-hotspot" data-key="ruffini" style="cursor:pointer;"/>
         <circle cx="90" cy="350" r="14" fill="#b1650f" class="skin-hotspot" data-key="pacinian" style="cursor:pointer;"/>
         <circle cx="150" cy="90" r="6" fill="#c0392b" class="skin-hotspot" data-key="freenerve" style="cursor:pointer;"/>
       </svg>
