@@ -2386,6 +2386,14 @@ html.dark .tf-quiz-row.incorrect .tf-btn-mcq.selected:not(.correct-answer) .tf-m
   border-radius: var(--papers-radius);
   background: var(--papers-primary-tint);
 }
+.tf-quiz-explanation {
+  margin-top: 0.4rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--papers-radius);
+  background: var(--papers-primary-tint);
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
 
 .papers-quiz-nav {
   display: flex;

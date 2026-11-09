@@ -47,6 +47,7 @@
         {{- end }}
       </div>
       <div class="tf-quiz-feedback"></div>
+      <div class="tf-quiz-explanation" hidden>{{ .explanation }}</div>
 
       {{- else if eq $type "numeric" }}
       <div class="tf-quiz-numeric">
@@ -54,6 +55,7 @@
         {{- with .unit }}<span class="tf-numeric-unit">{{ . }}</span>{{ end }}
       </div>
       <div class="tf-quiz-feedback"></div>
+      <div class="tf-quiz-explanation" hidden>{{ .explanation }}</div>
 
       {{- else if eq $type "free_response" }}
       <button type="button" class="tf-btn tf-reveal-btn">Reveal Model Answer</button>
@@ -65,6 +67,7 @@
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
+      <div class="tf-quiz-explanation" hidden>{{ .explanation }}</div>
       {{- end }}
     </div>
     {{- end }}
@@ -144,7 +147,9 @@
         var correctBtn = row.querySelector('.tf-btn-mcq[data-value="' + row.dataset.answer + '"]');
         if (correctBtn) correctBtn.classList.add('correct-answer');
       }
-      fb.textContent = (isCorrect ? '✓ Correct: ' : '✗ Incorrect: ') + row.dataset.explanation;
+      fb.textContent = isCorrect ? '✓ Correct' : '✗ Incorrect';
+      var expl = row.querySelector('.tf-quiz-explanation');
+      if (expl) expl.hidden = false;
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
@@ -163,6 +168,8 @@
       }
       var fb = row.querySelector('.tf-quiz-feedback');
       if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
+      var expl = row.querySelector('.tf-quiz-explanation');
+      if (expl) expl.hidden = true;
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });
