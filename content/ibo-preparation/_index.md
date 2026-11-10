@@ -135,7 +135,7 @@ This is where past papers become central.
 - **Review every mistake carefully**. For each wrong answer, identify whether the error was a knowledge gap (you didn't know the fact), a reasoning error (you knew the fact but applied it wrong), or a reading error (you misread the question).
 - **Track your weak areas**. If you consistently miss questions on plant hormone interactions or immune cell types, go back to the relevant section and study it again.
 
-The [Study Dashboard](/dashboard/) can help automate this tracking if you use BioGuide's timed attempt mode.
+The [Study Dashboard](/dashboard/) can help automate this tracking if you use BiOGuide's timed attempt mode.
 
 ### Adapting the timeline
 

@@ -24,7 +24,7 @@ date: 2026-08-27
 <div class="testimonial-quote-block">
 <p>Hi everyone 👋</p>
 <p>As an IBO 2026 participant and bronze medallist from Belgium, I would have been thrilled if this site had existed when I participated! During our training programme, there was not much emphasis on getting familiar with the types of questions asked at the IBO theory exams. Most of the theoretical preparation was also largely left to us as self-study, which made it quite challenging to know what to focus on.</p>
-<p>The fact that BioGuide has an archive containing many past IBO theory questions, accompanied by model solutions, is incredibly helpful. I also find it extremely useful that you can see which theoretical concepts are necessary to solve each question. This really is a lifesaver when you don't have much time to prepare for the IBO.</p>
+<p>The fact that BiOGuide has an archive containing many past IBO theory questions, accompanied by model solutions, is incredibly helpful. I also find it extremely useful that you can see which theoretical concepts are necessary to solve each question. This really is a lifesaver when you don't have much time to prepare for the IBO.</p>
 <p>Furthermore, the interactive part of the site, where you can identify which domains are still most challenging for you, comes in very handy. In Belgium, we only have one or two hours of biology a week, so our knowledge can be quite limited compared to other countries. Personally, I have always found more challenging problems on genetic recombination particularly difficult. That's why the mini-courses on the site are so convenient: they explain everything clearly, without having to search through the entire Campbell to find the relevant information.</p>
 <p>I hope this site will help fellow Belgian students, as well as students from all around the world, to prepare for the IBO and arrive at the starting line confidently! But the most important thing remains: have fun and enjoy the ride! The IBO is truly something you will never experience again 🍀</p>
 </div>
@@ -35,7 +35,7 @@ Belgium's setup for biology olympiad selection is fairly unusual, and Jonas expl
 
 <div class="testimonial-quote-block">
 <p>"The thing is, in Belgium we have 2 bio-olympiads: 1 for the Dutch-speaking community and 1 for the French-speaking community. Both olympiads are conducted independently from each other, so I have only info about the Dutch-speaking organization."</p>
-<p>"Also, our 1st and 2nd round (in both country parts) are really only based on the things we learn at schools. BioGuide is a bit too high-level for our 1st en 2nd round (even final), so the site is more suited for the people who actually go to the IBO to prepare"</p>
+<p>"Also, our 1st and 2nd round (in both country parts) are really only based on the things we learn at schools. BiOGuide is a bit too high-level for our 1st en 2nd round (even final), so the site is more suited for the people who actually go to the IBO to prepare"</p>
 </div>
 
 This is a useful distinction if you are a Belgian student reading this: the early rounds of both the Dutch-speaking and French-speaking olympiads test school-level content, and BiOGuide's syllabus-depth material genuinely is more than that stage calls for. Where it earns its place, per Jonas, is in the narrower and more intense window between qualifying for the international stage and actually sitting the IBO theory exam.

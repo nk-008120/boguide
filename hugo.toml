@@ -236,7 +236,7 @@ ignoreFiles = ['\.enc$']
       path = "/logo.png"
       width = 40
       height = 40
-      alt = "BioGuide Logo"
+      alt = "BiOGuide Logo"
   # Image zoom
   [params.imageZoom]
     enable = true
@@ -245,7 +245,7 @@ ignoreFiles = ['\.enc$']
     allowUserToggle = "True"
   # Footer
   [params.footer]
-    copyright = "© 2026 BioGuide for IBO Vilnius"
+    copyright = "© 2026 BiOGuide for IBO Vilnius"
   # Table of contents
   toc = true
 [params.mermaid]

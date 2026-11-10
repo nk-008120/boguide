@@ -24,8 +24,8 @@ date: 2026-09-16
 <div class="testimonial-quote-block">
 <p>Hello!!</p>
 <p>I am an IBO 2026 bronze medalist from Kyrgyzstan, and if I had had this website when I was in 7th grade, I would probably have participated in the IBO in 9th grade already instead of 10th.</p>
-<p>My favourite part about BioGuide is that it offers a reliable pathway that can help students succeed in biology olympiads. It also lays a great foundation, which saves a lot of time. For me, that was a huge problem because I wasted a lot of time revisiting content that I hadn't learned properly.</p>
-<p>The olympiad community in Kyrgyzstan is very small, so finding someone to guide you is very difficult. BioGuide solves this problem by showing what accomplished students have done and putting you on the right track.</p>
+<p>My favourite part about BiOGuide is that it offers a reliable pathway that can help students succeed in biology olympiads. It also lays a great foundation, which saves a lot of time. For me, that was a huge problem because I wasted a lot of time revisiting content that I hadn't learned properly.</p>
+<p>The olympiad community in Kyrgyzstan is very small, so finding someone to guide you is very difficult. BiOGuide solves this problem by showing what accomplished students have done and putting you on the right track.</p>
 <p>This site helps a lot of people, and I hope that in the future it will have guides for 20+ national biology olympiads!</p>
 <p>Wishing you the best of luck, and while you are on your journey, don't stop loving biology!</p>
 </div>

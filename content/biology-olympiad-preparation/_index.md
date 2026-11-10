@@ -282,7 +282,7 @@ Use [BiOrchive](/papers/) for past papers with interactive attempt mode, timed c
 
 ## How deep do you need to go?
 
-Different olympiads expect different depth on the same topics. This is BioGuide's own guidance based on syllabus patterns we've observed, not an official curriculum document.
+Different olympiads expect different depth on the same topics. This is BiOGuide's own guidance based on syllabus patterns we've observed, not an official curriculum document.
 
 **Reading the table:** ✓ means the topic is tested at that level. mMans it's not typically tested or is tested only superficially. "Deep" (marked with ★) means the topic is tested at mechanism/quantitative level, not just conceptual understanding.
 

@@ -60,7 +60,7 @@ Huseyn's own description of RFO maps closely onto how the three rounds actually 
 
 - The **Study Dashboard** turns timed practice attempts into a mastery breakdown by topic, which is useful for exactly the kind of self-directed, starting-from-scratch preparation Huseyn describes for students without a curriculum overlap to lean on.
 
-As Huseyn put it himself: "BioGuide will play key role in students Olympiad life. It will not only guide him/her for nationals but also afterwards for IBO or other international Olympiads. Most of the resources you recommended are absolutely necessary for RFO and of course for selection for IBO team."
+As Huseyn put it himself: "BiOGuide will play key role in students Olympiad life. It will not only guide him/her for nationals but also afterwards for IBO or other international Olympiads. Most of the resources you recommended are absolutely necessary for RFO and of course for selection for IBO team."
 
 ---
 

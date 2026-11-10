@@ -15,7 +15,7 @@
 
 ### Notes@BiOGuide
 
-The core study resource. 16 topic sections with 127+ subtopic pages covering the full IBO syllabus. Fourteen are written; Practicals 2 and 3 are still to come:
+The core study resource. 16 topic sections with 110+ subtopic pages covering the full IBO syllabus. Fourteen are written; Practicals 2 and 3 are still to come:
 
 | # | Section | Subtopics |
 |---|---------|-----------|
@@ -39,7 +39,7 @@ Each page follows a consistent structure: Overview, Key Concepts, Comparative St
 
 ### BiOrchive
 
-Past-paper practice engine for IBO and INBO. Features timed attempts, per-question instant scoring, detailed solutions, and per-round leaderboards. Currently hosts 450+ individual question pages across multiple years and rounds.
+Past-paper practice engine for IBO and INBO. Features timed attempts, per-question instant scoring, detailed solutions, and per-round leaderboards. Currently hosts 860+ individual question pages across multiple years and rounds.
 
 ### BiOClash
 
@@ -53,6 +53,10 @@ Open protocol archive for lab practicals: publish-immediately, community-submitt
 
 Staff-answered Q&A system where users can submit biology questions and receive verified responses.
 
+### BiOLive
+
+The weekend programme of live paper solving on Zoom (`/live/`). A team member solves a real olympiad paper live while students work through it alongside them. Students register with their BiOGuide account until 24 hours before a session, and the host emails them the Zoom link, which is never published on the site. Hosting needs a staff account and a personal staff key together. See ARCHITECTURE.md for the design.
+
 ### Dashboard
 
 Personalized study dashboard with mastery tracking, prerequisite-aware recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle. All computed client-side from timed attempt history.
@@ -61,9 +65,13 @@ Personalized study dashboard with mastery tracking, prerequisite-aware recommend
 
 Dedicated preparation guides for specific competitions: IBO, USABO, and INBO.
 
+### Country Guides
+
+A guide to each national Biology Olympiad selection programme, reached from the home page globe and `/olympiad-programmes/`. Each country has a firsthand guide written by a past national competitor, an official outline of the selection path built from official sources while an author is found, or nothing yet. As of November 2026 there are 9 firsthand guides and 33 official outlines. Anyone can offer to write one at `/contribute-a-guide/`.
+
 ### BiOBytes
 
-Articles and testimonials: competition experiences from medalists (Belgium, Azerbaijan, Slovakia, Turkmenistan), lab recommendations, and topical articles.
+BiOHorizon Reports, testimonials and articles. Each BiOHorizon Report (`/biobytes/horizon/`) takes one research field, walks through its most interesting recent results, what was measured and how sure anyone is, and links each story back to the syllabus. The first two cover astrobiology and drug delivery. Testimonials are competition experiences from medalists and national teams (Azerbaijan, Belgium, Hungary, Kyrgyzstan, Latvia, Slovakia, Turkmenistan), alongside lab recommendations and topical articles.
 
 ### BiOLudo
 
@@ -75,7 +83,7 @@ Visit /about and /tribute
 
 ### Home page and site motion (v2.1.0)
 
-The home page is a single scroll-led page: a hero with an interactive 3-D globe that links to the country-by-country guides, a reel section, the 15-topic learning path, and the practice, contribution and community sections. A lighter version of the same visual language (card spotlights, buttons that fill from where the cursor enters, scroll reveals) runs across the rest of the site, with a fuller version on the main landing pages. BiOrchive, the Dashboard and the account page share the look but get no motion at all, and BiOClash is deliberately left out. All of it respects the reduced-motion preference and scales back on touch devices and data-saver connections.
+The home page is a single scroll-led page: a hero with an interactive 3-D globe that links to the country-by-country guides, a reel section, the 16-section learning path, and the practice, contribution and community sections. A lighter version of the same visual language (card spotlights, buttons that fill from where the cursor enters, scroll reveals) runs across the rest of the site, with a fuller version on the main landing pages. BiOrchive, the Dashboard and the account page share the look but get no motion at all, and BiOClash is deliberately left out. All of it respects the reduced-motion preference and scales back on touch devices and data-saver connections.
 
 ---
 
@@ -93,6 +101,7 @@ The home page is a single scroll-led page: a hero with an interactive 3-D globe 
 | Styling | Tailwind CSS + about 17,600 lines of custom CSS across 37 files |
 | Math Rendering | KaTeX (via Hugo's built-in support) |
 | Interactive Widgets | Plotly, Vanilla JS, SVG |
+| Practice App | [Streamlit](https://streamlit.io/) on Streamlit Community Cloud (the Plant Computational Biology practice app) |
 | Motion | [GSAP](https://gsap.com/) (ScrollTrigger, SplitText, ScrambleText), [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll, a WebGL2 fluid simulation, [d3-geo](https://github.com/d3/d3-geo) for the home page globe. All vendored, bundled and fingerprinted by Hugo Pipes |
 
 ### Design Identity

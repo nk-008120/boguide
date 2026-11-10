@@ -13,7 +13,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology", "laboratory-technique"]
 
 ## Overview
 
-This page covers the core nucleic-acid manipulation toolkit: how DNA fragments are cut, copied, cloned, detected, sequenced, and precisely edited. Together with [Biomolecular Analytical Techniques](../biomolecular-analytical-techniques/) (which covers the protein-focused counterparts, electrophoresis, chromatography), this is the direct answer to the most specific technique requests raised by BioGuide's own student survey: named lab methods (blotting, PCR, sequencing) tested at the level of "what does this technique actually do and why would you choose it," not just definitions.
+This page covers the core nucleic-acid manipulation toolkit: how DNA fragments are cut, copied, cloned, detected, sequenced, and precisely edited. Together with [Biomolecular Analytical Techniques](../biomolecular-analytical-techniques/) (which covers the protein-focused counterparts, electrophoresis, chromatography), this is the direct answer to the most specific technique requests raised by BiOGuide's own student survey: named lab methods (blotting, PCR, sequencing) tested at the level of "what does this technique actually do and why would you choose it," not just definitions.
 
 ## Key Concepts
 

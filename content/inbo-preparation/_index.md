@@ -14,7 +14,7 @@ faq:
   - q: "How do I qualify for INBO?"
     a: "You qualify by scoring in the top percentile on the NSEB (National Standard Examination in Biology), which is held nationally each year. Students who qualify from INBO are then invited to OCSC (Orientation cum Selection Camp), where four students are selected to represent India at IBO."
   - q: "What books should I use for INBO preparation?"
-    a: "Start with NCERT biology textbooks as a foundation, then move to Campbell Biology for broader coverage. For INBO-level depth, add Silverthorn, Vander, or Guyton for physiology and Lehninger for biochemistry. The full graded book list is on the BioGuide Study Resources page."
+    a: "Start with NCERT biology textbooks as a foundation, then move to Campbell Biology for broader coverage. For INBO-level depth, add Silverthorn, Vander, or Guyton for physiology and Lehninger for biochemistry. The full graded book list is on the BiOGuide Study Resources page."
 ---
 
 <div class="prep-guide-wrapper">

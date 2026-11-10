@@ -13,7 +13,7 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
         <span class="recent-update-date">Oct 26 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
-      <p class="recent-update-text">Welcome to <a href="https://bioguide.world">BiOGuide v2.1.0</a>. Sitewide UI UX improvement is the major feature. Reinforced security measured RLS and on site PHP and limited script injection. Encrypted bioclash papers on the repository. Addition of <a href="/content/biology-olympiad-preparation">country guides</a> (pending), and improvement of staff workflows. Contribution method opened to public for the world guides. BiOClash round closed and results under review. Also updated the site community reach from 'views' to visits, still sourced directly from Umami analytics daily. <a href="/content/resources/16-biostatistics/">Biostatistics</a> addition to Notes and Ulukbek's contribution noted. <a href="/content/biobytes/">BiOHorizon</a> launched, and the first two reports published. </p>
+      <p class="recent-update-text">Welcome to <a href="https://bioguide.world">BiOGuide v2.1.0</a>. Sitewide UI UX improvement is the major feature. Reinforced security measures RLS and on site PHP and limited script injection. Encrypted bioclash papers on the repository. Addition of <a href="/olympiad-programmes/">country guides</a>, and improvement of staff workflows. Contribution method opened to public for the world guides. BiOClash round closed and results under review. Also updated the site community reach from 'views' to visits, still sourced directly from Umami analytics daily. <a href="/resources/16-biostatistics/">Biostatistics</a> addition to Notes and Ulukbek's contribution noted. <a href="/biobytes/horizon/">BiOHorizon</a> launched, and the first two reports published. </p>
     </div>
  </div>
  <div class="recent-update-card recent-update-newest">
@@ -65,7 +65,7 @@ Before we start blabbering about, please contact us on the following in case you
 **resourcerepository4boguide@gmail.com** - Resources or papers you want to submit, website feedback, website doubts, and requests for features on website!
 **r6394175@gmail.com** - Letter of interest to join team BiOGuide, talking shop, and so on. This is my personal e-mail so please respect the sanctity! (I'm done amn't I?)
 
-As of August 8 2026, this website has been a one man project. Now, we are about 11 people of peers from over five countries. Hence, as we are now under production, we encourage you to join our team if you are up for this position.
+BiOGuide is built by a team of 11 people from six countries: India, the UAE, Qatar, Azerbaijan, Kyrgyzstan and Brazil. We are still growing, and we especially need help with olympiad content for national programmes, problem design, community and social media, and intermediate development. If you would like to join the team, write to **r6394175@gmail.com**.
 
 ## Community Reach
 
@@ -74,7 +74,7 @@ As of August 8 2026, this website has been a one man project. Now, we are about 
   <div class="community-reach-grid" id="community-reach-grid"></div>
   <p class="community-reach-updated" id="community-reach-updated"></p>
   <p class="community-reach-note">
-    <strong>* Why this number got smaller.</strong> Until 18 October 2026 this
+    <strong>* Why this number got smaller.</strong> Until 26 October 2026 this
     figure counted page views, so a student who read ten pages of notes counted
     ten times. It now counts visits, which Umami records as sessions, so that
     same student counts once. No traffic was lost and nothing was removed: only
@@ -84,7 +84,7 @@ As of August 8 2026, this website has been a one man project. Now, we are about 
     period, from 7,220 on 26 October. We switched because visits are the stricter
     and the more honest count of how many students really came. The source has
     not changed: our own Umami instance, read once a day, counted over the whole
-    life of the site rather than a trailing 30 days.
+    life of the site.
   </p>
 </div>
 
@@ -137,7 +137,7 @@ That roadblock is what inspired BiOGuide. We make nothing from it; it's complete
 Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy, though a strong base of core facts is essential. It's about truly understanding how living systems function, working through problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
 
 *As of the present*,<br>
-The team now works with a lot of different people (although none contributing to the technical implementations), and their ideas prove valuable to the site. Although they don't act on then directly (Action on the managing partner), the idea attributions are available on request.
+The team now works with a lot of different people (although none contributing to the technical implementations), and their ideas prove valuable to the site. Although they don't act on then directly (Action on the Director), the idea attributions are available on request.
 
 ## How Do We find people?
 
@@ -151,16 +151,19 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
 
 ### Our Tech
 
-1. **Streamlit**: the platform behind the interactive experience that sets us apart. Thanks to the IBO 2026 Organizing Committee for introducing us to it.
-2. **Snowflake**, used for Streamlit deployment.
-3. **Hugo, the Hextra theme, and Vercel** - following AOGuide's own lead here.
-4. **VS Code, MathJax, and Git.**
+1. **Hugo** (extended) with the **Hextra** theme, heavily customised, as the static site generator, following AOGuide's own lead here.
+2. **Supabase** for accounts, the Postgres database and file storage.
+3. **Vercel** for hosting and the serverless API functions.
+4. **Umami** (self-hosted), **PostHog** and **Google Analytics 4** for analytics, and **Sentry** for error tracking on the API.
+5. **Tailwind CSS** and our own custom CSS for styling, and **KaTeX** for maths.
+6. **Plotly**, plain JavaScript and SVG for the interactive widgets.
+7. **GSAP**, **Lenis**, a WebGL2 fluid simulation and **d3-geo** for the home page motion and globe.
+8. **Streamlit**, on Snowflake's Streamlit Community Cloud, for our Plant Computational Biology practice app. Thanks to the IBO 2026 Organizing Committee for introducing us to it.
+9. **VS Code and Git.**
 
 ## The People Behind This
 
-As of August 8th, we were just a one-man team until production.
-
-But now, we are proud to announce, that we are a team of more than 10 people from all over the world, actively working to improve BiOGuide.
+We are a team of 11 people from six countries, actively working to improve BiOGuide.
 
 {{< team-member name="Nishit Kalani" role="Founder, Director & Software Engineer" avatar="/nkavat.jpg" since="February 8th 2026">}}
 Nishit Here (: <br>
@@ -172,7 +175,7 @@ Hi, I’m Bhavyaa.<br> I just finished grade 12 in India but still not sure what
 {{< team-member name="Dihui Yu" role="Senior Partner (Louis Litt Class)" avatar="dyavat.jpg" since="August 24th 2026">}}
 Hey, I'm Dihui and recently graduated high school from the UAE. I'm an aspiring neuroscientist with interests in cognition and computation, and IBO and IESO really kickstarted my scientific journey. I can't help but wish I had more guidance and training when prepping though - I taught myself most of the content and learnt a fair share of lessons the hard way (to the point where I gutted a cod from the supermarket to learn anatomy). That's why I'm here to democratize access to resources, which hopefully levels the playing field. Outside bio, you'll find me jamming to spotify and messing around with jazz and production :)
 <br>
-Currently Working on: BiOClash: The first non partner-class team member with access to BiOClash resources, And producing social media content for bioguideofficial for outreach.
+Currently Working on: BiOClash, and producing social media content for bioguideofficial for outreach.
 {{< /team-member>}}
 {{< team-member name="Soumil Maity" role="Junior Partner (Louis Litt Class)" avatar="/smavat.jpg" since="August 19th 2026">}}
 Hi! I’m Soumil,<br> member of the Indian team and a Silver medalist at the 2026 IBO. Biology has always intrigued me, even though astronomy was what got me into Olympiads. You can expect me to remember important biochemical pathways, but will not be able to tell you what I had for lunch. If you don’t find me toiling away preparing for NEET, you can find me playing badminton, football, cricket or goofing around with my friends (at the goated DAV ground). I can already envision the 'aura' of BiOGuide among future biologists. Have fun exploring the what, why and how of life (perhaps with the occasional torment of the questions)!!
@@ -194,7 +197,7 @@ Hello there. I am Huseyn Taghizada,  biology olympiadist from Azerbaijan. I will
 If you're interested in my hobbies they're quite lot in fact. Chess, books, films, music, mangas and much more. Feel free to contact me via huseyntagizade90@gmail.com.
 {{< /team-member >}}
 {{< team-member name="Adit Mital" role="Associate (Mike Ross Class)" avatar="/amavat.png" since="September 12th 26">}}
-Hey guys, I’m Adit, a senior in the UAE. I wanna go into commercial biotech (former burnt out pre-med) and am interested in drug discovery, biochem and computational biology. Having been a member of the UAE team at IBO'26, where our own training was pretty shoddy, I can confidently say that proper support is the number 1 thing standing between you, and your dream of an IBO medal. That's why I'm thrilled to be a part of BioGuide’s mission for equal knowledge and to spread its word far and wide.
+Hey guys, I’m Adit, a senior in the UAE. I wanna go into commercial biotech (former burnt out pre-med) and am interested in drug discovery, biochem and computational biology. Having been a member of the UAE team at IBO'26, where our own training was pretty shoddy, I can confidently say that proper support is the number 1 thing standing between you, and your dream of an IBO medal. That's why I'm thrilled to be a part of BiOGuide’s mission for equal knowledge and to spread its word far and wide.
 Beyond biology, I enjoy just about anything that scratches that permanent itch in my brain, be it shredding van-halen arpeggios or a good bout of chess. Anyways, here’s to more pull-your-hair out Bio problems, for you, for me, and for everyone in between!
 
 Currently Working on: Content moderation and protocol support, and producing social media content for bioguideofficial for outreach.
@@ -202,14 +205,14 @@ Currently Working on: Content moderation and protocol support, and producing soc
 {{< team-member name="Ruslanbekov Ulukbek" role="Associate (Mike Ross Class)" avatar="/uavat.png" since="September 18th 26">}}
 Hi, I’m Ruslanbekov Ulukbek! I’m currently in 11th grade, and I want to become a biochemist, though I’m also interested in computational biology and plants. I started my biology journey in 7th grade and made countless mistakes - even ones as big as refusing help and guidance from the best biologist in my country. I thought studying from books on my own would be better. (WHYYY 😭😭???)
 
-Well, BioGuide should help you avoid these kinds of mistakes and set you on the right track because its materials have been collected by people who have already completed this journey. Even now, after winning a bronze medal at the IBO, I still see BioGuide as a helpful website for me. So, it should not only help you reach the IBO but also help you win a medal!
+Well, BiOGuide should help you avoid these kinds of mistakes and set you on the right track because its materials have been collected by people who have already completed this journey. Even now, after winning a bronze medal at the IBO, I still see BiOGuide as a helpful website for me. So, it should not only help you reach the IBO but also help you win a medal!
 
 Besides being a biology enjoyer, I’m also a long-distance runner and an avid fan of RTS and TBS games.
 
 I’m currently working on establishing a pathway for Kyrgyz students to reach the IBO - basically, creating a guide to my country’s National Biology Olympiad.
 {{< /team-member >}}
 {{< team-member name="Darsh Dudhia" role="Associate (Mike Ross Class)" avatar="/ddavat.png" since="September 19th 26">}}
-Hi, I’m Darsh, a high schooler in India who has always been intrigued by biology. I got into preparing for olympiads by preparing for IJSO. After qualifying for the junior astronomy olympiad (IOAA Jr.)'s OCSC, I also got interested in astronomy. I am also preparing for the stages of IBO in India and BioGuide is a resource which will definitely help me through the process. I am going to work on: Making BiOrchive better by collecting more questions from olympiads and adding new features!
+Hi, I’m Darsh, a high schooler in India who has always been intrigued by biology. I got into preparing for olympiads by preparing for IJSO. After qualifying for the junior astronomy olympiad (IOAA Jr.)'s OCSC, I also got interested in astronomy. I am also preparing for the stages of IBO in India and BiOGuide is a resource which will definitely help me through the process. I am going to work on: Making BiOrchive better by collecting more questions from olympiads and adding new features!
 {{< /team-member >}}
 {{< team-member name="Davi P. Tsuchie" role="Associate (Mike Ross Class)" avatar="/dptavat.png" since="September 19th 26">}}
 Hey, I’m Davi, an 11th grader from Brazil!
@@ -221,11 +224,11 @@ Currently working on: BiOClash; Helping build a place where olympiad students ca
 
 ## Frequently Asked Questions
 
-{{< faq-item q="Is BioGuide free to use?" >}}
+{{< faq-item q="Is BiOGuide free to use?" >}}
 Yes, completely. Educational content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. Source code is published separately under the MIT License. See [Licensing](#licensing) below for the details.
 {{< /faq-item >}}
 
-{{< faq-item q="Which exams does BioGuide cover?" >}}
+{{< faq-item q="Which exams does BiOGuide cover?" >}}
 The syllabus is built around IBO and USABO, with INBO also in scope. Coverage depth is IBO-targeted: broad enough for national olympiads, deep enough for international ones.
 {{< /faq-item >}}
 

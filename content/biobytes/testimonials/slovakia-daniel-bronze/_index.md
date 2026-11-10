@@ -49,19 +49,19 @@ From there, the top 10-12 students from the national round enter two selection w
 ### Find resources easily
 
 <div class="testimonial-quote-block">
-<p>"One of the main challenges when studying for IBO is actually not the study itself. That would be resource hunting! Whilst just knowing all the topics you need to learn might pose a challenge to some, it is even harder to find sources which are detailed enough to meet your needs, without needlessly hyperspecializing in the topic. Bioguide acts as a large library of precisely such sources gathered for IBO participants by the IBO participants."</p>
+<p>"One of the main challenges when studying for IBO is actually not the study itself. That would be resource hunting! Whilst just knowing all the topics you need to learn might pose a challenge to some, it is even harder to find sources which are detailed enough to meet your needs, without needlessly hyperspecializing in the topic. BiOGuide acts as a large library of precisely such sources gathered for IBO participants by the IBO participants."</p>
 </div>
 
 ### Avoid wasting your time
 
 <div class="testimonial-quote-block">
-<p>"Did you know that most IBO participants are more likely to regret having studied a particular topic rather than not having studied one? It is well known, that IBO prep is no simple task, and with hoards of topics to study it can be hard to pick the right ones to focus on. That is the main benefit of BioGuide. Although randomly self-studied knowledge might still prove useful, no matter how obscene the topic, it is way more likely to just cost you time you could be putting in, where it matters."</p>
+<p>"Did you know that most IBO participants are more likely to regret having studied a particular topic rather than not having studied one? It is well known, that IBO prep is no simple task, and with hoards of topics to study it can be hard to pick the right ones to focus on. That is the main benefit of BiOGuide. Although randomly self-studied knowledge might still prove useful, no matter how obscene the topic, it is way more likely to just cost you time you could be putting in, where it matters."</p>
 </div>
 
 ### Practice makes perfect
 
 <div class="testimonial-quote-block">
-<p>"Although knowledge is a big part of what's being tested on IBO, it's by far not the only thing. It is just as important to be able to think within the context of information provided, as well as your general medical knowledge. So use BioGuide's archive of past years exams and practice, practice, practice!"</p>
+<p>"Although knowledge is a big part of what's being tested on IBO, it's by far not the only thing. It is just as important to be able to think within the context of information provided, as well as your general medical knowledge. So use BiOGuide's archive of past years exams and practice, practice, practice!"</p>
 </div>
 
 ## How BiOGuide fits in
