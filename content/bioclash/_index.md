@@ -29,13 +29,13 @@ images: ["/og-bioclash.png"]
     <svg class="bioclash-dna-strand bioclash-dna-4" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
     <svg class="bioclash-dna-strand bioclash-dna-5" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
   </div>
-  <p class="bioclash-eyebrow">Season 1: MB-01 results are in</p>
+  <p class="bioclash-eyebrow">Season 1: MB-01 concluded, AP-01 up next</p>
   <h1 class="bioclash-wordmark">BiOClash</h1>
   <p class="bioclash-tagline">An independent biology competition, built the same way as everything else here.</p>
-  <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite">Loading countdown…</p>
+  <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite" data-round="AP-01" data-target="" data-idle="AP-01 opens soon">AP-01 opens soon</p>
   <div class="bioclash-hero-actions">
     <a href="#bioclash-mb01-results" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>MB-01 results</span></a>
-    <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified</span></a>
+    <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified for AP-01</span></a>
     <a href="https://discord.gg/jQ7sfcCs4" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
     <a href="https://www.instagram.com/bioguideofficial/" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Instagram">{{< icon "instagram" >}}</a>
   </div>
@@ -43,7 +43,7 @@ images: ["/og-bioclash.png"]
 
 <section id="bioclash-mb01-results" class="bioclash-section bioclash-panel">
   <h2>MB-01 champions</h2>
-  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry has been graded, and the first podium of Season 1 is in. Congratulations to <strong>Shinwoo Mo</strong>, who takes first place, <strong>Fatima Ghaffar</strong> in second, and <strong>Lous Felower</strong> in third.</p>
+  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry has concluded and been graded, and the first podium of Season 1 is in. Congratulations to <strong>Shinwoo Mo</strong>, who takes first place, <strong>Fatima Ghaffar</strong> in second, and <strong>Lous Felower</strong> in third.</p>
   <p>All three will receive a custom micropipette pen from BiOGuide. Thank you to everyone who sat the opening round: every attempt counts toward the season ranking, and seven rounds are still to come.</p>
   <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
   <p>See the round's own page on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard</a>, and the cumulative standing in the <a href="/papers/leaderboard/">Season Champions</a>.</p>
@@ -51,20 +51,26 @@ images: ["/og-bioclash.png"]
 
 {{< bioclash-champions round="mb-01" >}}
 
-<section class="bioclash-section bioclash-panel">
-  <h2>What it is</h2>
-  <p>BiOClash is an original biology competition, not a translated IBO/USABO paper archive like BiOrchive, but questions written and reviewed by BiOGuide itself. It's the one part of this site where the content is genuinely ours, not a licensed reproduction.</p>
-  <p>Right now, it's still being built. Here's what we're planning, and how to hear the moment it's ready.</p>
+<section id="bioclash-ap01" class="bioclash-section bioclash-panel">
+  <h2>Up next: AP-01</h2>
+  <p>The second round of Season 1 is <strong>Case File AP-01: Animal Anatomy &amp; Physiology</strong>, and it opens soon. It runs in the same format as MB-01: a timed, solo, 90-minute attempt, open during a window announced ahead of time, and it carries 12.5% of the season ranking, the largest share of any subject round.</p>
+  <p>Everyone with a BiOGuide account is already registered. The exact window will be announced on <a href="https://discord.gg/jQ7sfcCs4" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a>, on <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a>, and by email to everyone who <a href="#bioclash-notify-section">turns on notifications</a>. Missed MB-01? You can still join the season from AP-01: a round not attempted simply contributes nothing.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
-  <h2>What's being planned</h2>
+  <h2>What it is</h2>
+  <p>BiOClash is an original biology competition, not a translated IBO/USABO paper archive like BiOrchive, but questions written and reviewed by BiOGuide itself. It's the one part of this site where the content is genuinely ours, not a licensed reproduction.</p>
+  <p>Season 1 is live: the opening round has been run and graded, and the format is refined between rounds based on what each one teaches us. Here's how it works, and how to hear when the next round opens.</p>
+</section>
+
+<section class="bioclash-section bioclash-panel">
+  <h2>How it works</h2>
   <ul class="bioclash-planning-list">
-    <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds: heavily scrutinized and difficult.</li>
-    <li><span class="papers-pill bioclash-pill">Scope</span> Aiming to cover the full IBO syllabus.</li>
-    <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year: Cell, Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics, capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
-    <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds are planned to run 90 minutes, with the Full Syllabus round given longer. An optional short extension is planned to be available during an attempt, at a competitive cost rather than as free extra time.</li>
-    <li><span class="papers-pill bioclash-pill">Scoring</span> Planning to rank each round by standardized performance relative to that round's own field, not raw marks, closer to how many real olympiads report results than a simple percentage. Season standing is planned to be a weighted composite across every round, not just an average.</li>
+    <li><span class="papers-pill bioclash-pill">Format</span> Timed, solo rounds: heavily scrutinized and difficult.</li>
+    <li><span class="papers-pill bioclash-pill">Scope</span> Covers the full IBO syllabus across the season.</li>
+    <li><span class="papers-pill bioclash-pill">Frequency</span> A full season of subject-focused rounds spread across the year: Cell, Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics, capped off by a Full Syllabus round in the weeks before IBO, with placements across the season adding up to one cumulative season ranking.</li>
+    <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds run 90 minutes, with the Full Syllabus round given longer. An optional short extension is available during an attempt, at a competitive cost rather than as free extra time.</li>
+    <li><span class="papers-pill bioclash-pill">Scoring</span> Each round is ranked by standardized performance relative to that round's own field, not raw marks, closer to how many real olympiads report results than a simple percentage. Season standing is a weighted composite across every round, not just an average.</li>
   </ul>
 </section>
 
@@ -77,8 +83,8 @@ images: ["/og-bioclash.png"]
         <tr><th>Subject round</th><th>Season weight</th><th>Timing</th></tr>
       </thead>
       <tbody>
-        <tr><td>Cell, Molecular Biology &amp; Biochemistry (MB-01)</td><td>10%</td><td>October</td></tr>
-        <tr><td>Animal Anatomy &amp; Physiology</td><td>12.5%</td><td>November</td></tr>
+        <tr><td>Cell, Molecular Biology &amp; Biochemistry (MB-01) <span class="papers-pill bioclash-pill">Concluded</span></td><td>10%</td><td>October</td></tr>
+        <tr><td>Animal Anatomy &amp; Physiology (AP-01) <span class="papers-pill bioclash-pill">Up next</span></td><td>12.5%</td><td>November</td></tr>
         <tr><td>Genetics &amp; Evolution</td><td>10%</td><td>January</td></tr>
         <tr><td>Plant Anatomy &amp; Physiology</td><td>7.5%</td><td>March</td></tr>
         <tr><td>Ecology</td><td>5%</td><td>May</td></tr>
@@ -88,7 +94,7 @@ images: ["/og-bioclash.png"]
       </tbody>
     </table>
   </div>
-  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, has concluded and its podium is shown above. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
+  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, has concluded and its podium is shown above, and Case File AP-01 opens next. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
   <div class="bioclash-sample-cta">
     <p>Want to see how it works before committing?</p>
     <div class="bioclash-sample-cta-actions">
@@ -106,7 +112,7 @@ images: ["/og-bioclash.png"]
 
 <section class="bioclash-section bioclash-panel">
   <h2>Get involved</h2>
-  <p>BiOClash is green-field; nothing is set in stone yet. If you'd want to help design questions, write rounds, or shape the format, this is one of the most open-ended ways to join as a Content Reviewer or Partner. Reach out: <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
+  <p>BiOClash is still young, and the format keeps evolving between rounds. If you'd want to help design questions, write rounds, or shape the format, this is one of the most open-ended ways to join as a Content Reviewer or Partner. Reach out: <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
 </section>
 
 <section id="bioclash-notify-section" class="bioclash-section bioclash-panel bioclash-notify-section">

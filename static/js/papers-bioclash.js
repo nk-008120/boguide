@@ -3,22 +3,29 @@
 
   var countdownRoot = document.getElementById('bioclash-countdown');
   if (countdownRoot) {
-    var TARGET = new Date('2026-10-10T00:00:00Z').getTime();
+    var targetAttr = countdownRoot.getAttribute('data-target') || '';
+    var TARGET = targetAttr ? new Date(targetAttr).getTime() : NaN;
+    var ROUND = countdownRoot.getAttribute('data-round') || 'The next round';
+    var IDLE = countdownRoot.getAttribute('data-idle') || (ROUND + ' opens soon');
     var DAY = 24 * 60 * 60 * 1000;
     var HOUR = 60 * 60 * 1000;
 
     var renderCountdown = function () {
+      if (isNaN(TARGET)) {
+        countdownRoot.textContent = IDLE;
+        return;
+      }
       var diff = TARGET - Date.now();
       if (diff <= 0) {
-        countdownRoot.textContent = 'Season 1 is here.';
+        countdownRoot.textContent = ROUND + ' is open.';
         return;
       }
       var days = Math.floor(diff / DAY);
       var hours = Math.floor((diff % DAY) / HOUR);
-      countdownRoot.textContent = days + 'd ' + hours + 'h until October 10.';
+      countdownRoot.textContent = days + 'd ' + hours + 'h until ' + ROUND + ' opens.';
     };
     renderCountdown();
-    setInterval(renderCountdown, 60 * 1000);
+    if (!isNaN(TARGET)) setInterval(renderCountdown, 60 * 1000);
   }
 
   var notifyRoot = document.getElementById('bioclash-notify');
