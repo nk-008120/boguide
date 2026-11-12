@@ -19,10 +19,12 @@
   }
 
   var MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' };
+  var PLACES = { 1: '01 / First', 2: '02 / Second', 3: '03 / Third' };
 
   function renderPodiumSlot(r) {
     return (
       '<div class="bioclash-champion-slot bioclash-champion-rank-' + r.placement + '">' +
+      '<div class="bioclash-champion-place">' + (PLACES[r.placement] || String(r.placement)) + '</div>' +
       '<div class="bioclash-champion-medal">' + (MEDALS[r.placement] || '🎖️') + '</div>' +
       '<div class="bioclash-champion-avatar-wrap">' + window.PapersAuth.avatarHTML(r.display_name, r.avatar_url) + '</div>' +
       '<div class="bioclash-champion-name">' + window.PapersAuth.flagHTML(r.country) + '<span>' + escapeHTML(r.display_name) + '</span></div>' +

@@ -29,16 +29,27 @@ images: ["/og-bioclash.png"]
     <svg class="bioclash-dna-strand bioclash-dna-4" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
     <svg class="bioclash-dna-strand bioclash-dna-5" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
   </div>
-  <p class="bioclash-eyebrow">OPEN Season 1: targeting October 10</p>
+  <p class="bioclash-eyebrow">Season 1: MB-01 results are in</p>
   <h1 class="bioclash-wordmark">BiOClash</h1>
   <p class="bioclash-tagline">An independent biology competition, built the same way as everything else here.</p>
   <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite">Loading countdown…</p>
   <div class="bioclash-hero-actions">
+    <a href="#bioclash-mb01-results" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>MB-01 results</span></a>
     <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified</span></a>
     <a href="https://discord.gg/jQ7sfcCs4" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
     <a href="https://www.instagram.com/bioguideofficial/" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Instagram">{{< icon "instagram" >}}</a>
   </div>
 </section>
+
+<section id="bioclash-mb01-results" class="bioclash-section bioclash-panel">
+  <h2>MB-01 champions</h2>
+  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry has been graded, and the first podium of Season 1 is in. Congratulations to <strong>Shinwoo Mo</strong>, who takes first place, <strong>Fatima Ghaffar</strong> in second, and <strong>Lous Felower</strong> in third.</p>
+  <p>All three will receive a custom micropipette pen from BiOGuide. Thank you to everyone who sat the opening round: every attempt counts toward the season ranking, and seven rounds are still to come.</p>
+  <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
+  <p>See the round's own page on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard</a>, and the cumulative standing in the <a href="/papers/leaderboard/">Season Champions</a>.</p>
+</section>
+
+{{< bioclash-champions round="mb-01" >}}
 
 <section class="bioclash-section bioclash-panel">
   <h2>What it is</h2>
@@ -77,7 +88,7 @@ images: ["/og-bioclash.png"]
       </tbody>
     </table>
   </div>
-  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, is now closed. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
+  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, has concluded and its podium is shown above. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
   <div class="bioclash-sample-cta">
     <p>Want to see how it works before committing?</p>
     <div class="bioclash-sample-cta-actions">
@@ -86,13 +97,6 @@ images: ["/og-bioclash.png"]
     </div>
     <p class="bioclash-sample-cta-note">The guide covers the rules, scoring, verification, and the full season schedule in one short document.</p>
   </div>
-</section>
-
-<section class="bioclash-section bioclash-panel">
-  <h2>MB-01 winner</h2>
-  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry podium holders will get a custom micropipette pen from BiOGuide!</p>
-  <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
-  <p>See the full standings on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard on November 17th</a>.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
