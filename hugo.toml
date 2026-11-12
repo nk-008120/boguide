@@ -192,10 +192,17 @@ ignoreFiles = ['\.enc$']
 
   [[menu.main]]
     name = "Discord"
-    url = "https://discord.gg/jQ7sfcCs4"
+    url = "https://discord.gg/UUkakYdsC"
     weight = 13
     [menu.main.params]
       icon = "discord"
+
+  [[menu.main]]
+    name = "Whatsapp"
+    url = "https://chat.whatsapp.com/Ia9cArydT4hB4PPbFLRmNh"
+    weight = 16
+    [menu.main.params]
+    icon = "whatsapp"
 
   [[menu.main]]
     name = "GitHub"
@@ -214,7 +221,7 @@ ignoreFiles = ['\.enc$']
   [[menu.main]]
     name = "Games"
     url = "/games/"
-    weight = 16
+    weight = 17
     [menu.main.params]
       icon = "lucide:dice-5"
       iconOnly = true

@@ -13,10 +13,10 @@ cascade:
 <div class="gic-article">
 
 <div class="gic-meta">
-  <span class="gic-meta-pill">📍 Bengaluru, India</span>
-  <span class="gic-meta-pill">🗓️ 1–3 September 2026</span>
-  <span class="gic-meta-pill">🧬 Genomics India Conference 2026</span>
-  <span class="gic-meta-pill">☕ ~14 min read</span>
+  <span class="gic-meta-pill"> Bengaluru, India</span>
+  <span class="gic-meta-pill"> 1–3 September 2026</span>
+  <span class="gic-meta-pill"> Genomics India Conference 2026</span>
+  <span class="gic-meta-pill"> ~14 min read</span>
 </div>
 
 Three days, three very different rooms- a hands-on Genotypic workshop, a full day of clinical genomics and hardware acceleration, and a closing day that swung from population genetics to cancer immunotherapy. Here's everything we sat through (and the bits we didn't) at GIC 2026, Bengaluru.
@@ -26,7 +26,7 @@ Three days, three very different rooms- a hands-on Genotypic workshop, a full da
 ## DAY 1 (Genotypic NGS AI Based Data Analysis)
 <p class="gic-day-kicker">Pre-Conference Workshop &middot; 1 September 2026</p>
 
-### L1 -  Assembling the Puzzle : From Sequencing Reads to GenomeAnnotation 
+### L1 -  Assembling the Puzzle : From Sequencing Reads to Genome Annotation 
 *~ Nihar Bachan Das*
 
 The first lecture of the first day at the GIC 2026, Bengaluru started with an introductory class on assembly and annotation of genomes from raw reads. It was the theoretical basis of the computationally challenging methods that followed. In the lecture, we got to know a lot about:
@@ -42,7 +42,7 @@ Mr. Nihar explained how SPAdes and Velvet differ while being de Bruijn Graphs an
     Common tools: Includes RaGOO for reference-guided ordering, as well as SSPACE and RAILS.
     2. Gap filling (or gap closure) replaces the unknown "N" spacer regions in scaffolds with actual nucleotide sequences.Mechanisms: Uses overlapping short reads, high-accuracy long reads (like PacBio HiFi or Oxford Nanopore), or syntenic reference sequences to resolve the missing segments.
     Common tools: Specialized programs like GapCloser or Gapfiller map reads back to scaffold boundaries to extend contig ends until they meet.Community consensus: Researchers on ResearchGate generally agree that hybrid approaches.combining long-read data to bridge repeats with short-read data for base-pair accuracy-yield the most complete and robust genome closure
-- Another interesting technical differentiation discused by Mr. Nihar in his talk was about how Normal and T2T Genome Assemblies difer:
+- Another interesting technical differentiation discussed by Mr. Nihar in his talk was about how Normal and T2T Genome Assemblies differ:
     He explained how Normal assembly leaves out contromeric and telomeric datasets and how telomeric assemblies uses LRS technologies like Oxford Nanopore. 
 Mr. Nihar then concluded his speech with informing us on how Genotypic keeps working on new techniques to improve the technological applications of these intriguing and complex theoretical bioinformatical principles.
 
@@ -53,21 +53,21 @@ The first theoretical lecture was followed by a brief turnaround into the novice
 
 - Mrs. Praddyumna started her speech with explaining how bulk RNA-Seq is limited by the absence of tags and the presence of cDNA, and how it has restricted applications outside of treated vs untreated samples and whole tissue analyses.
 - Then she started touching upon the main topic:
-        Advantanges of technical adaptations of SC-RNASeq:
+        Advantages of technical adaptations of SC-RNASeq:
         1. The presence of a Barcode and UMI. Unlike a normal RNA-Seq analysis which only uses cDNA, SCRNA-Seq is structure in the following way :<br>
         **P5 - Barcode - UMI - cDNA - i7 Index - P7** <br>
         The presence of the barcode and the UMI(Unique Molecular I.D.) help in tagging the individual cell and the individual molecule respectively.
 - The workflow pertaining to this technique, as stated by Mrs. Praddyumna, can be summarized as:
-        Raw Read -> Alignment and Counting -> Cellular and Gene MATRIX -> QC Filtering -> Polishing _> Assembly.
-- She also briefly touched upon the use of Genotypic product Cell ranger as a tool to convert FASTQ files into a count matrix, which can even accomodate individual and multi cell protocols.
-- Providing her opinions on how people should use the mentioned software, she eplained how reading output HTML reports from commander, and setting up the configuration file with Reg, Probe Set Ref, FASTQ Sample Barcode etc. helps.
+        Raw Read -> Alignment and Counting -> Cellular and Gene MATRIX -> QC Filtering -> Polishing -> Assembly.
+- She also briefly touched upon the use of Genotypic product Cell ranger as a tool to convert FASTQ files into a count matrix, which can even accommodate individual and multi cell protocols.
+- Providing her opinions on how people should use the mentioned software, she explained how reading output HTML reports from CommandeR, and setting up the configuration file with Reg, Probe Set Ref, FASTQ Sample Barcode etc. helps.
 - Reaching the end of her talk, she explained how analysis of these files should be conducted and how PCA Markers and Phenotypic filtering is a great help in data analysis.
 
 ### L3 - The Interactive CommandeR workshop:
 
-- The session continues after a fabulous lunch with an interactive workshop demonstrating the use of genotypic product Commander, showcasing various toold like QC Checking, Python scripts for various uses (Length, Repeats, and vFC Reads), and use of the Genetic Variant Analysis (AI-based) tool to generate comprehensive reports on the given fastq, gff and fasta files.
+- The session continues after a fabulous lunch with an interactive workshop demonstrating the use of genotypic product CommandeR, showcasing various toold like QC Checking, Python scripts for various uses (Length, Repeats, and vFC Reads), and use of the Genetic Variant Analysis (AI-based) tool to generate comprehensive reports on the given fastq, gff and fasta files.
 
-### L4 - Inaugration and Introductory talks
+### L4 - Inauguration and Introductory talks
 
 Preceded by the workshop and a small tea break, it was finally time to inaugrate the GIC 2026 Conference. Dr. Sudha Rao and Dr. Samir K Brahmachari provided us with invaluable insights into what the next 2 days will uphold.
 
