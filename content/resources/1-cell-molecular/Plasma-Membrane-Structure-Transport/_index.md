@@ -22,7 +22,7 @@ The plasma membrane is a **selectively permeable** boundary: its job is not simp
 The **fluid mosaic model** (Singer & Nicolson, 1972) describes the membrane as a two-dimensional fluid in which phospholipids and proteins diffuse laterally, rather than a static, rigid structure. "Fluid" refers to this lateral mobility (phospholipids and many proteins move within their own leaflet); "mosaic" refers to the patchwork arrangement of diverse protein types embedded at varying depths within the lipid bilayer. Fluidity is tuned by fatty acid saturation and cholesterol content (see [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/)) and matters functionally: a membrane that is too rigid restricts protein conformational changes (many transport and signalling proteins require this) and vesicle fusion/budding; a membrane that is too fluid compromises barrier integrity.
 
 ![Detailed fluid mosaic model illustration of the plasma membrane: phospholipid bilayer with embedded integral membrane proteins at varying depths, surface-associated peripheral proteins, and cholesterol molecules intercalated among the phospholipid tails](fluid-mosaic-model.svg)
-*Source: en.wikipedia.org (Fluid mosaic model)*
+*Source: [Wikimedia Commons, "Cell membrane detailed diagram en.svg"](https://commons.wikimedia.org/wiki/File:Cell_membrane_detailed_diagram_en.svg) by Mariana Ruiz, public domain. Recoloured by BiOGuide.*
 
 ### Membrane protein topology
 

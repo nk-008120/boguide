@@ -1,6 +1,6 @@
 ---
-title: "How to Prepare for IBO: Complete Biology Olympiad Guide"
-description: "How to prepare for the International Biology Olympiad (IBO): format, what gets tested, recommended resources, past papers, and preparation strategy."
+title: "How to Prepare for the IBO: A 12-Month Biology Olympiad Plan"
+description: "A realistic 12-month plan for the International Biology Olympiad: how theory and practical exams are scored, which topics come up most, books, past papers."
 images: ["/images/og/ibo-prep-og.png"]
 aliases:
   - /ibo/

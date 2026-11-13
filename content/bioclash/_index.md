@@ -36,7 +36,7 @@ images: ["/og-bioclash.png"]
   <div class="bioclash-hero-actions">
     <a href="#bioclash-mb01-results" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>MB-01 results</span></a>
     <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified for AP-01</span></a>
-    <a href="https://discord.gg/jQ7sfcCs4" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
+    <a href="https://discord.gg/UUkakYdsC" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
     <a href="https://www.instagram.com/bioguideofficial/" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Instagram">{{< icon "instagram" >}}</a>
   </div>
 </section>
@@ -54,7 +54,7 @@ images: ["/og-bioclash.png"]
 <section id="bioclash-ap01" class="bioclash-section bioclash-panel">
   <h2>Up next: AP-01</h2>
   <p>The second round of Season 1 is <strong>Case File AP-01: Animal Anatomy &amp; Physiology</strong>, and it opens soon. It runs in the same format as MB-01: a timed, solo, 90-minute attempt, open during a window announced ahead of time, and it carries 12.5% of the season ranking, the largest share of any subject round.</p>
-  <p>Everyone with a BiOGuide account is already registered. The exact window will be announced on <a href="https://discord.gg/jQ7sfcCs4" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a>, on <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a>, and by email to everyone who <a href="#bioclash-notify-section">turns on notifications</a>. Missed MB-01? You can still join the season from AP-01: a round not attempted simply contributes nothing.</p>
+  <p>Everyone with a BiOGuide account is already registered. The exact window will be announced on <a href="https://discord.gg/UUkakYdsC" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a>, on <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a>, and by email to everyone who <a href="#bioclash-notify-section">turns on notifications</a>. Missed MB-01? You can still join the season from AP-01: a round not attempted simply contributes nothing.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
@@ -120,7 +120,7 @@ images: ["/og-bioclash.png"]
   <div id="bioclash-notify" class="bioclash-notify" data-next="/bioclash/">
     <p class="bioclash-notify-msg">Loading…</p>
   </div>
-  <p class="bioclash-notify-alt">Prefer not to log in? Follow along on <a href="https://discord.gg/jQ7sfcCs4" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a> or <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a> instead.</p>
+  <p class="bioclash-notify-alt">Prefer not to log in? Follow along on <a href="https://discord.gg/UUkakYdsC" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a> or <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a> instead.</p>
 </section>
 
 </div>

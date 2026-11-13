@@ -48,7 +48,7 @@ The mitochondrial **outer membrane** is smooth and relatively permeable (contain
 Chloroplasts share the double-membrane, own-genome, own-ribosome pattern, but add a third internal membrane system: **thylakoids**, flattened membrane sacs (often stacked into **grana**) suspended in the **stroma** (the chloroplast's matrix-equivalent compartment). The thylakoid membrane houses the light-reaction machinery (photosystems, electron transport chain, ATP synthase): directly analogous in mechanism to the mitochondrial inner membrane's ETC/ATP synthase, but running in the reverse net direction (building reducing power and ATP from light energy, rather than from stored chemical bond energy). The stroma houses the Calvin cycle enzymes. Both the thylakoid-vs-cristae membrane elaboration and the parallel “membrane houses electron transport chain, matrix/stroma houses the cycle” organisation are a direct structural echo of each other, consistent with both organelles having converged on the same chemiosmotic strategy independently from their respective free-living bacterial ancestors.
 
 ![Chloroplast cutaway: outer and inner chloroplast envelope membranes, stroma, granal and stromal thylakoids (lamellae/frets) forming a granum stack, thylakoid membrane and thylakoid space (lumen), nucleoid (DNA rings), ribosomes, plastoglobuli, and a starch granule all labelled](chloroplast-cutaway-diagram.svg)
-*Source: en.wikipedia.org (Thylakoid)*
+*Source: [Wikimedia Commons, "Chloroplast mini.svg"](https://commons.wikimedia.org/wiki/File:Chloroplast_mini.svg) by Kelvinsong, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Recoloured by BiOGuide.*
 
 ### Semi-autonomy, not full independence
 

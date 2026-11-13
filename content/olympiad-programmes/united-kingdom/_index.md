@@ -1,6 +1,6 @@
 ---
-title: "British Biology Olympiad (BBO): Official Outline of the UK Path to IBO"
-description: "How the UK picks its IBO team: the British Biology Olympiad, a second round and a selection final at Warwick. An official outline with BiOGuide tips."
+title: "British Biology Olympiad (BBO): How the UK Picks Its IBO Team"
+description: "Who can enter the British Biology Olympiad, what the second round and the Warwick selection final involve, and how the UK picks its four IBO students."
 layout: "wide"
 schema_type: "article"
 guide_class: "outline"

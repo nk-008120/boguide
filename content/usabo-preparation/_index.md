@@ -1,6 +1,6 @@
 ---
-title: "How to Prepare for USABO: USA Biology Olympiad Guide"
-description: "How to prepare for the USA Biology Olympiad (USABO): stages, what gets tested, recommended resources, past papers, and preparation strategy."
+title: "USABO Study Guide: How to Prepare for the Open and Semifinal"
+description: "Free USABO study guide: what the Open and Semifinal exams test, which topics come up most, a prep plan for each stage, past papers and common mistakes."
 images: ["/images/og/usabo-prep-og.png"]
 aliases:
   - /usabo/

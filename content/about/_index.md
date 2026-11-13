@@ -186,6 +186,11 @@ Hey, I’m Khadija Mansoor , and I just finished my A-levels in Qatar. I’m hea
 
 Currently Working on: Media and press for BiOguide, designing posts that make dense notes look inviting, and running Qatar STEM Society.
 {{< /team-member >}}
+{{< team-member name="Prayush Chopra" role="Junior Partner (Louis Litt Class)" avatar="/pcavat.png since="November 13th 2026">}}
+Hey, I’m Prayush Chopra, a first-year BBA student at NUS majoring in finance. I’m from Pali, a small town near Jodhpur, and I grew up around my family’s business, so I’ve always been more curious about how things grow than how cells do. I’m also probably the only person on this team without an olympiad medal, so my job is getting their work in front of the students who need it. Coming from a small town, I know how much depends on someone pointing you to the right resources, and BiOGuide does that for students in 110 countries. My competitive side comes out in chess, which I’ve played since I was five and now play for NUS. Outside BiOGuide, you’ll find me at the piano or with a guitar. Fun fact: I’m lactose intolerant and somehow still surviving :)
+
+Currently Working on: Director of Growth and Partnerships at BiOGuide. Marketing Executive on the Hall Promotion Board, while representing NUS in chess and debate.
+{{< /team-member >}}
 {{< team-member name="Saisha Jain" role="Associate (Mike Ross Class)" avatar="/sjavat.png" since="August 19th 2026">}}
 print("Hello, World!")<br>
 I'm Saisha from the country that accounts for every 1 out of 8 people in the world. I've Just finished 12th grade and finally on to the next step to join med school after toiling for NEET. I’ve always loved anything that excites my neurons be it cubing or sports or puzzles. I am interested in Computers,AI,Physics,Physiology,Olympiad problems or anything that is logical contrary to my choice for med school which i have chosen for helping people something i'm really passionate about hence i'm excited about BiOGuide too. I’m passable at almost any sport and good at badminton and basketball,learning to play the keyboard and harmonica bit by bit apart from binging on novels and movies when i'm free.<br>

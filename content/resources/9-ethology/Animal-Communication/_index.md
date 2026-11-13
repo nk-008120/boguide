@@ -26,7 +26,7 @@ Signals travel through five main channels, each with a characteristic trade-off 
 - **Electrical**, restricted to aquatic environments and a small set of lineages (weakly electric fish, e.g. mormyrids and gymnotiforms), used for both navigation and species/individual recognition via electric organ discharge waveform.
 
 ![Illustration of a honeybee tracing the waggle dance's figure-eight pattern, with the straight waggle run highlighted.](waggle-dance-figure-eight-diagram.svg)
-*Source: Wikipedia, "Waggle dance"*
+*Source: [Wikimedia Commons, "Bee dance.svg"](https://commons.wikimedia.org/wiki/File:Bee_dance.svg) by Jüppsche, built from files by Emmanuel Boutet and Kilom691, [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/). Recoloured by BiOGuide; this modified version is shared under the same licence.*
 
 {{< youtube 7P0R0ZZTAkI >}}
 
