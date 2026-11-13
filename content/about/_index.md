@@ -186,7 +186,7 @@ Hey, I’m Khadija Mansoor , and I just finished my A-levels in Qatar. I’m hea
 
 Currently Working on: Media and press for BiOguide, designing posts that make dense notes look inviting, and running Qatar STEM Society.
 {{< /team-member >}}
-{{< team-member name="Prayush Chopra" role="Junior Partner (Louis Litt Class)" avatar="/pcavat.png since="November 13th 2026">}}
+{{< team-member name="Prayush Chopra" role="Junior Partner (Louis Litt Class)" avatar="/pcavat.jpeg" since="November 13th 2026">}}
 Hey, I’m Prayush Chopra, a first-year BBA student at NUS majoring in finance. I’m from Pali, a small town near Jodhpur, and I grew up around my family’s business, so I’ve always been more curious about how things grow than how cells do. I’m also probably the only person on this team without an olympiad medal, so my job is getting their work in front of the students who need it. Coming from a small town, I know how much depends on someone pointing you to the right resources, and BiOGuide does that for students in 110 countries. My competitive side comes out in chess, which I’ve played since I was five and now play for NUS. Outside BiOGuide, you’ll find me at the piano or with a guitar. Fun fact: I’m lactose intolerant and somehow still surviving :)
 
 Currently Working on: Director of Growth and Partnerships at BiOGuide. Marketing Executive on the Hall Promotion Board, while representing NUS in chess and debate.
