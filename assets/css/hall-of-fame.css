@@ -19,20 +19,6 @@
     radial-gradient(70% 40% at 50% 12%, rgba(183, 156, 255, 0.16), transparent 70%),
     radial-gradient(120% 90% at 50% 50%, transparent 52%, rgba(6, 4, 12, 0.78) 100%);
 }
-:is(#bioclash-leaderboard-root, #bioclash-round-leaderboard-root) .hof-fluid {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  transition: opacity 1.2s ease;
-}
-:is(#bioclash-leaderboard-root, #bioclash-round-leaderboard-root) .hof-fluid.is-on {
-  opacity: 0.8;
-}
 :is(#bioclash-leaderboard-root, #bioclash-round-leaderboard-root) .hof-grain {
   position: fixed;
   inset: 0;

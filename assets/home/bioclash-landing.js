@@ -5,9 +5,6 @@
 
     var NS = "http://www.w3.org/2000/svg";
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches && !/[?&]motion=on/.test(window.location.search);
-    var fine = window.matchMedia("(any-hover: hover) and (any-pointer: fine)").matches;
-    var conn = navigator.connection;
-    var lite = !!conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""));
 
     function el(name, attrs, parent) {
       var node = document.createElementNS(NS, name);
@@ -111,13 +108,9 @@
     var grain = document.createElement("div");
     grain.className = "bcl-grain";
     grain.setAttribute("aria-hidden", "true");
-    var canvas = document.createElement("canvas");
-    canvas.className = "bcl-fluid";
-    canvas.setAttribute("aria-hidden", "true");
     var bg = root.querySelector(".bioclash-landing-bg");
     bg.insertAdjacentElement("afterend", grain);
     bg.insertAdjacentElement("afterend", wings);
-    bg.insertAdjacentElement("afterend", canvas);
 
     var panels = Array.prototype.slice.call(root.querySelectorAll(".bioclash-section.bioclash-panel"));
 
@@ -131,14 +124,6 @@
 
     if (reduce) return;
     root.classList.add("bcl-live");
-
-    if (fine && !lite && window.HVFluid) {
-      var fluid = window.HVFluid.create(canvas);
-      if (fluid) {
-        fluid.setColors([1, 0.3, 0.14], [0.89, 0.71, 0.29], 0.5);
-        window.addEventListener("pagehide", function () { fluid.destroy(); }, { once: true });
-      }
-    }
 
     document.addEventListener("visibilitychange", function () {
       wings.style.display = document.hidden ? "none" : "";

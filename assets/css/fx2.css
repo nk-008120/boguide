@@ -1,5 +1,4 @@
 body.fx-2 .fx2-ambient,
-body.fx-2 .fx2-fluid,
 body.fx-2 .fx2-grain {
   position: fixed;
   inset: 0;
@@ -10,14 +9,6 @@ body.fx-2 .fx2-grain {
 body.fx-2 .fx2-ambient {
   z-index: -3;
   overflow: hidden;
-}
-body.fx-2 .fx2-fluid {
-  z-index: -2;
-  opacity: 0;
-  transition: opacity 1.2s ease;
-}
-body.fx-2 .fx2-fluid.is-on {
-  opacity: 1;
 }
 body.fx-2 .fx2-grain {
   z-index: 3;

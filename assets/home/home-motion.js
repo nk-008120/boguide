@@ -36,35 +36,6 @@
     gsap.ticker.lagSmoothing(0);
   }
 
-  function readTriplet(style, name, fallback) {
-    var parts = style.getPropertyValue(name).trim().split(/[\s,]+/).map(Number);
-    if (parts.length !== 3 || parts.some(isNaN)) return fallback;
-    return parts.map(function (v) { return v / 255; });
-  }
-
-  var fluid = null;
-  var canvas = root.querySelector(".hv-fluid");
-  if (fine && !lite && canvas && window.HVFluid) {
-    fluid = window.HVFluid.create(canvas);
-  }
-
-  function syncTheme() {
-    if (!fluid) return;
-    var style = getComputedStyle(document.body);
-    var strength = parseFloat(style.getPropertyValue("--fx-dye-strength")) || 0.4;
-    fluid.setColors(
-      readTriplet(style, "--fx-dye-a", [0.54, 0.4, 0.77]),
-      readTriplet(style, "--fx-dye-b", [0.36, 0.48, 0.35]),
-      strength
-    );
-  }
-
-  if (fluid) {
-    syncTheme();
-    new MutationObserver(syncTheme).observe(html, { attributes: true, attributeFilter: ["class"] });
-    window.addEventListener("pagehide", function () { fluid.destroy(); }, { once: true });
-  }
-
   function onEnter(els, margin, cb) {
     var io = new IntersectionObserver(function (entries) {
       var batch = [];

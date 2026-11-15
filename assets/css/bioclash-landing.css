@@ -34,20 +34,6 @@
   overflow: hidden;
   pointer-events: none;
 }
-#bioclash-root .bcl-fluid {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  transition: opacity 1.2s ease;
-}
-#bioclash-root .bcl-fluid.is-on {
-  opacity: 0.85;
-}
 
 #bioclash-root .bcl-wing {
   --w: min(38vw, 35rem);

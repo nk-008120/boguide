@@ -1,6 +1,5 @@
 (function () {
   var body = document.body;
-  var html = document.documentElement;
   if (!body || !body.classList.contains("fx-2") || !window.gsap) return;
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches && !/[?&]motion=on/.test(window.location.search);
@@ -26,10 +25,8 @@
     blob.appendChild(document.createElement("i"));
     ambient.appendChild(blob);
   });
-  var canvas = layer("canvas", "fx2-fluid");
   var grain = layer("div", "fx2-grain");
   body.appendChild(ambient);
-  body.appendChild(canvas);
   body.appendChild(grain);
 
   if (fine && !lite && window.Lenis) {
@@ -42,27 +39,6 @@
     });
     gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
     gsap.ticker.lagSmoothing(0);
-  }
-
-  function triplet(style, name, fallback) {
-    var parts = style.getPropertyValue(name).trim().split(/[\s,]+/).map(Number);
-    if (parts.length !== 3 || parts.some(isNaN)) return fallback;
-    return parts.map(function (v) { return v / 255; });
-  }
-
-  var fluid = fine && !lite && window.HVFluid ? window.HVFluid.create(canvas) : null;
-  if (fluid) {
-    var sync = function () {
-      var style = getComputedStyle(body);
-      fluid.setColors(
-        triplet(style, "--fx-dye-a", [0.54, 0.4, 0.77]),
-        triplet(style, "--fx-dye-b", [0.36, 0.48, 0.35]),
-        parseFloat(style.getPropertyValue("--fx-dye-strength")) || 0.3
-      );
-    };
-    sync();
-    new MutationObserver(sync).observe(html, { attributes: true, attributeFilter: ["class"] });
-    window.addEventListener("pagehide", function () { fluid.destroy(); }, { once: true });
   }
 
   function onEnter(els, margin, cb) {

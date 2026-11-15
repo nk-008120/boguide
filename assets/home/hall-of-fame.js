@@ -2,13 +2,9 @@
   function start() {
     var root = document.getElementById("bioclash-leaderboard-root") || document.getElementById("bioclash-round-leaderboard-root");
     var bg = root && root.querySelector(".bioclash-leaderboard-bg, .bioclash-round-leaderboard-bg");
-    var round = !!root && root.id === "bioclash-round-leaderboard-root";
     if (!bg) return;
 
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches && !/[?&]motion=on/.test(window.location.search);
-    var fine = window.matchMedia("(any-hover: hover) and (any-pointer: fine)").matches;
-    var conn = navigator.connection;
-    var lite = !!conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""));
 
     function layer(tag, cls) {
       var node = document.createElement(tag);
@@ -19,7 +15,6 @@
     }
 
     layer("div", "hof-grain");
-    var canvas = layer("canvas", "hof-fluid");
 
     var PANEL = ".bioclash-leaderboard-panel, .bioclash-panel";
     root.addEventListener("pointermove", function (e) {
@@ -32,15 +27,6 @@
 
     if (reduce) return;
     root.classList.add("hof-live");
-
-    if (fine && !lite && window.HVFluid) {
-      var fluid = window.HVFluid.create(canvas);
-      if (fluid) {
-        if (round) fluid.setColors([1, 0.3, 0.14], [0.89, 0.71, 0.29], 0.5);
-        else fluid.setColors([0.62, 0.45, 1], [0.89, 0.71, 0.29], 0.5);
-        window.addEventListener("pagehide", function () { fluid.destroy(); }, { once: true });
-      }
-    }
 
     if (!("IntersectionObserver" in window)) return;
     var limit = window.innerHeight * 0.92;

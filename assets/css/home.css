@@ -70,7 +70,6 @@ html.favourite .home-v2 {
 }
 
 .home-v2 .hv-ambient,
-.home-v2 .hv-fluid,
 .home-v2 .hv-grain {
   position: fixed;
   inset: 0;
@@ -81,14 +80,6 @@ html.favourite .home-v2 {
 .home-v2 .hv-ambient {
   z-index: -3;
   overflow: hidden;
-}
-.home-v2 .hv-fluid {
-  z-index: -2;
-  opacity: 0;
-  transition: opacity 1.2s ease;
-}
-.home-v2 .hv-fluid.is-on {
-  opacity: 1;
 }
 .home-v2 .hv-grain {
   z-index: 3;
