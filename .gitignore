@@ -21,3 +21,5 @@ emails/
 image-sources.md
 *.pyc
 __pycache__/
+
+reviews/2026-11/
