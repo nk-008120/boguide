@@ -1,6 +1,6 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
 const { loadPaper, allBlocks, componentIsCorrect, componentMaxMarks, extensionPenalty, autoGrade } = require('./_lib/bioclash');
-const { verifyCronSecret } = require('./_lib/cronAuth');
+const { verifyCronSecret, verifyAdminSecret } = require('./_lib/cronAuth');
 const { captureError } = require('./_lib/sentry');
 
 async function runCleanup(req, res, admin) {
@@ -269,12 +269,6 @@ async function runFinalizeRound(req, res, admin) {
 
   const season = seasonYear + ':' + paperId;
 
-  const { error: deleteError } = await admin
-    .from('bioclash_results')
-    .delete()
-    .eq('season', season);
-  if (deleteError) throw deleteError;
-
   const rows = participantScores.map((p) => ({
     user_id: p.userId,
     season,
@@ -288,10 +282,8 @@ async function runFinalizeRound(req, res, admin) {
     season_weight: seasonWeight
   }));
 
-  const { error: insertError } = await admin
-    .from('bioclash_results')
-    .insert(rows);
-  if (insertError) throw insertError;
+  const { error: replaceError } = await admin.rpc('bioclash_replace_round_results', { p_season: season, p_rows: rows });
+  if (replaceError) throw replaceError;
 
   res.status(200).json({
     ok: true,
@@ -311,9 +303,9 @@ module.exports = async (req, res) => {
     return;
   }
 
-  if (!verifyCronSecret(req, res)) return;
-
   const action = req.method === 'POST' ? (req.body && req.body.action) : req.query.action;
+  const allowed = action === 'cleanup' ? verifyCronSecret(req, res) : verifyAdminSecret(req, res);
+  if (!allowed) return;
 
   try {
     const admin = getAdminClient();

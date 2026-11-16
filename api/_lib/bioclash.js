@@ -22,7 +22,7 @@ function readPaperSource(paperId) {
 }
 
 function loadPaper(paperId) {
-  if (!/^[a-z0-9-]+$/.test(paperId || '')) return null;
+  if (typeof paperId !== 'string' || !/^[a-z0-9-]+$/.test(paperId)) return null;
   if (paperCache.has(paperId)) return paperCache.get(paperId);
   const source = readPaperSource(paperId);
   if (source == null) return null;
@@ -162,22 +162,126 @@ function componentMaxMarks(paper, component) {
   return component.marks || 1;
 }
 
+function numericValue(submitted) {
+  if (typeof submitted === 'number') return Number.isFinite(submitted) ? submitted : null;
+  if (typeof submitted !== 'string' || submitted.trim() === '') return null;
+  const val = Number(submitted);
+  return Number.isFinite(val) ? val : null;
+}
+
 function componentIsCorrect(component, submitted) {
-  if (submitted === undefined || submitted === null) return false;
+  const missing = submitted === undefined || submitted === null;
   switch (component.type) {
     case 'mcq':
-      return submitted === component.correctKey;
+      return !missing && submitted === component.correctKey;
     case 'true_false':
-      return submitted === component.correctValue;
+      return !missing && submitted === component.correctValue;
     case 'numeric': {
-      const val = Number(submitted);
-      if (Number.isNaN(val)) return false;
+      const val = numericValue(submitted);
+      if (val === null) return false;
       const tol = component.tolerance != null ? component.tolerance : 0;
       return Math.abs(val - component.expected) <= tol;
     }
     default:
       return null;
   }
+}
+
+const MAX_ANSWER_TEXT = 5000;
+const MAX_ANSWER_JSON = 50000;
+const MAX_SUB_ANSWERS = 30;
+
+function cleanScalar(value) {
+  if (typeof value === 'boolean') return { value };
+  if (typeof value === 'number') return Number.isFinite(value) ? { value } : { error: 'Answers must be finite numbers' };
+  if (typeof value === 'string') {
+    return value.length <= MAX_ANSWER_TEXT ? { value } : { error: 'Answers are limited to ' + MAX_ANSWER_TEXT + ' characters' };
+  }
+  return { error: 'Unsupported answer value' };
+}
+
+function sanitizeAnswers(paperBlock, raw) {
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return { error: 'componentAnswers must be an object' };
+  let size;
+  try {
+    size = JSON.stringify(raw).length;
+  } catch (e) {
+    return { error: 'componentAnswers could not be read' };
+  }
+  if (size > MAX_ANSWER_JSON) return { error: 'Answers are too large' };
+  const components = new Map((paperBlock.components || []).map((c) => [c.key, c]));
+  const answers = {};
+  for (const key of Object.keys(raw)) {
+    const component = components.get(key);
+    if (!component) continue;
+    const value = raw[key];
+    if (value === null || value === undefined) continue;
+    if (component.type === 'free_text_for_others') {
+      if (typeof value !== 'object' || Array.isArray(value)) return { error: 'Unsupported answer value' };
+      const subKeys = Object.keys(value);
+      if (subKeys.length > MAX_SUB_ANSWERS) return { error: 'Too many answers' };
+      const nested = {};
+      for (const sub of subKeys) {
+        if (sub.length > 64 || typeof value[sub] !== 'string') return { error: 'Unsupported answer value' };
+        const cleaned = cleanScalar(value[sub]);
+        if (cleaned.error) return cleaned;
+        nested[sub] = cleaned.value;
+      }
+      answers[key] = nested;
+      continue;
+    }
+    const cleaned = cleanScalar(value);
+    if (cleaned.error) return cleaned;
+    answers[key] = cleaned.value;
+  }
+  return { answers };
+}
+
+async function raiseCounters(admin, attemptId, fullscreenExits, visibilityLosses) {
+  const updates = [['fullscreen_exits', fullscreenExits], ['visibility_losses', visibilityLosses]];
+  for (const [column, raw] of updates) {
+    if (!Number.isFinite(raw) || raw < 0) continue;
+    const value = Math.min(Math.floor(raw), 100000);
+    await admin.from('bioclash_attempts').update({ [column]: value }).eq('id', attemptId).lt(column, value);
+  }
+}
+
+const FIGURE_BUCKET = 'bioclash-figures';
+const FIGURE_PREFIX = 'private:';
+const FIGURE_TTL_SECONDS = 3 * 60 * 60;
+
+function privatePath(ref) {
+  return typeof ref === 'string' && ref.startsWith(FIGURE_PREFIX) ? ref.slice(FIGURE_PREFIX.length) : null;
+}
+
+async function signBlockFigures(admin, blocks) {
+  const paths = new Set();
+  for (const block of blocks) {
+    for (const img of block.images || []) {
+      const p = img && privatePath(img.src);
+      if (p) paths.add(p);
+    }
+    for (const comp of block.components || []) {
+      const p = privatePath(comp.imageRef);
+      if (p) paths.add(p);
+    }
+  }
+  if (paths.size === 0) return blocks;
+  const { data, error } = await admin.storage.from(FIGURE_BUCKET).createSignedUrls([...paths], FIGURE_TTL_SECONDS);
+  if (error) throw error;
+  const signed = new Map();
+  for (const item of data || []) {
+    if (item && item.path && item.signedUrl) signed.set(item.path, item.signedUrl);
+  }
+  const resolve = (ref) => {
+    const p = privatePath(ref);
+    return p ? signed.get(p) || null : ref;
+  };
+  return blocks.map((block) => ({
+    ...block,
+    images: block.images ? block.images.map((img) => (img && typeof img.src === 'string' ? { ...img, src: resolve(img.src) } : img)) : block.images,
+    components: block.components ? block.components.map((comp) => ({ ...comp, imageRef: resolve(comp.imageRef) })) : block.components
+  }));
 }
 
 function computeTotalPages(paper) {
@@ -251,6 +355,9 @@ module.exports = {
   toClientBlock,
   componentIsCorrect,
   componentMaxMarks,
+  sanitizeAnswers,
+  raiseCounters,
+  signBlockFigures,
   autoGrade,
   extensionPenalty,
   rateLimit,

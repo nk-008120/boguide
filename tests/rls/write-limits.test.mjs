@@ -202,6 +202,24 @@ async function main() {
       await rejected(`insert into public.biolab_protocol_reports (protocol_id, reason) values ('${protoId}', 'spam')`));
   });
 
+  await asUser(USER_A, async () => {
+    check('a signed-in user cannot call the BiOClash results replacement',
+      await rejected(`select public.bioclash_replace_round_results('2026:mb-01', '[]'::jsonb)`));
+  });
+
+  const replaced = await db.query(`select public.bioclash_replace_round_results('test:round', $1::jsonb) as n`,
+    [JSON.stringify([{ user_id: USER_A, placement: 1, score_label: '5 / 10' }, { user_id: USER_B, placement: 2, score_label: '4 / 10' }])]);
+  const again = await db.query(`select public.bioclash_replace_round_results('test:round', $1::jsonb) as n`,
+    [JSON.stringify([{ user_id: USER_B, placement: 1, score_label: '6 / 10' }])]);
+  const rows = (await db.query(`select user_id, placement from public.bioclash_results where season = 'test:round'`)).rows;
+  check('replacing a round writes its rows and a second run replaces them',
+    replaced.rows[0].n === 2 && again.rows[0].n === 1 && rows.length === 1 && rows[0].user_id === USER_B);
+  check('a failed replacement leaves the previous results in place',
+    await rejected(`select public.bioclash_replace_round_results('test:round', '[{"user_id":"${USER_A}","placement":0}]'::jsonb)`) &&
+    (await db.query(`select count(*)::int as n from public.bioclash_results where season = 'test:round'`)).rows[0].n === 1);
+  check('the BiOClash figures bucket exists and is private',
+    (await db.query(`select public from storage.buckets where id = 'bioclash-figures'`)).rows[0].public === false);
+
   console.log('\n' + (failures === 0 ? 'ALL WRITE LIMIT CHECKS PASSED.' : `${failures} CHECK(S) FAILED.`));
   if (failures > 0) process.exit(1);
 }

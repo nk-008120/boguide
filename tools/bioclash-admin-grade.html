@@ -507,11 +507,11 @@
     var outFile = paperId + '-grades.json';
     var bash =
       'curl -s "' + url + '" \\\n' +
-      '  -H "Authorization: Bearer $CRON_SECRET" \\\n' +
+      '  -H "Authorization: Bearer $BIOCLASH_ADMIN_SECRET" \\\n' +
       '  -o ' + outFile;
     var ps =
       'curl.exe -s "' + url + '" `\n' +
-      '  -H "Authorization: Bearer $env:CRON_SECRET" `\n' +
+      '  -H "Authorization: Bearer $env:BIOCLASH_ADMIN_SECRET" `\n' +
       '  -o ' + outFile;
     return { bash: bash, ps: ps, outFile: outFile };
   }
@@ -859,13 +859,13 @@
     var outFile = state.paperId + '-finalize-response.json';
     var bash =
       'curl -s -X POST "' + url + '" \\\n' +
-      '  -H "Authorization: Bearer $CRON_SECRET" \\\n' +
+      '  -H "Authorization: Bearer $BIOCLASH_ADMIN_SECRET" \\\n' +
       '  -H "Content-Type: application/json" \\\n' +
       '  -d @' + reqFile + ' \\\n' +
       '  -o ' + outFile;
     var ps =
       'curl.exe -s -X POST "' + url + '" `\n' +
-      '  -H "Authorization: Bearer $env:CRON_SECRET" `\n' +
+      '  -H "Authorization: Bearer $env:BIOCLASH_ADMIN_SECRET" `\n' +
       '  -H "Content-Type: application/json" `\n' +
       '  -d "@' + reqFile + '" `\n' +
       '  -o ' + outFile;

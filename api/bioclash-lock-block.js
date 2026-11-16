@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, authenticate } = require('./_lib/bioclash');
+const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, authenticate, sanitizeAnswers, raiseCounters, signBlockFigures } = require('./_lib/bioclash');
 const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
@@ -26,8 +26,9 @@ module.exports = async (req, res) => {
       res.status(400).json({ error: 'This block is recoverable. Use save-draft instead.' });
       return;
     }
-    if (!componentAnswers || typeof componentAnswers !== 'object') {
-      res.status(400).json({ error: 'componentAnswers must be an object' });
+    const cleaned = sanitizeAnswers(paperBlock, componentAnswers);
+    if (cleaned.error) {
+      res.status(400).json({ error: cleaned.error });
       return;
     }
 
@@ -57,7 +58,7 @@ module.exports = async (req, res) => {
 
     const { data: lockedRow, error: lockError } = await admin
       .from('bioclash_attempt_blocks')
-      .update({ status: 'locked', locked_at: new Date().toISOString(), updated_at: new Date().toISOString(), answer: componentAnswers })
+      .update({ status: 'locked', locked_at: new Date().toISOString(), updated_at: new Date().toISOString(), answer: cleaned.answers })
       .eq('attempt_id', attempt.id)
       .eq('block_id', blockId)
       .eq('status', 'active')
@@ -98,14 +99,9 @@ module.exports = async (req, res) => {
       });
     }
 
-    if (Number.isFinite(fullscreenExits) || Number.isFinite(visibilityLosses)) {
-      const patch = {};
-      if (Number.isFinite(fullscreenExits)) patch.fullscreen_exits = fullscreenExits;
-      if (Number.isFinite(visibilityLosses)) patch.visibility_losses = visibilityLosses;
-      await admin.from('bioclash_attempts').update(patch).eq('id', attempt.id);
-    }
+    await raiseCounters(admin, attempt.id, fullscreenExits, visibilityLosses);
 
-    res.status(200).json({ ok: true, locked: blockId, revealedBlocks });
+    res.status(200).json({ ok: true, locked: blockId, revealedBlocks: await signBlockFigures(admin, revealedBlocks) });
   } catch (err) {
     console.error('bioclash-lock-block failed:', err);
     await captureError(err, { route: 'bioclash-lock-block' });

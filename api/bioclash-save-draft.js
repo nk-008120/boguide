@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, authenticate } = require('./_lib/bioclash');
+const { loadPaper, findBlock, authenticate, sanitizeAnswers, raiseCounters } = require('./_lib/bioclash');
 const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
@@ -26,8 +26,9 @@ module.exports = async (req, res) => {
       res.status(400).json({ error: 'This block requires Lock & Continue, not a draft save.' });
       return;
     }
-    if (!componentAnswers || typeof componentAnswers !== 'object') {
-      res.status(400).json({ error: 'componentAnswers must be an object' });
+    const cleaned = sanitizeAnswers(paperBlock, componentAnswers);
+    if (cleaned.error) {
+      res.status(400).json({ error: cleaned.error });
       return;
     }
 
@@ -56,7 +57,7 @@ module.exports = async (req, res) => {
 
     const { data: updated, error: updateError } = await admin
       .from('bioclash_attempt_blocks')
-      .update({ answer: componentAnswers, updated_at: new Date().toISOString() })
+      .update({ answer: cleaned.answers, updated_at: new Date().toISOString() })
       .eq('attempt_id', attempt.id)
       .eq('block_id', blockId)
       .eq('status', 'active')
@@ -68,12 +69,7 @@ module.exports = async (req, res) => {
       return;
     }
 
-    if (Number.isFinite(fullscreenExits) || Number.isFinite(visibilityLosses)) {
-      const patch = {};
-      if (Number.isFinite(fullscreenExits)) patch.fullscreen_exits = fullscreenExits;
-      if (Number.isFinite(visibilityLosses)) patch.visibility_losses = visibilityLosses;
-      await admin.from('bioclash_attempts').update(patch).eq('id', attempt.id);
-    }
+    await raiseCounters(admin, attempt.id, fullscreenExits, visibilityLosses);
 
     res.status(200).json({ ok: true });
   } catch (err) {

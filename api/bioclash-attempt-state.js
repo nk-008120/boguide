@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages, autoGrade, authenticate } = require('./_lib/bioclash');
+const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages, autoGrade, authenticate, signBlockFigures } = require('./_lib/bioclash');
 const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
@@ -99,7 +99,7 @@ module.exports = async (req, res) => {
       maxExtensionBlocks: paper.maxExtensionBlocks || 0,
       extensionBlockMinutes: paper.extensionBlockMinutes || 0,
       extensionCostSchedule: paper.extensionCostSchedule || [],
-      blocks
+      blocks: await signBlockFigures(admin, blocks)
     });
   } catch (err) {
     console.error('bioclash-attempt-state failed:', err);

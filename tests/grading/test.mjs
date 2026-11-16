@@ -6,7 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
 const REPO_ROOT = path.resolve(__dirname, '../..');
 
-const { componentIsCorrect, autoGrade, extensionPenalty, seededShuffle } =
+const { componentIsCorrect, autoGrade, extensionPenalty, seededShuffle, sanitizeAnswers } =
   require(path.join(REPO_ROOT, 'api/_lib/bioclash.js'));
 const { recompute } = require(path.join(REPO_ROOT, 'api/submit-attempt.js'));
 
@@ -222,6 +222,49 @@ check('a single-subject question contributes full weight to that subject',
   Math.abs(rFull.subjectStats.Biochemistry.total - 1) < 1e-9);
 check('a question with no subjects at all contributes no subjectStats entry',
   Object.keys(rFull.subjectStats).sort().join(',') === 'Biochemistry,Genetics');
+
+console.log('\n--- blank answers and written questions ---');
+
+check('numeric: a blank string is not correct when the expected value is 0',
+  componentIsCorrect({ type: 'numeric', expected: 0 }, '') === false);
+check('numeric: false, an empty array and whitespace are not correct against 0',
+  componentIsCorrect({ type: 'numeric', expected: 0 }, false) === false &&
+  componentIsCorrect({ type: 'numeric', expected: 0 }, []) === false &&
+  componentIsCorrect({ type: 'numeric', expected: 0 }, '   ') === false);
+check('numeric: a real 0 is still correct against 0',
+  componentIsCorrect({ type: 'numeric', expected: 0 }, 0) === true &&
+  componentIsCorrect({ type: 'numeric', expected: 0 }, '0') === true);
+check('written: an unanswered written question is not auto-gradable (null)',
+  componentIsCorrect({ type: 'free_text' }, undefined) === null);
+
+const writtenPaper = { parts: [{ id: 'p', blocks: [{ id: 'w', type: 'question', components: [
+  { key: 'n', type: 'numeric', expected: 0, marks: 1 },
+  { key: 't', type: 'free_text', marks: 5 }
+] }] }] };
+const writtenResult = autoGrade(writtenPaper, [{ block_id: 'w', answer: { n: '' } }]);
+check('autoGrade counts only the numeric part and marks a blank numeric wrong',
+  writtenResult.autoTotal === 1 && writtenResult.autoMarksTotal === 1 && writtenResult.autoCorrect === 0);
+
+console.log('\n--- sanitizeAnswers ---');
+
+const answerBlock = { components: [
+  { key: 'a', type: 'mcq' },
+  { key: 'b', type: 'true_false' },
+  { key: 'c', type: 'numeric' },
+  { key: 'd', type: 'free_text_for_others' }
+] };
+const okAnswers = sanitizeAnswers(answerBlock, { a: 'x', b: true, c: 3, d: { k1: 'why' }, junk: 'dropped' });
+check('valid answers pass and unknown keys are dropped',
+  !okAnswers.error && okAnswers.answers.a === 'x' && okAnswers.answers.b === true &&
+  okAnswers.answers.c === 3 && okAnswers.answers.d.k1 === 'why' && !('junk' in okAnswers.answers));
+check('an oversized payload is refused',
+  !!sanitizeAnswers(answerBlock, { a: 'x'.repeat(60000) }).error);
+check('a text answer over 5,000 characters is refused',
+  !!sanitizeAnswers(answerBlock, { a: 'x'.repeat(5001) }).error);
+check('an object where a single value is expected is refused',
+  !!sanitizeAnswers(answerBlock, { a: { nested: 1 } }).error);
+check('an array instead of an object is refused',
+  !!sanitizeAnswers(answerBlock, ['a']).error);
 
 console.log('\n' + (failures === 0
   ? 'ALL CHECKS PASSED against the real, shipped grading functions.'
