@@ -1,24 +1,19 @@
-{{- /*
-Umami Analytics: project override of themes/hextra umami.html
-Adds data-web-vitals="true" for Core Web Vitals collection (Umami v2.10+).
-https://umami.is/docs/tracker-configuration
-*/ -}}
-
 {{- with .Site.Params.analytics.umami -}}
+{{- $serverURL := getenv "HUGO_UMAMI_SERVER_URL" | default .serverURL -}}
+{{- $websiteID := getenv "HUGO_UMAMI_WEBSITE_ID" | default .websiteID -}}
 
-{{- if not .serverURL }}
+{{- if not $serverURL }}
   {{- errorf "Missing Umami 'serverURL' configuration." -}}
 {{- end -}}
 
-{{- if not .websiteID }}
+{{- if not $websiteID }}
   {{- errorf "Missing Umami 'websiteID' configuration." -}}
 {{- end -}}
 
 {{- $attributes := newScratch -}}
 
-{{- $attributes.SetInMap "umami" "src" (printf "%s/%s" .serverURL (.scriptName | default "script.js")) -}}
-{{- $attributes.SetInMap "umami" "data-website-id" .websiteID -}}
-{{- $attributes.SetInMap "umami" "data-web-vitals" "true" -}}
+{{- $attributes.SetInMap "umami" "src" (printf "%s/%s" $serverURL (.scriptName | default "script.js")) -}}
+{{- $attributes.SetInMap "umami" "data-website-id" $websiteID -}}
 
 {{- if .hostURL -}}
   {{- $attributes.SetInMap "umami" "data-host-url" .hostURL -}}

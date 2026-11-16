@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
       .maybeSingle();
     if (error) throw error;
 
-    res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
+    res.setHeader('Cache-Control', 'public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400');
 
     if (!data) {
       res.status(200).json({ totalCountries: 0, totalVisits: 0, countries: [], lastUpdated: null });
@@ -27,6 +27,6 @@ module.exports = async (req, res) => {
   } catch (err) {
     console.error('country-stats failed:', err);
     await captureError(err, { route: 'country-stats' });
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: 'Could not load visit statistics' });
   }
 };

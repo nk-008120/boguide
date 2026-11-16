@@ -59,7 +59,7 @@ Your login session is kept in your browser's local storage, not a cookie, so you
 
 We use three tools to understand how the site is used. None of them sell data or run advertising:
 
-- **Umami** (self-hosted, on our own infrastructure) - anonymous page views and Core Web Vitals. No cookies, no personal data. This is also what powers the visitor-country counts on the [About page](/about/#community-reach).
+- **Umami Cloud** (run by Umami Software) - anonymous page views. No cookies, no personal data. Once a day we copy only two kinds of numbers into our own database: the total number of visits and the number of visits from each country. Those totals are what the [About page](/about/#community-reach) shows. No individual page views are stored by BiOGuide.
 - **PostHog** (hosted in the EU) - tracks a small set of specific actions, like completing signup or submitting a practice attempt, not full page content or recordings of your session. If you're logged in, these actions are linked to your account so we can understand how account holders actually use the site; if you're not logged in, they're anonymous.
 - **Google Analytics 4** - standard traffic and behavior analytics, using the first-party cookies described above. You can opt out at any time using [Google's browser add-on](https://tools.google.com/dlpage/gaoptout) or by enabling Do Not Track in your browser.
 

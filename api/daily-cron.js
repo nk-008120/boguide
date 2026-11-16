@@ -20,29 +20,23 @@ function nameFromCode(code) {
   }
 }
 
-async function umamiLogin(baseUrl, username, password) {
-  const res = await fetch(`${baseUrl}/api/auth/login`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ username, password })
-  });
-  if (!res.ok) throw new Error(`Umami login failed: ${res.status}`);
-  const data = await res.json();
-  if (!data.token) throw new Error('Umami login response had no token');
-  return data.token;
+const DAY_MS = 24 * 60 * 60 * 1000;
+const MAX_CATCH_UP_DAYS = 60;
+
+function startOfUtcDay(ms) {
+  return Math.floor(ms / DAY_MS) * DAY_MS;
 }
 
-async function fetchCountryMetrics(baseUrl, websiteId, token) {
-  const params = new URLSearchParams({
-    type: 'country',
-    startAt: '0',
-    endAt: String(Date.now()),
-    limit: '500'
+function dayString(ms) {
+  return new Date(ms).toISOString().slice(0, 10);
+}
+
+async function umamiGet(path, params) {
+  const base = (process.env.UMAMI_API_URL || 'https://api.umami.is/v1').replace(/\/$/, '');
+  const res = await fetch(`${base}${path}?${new URLSearchParams(params)}`, {
+    headers: { 'x-umami-api-key': process.env.UMAMI_API_KEY, Accept: 'application/json' }
   });
-  const res = await fetch(`${baseUrl}/api/websites/${websiteId}/metrics/expanded?${params}`, {
-    headers: { Authorization: `Bearer ${token}` }
-  });
-  if (!res.ok) throw new Error(`Umami metrics fetch failed: ${res.status}`);
+  if (!res.ok) throw new Error(`Umami request ${path} failed: ${res.status}`);
   return res.json();
 }
 
@@ -54,16 +48,37 @@ function readStatValue(stats, key) {
   return null;
 }
 
-async function fetchSiteStats(baseUrl, websiteId, token) {
-  const params = new URLSearchParams({
-    startAt: '0',
-    endAt: String(Date.now())
-  });
-  const res = await fetch(`${baseUrl}/api/websites/${websiteId}/stats?${params}`, {
-    headers: { Authorization: `Bearer ${token}` }
-  });
-  if (!res.ok) throw new Error(`Umami stats fetch failed: ${res.status}`);
-  return res.json();
+async function fetchDay(websiteId, dayStart) {
+  const range = { startAt: String(dayStart), endAt: String(dayStart + DAY_MS - 1) };
+  const stats = await umamiGet(`/websites/${websiteId}/stats`, range);
+  const visits = readStatValue(stats, 'visits');
+  if (visits == null) throw new Error('Umami stats response had no visits value');
+  const rows = await umamiGet(`/websites/${websiteId}/metrics/expanded`, { ...range, type: 'country', limit: '500' });
+  const countries = (Array.isArray(rows) ? rows : []).map((row) => ({
+    code: String(row.name || row.x || '').toUpperCase(),
+    visits: Number(row.visits != null ? row.visits : row.y) || 0
+  }));
+  return { visits, countries };
+}
+
+function mergeCountries(existing, additions) {
+  const byCode = new Map();
+  for (const c of Array.isArray(existing) ? existing : []) {
+    if (c && c.code) byCode.set(c.code, { ...c, visits: Number(c.visits) || 0 });
+  }
+  for (const add of additions) {
+    if (!add.visits) continue;
+    const prev = byCode.get(add.code);
+    if (prev) {
+      prev.visits += add.visits;
+      continue;
+    }
+    const name = nameFromCode(add.code);
+    const flag = flagFromCode(add.code);
+    if (!name || !flag) continue;
+    byCode.set(add.code, { code: add.code, name, flag, visits: add.visits });
+  }
+  return [...byCode.values()].sort((a, b) => b.visits - a.visits);
 }
 
 async function runKeepalive() {
@@ -73,46 +88,46 @@ async function runKeepalive() {
 }
 
 async function runSyncCountryStats() {
-  const baseUrl = process.env.UMAMI_BASE_URL;
   const websiteId = process.env.UMAMI_WEBSITE_ID;
-  const username = process.env.UMAMI_USERNAME;
-  const password = process.env.UMAMI_PASSWORD;
-  if (!baseUrl || !websiteId || !username || !password) {
-    throw new Error('UMAMI_BASE_URL / UMAMI_WEBSITE_ID / UMAMI_USERNAME / UMAMI_PASSWORD are not configured');
+  if (!process.env.UMAMI_API_KEY || !websiteId) {
+    throw new Error('UMAMI_API_KEY / UMAMI_WEBSITE_ID are not configured');
   }
-
-  const token = await umamiLogin(baseUrl, username, password);
-  const raw = await fetchCountryMetrics(baseUrl, websiteId, token);
-  const stats = await fetchSiteStats(baseUrl, websiteId, token);
-  let totalVisits = readStatValue(stats, 'visits');
-  if (totalVisits == null) {
-    console.error('[daily-cron] could not read visits from the Umami stats response, keys: ' +
-      Object.keys(stats || {}).join(', '));
-    totalVisits = 0;
-  }
-
-  const countries = raw
-    .map((row) => {
-      const code = String(row.name || '').toUpperCase();
-      const displayName = nameFromCode(code);
-      const flag = flagFromCode(code);
-      if (!displayName || !flag) return null;
-      return { code, name: displayName, flag, visits: Number(row.visits) || 0 };
-    })
-    .filter(Boolean)
-    .sort((a, b) => b.visits - a.visits);
 
   const client = getAdminClient();
+  const { data: row, error: readError } = await client
+    .from('country_stats_cache')
+    .select('total_visits, countries, last_synced_day')
+    .eq('id', 'latest')
+    .maybeSingle();
+  if (readError) throw readError;
+
+  const today = startOfUtcDay(Date.now());
+  const yesterday = today - DAY_MS;
+  let next = row && row.last_synced_day ? Date.parse(row.last_synced_day + 'T00:00:00Z') + DAY_MS : yesterday;
+  next = Math.max(next, today - MAX_CATCH_UP_DAYS * DAY_MS);
+  if (next > yesterday) return { days: 0, countries: (row && row.countries || []).length, visits: row ? row.total_visits : 0 };
+
+  let totalVisits = row ? Number(row.total_visits) || 0 : 0;
+  let countries = row ? row.countries : [];
+  let lastDay = null;
+  for (let day = next; day <= yesterday; day += DAY_MS) {
+    const result = await fetchDay(websiteId, day);
+    totalVisits += result.visits;
+    countries = mergeCountries(countries, result.countries);
+    lastDay = day;
+  }
+
   const { error } = await client.from('country_stats_cache').upsert({
     id: 'latest',
     total_countries: countries.length,
     total_visits: totalVisits,
     countries,
+    last_synced_day: dayString(lastDay),
     last_updated: new Date().toISOString()
   });
   if (error) throw error;
 
-  return { countries: countries.length, visits: totalVisits };
+  return { days: Math.round((lastDay - next) / DAY_MS) + 1, countries: countries.length, visits: totalVisits };
 }
 
 module.exports = async (req, res) => {
@@ -132,6 +147,7 @@ module.exports = async (req, res) => {
 
   try {
     const synced = await runSyncCountryStats();
+    result.daysAdded = synced.days;
     result.totalCountries = synced.countries;
     result.totalVisits = synced.visits;
     result.syncCountryStats = 'ok';
