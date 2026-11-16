@@ -27,7 +27,7 @@ jobs:
       - name: Check internal links in the built site
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8
         with:
-          args: --offline --no-progress --root-dir ${{ github.workspace }}/public --exclude-path public/papers 'public/**/*.html'
+          args: --offline --no-progress --root-dir ${{ github.workspace }}/public --exclude-path public/papers --exclude '/papers/.+\.pdf' 'public/**/*.html'
           fail: true
 
   lint:

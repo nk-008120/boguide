@@ -79,6 +79,32 @@ rewriting history would invalidate the commit hashes recorded in
 `AI_INVOLVEMENT_LOG.csv` and in the release tags. It is written up under
 "What went wrong with MB-01, and what we decided".
 
+## Exam PDFs are served from Cloudflare R2, not from Git
+
+The exam and solution PDFs are stored in the R2 bucket `bioguide-papers`
+and served from `papers.bioguide.world`, with the same paths they had
+under `static/papers/`. Links in content and in `data/papers/` still say
+`/papers/...pdf`; a redirect in `vercel.json` sends them to R2, and the
+browser keeps any `#page=` anchor. The figure images stay in
+`static/papers/` because Hugo processes them.
+
+The PDFs never change once published and made up about 234 MB of the
+repository, which every clone, Vercel build and CI secret scan had to
+download. R2 has no egress charge, and the free tier (10 GB stored, 10
+million reads a month) is far above what the site uses. A Cloudflare cache
+rule keeps repeat views out of the read count, and a rate-limit rule
+blocks a single address that floods the domain. The bucket's `r2.dev` URL
+stays disabled.
+
+To add or replace a PDF, upload it to the bucket at the matching path:
+
+```bash
+npx wrangler r2 object put bioguide-papers/papers/ibo/2026/theoretical-a-exam.pdf --file theoretical-a-exam.pdf --content-type application/pdf --remote
+```
+
+The link check in CI skips `/papers/...pdf` links, since those files are
+not in the build.
+
 ## BiOClash: anti-cheat and scoring
 
 BiOClash's exam content (`data/bioclash/*.yaml`) never reaches the browser

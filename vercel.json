@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/papers/:path(.*\\.pdf)",
+      "destination": "https://papers.bioguide.world/papers/:path",
+      "statusCode": 301
+    },
+    {
       "source": "/papers/tbo",
       "destination": "/papers/",
       "statusCode": 302
