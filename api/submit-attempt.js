@@ -4,6 +4,7 @@ const yaml = require('js-yaml');
 const { getAdminClient } = require('./_lib/supabaseAdmin');
 const { captureError } = require('./_lib/sentry');
 const { authenticate } = require('./_lib/auth');
+const { rateLimit } = require('./_lib/rateLimit');
 
 const ID_PATTERN = /^[a-z0-9-]+$/;
 
@@ -92,6 +93,10 @@ async function handle(req, res) {
 
   const userId = await authenticate(req, res, 'papers-submit-attempt', 10, 60000);
   if (!userId) return;
+  if (await rateLimit(userId, 'papers-submit-attempt-day', 100, 86400000)) {
+    res.status(429).json({ error: 'Daily limit of saved attempts reached. Please try again tomorrow.' });
+    return;
+  }
 
   const body = req.body || {};
   const { olympiad, year, roundId, answers, timeSpent, fullscreenExits } = body;

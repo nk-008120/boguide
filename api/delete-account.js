@@ -18,10 +18,34 @@ async function listFolder(admin, bucket, folder) {
   return paths;
 }
 
-async function removeFolders(admin, bucket, folders) {
-  let removed = 0;
+async function collectFolders(admin, bucket, folders) {
+  const paths = [];
   for (const folder of folders) {
-    const paths = await listFolder(admin, bucket, folder);
+    paths.push(...await listFolder(admin, bucket, folder));
+  }
+  return { bucket, paths };
+}
+
+async function idsOwnedBy(admin, table, userId) {
+  const { data, error } = await admin.from(table).select('id').eq('user_id', userId);
+  if (error) throw error;
+  return (data || []).map((row) => row.id);
+}
+
+async function collectUserFiles(admin, userId) {
+  const doubtIds = await idsOwnedBy(admin, 'doubts', userId);
+  const replyIds = await idsOwnedBy(admin, 'doubt_replies', userId);
+  return [
+    await collectFolders(admin, 'biolab-captures', [userId]),
+    await collectFolders(admin, 'paper-contributions', [userId]),
+    await collectFolders(admin, 'doubt-images', doubtIds),
+    await collectFolders(admin, 'doubt-reply-images', replyIds)
+  ];
+}
+
+async function removeCollected(admin, collected) {
+  let removed = 0;
+  for (const { bucket, paths } of collected) {
     for (let i = 0; i < paths.length; i += REMOVE_BATCH) {
       const { error } = await admin.storage.from(bucket).remove(paths.slice(i, i + REMOVE_BATCH));
       if (error) throw error;
@@ -31,21 +55,35 @@ async function removeFolders(admin, bucket, folders) {
   return removed;
 }
 
-async function idsOwnedBy(admin, table, userId) {
-  const { data, error } = await admin.from(table).select('id').eq('user_id', userId);
-  if (error) throw error;
-  return (data || []).map((row) => row.id);
+async function removeUserFiles(admin, userId) {
+  return removeCollected(admin, await collectUserFiles(admin, userId));
 }
 
-async function removeUserFiles(admin, userId) {
-  const doubtIds = await idsOwnedBy(admin, 'doubts', userId);
-  const replyIds = await idsOwnedBy(admin, 'doubt_replies', userId);
-  let removed = 0;
-  removed += await removeFolders(admin, 'biolab-captures', [userId]);
-  removed += await removeFolders(admin, 'paper-contributions', [userId]);
-  removed += await removeFolders(admin, 'doubt-images', doubtIds);
-  removed += await removeFolders(admin, 'doubt-reply-images', replyIds);
-  return removed;
+async function deleteAccount(admin, userId, report) {
+  let collected;
+  try {
+    collected = await collectUserFiles(admin, userId);
+  } catch (listError) {
+    await report(listError, 'file-listing');
+    return { status: 500, body: { error: 'Could not prepare the deletion, so nothing was deleted. Please try again.' } };
+  }
+
+  const { error: deleteError } = await admin.auth.admin.deleteUser(userId);
+  if (deleteError) {
+    await report(deleteError, 'delete-user');
+    return { status: 500, body: { error: 'Could not delete account' } };
+  }
+
+  try {
+    await removeCollected(admin, collected);
+  } catch (filesError) {
+    await report(filesError, 'file-cleanup');
+  }
+
+  const { error: logError } = await admin.from('account_deletions').insert({ user_id: userId });
+  if (logError) await report(logError, 'log-insert');
+
+  return { status: 200, body: { deleted: true } };
 }
 
 module.exports = async (req, res) => {
@@ -59,6 +97,7 @@ module.exports = async (req, res) => {
 };
 
 module.exports.removeUserFiles = removeUserFiles;
+module.exports.deleteAccount = deleteAccount;
 
 async function handle(req, res) {
   if (req.method !== 'POST') {
@@ -70,33 +109,9 @@ async function handle(req, res) {
   if (!userId) return;
 
   const admin = getAdminClient();
-
-  try {
-    await removeUserFiles(admin, userId);
-  } catch (filesError) {
-    console.error('[delete-account] file cleanup failed:', filesError);
-    await captureError(filesError, { route: 'delete-account', stage: 'file-cleanup' });
-    res.status(500).json({ error: 'Could not remove your uploaded files, so nothing was deleted. Please try again.' });
-    return;
-  }
-
-  const { error: logError } = await admin
-    .from('account_deletions')
-    .insert({ user_id: userId });
-  if (logError) {
-    console.error('[delete-account] deletion log insert failed:', logError);
-    await captureError(logError, { route: 'delete-account', stage: 'log-insert' });
-    res.status(500).json({ error: 'Could not process deletion' });
-    return;
-  }
-
-  const { error: deleteError } = await admin.auth.admin.deleteUser(userId);
-  if (deleteError) {
-    console.error('[delete-account] auth.admin.deleteUser failed:', deleteError);
-    await captureError(deleteError, { route: 'delete-account', stage: 'delete-user' });
-    res.status(500).json({ error: 'Could not delete account' });
-    return;
-  }
-
-  res.status(200).json({ deleted: true });
+  const result = await deleteAccount(admin, userId, async (err, stage) => {
+    console.error(`[delete-account] ${stage} failed:`, err);
+    await captureError(err, { route: 'delete-account', stage });
+  });
+  res.status(result.status).json(result.body);
 }

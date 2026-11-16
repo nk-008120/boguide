@@ -13,12 +13,26 @@ function check(name, cond) {
   if (!cond) failures++;
 }
 
-function fakeAdmin({ rows, objects, failList, failRemove }) {
+function fakeAdmin({ rows, objects, failList, failRemove, failDelete, failLog }) {
   const removed = [];
+  const events = [];
   return {
     removed,
+    events,
+    auth: {
+      admin: {
+        deleteUser(userId) {
+          events.push('delete-user:' + userId);
+          return Promise.resolve({ error: failDelete ? new Error('delete failed') : null });
+        }
+      }
+    },
     from(table) {
       return {
+        insert(row) {
+          events.push('insert:' + table + ':' + row.user_id);
+          return Promise.resolve({ error: failLog ? new Error('insert failed') : null });
+        },
         select() {
           return {
             eq(_column, userId) {
@@ -40,6 +54,7 @@ function fakeAdmin({ rows, objects, failList, failRemove }) {
           remove(paths) {
             if (failRemove === bucket) return Promise.resolve({ data: null, error: new Error('remove failed') });
             for (const p of paths) removed.push(bucket + ':' + p);
+            events.push('remove:' + bucket);
             return Promise.resolve({ data: [], error: null });
           }
         };
@@ -48,7 +63,7 @@ function fakeAdmin({ rows, objects, failList, failRemove }) {
   };
 }
 
-const { removeUserFiles } = require(path.join(REPO_ROOT, 'api/delete-account.js'));
+const { removeUserFiles, deleteAccount } = require(path.join(REPO_ROOT, 'api/delete-account.js'));
 
 const ME = 'user-me';
 const OTHER = 'user-other';
@@ -87,7 +102,7 @@ console.log('--- delete-account: uploaded files ---');
   const admin = fakeAdmin({ rows: {}, objects: { 'biolab-captures': { [ME]: ['a.jpg'] } }, failRemove: 'biolab-captures' });
   let threw = false;
   try { await removeUserFiles(admin, ME); } catch (e) { threw = true; }
-  check('a storage failure is raised, so the handler stops before deleting the account', threw);
+  check('a storage failure is raised by the file cleanup helper', threw);
 }
 
 {
@@ -95,6 +110,40 @@ console.log('--- delete-account: uploaded files ---');
   let threw = false;
   try { await removeUserFiles(admin, ME); } catch (e) { threw = true; }
   check('a listing failure is raised too', threw);
+}
+
+console.log('\n--- delete-account: order of steps ---');
+
+{
+  const admin = fakeAdmin({ rows: {}, objects: { 'biolab-captures': { [ME]: ['a.jpg'] } } });
+  const stages = [];
+  const result = await deleteAccount(admin, ME, async (_e, stage) => { stages.push(stage); });
+  check('the account is deleted before any file is removed, and the log row is written last',
+    result.status === 200 &&
+    admin.events.join(',') === `delete-user:${ME},remove:biolab-captures,insert:account_deletions:${ME}` &&
+    stages.length === 0);
+}
+
+{
+  const admin = fakeAdmin({ rows: {}, objects: { 'biolab-captures': { [ME]: ['a.jpg'] } }, failDelete: true });
+  const result = await deleteAccount(admin, ME, async () => {});
+  check('if the account cannot be deleted, no file is removed and no log row is written',
+    result.status === 500 && admin.removed.length === 0 && !admin.events.some((e) => e.startsWith('insert:')));
+}
+
+{
+  const admin = fakeAdmin({ rows: {}, objects: {}, failList: 'biolab-captures' });
+  const result = await deleteAccount(admin, ME, async () => {});
+  check('if the files cannot be listed, the account is kept',
+    result.status === 500 && !admin.events.some((e) => e.startsWith('delete-user')));
+}
+
+{
+  const admin = fakeAdmin({ rows: {}, objects: { 'biolab-captures': { [ME]: ['a.jpg'] } }, failRemove: 'biolab-captures' });
+  const stages = [];
+  const result = await deleteAccount(admin, ME, async (_e, stage) => { stages.push(stage); });
+  check('a file cleanup failure after the account is gone is reported, and the deletion still succeeds and is logged',
+    result.status === 200 && stages.includes('file-cleanup') && admin.events.includes(`insert:account_deletions:${ME}`));
 }
 
 console.log('\n--- account page: next redirect ---');

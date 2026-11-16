@@ -220,6 +220,88 @@ async function main() {
   check('the BiOClash figures bucket exists and is private',
     (await db.query(`select public from storage.buckets where id = 'bioclash-figures'`)).rows[0].public === false);
 
+  console.log('\n--- remaining limits ---');
+
+  await asUser(USER_A, async () => {
+    const paths = Array.from({ length: 199 }, (_, i) => `('${USER_A}', '/cap/page-${i}/', 8)`).join(',');
+    check('two hundred page ratings in a day are accepted',
+      !(await rejected(`insert into public.page_ratings (user_id, page_path, rating) values ${paths}`)));
+    check('the two hundred and first page rating in a day is rejected',
+      await rejected(`insert into public.page_ratings (user_id, page_path, rating) values ('${USER_A}', '/cap/one-more/', 8)`));
+  });
+
+  await asUser(USER_B, async () => {
+    const flood = Array.from({ length: 300 }, (_, i) => `('${USER_B}', '/flood/page-${i}/', 8)`).join(',');
+    check('three hundred page ratings sent in one request are rejected',
+      await rejected(`insert into public.page_ratings (user_id, page_path, rating) values ${flood}`));
+    const rows = Array.from({ length: 1001 }, (_, i) => `('/resources/s-${i}/', 'Subject ${i}')`).join(',');
+    check('more than a thousand review rows sent in one request are rejected',
+      await rejected(`insert into public.subject_review_state (subject_link, subject_name) values ${rows}`));
+    const fine = Array.from({ length: 1000 }, (_, i) => `('/resources/s-${i}/', 'Subject ${i}')`).join(',');
+    check('a thousand review rows are accepted',
+      !(await rejected(`insert into public.subject_review_state (subject_link, subject_name) values ${fine}`)));
+    check('the thousand and first review row is rejected',
+      await rejected(`insert into public.subject_review_state (subject_link, subject_name) values ('/resources/extra/', 'Extra')`));
+    check('an existing review row can still be updated at the cap',
+      !(await rejected(`update public.subject_review_state set repetitions = 1 where subject_link = '/resources/s-0/'`)));
+  });
+
+  await asUser(USER_B, async () => {
+    check('a result with normal calibration inputs is accepted',
+      !(await rejected(`insert into public.biolab_submissions (practical_id, calibration_inputs) values ('${protoId}', '{"blank": 0.1}'::jsonb)`)));
+    await db.exec(`reset role; delete from public.biolab_submissions; set role authenticated;`);
+    check('a result with oversized calibration inputs is rejected',
+      await rejected(`insert into public.biolab_submissions (practical_id, calibration_inputs) values ('${protoId}', jsonb_build_object('pad', repeat(md5(random()::text), 1000)))`));
+    let ok = true;
+    for (let i = 0; i < 20; i++) {
+      if (await rejected(`insert into public.biolab_submissions (practical_id) values ('${protoId}')`)) ok = false;
+    }
+    check('twenty BiOLab results in a day are accepted', ok);
+    check('the twenty-first BiOLab result in a day is rejected',
+      await rejected(`insert into public.biolab_submissions (practical_id) values ('${protoId}')`));
+  });
+
+  await asUser(USER_A, async () => {
+    check('a correction whose current value is over 5,000 characters is rejected',
+      await rejected(`insert into public.content_corrections (olympiad, year, round_id, problem_id, field, current_value, proposed_value, reason) values ('IBO', '2020', 'r1', 'q1', 'answer', '${'c'.repeat(5001)}', 'new', 'why')`));
+    check('a normal correction is accepted',
+      !(await rejected(`insert into public.content_corrections (olympiad, year, round_id, problem_id, field, current_value, proposed_value, reason) values ('IBO', '2020', 'r1', 'q1', 'answer', 'old', 'new', 'why')`)));
+  });
+
+  {
+    const buckets = (await db.query(`select id, file_size_limit, allowed_mime_types from storage.buckets where id in ('biolab-captures', 'paper-contributions') order by id`)).rows;
+    check('result photos are limited to 10 MB images',
+      buckets[0].id === 'biolab-captures' && Number(buckets[0].file_size_limit) === 10485760 && buckets[0].allowed_mime_types.join(',') === 'image/jpeg,image/png,image/webp');
+    check('contributed papers are limited to 50 MB PDFs',
+      buckets[1].id === 'paper-contributions' && Number(buckets[1].file_size_limit) === 52428800 && buckets[1].allowed_mime_types.join(',') === 'application/pdf');
+  }
+
+  console.log('\n--- leaks ---');
+
+  await db.exec(`insert into public.attempt_reports (user_id, olympiad, year, round_id, round_name, total_correct, total_statements, score_pct, duration_sec) values ('${USER_B}', 'ibo', '2020', 'r1', 'Round 1', 5, 10, 50, 600)`).catch(() => {});
+  await db.exec(`update public.profiles set is_hidden = true where id = '${USER_B}'`);
+
+  await db.exec(`set role anon; select set_config('request.jwt.claims', '{}', false);`);
+  try {
+    check('a logged-out visitor cannot read the per-round base view',
+      await rejected(`select * from public.best_attempt_per_round`));
+    check('a logged-out visitor can still read the leaderboard',
+      !(await rejected(`select * from public.leaderboard_per_round`)));
+  } finally {
+    await db.exec(`reset role;`);
+  }
+
+  await asUser(USER_A, async () => {
+    check('a member cannot read the per-round base view',
+      await rejected(`select * from public.best_attempt_per_round`));
+    const lb = await db.query(`select user_id from public.leaderboard_per_round`);
+    check('the leaderboard still hides a hidden member', !lb.rows.some((r) => r.user_id === USER_B));
+    check('a member cannot ask how many pending items another member has',
+      await rejected(`select public.count_pending_content_corrections('${USER_B}'::uuid)`));
+    const own = await db.query(`select public.count_pending_content_corrections() as n`);
+    check('a member can still count their own pending items', own.rows[0].n === 1);
+  });
+
   console.log('\n' + (failures === 0 ? 'ALL WRITE LIMIT CHECKS PASSED.' : `${failures} CHECK(S) FAILED.`));
   if (failures > 0) process.exit(1);
 }
