@@ -1,5 +1,5 @@
 ---
-title: "BO Papers Archive"
+title: "Past Papers: BiOrchive"
 description: "Browse past Biology Olympiad papers by year and round, with full solutions and an interactive timed-attempt mode, across IBO, USABO, and INBO."
 images: ["/og-biorchive.png"]
 cascade:
@@ -13,12 +13,12 @@ cascade:
 
 {{< biorchive-bg >}}
 
-Here you will find the growing archive of translated Biology Olympiad papers from the world, browsable by programme, year, round, and problem. Using these to prepare? See our guides for [IBO](/ibo-preparation/), [USABO](/usabo-preparation/), and [INBO](/inbo-preparation/).
+Past Papers holds real questions from past Biology Olympiads, with answers, browsable by programme, year, round and question. Our archive is called BiOrchive. A timed attempt lets you sit a full paper against the clock and see your score. Using these to prepare? See our guides for [IBO](/ibo-preparation/), [USABO](/usabo-preparation/), and [INBO](/inbo-preparation/).
 
 **[BiOrchive](ibo/)** is the flagship of this archive: every IBO question is reproduced in full with the original figures, an interactive true/false quiz, and a timed-attempt mode, cross-linked to the matching topic notes elsewhere on this site. Other programmes are being added over time.
 
 {{< cards cols="2" >}}
-  {{< card link="ibo/" title="BiOrchive - International Biology Olympiad" image="/biorchive-logo-transparent.png" imageStyle="object-fit: contain; padding: 1.5rem; max-height: 220px;" subtitle="The full IBO archive: official exams + answer keys, plus unofficial community solutions. Every question comes with an interactive quiz, figures, and a timed-attempt mode. 2019, 2022, 2023, and 2024." >}}
+  {{< card link="ibo/" title="BiOrchive - International Biology Olympiad" image="/biorchive-logo-transparent.png" imageStyle="object-fit: contain; padding: 1.5rem; max-height: 220px;" subtitle="The full IBO archive: official exams + answer keys, plus unofficial community solutions. Every question comes with an interactive quiz, figures, and a timed-attempt mode. Years 2015 to 2024 (no 2021 paper yet)." >}}
   {{< card link="question-bank/" title="Question Bank" icon="search" subtitle="Every question across the whole archive, in one searchable table. Filter by olympiad, year, topic, and difficulty to find practice on exactly what you need." >}}
 {{< /cards >}}
 

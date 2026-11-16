@@ -29,38 +29,38 @@ images: ["/og-bioclash.png"]
     <svg class="bioclash-dna-strand bioclash-dna-4" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
     <svg class="bioclash-dna-strand bioclash-dna-5" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
   </div>
-  <p class="bioclash-eyebrow">Season 1: MB-01 concluded, AP-01 up next</p>
+  <p class="bioclash-eyebrow">Season 1: round AP-01 opens 27 November</p>
   <h1 class="bioclash-wordmark">BiOClash</h1>
-  <p class="bioclash-tagline">An independent biology competition, built the same way as everything else here.</p>
-  <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite" data-round="AP-01" data-target="" data-idle="AP-01 opens soon">AP-01 opens soon</p>
+  <p class="bioclash-tagline">A free online biology competition with timed rounds written by BiOGuide. Every BiOGuide account is already registered.</p>
+  <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite" data-round="AP-01" data-target="" data-idle="AP-01 opens 27 November">AP-01 opens 27 November</p>
   <div class="bioclash-hero-actions">
-    <a href="#bioclash-mb01-results" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>MB-01 results</span></a>
+    <a href="#bioclash-join" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>How to take part</span></a>
     <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified for AP-01</span></a>
     <a href="https://discord.gg/UUkakYdsC" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
     <a href="https://www.instagram.com/bioguideofficial/" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Instagram">{{< icon "instagram" >}}</a>
   </div>
 </section>
 
-<section id="bioclash-mb01-results" class="bioclash-section bioclash-panel">
-  <h2>MB-01 champions</h2>
-  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry has concluded and been graded, and the first podium of Season 1 is in. Congratulations to <strong>Shinwoo Mo</strong>, who takes first place, <strong>Fatima Ghaffar</strong> in second, and <strong>Lous Felower</strong> in third.</p>
-  <p>All three will receive a custom micropipette pen from BiOGuide. Thank you to everyone who sat the opening round: every attempt counts toward the season ranking, and seven rounds are still to come.</p>
-  <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
-  <p>See the round's own page on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard</a>, and the cumulative standing in the <a href="/papers/leaderboard/">Season Champions</a>.</p>
-</section>
-
-{{< bioclash-champions round="mb-01" >}}
-
-<section id="bioclash-ap01" class="bioclash-section bioclash-panel">
-  <h2>Up next: AP-01</h2>
-  <p>The second round of Season 1 is <strong>Case File AP-01: Animal Anatomy &amp; Physiology</strong>, and it opens soon. It runs in the same format as MB-01: a timed, solo, 90-minute attempt, open during a window announced ahead of time, and it carries 12.5% of the season ranking, the largest share of any subject round.</p>
-  <p>Everyone with a BiOGuide account is already registered. The exact window will be announced on <a href="https://discord.gg/UUkakYdsC" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a>, on <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a>, and by email to everyone who <a href="#bioclash-notify-section">turns on notifications</a>. Missed MB-01? You can still join the season from AP-01: a round not attempted simply contributes nothing.</p>
-</section>
-
 <section class="bioclash-section bioclash-panel">
   <h2>What it is</h2>
   <p>BiOClash is an original biology competition, not a translated IBO/USABO paper archive like BiOrchive, but questions written and reviewed by BiOGuide itself. It's the one part of this site where the content is genuinely ours, not a licensed reproduction.</p>
-  <p>Season 1 is live: the opening round has been run and graded, and the format is refined between rounds based on what each one teaches us. Here's how it works, and how to hear when the next round opens.</p>
+  <p>It is free, it runs online, and anyone preparing for a Biology Olympiad can take part. A season is a series of timed rounds through the school year, each on one part of the syllabus, ending with a Full Syllabus Test a few weeks before the IBO.</p>
+</section>
+
+<section id="bioclash-join" class="bioclash-section bioclash-panel">
+  <h2>How to take part</h2>
+  <ol class="bioclash-join-steps">
+    <li><strong>Make a free BiOGuide account.</strong> Every account is registered for Season 1 automatically. There is no separate sign-up form. <a href="/account/">Create an account</a>.</li>
+    <li><strong>Try the sample round</strong> to see the format before a real round: <a href="/bioclash/bioclash-sample/attempt/">open the sample round</a>.</li>
+    <li><strong>Sit each round while its window is open.</strong> Start whenever suits you during the window. Your 90-minute timer begins when you click Start.</li>
+    <li><strong>Check the results</strong> on the round leaderboard and the season ranking once each round is graded.</li>
+  </ol>
+</section>
+
+<section id="bioclash-ap01" class="bioclash-section bioclash-panel">
+  <h2>Up next: AP-01</h2>
+  <p>The second round of Season 1 is <strong>Case File AP-01: Animal Anatomy &amp; Physiology</strong>, and its window runs from <strong>27 November to 4 December</strong>. It runs in the same format as MB-01: a timed, solo, 90-minute attempt, open during a window announced ahead of time, and it carries 12.5% of the season ranking, the largest share of any subject round.</p>
+  <p>Everyone with a BiOGuide account is already registered. Updates are posted on <a href="https://discord.gg/UUkakYdsC" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a>, on <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a>, and by email to everyone who <a href="#bioclash-notify-section">turns on notifications</a>. Missed MB-01? You can still join the season from AP-01: a round not attempted simply contributes nothing.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
@@ -94,7 +94,7 @@ images: ["/og-bioclash.png"]
       </tbody>
     </table>
   </div>
-  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, has concluded and its podium is shown above, and Case File AP-01 opens next. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
+  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, has concluded and its podium is shown below, and Case File AP-01 opens next. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
   <div class="bioclash-sample-cta">
     <p>Want to see how it works before committing?</p>
     <div class="bioclash-sample-cta-actions">
@@ -104,6 +104,16 @@ images: ["/og-bioclash.png"]
     <p class="bioclash-sample-cta-note">The guide covers the rules, scoring, verification, and the full season schedule in one short document.</p>
   </div>
 </section>
+
+<section id="bioclash-mb01-results" class="bioclash-section bioclash-panel">
+  <h2>MB-01 champions</h2>
+  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry has concluded and been graded, and the first podium of Season 1 is in. Congratulations to <strong>Shinwoo Mo</strong>, who takes first place, <strong>Fatima Ghaffar</strong> in second, and <strong>Lous Felower</strong> in third.</p>
+  <p>All three will receive a custom micropipette pen from BiOGuide. Thank you to everyone who sat the opening round: every attempt counts toward the season ranking, and seven rounds are still to come.</p>
+  <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
+  <p>See the round's own page on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard</a>, and the cumulative standing in the <a href="/papers/leaderboard/">Season Champions</a>.</p>
+</section>
+
+{{< bioclash-champions round="mb-01" >}}
 
 <section class="bioclash-section bioclash-panel">
   <h2>Why it exists</h2>

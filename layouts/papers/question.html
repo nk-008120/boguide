@@ -1,8 +1,5 @@
 {{ define "main" }}
-  {{/* Theme's global menu.js always queries .hextra-sidebar-container (even
-       outside docs pages); this layout intentionally omits the real sidebar
-       partial, so provide a hidden, out-of-flow stand-in to satisfy it. */}}
-  <aside class="hextra-sidebar-container" hidden></aside>
+  {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" false) }}
   <div class="focus-reader-root" id="focus-reader-root" data-back="{{ .Parent.RelPermalink }}">
     <div class="focus-reader-topbar">
       <a class="focus-reader-exit" href="{{ .Parent.RelPermalink }}">{{ partial "icon.html" "arrow-left" }} {{ .Parent.Title }}</a>
