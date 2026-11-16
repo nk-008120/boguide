@@ -191,7 +191,7 @@ Identify stomatal density of an abaxial leaf epidermis from a DIC micrograph (**
 2. Apply **thresholding** to isolate stomatal apertures.
 3. Use **Analyze Particles** to count stomata and exclude noise (size filter: 50–500 µm²).
 
-<img src="/gifs/imagejps/imagejp2.png" alt="DIC micrograph of stomata" style="max-width:100%;">
+<img src="/gifs/imagejps/imagejp2.webp" alt="DIC micrograph of stomata" style="max-width:100%;">
 
 ### Protocol
 

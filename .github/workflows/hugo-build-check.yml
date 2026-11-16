@@ -2,7 +2,6 @@ name: Hugo build check
 
 on:
   pull_request:
-    branches: [main]
   push:
     branches: [main]
 
@@ -14,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78
         with:
           hugo-version: '0.162.0'
           extended: true
@@ -26,7 +25,7 @@ jobs:
         run: hugo --gc --minify
 
       - name: Check internal links in the built site
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8
         with:
           args: --offline --no-progress --root-dir ${{ github.workspace }}/public --exclude-path public/papers 'public/**/*.html'
           fail: true
@@ -35,10 +34,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22'
 
@@ -48,16 +47,31 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint
 
+      - name: Paths named in the documentation exist
+        run: node scripts/check-doc-paths.js
+
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
+
+      - name: No large files other than PDFs
+        run: |
+          large=$(git ls-files -z | xargs -0 du -b | awk -F'\t' '$1 > 2097152 && $2 !~ /^static\/papers\// && $2 !~ /\.pdf$/' || true)
+          if [ -n "$large" ]; then
+            echo "Files over 2 MB must be resized or kept out of the repository:"
+            echo "$large"
+            exit 1
+          fi
+
   secrets:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout with full history
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           fetch-depth: 0
 
       - name: Scan for committed secrets
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -65,10 +79,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22'
 

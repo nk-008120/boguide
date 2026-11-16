@@ -15,7 +15,7 @@
 {{- end -}}
 
 {{- if $useDefaultCdn -}}
-  {{- $mermaidBase = "https://cdn.jsdelivr.net/npm/mermaid@latest/dist" -}}
+  {{- $mermaidBase = "https://cdn.jsdelivr.net/npm/mermaid@12.1.0/dist" -}}
 {{- end -}}
 
 {{- $isRemoteBase := or (strings.HasPrefix $mermaidBase "http://") (strings.HasPrefix $mermaidBase "https://") -}}
