@@ -275,10 +275,10 @@ async function main() {
   console.log('\n--- biolab_feedback_reports: update (staff-only, despite a broader column grant) ---');
 
   await asUser(USER_B, async () => {
-    let blocked = false, err;
+    let err;
     try {
       await db.query(`update public.biolab_feedback_reports set status = 'actioned' where id = '${reportId}'`);
-    } catch (e) { blocked = true; err = e.message.split('\n')[0]; }
+    } catch (e) { err = e.message.split('\n')[0]; }
     const r = await db.query(`select status from public.biolab_feedback_reports where id = '${reportId}'`);
     const stillOpen = r.rows.length === 0 || r.rows[0].status !== 'actioned';
     check('the REPORTER themself cannot update status despite having column UPDATE grant (RLS requires staff)' + (err ? ` (${err})` : ' (silently affected 0 rows)'), stillOpen);

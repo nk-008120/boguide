@@ -11,11 +11,7 @@
 
   var TREND_ARROWS = { improving: '↑', declining: '↓', stable: '↔' };
 
-  function escapeHTML(s) {
-    var d = document.createElement('div');
-    d.textContent = s == null ? '' : s;
-    return d.innerHTML;
-  }
+  var escapeHTML = window.bioEscape;
 
   function loadTopicGraph() {
     return fetch('/data/topic-graph.json')
@@ -428,8 +424,8 @@
     var subjects = profile.subjects;
     var vals = Object.keys(subjects).map(function (k) { return subjects[k]; });
     var tested = vals.filter(function (s) { return s.masteryLevel !== 'untested'; });
-    var link = '/plans/';
-    var label = 'Find a Study Plan';
+    var link;
+    var label;
     if (tested.length < 3) {
       link = '/plans/1-year/';
       label = 'Start with the 1-Year Plan';

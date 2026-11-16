@@ -109,7 +109,6 @@ while (changed) {
     if (at.name === 'layer' && !at.nodes) { at.remove(); changed = true; }
   });
 }
-const keptText = clone.toString();
 const bodyText = clone.toString();
 clone.walkAtRules(at => {
   if (/keyframes$/.test(at.name)) {

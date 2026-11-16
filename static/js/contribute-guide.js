@@ -17,14 +17,7 @@
   var statPublished = document.getElementById('cg-stat-published');
   var statOpen = document.getElementById('cg-stat-open');
 
-  function escapeHtml(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
+  var escapeHtml = window.bioEscape;
 
   function mailtoFor(name) {
     var subject = 'Country guide for BiOGuide: ' + name;

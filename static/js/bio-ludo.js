@@ -47,14 +47,7 @@
     }
   }
 
-  function escapeHtml(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
+  var escapeHtml = window.bioEscape;
 
   var RING = [
     [6, 1], [6, 2], [6, 3], [6, 4], [6, 5], [5, 6], [4, 6], [3, 6], [2, 6], [1, 6], [0, 6], [0, 7], [0, 8],
@@ -89,8 +82,6 @@
     { key: 'trooper', label: 'Trooper', badge: 'T', rangeLabel: '1-2' },
     { key: 'handcombat', label: 'Hand Combat', badge: 'H', rangeLabel: 'Melee' }
   ];
-
-  var YARD_SLOT_OFFSETS = [[1, 1], [1, 3], [3, 1], [3, 3]];
 
   var YARD_ORIGIN = {
     red: [0, 0],
@@ -1041,7 +1032,6 @@
   }
 
   function renderPieces() {
-    var byYard = {};
     var ringOccupants = {};
 
     boardEl.querySelectorAll('.bio-ludo-yard-slot').forEach(function (el) {

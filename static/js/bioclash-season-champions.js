@@ -10,11 +10,7 @@
   var table = document.getElementById('bioclash-season-champions-table');
   var tbody = document.getElementById('bioclash-season-champions-tbody');
 
-  function escapeHTML(s) {
-    var d = document.createElement('div');
-    d.textContent = s == null ? '' : s;
-    return d.innerHTML;
-  }
+  var escapeHTML = window.bioEscape;
 
   var MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' };
 

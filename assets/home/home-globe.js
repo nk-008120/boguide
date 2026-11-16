@@ -10,7 +10,6 @@
 
   var CENTROIDS = { US: [-98, 39], RU: [60, 58], CA: [-100, 56], NO: [10, 61], FR: [2.5, 46.5], ID: [113, -1], MY: [102, 4], NZ: [172, -42], JP: [138, 37], CN: [104, 35], VN: [106, 16], PH: [122, 13] };
   var EXTRA = { SG: [103.8, 1.35] };
-  var RAD = Math.PI / 180;
 
   function fail() {
     host.classList.add("is-fallback");

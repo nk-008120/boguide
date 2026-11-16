@@ -100,11 +100,7 @@
     }
   }
 
-  function escapeHtml(str) {
-    var div = document.createElement('div');
-    div.appendChild(document.createTextNode(str || ''));
-    return div.innerHTML;
-  }
+  var escapeHtml = window.bioEscape;
 
   function formatNumber(n) {
     if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k';

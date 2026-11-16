@@ -162,15 +162,6 @@
     });
   }
 
-  function apiGet(path) {
-    return window.PapersAuth.getSession().then(function (session) {
-      if (!session) return { ok: false, status: 401, body: { error: 'Invalid session' } };
-      state.accessToken = session.access_token;
-      return fetch(path, { headers: { 'Authorization': 'Bearer ' + session.access_token } })
-        .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
-    });
-  }
-
   function showScreen(el) {
     [startScreen, readyScreen, liveScreen, reportScreen].forEach(function (s) { if (s) s.hidden = (s !== el); });
   }

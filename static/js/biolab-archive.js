@@ -21,11 +21,7 @@
     other: '✨ Other'
   };
 
-  function escapeHTML(s) {
-    var d = document.createElement('div');
-    d.textContent = s == null ? '' : s;
-    return d.innerHTML.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
+  var escapeHTML = window.bioEscape;
 
   function formatDate(iso) {
     try {

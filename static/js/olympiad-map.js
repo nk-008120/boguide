@@ -9,18 +9,10 @@
   var programmeData = null;
   var labels = { firsthand: 'Firsthand guide', outline: 'Official outline', soon: 'Coming soon' };
 
-  function escapeHtml(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
+  var escapeHtml = window.bioEscape;
 
   function loadMap() {
-    var svgUrl = (document.querySelector('meta[name="base"]') || {}).content || '';
-    svgUrl = '/images/world-map.svg';
+    var svgUrl = '/images/world-map.svg';
 
     Promise.all([
       fetch(svgUrl).then(function (r) { return r.text(); }),
@@ -80,8 +72,8 @@
       el.setAttribute('data-country', code);
       el.setAttribute('tabindex', '0');
       el.setAttribute('role', 'link');
-      el.setAttribute('aria-label', escapeHtml(info.name) +
-        (info.programme ? ' -- ' + escapeHtml(info.programme) : ''));
+      el.setAttribute('aria-label', info.name +
+        (info.programme ? ' -- ' + info.programme : ''));
 
       if (isPublished || isOutline) {
         addMarkerIfSmall(svg, el, code, isOutline);

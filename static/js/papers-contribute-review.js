@@ -7,10 +7,7 @@
   var statusEl = document.getElementById('papers-contribute-review-status');
   var listEl = document.getElementById('papers-contribute-review-list');
 
-  function escapeHTML(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
+  var escapeHTML = window.bioEscape;
 
   function formatDate(iso) {
     try { return new Date(iso).toLocaleString(); } catch (e) { return iso; }

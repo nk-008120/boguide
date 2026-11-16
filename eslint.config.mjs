@@ -3,14 +3,15 @@ import globals from 'globals';
 
 const rules = {
   ...js.configs.recommended.rules,
-  'no-unused-vars': ['warn', { args: 'none', caughtErrors: 'none' }],
+  'no-unused-vars': ['error', { args: 'none', caughtErrors: 'none' }],
   'no-empty': ['error', { allowEmptyCatch: true }],
   'no-eval': 'error',
   'no-implied-eval': 'error',
   'no-new-func': 'error',
   'no-script-url': 'error',
   'preserve-caught-error': 'off',
-  'no-useless-assignment': 'warn'
+  'no-useless-assignment': 'error',
+  eqeqeq: ['error', 'smart']
 };
 
 export default [

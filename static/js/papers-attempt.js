@@ -217,11 +217,7 @@
     return '<div class="attempt-answer-block">' + rows + '</div>';
   }
 
-  function escapeHTML(s) {
-    var d = document.createElement('div');
-    d.textContent = s;
-    return d.innerHTML;
-  }
+  var escapeHTML = window.bioEscape;
 
   function wireStatementButtons(p) {
     qBodyEl.querySelectorAll('.attempt-statement').forEach(function (row) {
@@ -511,7 +507,6 @@
           fetch('/data/topic-graph.json').then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; })
         ]).then(function (results) {
           var attempts = results[0];
-          var userProfile = results[1];
           var topicGraph = results[2];
           if (!attempts || attempts.length < 1) return;
           var profile = BioKnowledge.buildProfile(attempts, topicGraph);

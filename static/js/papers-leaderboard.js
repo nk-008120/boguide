@@ -11,11 +11,7 @@
   var table = document.getElementById('papers-leaderboard-table');
   var tbody = document.getElementById('papers-leaderboard-tbody');
 
-  function escapeHTML(s) {
-    var d = document.createElement('div');
-    d.textContent = s == null ? '' : s;
-    return d.innerHTML;
-  }
+  var escapeHTML = window.bioEscape;
 
   function formatTime(sec) {
     sec = Math.round(sec || 0);

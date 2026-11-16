@@ -26,6 +26,7 @@
      biolab/about) -- confirmed empirically while wiring this up. RelPermalink
      prefix matching works uniformly for both bundle types, so use that
      instead. */ -}}
+<script>{{ os.ReadFile "static/js/bio-escape.js" | safeJS }}</script>
 {{- $path := .RelPermalink -}}
 {{- $extraStyles := slice -}}
 {{- if or (hasPrefix $path "/bioclash/") (eq $path "/papers/leaderboard/") -}}{{ $extraStyles = $extraStyles | append "css/bioclash.css" }}{{- end -}}

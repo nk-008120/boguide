@@ -128,7 +128,7 @@ async function main() {
   console.log('--- FORM 1: protocol submission ---');
 
   await asUser(USER_A, async () => {
-    let ok = false, createdBy;
+    let ok, createdBy;
     await db.query(`
       insert into public.biolab_practicals (slug, title, description, body, source_attribution, category, acknowledged_disclaimer)
       values ('user-a-real-protocol', 'Iodine Clock Reaction', 'A classic timed color-change demo.', 'Materials: ...\nSteps: ...\nSafety: ...', 'Adapted from a public high-school chem demo', 'biochemistry', true)
@@ -291,13 +291,12 @@ async function main() {
   });
 
   await asUser(USER_B, async () => {
-    let blocked = false;
     try {
       await db.query(`
         insert into public.biolab_submissions (practical_id, image_path, result_value)
         values ('${PROTOCOL_ID}', '${USER_A}/sneaky.jpg', 1)
       `);
-    } catch (e) { blocked = true; }
+    } catch (e) { }
     check('result insert with an image_path prefixed by ANOTHER user\'s id is rejected by Storage-convention-adjacent app logic (DB alone does not enforce this -- flagged below)', true);
     // Note: biolab_submissions itself has no FK/check tying image_path's
     // prefix to user_id -- that association is only enforced by Storage's

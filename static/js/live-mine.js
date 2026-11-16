@@ -7,11 +7,7 @@
 
   var canPullOut = box.hasAttribute('data-pullout');
 
-  function esc(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
+  var esc = window.bioEscape;
 
   function load() {
     return Auth.getSession().then(function (session) {

@@ -9,11 +9,7 @@
   var table = document.getElementById('papers-leaderboard-overall-table');
   var tbody = document.getElementById('papers-leaderboard-overall-tbody');
 
-  function escapeHTML(s) {
-    var d = document.createElement('div');
-    d.textContent = s == null ? '' : s;
-    return d.innerHTML;
-  }
+  var escapeHTML = window.bioEscape;
 
   var MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' };
 

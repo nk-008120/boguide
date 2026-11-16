@@ -13,11 +13,7 @@
 
   var state = { user: null, profile: null, sessions: [], counts: {}, mine: {}, cursor: null, day: null, msg: null };
 
-  function esc(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
+  var esc = window.bioEscape;
 
   function dayKey(d) {
     return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();

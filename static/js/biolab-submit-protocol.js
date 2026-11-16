@@ -84,7 +84,6 @@
     statusEl.hidden = true;
     form.hidden = false;
 
-    var userId = session.user.id;
     var attachmentInput = document.getElementById('biolab-submit-attachments');
     var attachmentPreview = document.getElementById('biolab-submit-attachments-preview');
     var selectedAttachments = []; // File[]

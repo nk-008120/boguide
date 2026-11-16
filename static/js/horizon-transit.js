@@ -16,7 +16,6 @@
   var DOMAIN = 1.5;
   var W = 640;
   var H = 492;
-  var SVG_NS = 'http://www.w3.org/2000/svg';
 
   function scaleHeight(mu) {
     return K_B * TEMPERATURE / (mu * M_H * GRAVITY);

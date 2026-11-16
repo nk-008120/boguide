@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
     const userId = await authenticate(req, res, 'submit-attempt', 5, 60000);
     if (!userId) return;
 
-    const { paperId, force } = req.body || {};
+    const { paperId } = req.body || {};
     const paper = loadPaper(paperId);
     if (!paper) {
       res.status(400).json({ error: 'Unknown paper' });
