@@ -1,13 +1,3 @@
-{{- /* Mermaid: project override of themes/hextra/layouts/_partials/scripts/mermaid.html.
-     Adds a post-render sizing fix: Mermaid's default useMaxWidth:true sets width="100%"
-     on the rendered <svg>, which shrinks large diagrams to fit the content column: since
-     Mermaid's own text font-sizes live in that same internal viewBox coordinate system,
-     shrinking the SVG shrinks the text proportionally too, down to illegible sizes for any
-     diagram whose natural size exceeds ~650-900px. Fix: explicitly size each diagram's SVG
-     from its own viewBox (its true natural size) instead of the shrink-to-fit width="100%",
-     and let .mermaid scroll horizontally (assets/css/custom.css) if that's wider than the
-     column. Everything else here is unchanged from the theme's original. */ -}}
-
 {{- $mermaidBase := "" -}}
 {{- $useDefaultCdn := true -}}
 {{- with site.Params.mermaid.base -}}
@@ -20,12 +10,10 @@
   {{- $mermaidJsAsset = . -}}
 {{- end -}}
 
-{{- /* If only js is set without base, use local asset loading */ -}}
 {{- if and $useDefaultCdn (ne $mermaidJsAsset "") -}}
   {{- $useDefaultCdn = false -}}
 {{- end -}}
 
-{{- /* Set default CDN base if needed */ -}}
 {{- if $useDefaultCdn -}}
   {{- $mermaidBase = "https://cdn.jsdelivr.net/npm/mermaid@latest/dist" -}}
 {{- end -}}
@@ -33,7 +21,6 @@
 {{- $isRemoteBase := or (strings.HasPrefix $mermaidBase "http://") (strings.HasPrefix $mermaidBase "https://") -}}
 {{- $minSuffix := cond hugo.IsProduction ".min" "" -}}
 
-{{- /* JS retrieval: get raw JS from either local asset or remote, then process */ -}}
 {{- if $isRemoteBase -}}
   {{- $jsPath := cond (ne $mermaidJsAsset "") $mermaidJsAsset (printf "mermaid%s.js" $minSuffix) -}}
   {{- $mermaidJsUrl := urls.JoinPath $mermaidBase $jsPath -}}
@@ -43,14 +30,14 @@
     {{- else with .Value -}}
       {{- with resources.Copy (printf "js/mermaid%s.js" $minSuffix) . -}}
         {{- $mermaidJs := . | fingerprint -}}
-        <script defer src="{{ $mermaidJs.RelPermalink }}" integrity="{{ $mermaidJs.Data.Integrity }}" crossorigin="anonymous"></script>
+        <script>window.__mermaidSrc={{ $mermaidJs.RelPermalink }};window.__mermaidSri={{ $mermaidJs.Data.Integrity }};</script>
       {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- else if $mermaidJsAsset -}}
   {{- with resources.Get $mermaidJsAsset -}}
     {{- $mermaidJs := . | fingerprint -}}
-    <script defer src="{{ $mermaidJs.RelPermalink }}" integrity="{{ $mermaidJs.Data.Integrity }}" crossorigin="anonymous"></script>
+    <script>window.__mermaidSrc={{ $mermaidJs.RelPermalink }};window.__mermaidSri={{ $mermaidJs.Data.Integrity }};</script>
   {{- else -}}
     {{- errorf "Mermaid js asset not found at %q" $mermaidJsAsset -}}
   {{- end -}}
@@ -94,10 +81,10 @@
       mermaid.run({ querySelector: ".mermaid" }).then(fixMermaidSizing).catch(() => {});
     }
 
-    renderMermaid();
-
-    let timeout;
-    new MutationObserver(() => {
+    function start() {
+      renderMermaid();
+      let timeout;
+      new MutationObserver(() => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         document.querySelectorAll(".mermaid").forEach((el) => {
@@ -106,9 +93,33 @@
         });
         renderMermaid();
       }, 150);
-    }).observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
+      }).observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["class"],
+      });
+    }
+
+    let requested = false;
+    function load() {
+      if (requested || !window.__mermaidSrc) return;
+      requested = true;
+      const script = document.createElement("script");
+      script.src = window.__mermaidSrc;
+      script.integrity = window.__mermaidSri;
+      script.crossOrigin = "anonymous";
+      script.onload = start;
+      document.head.appendChild(script);
+    }
+
+    const diagrams = document.querySelectorAll(".mermaid");
+    if (!diagrams.length) return;
+    if (!("IntersectionObserver" in window)) { load(); return; }
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((en) => en.isIntersecting)) {
+        io.disconnect();
+        load();
+      }
+    }, { rootMargin: "600px 0px" });
+    diagrams.forEach((el) => io.observe(el));
   });
 </script>

@@ -1,4 +1,5 @@
 (function () {
+  if (!window.matchMedia("(any-hover: hover) and (any-pointer: fine)").matches) return;
   var KEY = "fxNav";
   var SHOW_MS = 1000;
   var STALE_MS = 20000;

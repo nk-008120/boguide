@@ -11,30 +11,11 @@
 
   var gsap = window.gsap;
   var ScrollTrigger = window.ScrollTrigger;
-  var SplitText = window.SplitText;
   var fine = window.matchMedia("(any-hover: hover) and (any-pointer: fine)").matches;
 
   gsap.registerPlugin(ScrollTrigger);
-  if (SplitText) gsap.registerPlugin(SplitText);
   if (window.ScrambleTextPlugin) gsap.registerPlugin(window.ScrambleTextPlugin);
   window.__hvStarted = true;
-
-  var conn = navigator.connection;
-  var lite = !!conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""));
-
-  var lenis = null;
-  if (fine && !lite && window.Lenis) {
-    lenis = new window.Lenis({
-      duration: 1.15,
-      easing: function (t) { return 1 - Math.pow(1 - t, 4); },
-      anchors: true,
-      allowNestedScroll: true,
-      autoRaf: false
-    });
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
-    gsap.ticker.lagSmoothing(0);
-  }
 
   function onEnter(els, margin, cb) {
     var io = new IntersectionObserver(function (entries) {
@@ -48,50 +29,6 @@
     }, { rootMargin: margin });
     Array.prototype.forEach.call(els, function (el) { io.observe(el); });
   }
-
-  gsap.to(root.querySelector(".hv-hero"), {
-    yPercent: -8,
-    autoAlpha: 0.15,
-    ease: "none",
-    scrollTrigger: { trigger: root.querySelector(".hv-hero"), start: "top top", end: "bottom top", scrub: 0.6 }
-  });
-
-  function splitReveal(el, type, target, start, from, stagger, duration) {
-    gsap.set(el, { autoAlpha: 1 });
-    if (!SplitText) return;
-    var items = SplitText.create(el, { type: type })[target];
-    gsap.set(items, from);
-    onEnter([el], start, function () {
-      gsap.to(items, {
-        autoAlpha: 1,
-        yPercent: 0,
-        rotate: 0,
-        duration: duration,
-        ease: "expo.out",
-        stagger: stagger,
-        overwrite: true,
-        clearProps: "transform,opacity,visibility"
-      });
-    });
-  }
-
-  function splitAll() {
-    gsap.utils.toArray(root.querySelectorAll("[data-split]")).forEach(function (el) {
-      splitReveal(el, "words,chars", "chars", "0px 0px -10% 0px", { autoAlpha: 0, yPercent: 70, rotate: 6 }, 0.022, 0.9);
-    });
-    gsap.utils.toArray(root.querySelectorAll("[data-lines]")).forEach(function (el) {
-      splitReveal(el, "words", "words", "0px 0px -8% 0px", { autoAlpha: 0, yPercent: 60 }, 0.014, 0.9);
-    });
-  }
-
-  var splitDone = false;
-  function splitOnce() {
-    if (splitDone) return;
-    splitDone = true;
-    splitAll();
-  }
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(splitOnce);
-  setTimeout(splitOnce, 1500);
 
   onEnter(root.querySelectorAll("[data-reveal]"), "0px 0px -6% 0px", function (els) {
     els.forEach(function (el, i) {
@@ -212,7 +149,7 @@
   }
 
   var SCRAMBLE = "ACGTU";
-  if (window.ScrambleTextPlugin) {
+  if (fine && window.ScrambleTextPlugin) {
     gsap.utils.toArray(root.querySelectorAll("[data-scramble]")).forEach(function (el) {
       var text = el.textContent;
       var busy = false;
@@ -235,15 +172,6 @@
     });
   }
 
-  gsap.utils.toArray(root.querySelectorAll(".hv-blob")).forEach(function (blob, i) {
-    gsap.to(blob, {
-      yPercent: [-28, 22, -40][i % 3],
-      xPercent: [10, -12, 6][i % 3],
-      ease: "none",
-      scrollTrigger: { trigger: document.documentElement, start: "top top", end: "bottom bottom", scrub: 1.6 }
-    });
-  });
-
   if (fine) {
     root.addEventListener("pointermove", function (e) {
       var card = e.target.closest(".hv-frame, .hv-tile");
@@ -251,74 +179,6 @@
       var r = card.getBoundingClientRect();
       card.style.setProperty("--px", (e.clientX - r.left) + "px");
       card.style.setProperty("--py", (e.clientY - r.top) + "px");
-    }, { passive: true });
-
-    var RANGE = 26;
-    var magnets = gsap.utils.toArray(root.querySelectorAll("[data-magnetic]")).map(function (el) {
-      return {
-        el: el,
-        on: false,
-        x: gsap.quickTo(el, "x", { duration: 0.55, ease: "power3.out" }),
-        y: gsap.quickTo(el, "y", { duration: 0.55, ease: "power3.out" }),
-        skew: gsap.quickTo(el, "skewX", { duration: 0.55, ease: "power3.out" }),
-        scale: gsap.quickTo(el, "scale", { duration: 0.55, ease: "power3.out" })
-      };
-    });
-
-    function place(el, e) {
-      var r = el.getBoundingClientRect();
-      el.style.setProperty("--fx", (e.clientX - r.left) + "px");
-      el.style.setProperty("--fy", (e.clientY - r.top) + "px");
-      el.style.setProperty("--fd", (Math.sqrt(r.width * r.width + r.height * r.height) * 2.2) + "px");
-    }
-
-    magnets.forEach(function (m) {
-      m.el.addEventListener("pointerenter", function (e) { place(m.el, e); });
-      m.el.addEventListener("pointerleave", function (e) { place(m.el, e); });
-    });
-
-    var pointer = null;
-    var queued = false;
-
-    function pull() {
-      queued = false;
-      if (!pointer) return;
-      magnets.forEach(function (m) {
-        var r = m.el.getBoundingClientRect();
-        if (r.bottom < -RANGE || r.top > window.innerHeight + RANGE) {
-          if (m.on) { m.on = false; m.x(0); m.y(0); m.skew(0); m.scale(1); }
-          return;
-        }
-        var ox = Number(gsap.getProperty(m.el, "x")) || 0;
-        var oy = Number(gsap.getProperty(m.el, "y")) || 0;
-        var left = r.left - ox;
-        var top = r.top - oy;
-        var gapX = Math.max(left - pointer.x, 0, pointer.x - (left + r.width));
-        var gapY = Math.max(top - pointer.y, 0, pointer.y - (top + r.height));
-        if (Math.sqrt(gapX * gapX + gapY * gapY) <= RANGE) {
-          var dx = pointer.x - (left + r.width / 2);
-          var dy = pointer.y - (top + r.height / 2);
-          m.on = true;
-          m.x(dx * 0.28);
-          m.y(dy * 0.38);
-          m.skew(gsap.utils.clamp(-7, 7, dx * -0.06));
-          m.scale(1.04);
-        } else if (m.on) {
-          m.on = false;
-          m.x(0);
-          m.y(0);
-          m.skew(0);
-          m.scale(1);
-        }
-      });
-    }
-
-    window.addEventListener("pointermove", function (e) {
-      pointer = { x: e.clientX, y: e.clientY };
-      if (!queued) {
-        queued = true;
-        requestAnimationFrame(pull);
-      }
     }, { passive: true });
   }
 

@@ -6,6 +6,8 @@
   {{- $tier = 1 -}}
 {{- else if .IsHome -}}
   {{- $tier = 4 -}}
+{{- else if and (hasPrefix $p "/resources/") (ne $p "/resources/") -}}
+  {{- $tier = 1 -}}
 {{- else if in (slice "/resources/" "/biobytes/" "/biolab/" "/about/" "/biology-olympiad-preparation/" "/games/" "/games/bio-ludo/" "/doubts/" "/dashboard/" "/account/" "/live/" "/live/staff/") $p -}}
   {{- $tier = 3 -}}
 {{- end -}}

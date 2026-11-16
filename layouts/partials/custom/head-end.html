@@ -83,7 +83,7 @@
 {{- if eq $path "/" -}}
 <script>(function(){var d=document.documentElement;if(window.matchMedia("(prefers-reduced-motion: reduce)").matches&&!/[?&]motion=on/.test(location.search))return;d.classList.add("hv-js");setTimeout(function(){if(!window.__hvStarted)d.classList.remove("hv-js")},4000)})()</script>
 {{- $homeParts := slice -}}
-{{- range slice "gsap.min.js" "ScrollTrigger.min.js" "SplitText.min.js" "ScrambleTextPlugin.min.js" "lenis.min.js" -}}
+{{- range slice "gsap.min.js" "ScrollTrigger.min.js" "ScrambleTextPlugin.min.js" -}}
   {{- $homeParts = $homeParts | append (resources.Get (printf "home/vendor/%s" .)) -}}
 {{- end -}}
 {{- range slice "home-motion.js" "home-globe.js" -}}
@@ -100,7 +100,7 @@
 <script>{{ (resources.Get "home/fx-nav.js" | minify).Content | safeJS }}</script>
 {{- end -}}
 {{- if eq $fxTier 3 -}}
-{{- $fx2Parts := slice (resources.Get "home/vendor/gsap.min.js") (resources.Get "home/vendor/SplitText.min.js") (resources.Get "home/vendor/lenis.min.js") (resources.Get "home/fx2-motion.js" | minify) -}}
+{{- $fx2Parts := slice (resources.Get "home/fx2-motion.js" | minify) -}}
 {{- $fx2Js := $fx2Parts | resources.Concat "bundles/fx2.js" | fingerprint -}}
 <script src="{{ $fx2Js.RelPermalink }}" integrity="{{ $fx2Js.Data.Integrity }}" defer></script>
 {{- end -}}
@@ -159,6 +159,10 @@
 <script src="{{ "js/papers-nav-account.js" | relURL }}" defer></script>
 <script src="{{ "js/staff-welcome.js" | relURL }}" defer></script>
 <script src="{{ "js/site-tutorial.js" | relURL }}" defer></script>
+{{- if or (eq $path "/") (eq $path "/about/") -}}
 <script src="{{ "js/country-counter.js" | relURL }}" defer></script>
+{{- end -}}
+{{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/olympiad-map.js" | relURL }}?v={{ substr (os.ReadFile "static/js/olympiad-map.js" | md5) 0 10 }}" defer></script>
+{{- end -}}
 <script src="{{ "js/posthog-events.js" | relURL }}" defer></script>
