@@ -3,7 +3,7 @@ title: "P1 - Molecular Biology & Biochemistry Practicals"
 weight: 1
 description: "A unified, bottom-up guide to every major wet-lab technique tested in IBO Molecular Biology and Biochemistry practical exams (2015-2023 and beyond): restriction mapping, PCR genotyping, auxotrophy, Ni-NTA chromatography, Bradford assay, enzyme kinetics, SDS-PAGE, gel retardation, and the integrated workflows that tie them together."
 difficulty: "advanced"
-prerequisites: ["Enzyme Kinetics & Regulation", "Recombinant DNA & Biotechnology"]
+prerequisites: ["/resources/1-cell-molecular/Enzyme-Kinetics-Regulation", "/resources/1-cell-molecular/Recombinant-DNA-Biotechnology-Techniques"]
 syllabus_tags: ["IBO", "practical", "biochemistry", "molecular-biology"]
 ---
 

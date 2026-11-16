@@ -166,7 +166,7 @@ In cross-section, the spinal cord shows a butterfly/H-shaped core of gray matter
 The **reflex arc** is the clearest anatomical demonstration of spinal cord organization, using the knee-jerk (patellar) reflex as the standard example: stretch receptor in the quadriceps muscle → sensory neuron → dorsal root → direct synapse onto a motor neuron in the ventral horn (a **monosynaptic reflex**, the fastest reflex type, since it involves no interneuron) → ventral root → motor neuron → quadriceps contraction, occurring without requiring the brain, though the brain normally receives a parallel signal and can modulate the reflex.
 
 ![The patellar tendon (knee-jerk) reflex traced end to end on a spinal cord cross-section: tendon tap → muscle spindle receptor fires → afferent sensory neuron → synapse in the spinal cord → efferent motor neuron to the quadriceps (contraction) and a parallel inhibitory interneuron to the hamstring motor neuron (reciprocal inhibition, staying relaxed).](spinal-cord-cross-section-reflex-arc.png)
-*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(Fig. 13.5; also used on [Animal Physiology: Nervous System Physiology](../../3-animal-physiology/Nervous-System-Physiology/)).*
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(Fig. 13.5; also used on [Animal Physiology: Nervous System Physiology](../../3-animal-physiology/nervous-system-physiology/)).*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🦵 Knee-Jerk Reflex Arc Walkthrough</h3>

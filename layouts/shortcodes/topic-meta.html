@@ -11,7 +11,11 @@
   {{ with $prereqs }}
     <span class="topic-meta-label">Prerequisites:</span>
     {{ range . }}
-      <a class="badge-custom topic-meta-link" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">{{ replace . "-" " " }}</a>
+      {{ if hasPrefix . "/" }}
+        {{ with site.GetPage . }}<a class="badge-custom topic-meta-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      {{ else }}
+        <a class="badge-custom topic-meta-link" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">{{ replace . "-" " " }}</a>
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ with $next }}
