@@ -45,7 +45,7 @@
       text: 'Have feedback, want to contribute, or interested in joining the team? Reach out via the emails listed here.' },
     { page: '/about/', selector: null, end: true,
       title: 'That’s the tour!',
-      text: 'Replay it any time from the Site Tutorial badge on the homepage.' }
+      text: 'Replay it any time from the Take the tour button on the home page.' }
   ];
 
   var state = {
@@ -492,10 +492,11 @@
 
     el.appendChild(actions);
     document.body.appendChild(el);
+    setSeenLocal();
   }
 
   function checkEligibilityAndMaybeInvite() {
-    if (getSeenLocal()) return;
+    if (getSeenLocal() || !samePage(location.pathname, '/')) return;
     if (!window.PapersAuth || !window.PapersAuth.isConfigured()) {
       showInviteToast();
       return;

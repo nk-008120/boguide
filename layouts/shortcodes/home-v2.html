@@ -42,36 +42,41 @@
 {{- $coverSteps := slice "Start" "Roadmap" "Notes" "Programmes" "BiOrchive" "Q-Bank" "Dashboard" "Mocks" "BiOClash" "BiOLab" "BiOLudo" "Community" "BiOGuide" -}}
 {{- $marquee := slice "Cell Biology" "Genetics" "Bioinformatics" "Plant Physiology" "Evolution" "Animal Physiology" "Animal Anatomy" "Plant Anatomy" "Ecology" "Ethology" "Biosystematics" "Practicals" -}}
 <div class="hv">
-  <div class="hv-ambient" aria-hidden="true">
-    <div class="hv-blob hv-blob--a"><i></i></div>
-    <div class="hv-blob hv-blob--b"><i></i></div>
-    <div class="hv-blob hv-blob--c"><i></i></div>
-  </div>
-  <div class="hv-grain" aria-hidden="true"></div>
-
   <section class="hv-hero">
-    <p class="hv-eyebrow" data-hero style="--i:0"><span class="hv-dot"></span><span data-scramble>BiOGuide v2.1.0 / Biology Olympiad Preparation Hub</span></p>
-    <h1 class="hero-title" aria-label="Your roadmap to Biology Olympiads">
-      <span class="hwm" aria-hidden="true"><span class="hw" style="--i:0">Your</span></span>
-      <span class="hwm" aria-hidden="true"><span class="hw" style="--i:1">roadmap</span></span>
-      <span class="hwm" aria-hidden="true"><span class="hw" style="--i:2">to</span></span>
-      <br class="hv-br">
-      <span class="hwm" aria-hidden="true"><span class="hw hw--a" style="--i:3">Biology</span></span>
-      <span class="hwm" aria-hidden="true"><span class="hw hw--b" style="--i:4">Olympiads</span></span>
-    </h1>
-    <p class="hero-subtitle" data-hero style="--i:1">A complete preparation platform for BiOlogy enthusiasts. Built by students, for students.</p>
-    <p class="hero-country-counter" id="hero-country-counter" aria-live="polite" data-hero style="--i:2"></p>
-    <div class="hv-cta" data-hero style="--i:3">
-      <button type="button" id="tutorial-replay-badge" class="hv-btn hv-btn--solid" data-magnetic><span class="hv-btn-fill"></span><span class="hv-btn-label">Site Tutorial {{ $arrow }}</span></button>
-      <a href="/papers/" class="hv-btn" data-magnetic><span class="hv-btn-fill"></span><span class="hv-btn-label">Practice Papers</span></a>
-      <a href="/dashboard/" class="hv-btn" data-magnetic><span class="hv-btn-fill"></span><span class="hv-btn-label">Your Study Dashboard</span></a>
+    <div class="hv-hero-main">
+      <p class="hv-eyebrow" data-hero style="--i:0"><span class="hv-dot"></span><span data-scramble>BiOGuide / Biology Olympiad preparation</span></p>
+      <h1 class="hero-title" aria-label="Your roadmap to Biology Olympiads">
+        <span class="hwm" aria-hidden="true"><span class="hw" style="--i:0">Your</span></span>
+        <span class="hwm" aria-hidden="true"><span class="hw" style="--i:1">roadmap</span></span>
+        <span class="hwm" aria-hidden="true"><span class="hw" style="--i:2">to</span></span>
+        <br class="hv-br">
+        <span class="hwm" aria-hidden="true"><span class="hw hw--a" style="--i:3">Biology</span></span>
+        <span class="hwm" aria-hidden="true"><span class="hw hw--b" style="--i:4">Olympiads</span></span>
+      </h1>
+      <p class="hero-subtitle" data-hero style="--i:1">The Biology Olympiad is a competition for school students: each country runs a national olympiad, and up to four of its best students go on to the International Biology Olympiad every July. <a href="/what-is-the-biology-olympiad/">What is the Biology Olympiad?</a></p>
+      <p class="hero-subtitle" data-hero style="--i:2">BiOGuide gives you free notes, real past papers and a guide to your country's olympiad. Built by students who have sat them.</p>
+      <p class="hero-country-counter" id="hero-country-counter" aria-live="polite" data-hero style="--i:3"></p>
+      <div class="hv-cta" data-hero style="--i:4">
+        <a href="/resources/" class="hv-btn hv-btn--solid"><span class="hv-btn-fill"></span><span class="hv-btn-label">Start with the notes {{ $arrow }}</span></a>
+        <a href="/papers/" class="hv-btn"><span class="hv-btn-fill"></span><span class="hv-btn-label">Try a past question</span></a>
+        <a href="/dashboard/" class="hv-btn"><span class="hv-btn-fill"></span><span class="hv-btn-label">Your Study Dashboard</span></a>
+      </div>
+      <nav class="hv-quick" aria-label="More ways in" data-hero style="--i:5">
+        <a href="/biology-olympiad-preparation/" class="hv-link">BiO Nation-wise Guides</a>
+        <a href="/bioclash/" class="hv-link">Challenge yourself in BiOClash</a>
+        <a href="/games/bio-ludo/" class="hv-link">Play BiOLudo</a>
+      </nav>
     </div>
-    <nav class="hv-quick" aria-label="More ways in" data-hero style="--i:4">
-      <a href="/biology-olympiad-preparation/" class="hv-link">BiO Nation-wise Guides</a>
-      <a href="/bioclash/" class="hv-link">Challenge Yourself!</a>
-      <a href="/games/bio-ludo/" class="hv-link">Play BiOLudo</a>
-      <a href="/resources/" class="hv-link">Start Learning</a>
-    </nav>
+    <aside class="hv-hero-card" data-hero style="--i:2" aria-labelledby="first-time-here">
+      <p class="hv-label">First time here?</p>
+      <h2 class="hv-hero-card-title" id="first-time-here">Three steps</h2>
+      <ol>
+        <li><a href="/biology-olympiad-preparation/">Find how your country selects its team</a></li>
+        <li><a href="/resources/1-cell-molecular/">Read one topic you already know</a></li>
+        <li><a href="/papers/">Try a real olympiad question on it</a></li>
+      </ol>
+      <button type="button" id="tutorial-replay-badge" class="hv-hero-card-tour">Take the 60-second site tour {{ $arrow }}</button>
+    </aside>
     <div class="hv-globe" data-hero style="--i:5" role="group" aria-label="Interactive globe of national Biology Olympiad programme guides" data-d3-array="{{ "vendor/d3-geo/d3-array.min.js" | relURL }}" data-d3-geo="{{ "vendor/d3-geo/d3-geo.min.js" | relURL }}" data-world="{{ "data/globe-110m.json" | relURL }}" data-programmes="{{ "data/olympiad-programmes.json" | relURL }}">
       <canvas aria-hidden="true"></canvas>
       <div class="hv-globe-tip" role="status" hidden></div>
@@ -89,6 +94,13 @@
     </dl>
   </section>
 
+  <nav class="hv-doors" aria-label="Main sections">
+    <a class="hv-door" href="/resources/"><span class="hv-label">Learn</span><span class="hv-door-title">Notes</span><span class="hv-door-text">Topic pages across 16 syllabus sections.</span></a>
+    <a class="hv-door" href="/papers/"><span class="hv-label">Practice</span><span class="hv-door-title">Past Papers</span><span class="hv-door-text">IBO and national olympiad questions with answers.</span></a>
+    <a class="hv-door" href="/biology-olympiad-preparation/"><span class="hv-label">Plan</span><span class="hv-door-title">Country Guides</span><span class="hv-door-text">How each country selects its team.</span></a>
+    <a class="hv-door" href="/bioclash/"><span class="hv-label">Compete</span><span class="hv-door-title">BiOClash</span><span class="hv-door-text">Free online rounds through the season.</span></a>
+  </nav>
+
   <div class="hv-marquee" aria-hidden="true">
     <div class="hv-marquee-track">
       {{- range seq 2 }}
@@ -101,9 +113,9 @@
     <header class="hv-head hv-head--split">
       <div>
         <p class="hv-label" data-scramble>Reel / v2.0.0 launch</p>
-        <h2 class="hv-h2 hv-h2--xl" id="the-reel" data-split>This is just the beginning</h2>
+        <h2 class="hv-h2 hv-h2--xl" id="the-reel">This is just the beginning</h2>
       </div>
-      <p class="hv-lead" data-lines>POV: you started a little project to help students in Biology Olympiad prep and it turned into 10,000+ student visitors, 100+ live accounts, and a 10 person organization redefining olympiad preparation. Launching BiOGuide v2.0.0, a complete prep platform.</p>
+      <p class="hv-lead">POV: you started a little project to help students in Biology Olympiad prep and it turned into 10,000+ student visitors, 100+ live accounts, and a 10 person organization redefining olympiad preparation. Launching BiOGuide v2.0.0, a complete prep platform.</p>
     </header>
     <a class="hv-reel-frame" href="https://www.instagram.com/p/DdcJuipzHca/" target="_blank" rel="noopener noreferrer" aria-label="Play the BiOGuide v2.0.0 launch reel on Instagram (opens in a new tab)">
       <span class="hv-reel-media">
@@ -125,8 +137,8 @@
   <section class="hv-section" aria-labelledby="start-here">
     <header class="hv-head">
       <p class="hv-label" data-scramble>01 / Orientation</p>
-      <h2 class="hv-h2" id="start-here" data-split>Start Here</h2>
-      <p class="hv-lead" data-lines>New to Biology Olympiads, or not sure where to jump in? Pick what matches you best:</p>
+      <h2 class="hv-h2" id="start-here">Start Here</h2>
+      <p class="hv-lead">New to Biology Olympiads, or not sure where to jump in? Pick what matches you best:</p>
     </header>
     <div class="hv-start">
       <a href="/resources/1-cell-molecular/" class="hv-frame hv-frame--lead" data-reveal>
@@ -172,8 +184,8 @@
   <section class="hv-section" aria-labelledby="the-learning-path">
     <header class="hv-head">
       <p class="hv-label" data-scramble>02 / Syllabus</p>
-      <h2 class="hv-h2" id="the-learning-path" data-split>The Learning Path</h2>
-      <p class="hv-lead" data-lines>We cover the full IBO syllabus: 16 sections, 110+ topic pages, growing every week. Work through them in order, or jump straight to what you need.</p>
+      <h2 class="hv-h2" id="the-learning-path">The Learning Path</h2>
+      <p class="hv-lead">We cover the full IBO syllabus: 16 sections, 110+ topic pages, growing every week. Work through them in order, or jump straight to what you need.</p>
     </header>
     <div class="hv-folders">
       {{- range $folders }}
@@ -207,7 +219,7 @@
   <section class="hv-section" aria-labelledby="practice-resources--more">
     <header class="hv-head">
       <p class="hv-label" data-scramble>03 / Toolkit</p>
-      <h2 class="hv-h2" id="practice-resources--more" data-split>Practice, Resources &amp; More</h2>
+      <h2 class="hv-h2" id="practice-resources--more">Practice, Resources &amp; More</h2>
     </header>
     <div class="hv-bento">
       {{- range $more }}
@@ -224,7 +236,7 @@
   <section class="hv-section" aria-labelledby="what-makes-bioguide-stand-out">
     <header class="hv-head">
       <p class="hv-label" data-scramble>04 / Built in house</p>
-      <h2 class="hv-h2" id="what-makes-bioguide-stand-out" data-split>What Makes BiOGuide Stand Out</h2>
+      <h2 class="hv-h2" id="what-makes-bioguide-stand-out">What Makes BiOGuide Stand Out</h2>
     </header>
     <div class="hv-quad">
       <a href="https://practicepcmb4boguide.streamlit.app/" class="hv-frame" data-reveal rel="noopener">
@@ -253,8 +265,8 @@
   <section class="hv-section" aria-labelledby="contribute-to-bioguide">
     <header class="hv-head">
       <p class="hv-label" data-scramble>05 / Open project</p>
-      <h2 class="hv-h2" id="contribute-to-bioguide" data-split>Contribute to BiOGuide</h2>
-      <p class="hv-lead" data-lines>BiOGuide is built by a team of 11 people from six countries, and we are still growing. If you want to help with olympiad content, problems, outreach or code, write to r6394175@gmail.com and join the team.</p>
+      <h2 class="hv-h2" id="contribute-to-bioguide">Contribute to BiOGuide</h2>
+      <p class="hv-lead">BiOGuide is built by a team of 11 people from six countries, and we are still growing. If you want to help with olympiad content, problems, outreach or code, write to r6394175@gmail.com and join the team.</p>
     </header>
     <div class="hv-duo">
       <div class="hv-frame hv-frame--static" data-reveal>
@@ -271,18 +283,19 @@
           <li><strong>Expanding our Current BiOrchive</strong>: send an email to resourcerepository4boguide@gmail.com for this purpose.</li>
           <li>More and improved interactive widgets (especially for Cell/Molecular Biology)</li>
           <li>Adding diagrams to pages that still have placeholders</li>
+          <li><strong>Writing your country's guide</strong>: join the <a href="/contribute-a-guide/">national programme guides initiative</a>.</li>
         </ul>
       </div>
     </div>
     <div class="hv-cta hv-cta--left" data-reveal>
-      <a href="https://github.com/nk-008120/boguide/" class="hv-btn hv-btn--solid" data-magnetic rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">Contribute on GitHub {{ $arrow }}</span></a>
+      <a href="https://github.com/nk-008120/boguide/" class="hv-btn hv-btn--solid" rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">Contribute on GitHub {{ $arrow }}</span></a>
     </div>
   </section>
 
   <section class="hv-section" aria-labelledby="recent-updates">
     <header class="hv-head">
       <p class="hv-label" data-scramble>06 / Changelog</p>
-      <h2 class="hv-h2" id="recent-updates" data-split>Recent Updates</h2>
+      <h2 class="hv-h2" id="recent-updates">Recent Updates</h2>
     </header>
     <ol class="hv-log">
       <li data-reveal>
@@ -346,12 +359,12 @@
   <section class="hv-section hv-section--end" aria-labelledby="join-the-community">
     <header class="hv-head">
       <p class="hv-label" data-scramble>07 / Signal</p>
-      <h2 class="hv-h2" id="join-the-community" data-split>Join the Community</h2>
-      <p class="hv-lead" data-lines><strong>Discord:</strong> Chat with other students, ask questions, share resources · <strong>GitHub Issues:</strong> Report typos, request features, discuss content</p>
+      <h2 class="hv-h2" id="join-the-community">Join the Community</h2>
+      <p class="hv-lead"><strong>Discord:</strong> Chat with other students, ask questions, share resources · <strong>GitHub Issues:</strong> Report typos, request features, discuss content</p>
     </header>
     <div class="hv-cta hv-cta--left" data-reveal>
-      <a href="https://discord.gg/UUkakYdsC" class="hv-btn hv-btn--solid" data-magnetic rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">Join the Discord {{ $arrow }}</span></a>
-      <a href="https://github.com/nk-008120/boguide/" class="hv-btn" data-magnetic rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">GitHub Issues</span></a>
+      <a href="https://discord.gg/UUkakYdsC" class="hv-btn hv-btn--solid" rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">Join the Discord {{ $arrow }}</span></a>
+      <a href="https://github.com/nk-008120/boguide/" class="hv-btn" rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">GitHub Issues</span></a>
     </div>
     <p class="hv-fine" data-reveal>Content (text) is licensed under <strong>CC BY-NC-SA 4.0</strong>: free to share and adapt for non-commercial purposes, with attribution. Source code is separately licensed under the <strong>MIT License</strong>. See <a href="/about/">About</a> for full licensing and image-source details.</p>
   </section>

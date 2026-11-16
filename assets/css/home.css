@@ -48,12 +48,6 @@ html.favourite .home-v2 {
 .home-v2 #content {
   overflow-x: clip;
 }
-@media (min-width: 901px) {
-  .home-v2 .gi-banner {
-    left: auto;
-    right: 1rem;
-  }
-}
 
 .home-v2 .hv {
   position: relative;
@@ -69,94 +63,12 @@ html.favourite .home-v2 {
   box-sizing: border-box;
 }
 
-.home-v2 .hv-ambient,
-.home-v2 .hv-grain {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-.home-v2 .hv-ambient {
-  z-index: -3;
-  overflow: hidden;
-}
-.home-v2 .hv-grain {
-  z-index: 3;
-  inset: -100px;
-  width: auto;
-  height: auto;
-  opacity: var(--fx-grain);
-  mix-blend-mode: var(--fx-grain-blend);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 220px 220px;
-  animation: hv-grain 0.9s steps(6) infinite;
-}
-@keyframes hv-grain {
-  0% { transform: translate3d(0, 0, 0); }
-  20% { transform: translate3d(-38px, 22px, 0); }
-  40% { transform: translate3d(26px, -44px, 0); }
-  60% { transform: translate3d(-52px, -18px, 0); }
-  80% { transform: translate3d(44px, 36px, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+body.home-v2 {
+  background-image: linear-gradient(180deg, color-mix(in srgb, var(--fx-accent) 9%, transparent), transparent 560px);
+  background-repeat: no-repeat;
 }
 
-.home-v2 .hv-blob {
-  position: absolute;
-  width: 62vmax;
-  height: 62vmax;
-  will-change: transform;
-}
-.home-v2 .hv-blob i {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  filter: blur(40px);
-  will-change: transform;
-}
-.home-v2 .hv-blob--a {
-  top: -22vmax;
-  left: -18vmax;
-}
-.home-v2 .hv-blob--a i {
-  background: radial-gradient(circle at 50% 50%, var(--fx-blob-a), transparent 62%);
-  animation: hv-drift-a 46s ease-in-out infinite alternate;
-}
-.home-v2 .hv-blob--b {
-  bottom: -26vmax;
-  right: -20vmax;
-}
-.home-v2 .hv-blob--b i {
-  background: radial-gradient(circle at 50% 50%, var(--fx-blob-b), transparent 62%);
-  animation: hv-drift-b 58s ease-in-out infinite alternate;
-}
-.home-v2 .hv-blob--c {
-  top: 24vh;
-  left: 34vw;
-  width: 44vmax;
-  height: 44vmax;
-}
-.home-v2 .hv-blob--c i {
-  background: radial-gradient(circle at 50% 50%, var(--fx-blob-c), transparent 60%);
-  animation: hv-drift-c 71s ease-in-out infinite alternate;
-}
-@keyframes hv-drift-a {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to { transform: translate3d(14vw, 10vh, 0) scale(1.18); }
-}
-@keyframes hv-drift-b {
-  from { transform: translate3d(0, 0, 0) scale(1.1); }
-  to { transform: translate3d(-16vw, -12vh, 0) scale(0.92); }
-}
-@keyframes hv-drift-c {
-  from { transform: translate3d(-8vw, 6vh, 0) scale(0.9); }
-  to { transform: translate3d(10vw, -10vh, 0) scale(1.2); }
-}
-
-html.hv-js .home-v2 [data-reveal],
-html.hv-js .home-v2 [data-split],
-html.hv-js .home-v2 [data-lines] {
+html.hv-js .home-v2 [data-reveal] {
   visibility: hidden;
 }
 
@@ -178,13 +90,121 @@ html.hv-js .home-v2 [data-lines] {
 }
 
 .home-v2 .hv-hero {
-  min-height: calc(100vh - var(--hextra-navbar-height, 4rem) - 5.5rem);
-  min-height: calc(100svh - var(--hextra-navbar-height, 4rem) - 5.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  grid-template-areas: "main card" "main globe" "stats stats";
+  gap: 1.5rem 3rem;
+  align-items: start;
+  padding: 3rem 0 2rem;
+}
+.home-v2 .hv-hero-main {
+  grid-area: main;
+  min-width: 0;
+}
+.home-v2 .hv .hv-hero-card {
+  grid-area: card;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--fx-line);
+  border-radius: 18px;
+  background: var(--fx-surface-solid, var(--fx-surface));
+}
+.home-v2 .hv .hv-hero-card .hv-label {
+  margin: 0 0 0.25rem;
+}
+.home-v2 .hv .hv-hero-card-title {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  border: 0;
+  font-family: var(--fx-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--fx-ink);
+}
+.home-v2 .hv .hv-hero-card ol {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+.home-v2 .hv .hv-hero-card li {
+  padding: 0.25rem 0;
+}
+.home-v2 .hv .hv-hero-card a {
+  color: var(--fx-accent);
+  text-underline-offset: 3px;
+}
+.home-v2 .hv .hv-hero-card-tour {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--fx-accent);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fx-accent);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.home-v2 .hv .hv-hero-card-tour:hover,
+.home-v2 .hv .hv-hero-card-tour:focus-visible {
+  background: color-mix(in srgb, var(--fx-accent) 10%, transparent);
+}
+.home-v2 .hv .hv-hero-card-tour .ui-icon {
+  width: 1em;
+  height: 1em;
+}
+.home-v2 .hv .hero-subtitle a {
+  color: var(--fx-accent);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+.home-v2 .hv-doors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 3rem;
+}
+.home-v2 .hv .hv-door {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 3rem 0 2.5rem;
+  gap: 0.3rem;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid var(--fx-line);
+  border-radius: 14px;
+  background: var(--fx-surface-solid, var(--fx-surface));
+  color: var(--fx-ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+.home-v2 .hv .hv-door:nth-child(even) {
+  background: color-mix(in srgb, var(--fx-accent-2) 8%, var(--fx-surface-solid, var(--fx-surface)));
+}
+.home-v2 .hv .hv-door:hover,
+.home-v2 .hv .hv-door:focus-visible {
+  border-color: var(--fx-accent);
+}
+.home-v2 .hv .hv-door .hv-label {
+  margin: 0;
+}
+.home-v2 .hv-door-title {
+  font-family: var(--fx-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.home-v2 .hv-door-text {
+  font-size: 0.9rem;
+  color: var(--fx-muted);
+}
+@media (max-width: 900px) {
+  .home-v2 .hv-doors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .home-v2 .hv-doors {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 .home-v2 .hv-hero {
   position: relative;
@@ -197,12 +217,12 @@ html.hv-js .home-v2 [data-lines] {
   pointer-events: none;
 }
 .home-v2 .hv-hero > .hv-globe {
-  --gs: min(44vw, 620px);
-  position: absolute;
-  z-index: 0;
-  top: calc(50% - var(--gs) / 2 + 1rem);
-  right: -4.5rem;
-  width: var(--gs);
+  grid-area: globe;
+  justify-self: center;
+  width: min(100%, 26rem);
+}
+.home-v2 .hv-hero > .hv-stats {
+  grid-area: stats;
 }
 .home-v2 .hv-globe canvas {
   display: block;
@@ -646,7 +666,7 @@ html.hv-js .home-v2 [data-lines] {
   font-family: var(--fx-serif);
   font-style: normal;
   font-weight: 500 !important;
-  font-size: clamp(2.9rem, 9vw, 7.6rem) !important;
+  font-size: clamp(2.6rem, 6.4vw, 5.6rem) !important;
   line-height: 0.95;
   letter-spacing: -0.03em !important;
   text-align: left;
@@ -1590,13 +1610,9 @@ html.hv-js .home-v2 [data-lines] {
 }
 
 @media (max-width: 960px) {
-  .home-v2 .hv-hero > .hv-globe {
-    position: relative;
-    top: auto;
-    right: auto;
-    align-self: center;
-    width: min(100%, 26rem);
-    margin: 0 0 2rem;
+  .home-v2 .hv-hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "main" "card" "globe" "stats";
   }
   .home-v2 .hv .hv-head--split {
     grid-template-columns: 1fr;
@@ -1630,19 +1646,6 @@ html.hv-js .home-v2 [data-lines] {
   .home-v2 .hv-log-by {
     grid-column: 2;
     text-align: left;
-  }
-}
-
-@media (max-width: 960px), (hover: none) {
-  .home-v2 .hv-grain {
-    inset: 0;
-    animation: none;
-    mix-blend-mode: normal;
-    opacity: calc(var(--fx-grain) * 0.6);
-  }
-  .home-v2 .hv-blob i {
-    animation: none;
-    filter: blur(24px);
   }
 }
 
@@ -1706,8 +1709,6 @@ html.hv-js .home-v2 [data-lines] {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .home-v2 .hv-grain,
-  .home-v2 .hv-blob i,
   .home-v2 .hv-marquee-track,
   .home-v2 .hv-dot,
   .home-v2 .hv-cover-step i,
