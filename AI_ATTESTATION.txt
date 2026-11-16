@@ -107,7 +107,9 @@ C) Section 3 - Notes@BiOGuide
       attribution checks (throughout early generation).
    3) Cataloguing of 100+ video insertions with attribution (throughout
       early generation).
-   4) Codebase reviews under /reviews.
+   4) Codebase reviews under /reviews. Earlier reviews removed from that
+      folder, such as reviews/repository-audit-2026-10-10.md, are kept in
+      the repository's git history.
    5) Debugging of appearance issues (image backgrounds under different
       themes) and interactive widgets. Widget debugging covered 23 of
       approximately 137 widget files and was scoped to bugfixes, not

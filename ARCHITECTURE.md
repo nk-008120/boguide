@@ -105,6 +105,17 @@ A few specific mechanisms worth calling out:
   they last read (`.eq('status', expectedStatus)` style checks) and treat
   a null result as "someone else already changed this." No database
   transaction or row lock is needed for this to be correct.
+- **Answers are checked before they are stored.** `save-draft` and
+  `lock-block` pass the browser's answers through `sanitizeAnswers()` in
+  `api/_lib/bioclash.js` first. Keys that are not components of that block
+  are dropped, the whole payload is capped at 50,000 characters and any
+  text answer at 5,000, and a value must be a string, a finite number or a
+  boolean (a `free_text_for_others` component takes an object of up to 30
+  strings). Anything else is refused with a 400 and nothing is written.
+- **Integrity counters only go up.** The fullscreen-exit and tab-switch
+  counts arrive from the browser, so `raiseCounters()` writes each one with
+  a conditional update (`.lt(column, value)`): a request can raise a count
+  but never lower it, and a stale or forged lower value is ignored.
 - **Z-score season standings.** `bioclash_season_standings`
   (`supabase/migrations/013_bioclash_season_scoring.sql`) ranks
   participants by `sum(time_normalized_z * season_weight)` across rounds,
@@ -127,11 +138,21 @@ plan's 12-function cap, three previously separate admin endpoints had to
 become one. `runExportGrades()` walks every component in the paper and
 classifies it as auto-graded or not via `componentIsCorrect()` (mcq,
 true_false, and numeric return a boolean, everything else returns `null`);
-the operator fills in `marksAwarded` for the manual ones and posts that
+a blank or non-numeric value is never correct for a numeric component,
+even when the expected value is 0. The operator fills in `marksAwarded`
+for the manual ones and posts that
 back as `manualGrades` to `runFinalizeRound()`, which recomputes
 `autoMarks` and `manualMarks` from the same stored answers server-side
 rather than trusting anything in the request beyond the manual grade
 values themselves.
+
+Two secrets guard this file. `cleanup`, which GitHub Actions calls every
+15 minutes, takes `CRON_SECRET`, the same secret as the daily cron. Every
+other action (`export-grades`, which returns every participant's answers
+with the answer key, and `finalize-round`) takes `BIOCLASH_ADMIN_SECRET`,
+which never leaves the grader's own machine and Vercel. Both checks live in
+`api/_lib/cronAuth.js`, so a leaked cron secret cannot export or rewrite
+results.
 
 A component's mark ceiling is not always its literal `marks` field.
 `componentMaxMarks()` (`api/_lib/bioclash.js`) exists because
@@ -159,8 +180,13 @@ per-block rate. That penalized figure is z-scored across the round's
 field before ranking. A season's row key is the composite string
 `seasonYear + ':' + paperId` (for example `2026:mb-01`), stored in
 `bioclash_results.season`; re-running finalize for the same season key
-deletes and re-inserts rather than accumulating duplicates, which is what
-makes correcting a grading mistake after the fact safe to just re-run.
+replaces that season's rows rather than accumulating duplicates, which is
+what makes correcting a grading mistake after the fact safe to just re-run.
+The replacement is one call to `bioclash_replace_round_results`
+(`supabase/migrations/048_bioclash_figures_and_atomic_results.sql`), a
+`SECURITY DEFINER` function that deletes and inserts in a single
+transaction, so a run that fails partway leaves the previous results in
+place. Only the service role can call it.
 
 That composite key format is also why the round-specific leaderboard page
 silently showed no results for a while.
@@ -200,9 +226,10 @@ curl/PowerShell commands `bioclash-admin.js` expects, which the grader
 copies and runs in their own terminal. It reads back whatever JSON that
 command produced, from a file drop or a paste, renders a per-participant
 grading UI with progress tracking, and autosaves marks to the browser's
-own `localStorage` as the grader works. Nothing in this tool touches
-`CRON_SECRET`, since a page reachable by URL should never be the thing
-holding an admin credential; the actual privileged call always happens in
+own `localStorage` as the grader works. The commands it builds read
+`BIOCLASH_ADMIN_SECRET` from the grader's own shell environment, and the
+page itself never holds it, since a page reachable by URL should never be
+the thing holding an admin credential; the actual privileged call always happens in
 the grader's own terminal, never in the browser.
 
 ## BiOClash: keeping papers unreadable in a public repository
@@ -231,7 +258,7 @@ rather than a flag day.
 
 Loading is a fallback, not a replacement. `readPaperSource()` in
 `api/_lib/bioclash.js` reads `<id>.yaml` if it exists, which covers local
-authoring and the public sample paper, and otherwise opens
+authoring, and otherwise opens
 `<id>.yaml.enc`. A missing or wrong key logs a short error code, returns
 `null`, and is not cached, so setting the variable and retrying recovers
 without a redeploy. `scripts/bioclash-paper-vault.js` is the operator
@@ -240,7 +267,8 @@ interface (`keygen`, `encrypt`, `decrypt`, `rotate`, `verify`, `guard`), and
 the key is present.
 
 Nothing here relies on remembering to run the right command. `.gitignore`
-excludes every plaintext paper except the public sample, `.githooks/pre-commit`
+excludes every plaintext paper (the sample paper is encrypted too),
+`.githooks/pre-commit`
 runs `guard` (enabled once per clone with `git config core.hooksPath
 .githooks`), and the same guard runs in CI. The two allowlists at the top of
 the script name the papers that may stay plaintext; mb-01 is on the second
@@ -292,10 +320,14 @@ What changes from the next round onward:
   and the guard in the pre-commit hook and in CI refuses anything else.
 - A paper goes on the "public after close" allowlist only after its round
   has closed, never before.
-- Figures do not go under `static/`. They are to be served only to a
-  participant who has started an attempt and reached the block that uses
-  them. This is not built yet; it has to be in place before the next paper
-  is authored.
+- Figures do not go under `static/`. They go in the private
+  `bioclash-figures` storage bucket (migration 048), and the paper refers
+  to each one as `private:<path>`. When `start-attempt`, `attempt-state` or
+  `lock-block` returns a block, `signBlockFigures()` in
+  `api/_lib/bioclash.js` swaps those references for signed URLs that
+  expire after 3 hours, so a figure can only be fetched by a participant
+  whose attempt has reached its block. A plain path is still served as an
+  ordinary static file, which is how MB-01's figures keep working.
 - Each paper sets `closesAt`, so the server enforces the end of the window
   instead of someone editing the allowlist by hand.
 
@@ -312,9 +344,11 @@ deliberate tradeoff, not an oversight, immediate publish means the
 archive can grow without a review bottleneck, at the cost of relying on
 reports catching anything wrong after the fact rather than before.
 
-The `is_official` flag on a protocol is derived from `created_by IS
-NULL`, meaning "no user owns this row, so it's BiOGuide's own seed
-content." `tests/biolab/test.mjs` proves a client can never set
+The `is_official` flag on a protocol started out derived from `created_by
+IS NULL`, meaning "no user owns this row, so it's BiOGuide's own seed
+content." Since migration 044 it is an explicit column, set for the seed
+rows and never by a client, so a protocol whose author deletes their
+account stays listed without becoming "official". `tests/biolab/test.mjs` proves a client can never set
 `created_by` to null or to another user's id, at insert or update time,
 since that would let anyone spoof the official badge, and it runs those
 checks against a real Postgres engine (`@electric-sql/pglite`, a WASM
@@ -876,25 +910,64 @@ to avoid maintaining two parallel implementations of movement and combat
 that could drift apart; a bot's "click" is functionally identical to a
 human's, it just originates from a timer instead of a pointer.
 
+## Navigation, the site notice and the explainer page
+
+The navbar is the theme's, overridden in `layouts/partials/navbar.html`
+and `layouts/partials/navbar-title.html` (a home icon and the site name
+in place of the logo). Its items come from `menu.main` in `hugo.toml`:
+five top-level entries (Notes, Past Papers, Country Guides, Competition
+and More), with every other section as a child of More, then Search and
+four icon links (Discord, Instagram, WhatsApp, GitHub) that are hidden
+below 640 px and repeated in `layouts/partials/custom/footer.html`. The
+`#nav-account` block shows Sign in, or an account menu with Dashboard,
+Leaderboard and Account once `static/js/papers-nav-account.js` finds a
+session. On phones the same menu is drawn by the theme's sidebar partial,
+which is also how question pages (`layouts/papers/question.html`) get a
+working phone menu while hiding the desktop sidebar.
+
+There is exactly one site-wide notice,
+`layouts/partials/custom/site-notice.html`, filled from `params.notice`
+in `hugo.toml` (`id`, `text`, `linkText`, `link`). Dismissing it stores
+the `id` in `localStorage`, so publishing a new notice with a new `id`
+shows it again to everyone. Leaving `params.notice` out removes it.
+
+`content/what-is-the-biology-olympiad/_index.md` is the plain-language
+explainer for new students, with its sources listed at the end. It is
+linked from More and points readers on to the country guides at
+`/biology-olympiad-preparation/`.
+
+The `topic-meta` shortcode (`layouts/shortcodes/topic-meta.html`) turns a
+note's `prerequisites` and `next_topics` front matter into links. A bare
+folder name is resolved against the page's own section; a value that
+starts with `/` is looked up with `site.GetPage` and linked by that page's
+real title, which is how a section page such as Practical 1 can point at
+notes in another section.
+
+The account page offers twelve avatars drawn by Lydia K.
+(`static/avatars/lydia-01.webp` to `lydia-12.webp`, used with her
+permission and credited on the account and About pages). The older
+`avatar-*.svg` files stay because saved profiles may still point at them.
+
 ## Home page and site motion: five tiers decided by URL
 
-The visual layer added in v2.1.0 (pointer-following fluid, smooth
-scrolling, scroll reveals, buttons that fill from the point the cursor
-enters) is not applied evenly. One partial,
+The visual layer (scroll reveals, card spotlights, buttons that fill from
+the pointer, soft background layers on landing pages) is not applied
+evenly. One partial,
 `layouts/partials/custom/fx-tier.html`, takes the page's `.RelPermalink`
 and returns a number, and everything else keys off that number:
 
 | Tier | Pages | Body class | What loads |
 |------|-------|------------|------------|
 | 0 | anything under `/bioclash/` | none | nothing new |
-| 1 | anything under `/papers/` | `fx-t fx-s` | `fx-core.css` and `fx-static.css`, inlined in a `<style>` tag |
+| 1 | anything under `/papers/`, and every topic page under `/resources/` (not `/resources/` itself) | `fx-t fx-s` | `fx-core.css` and `fx-static.css`, inlined in a `<style>` tag |
 | 2 | every other page | `fx-t fx` | `fx-core.css` + `fx.css` as one file, and an inlined `assets/home/fx.js` |
 | 3 | exactly `/resources/`, `/biobytes/`, `/biolab/`, `/about/`, `/biology-olympiad-preparation/`, `/games/`, `/games/bio-ludo/`, `/doubts/`, `/dashboard/`, `/account/`, `/live/`, `/live/staff/` | `fx-t fx fx-2` | tier 2 plus `fx2.css` in the same file, and `/bundles/fx2.<hash>.js` |
 | 4 | `/` | `fx-t home-v2` | `fx-core.css` + `home.css` as one file, and `/bundles/home.<hash>.js` |
 
 Tier 0 is BiOClash, left untouched as a matter of policy (see
 `AGENTS.md`). Tier 1 is BiOrchive, where a timed attempt or a table of results must
-not compete with decoration for frame time. It gets the shared look and
+not compete with decoration for frame time, and the topic pages under
+Notes, which are for reading. It gets the shared look and
 nothing that moves: no script, no transitions, no reveals. The dashboard
 and the account page started in tier 1 and were later moved to tier 3 at
 the owner's request. Tier 3 matches exact URLs, not prefixes, so a section's landing
@@ -949,10 +1022,10 @@ below-the-fold cards through one `IntersectionObserver`. It has no
 dependencies, so tier 2 pages download no animation library.
 
 **Tier 3 adds the ambient layers.** `assets/home/fx2-motion.js` injects
-the gradient blobs, the fluid canvas and the grain overlay into `<body>`
-at run time, so the landing pages needed no template changes. It
-also starts smooth scrolling, splits `h2` headings into characters for a
-reveal, and makes the main buttons magnetic. `fx2.css` gives the page
+the gradient blobs and the grain overlay into `<body>` at run time, so
+the landing pages needed no template changes, and does nothing else.
+Smooth scrolling, split-text headings and magnetic buttons were removed.
+`fx2.css` gives the page
 title on these pages the home hero's type treatment (large serif,
 tight tracking, a short two-colour rule beneath), so they read as
 siblings of the home page.
@@ -990,8 +1063,8 @@ the `.homepage-bg` rules have been removed.
 **The BiOClash landing page is the one exception inside tier 0.** The
 exact path `/bioclash/` (no other BiOClash page) loads
 `assets/css/bioclash-landing.css` after `bioclash.css`, and
-`/bundles/bioclash-landing.<hash>.js`, which is `home-fluid.js` joined
-with `assets/home/bioclash-landing.js`. Neither reads `fx-core.css`: the
+`/bundles/bioclash-landing.<hash>.js`, built from
+`assets/home/bioclash-landing.js`. Neither reads `fx-core.css`: the
 page keeps BiOClash's own palette (`--bc-*`), its forced dark theme and
 its green timeline background, and adds a small `--bcl-*` set for the
 ember glow. The script draws two feathered wings as SVG, computed from a
@@ -1003,18 +1076,15 @@ animations: the wrapper's flap, the blurred copy's opacity and the sharp
 copy's opacity, which is why the glow peaks exactly at the top of each
 beat. All three animate only transform or opacity on elements whose
 filters do not change, so the browser moves cached layers and does not
-redraw the feathers each frame. The same fluid simulation the home page
-uses runs here in ember and gold over the background with a `screen`
-blend, under the same conditions (fine pointer, not on data saver, not
-under reduced motion). The script also reveals panels on scroll and
-tracks the pointer for the panel spotlight.
+redraw the feathers each frame. The script also reveals panels on scroll
+and tracks the pointer for the panel spotlight.
 `content/bioclash/_index.md` was not edited: every change is an override
 scoped to `#bioclash-root`, so removing the `/bioclash/` lines in
 `head-end.html` restores the previous page exactly.
 
 **The leaderboards follow the same pattern.** Two kinds of page share
 `assets/css/hall-of-fame.css` and `/bundles/hall-of-fame.<hash>.js`
-(`home-fluid.js` joined with `assets/home/hall-of-fame.js`): the Hall of
+(built from `assets/home/hall-of-fame.js`): the Hall of
 Fame at the exact path `/papers/leaderboard/`, and each BiOClash round
 leaderboard, matched in `head-end.html` by the pattern
 `/bioclash/<round>/leaderboard/`. Every rule is scoped to
@@ -1023,9 +1093,9 @@ which matters because the classes being restyled
 (`.bioclash-case-header`, `.bioclash-champions-frame`,
 `.bioclash-panel`) are used across BiOClash, and no other page may
 change. Each page keeps its own background image and the
-gold-and-crimson palette; the Hall of Fame adds a violet accent and
-runs the fluid in violet and gold, the round leaderboards use ember and
-gold to match the BiOClash landing page. The Season Champions frame
+gold-and-crimson palette; the Hall of Fame adds a violet accent, the
+round leaderboards use ember and gold to match the BiOClash landing
+page. The Season Champions frame
 keeps its existing pulsing ring and chasing light. A new round's
 leaderboard picks this up automatically from its URL.
 
@@ -1038,7 +1108,9 @@ gold, silver and bronze tones by position, and the signed-in visitor's
 own row (`.papers-leaderboard-self`) is outlined in the accent colour.
 
 **A loader for switches to the home page.** `assets/home/fx-nav.js`
-and `assets/css/fx-nav.css` are inlined on tiers 2, 3 and 4. A click on
+and `assets/css/fx-nav.css` are inlined on tiers 2, 3 and 4. The script
+only runs on devices with a fine pointer and hover, so phones never see
+the card. A click on
 a same-site link to `/` from any other page shows a loading card at once
 and records the time of the click in `sessionStorage`. The old page
 keeps the card up until it is replaced. The home page reads the time of
@@ -1067,7 +1139,7 @@ of the tier system: they are cross-document view transitions defined in
 
 ### Scripts are bundled at build time
 
-The home page would otherwise request eight script files. `head-end.html`
+The home page would otherwise request five script files. `head-end.html`
 runs them through Hugo Pipes instead: the vendored libraries in
 `assets/home/vendor/` and the site's own minified scripts are joined with
 `resources.Concat` into `bundles/home.js` and fingerprinted, so the page
@@ -1078,11 +1150,9 @@ year immutable cache; `/vendor/` and `/data/globe-110m.json` are not
 hashed and get thirty days with `stale-while-revalidate`.
 
 The libraries are vendored, not loaded from a CDN, matching the rest of
-the site: GSAP 3.15 with ScrollTrigger, SplitText and ScrambleTextPlugin
-(GSAP's standard no-charge licence), Lenis 1.3 (MIT), and d3-geo with
-d3-array (ISC). The fluid simulation in `assets/home/home-fluid.js`
-follows the approach of Pavel Dobryakov's WebGL-Fluid-Simulation (MIT).
-Licence texts and notices are kept under `static/vendor/`.
+the site: GSAP 3.15 with ScrollTrigger and ScrambleTextPlugin (GSAP's
+standard no-charge licence), and d3-geo with d3-array (ISC). Licence
+texts and notices are kept under `static/vendor/`.
 
 ### Loading order is built around first paint
 
@@ -1093,11 +1163,8 @@ scroll-revealed elements until the bundle animates them in; if the bundle
 has not run within four seconds the class is removed, so a failed script
 can never leave content invisible.
 
-Two things are deferred until they are needed. The fluid simulation
-compiles its shaders at start-up but runs no frames until the pointer
-first moves. The globe's libraries and its 110m country outlines are
-fetched when the browser is idle, and the home bundle does not include
-them.
+The globe's libraries and its 110m country outlines are deferred until
+the browser is idle, and the home bundle does not include them.
 
 The thin line at the top of tier 3 and tier 4 pages is a progress
 indicator, not a gate. `baseof.html` advances it at fixed milestones
@@ -1117,16 +1184,6 @@ animated `clip-path` circle. That path is built in script from the
 section's measured geometry and rebuilt on resize, because its start and
 end points depend on where the heading and the frame land at the current
 width.
-
-### The fluid canvas looks after itself
-
-`home-fluid.js` exposes `window.HVFluid.create(canvas)` and is shared by
-tiers 3 and 4. It stores dye as two channels and maps them to two theme
-colours in the display shader, so a theme switch is a uniform change and
-not a restart; the motion scripts watch the class on `<html>` and call
-`setColors`. It refuses to start on a software renderer, lowers its
-resolution when frames run slow, shuts itself down if they stay slow, and
-stops drawing after seven seconds without input.
 
 ### The globe is a fourth reader of the country dataset
 
@@ -1163,11 +1220,10 @@ thread.
   it exists for testing on machines whose operating system reports
   reduced motion, which Windows does when "Show animations" is off.
 - **Data saver and slow connections.** When `navigator.connection`
-  reports `saveData` or a 2g connection, the fluid, smooth scrolling and
-  the globe are skipped.
-- **Touch and coarse pointers.** The fluid, magnetic buttons and smooth
-  scrolling require a fine pointer with hover. Phones get the layout,
-  the reveals and native scrolling.
+  reports `saveData` or a 2g connection, the globe is skipped.
+- **Touch and coarse pointers.** The heading scramble, the hover
+  spotlights and the home page loading card require a fine pointer with
+  hover. Phones get the layout and the reveals.
 
 ### Things to know before changing it
 
@@ -1218,20 +1274,26 @@ thread.
 The site runs three separate analytics tools, deliberately not
 overlapping in what they're for:
 
-- **Umami** (self-hosted) handles page views, Core Web Vitals, and feeds
-  the country-stats pipeline: `api/daily-cron.js` syncs Umami's own data
-  into `country_stats_cache` once a day, which `static/js/country-counter.js`
-  reads to render the homepage hero counter and the About page's
-  "Community Reach" section. Two different Umami endpoints feed that row,
-  deliberately: the headline figure is the site-level all-time **visits**
-  count from `/api/websites/:id/stats`, stored in `total_visits`, so that
-  the number on the page is the same number the Umami dashboard shows
-  rather than a sum this codebase computed; the per-country breakdown is
-  the `visits` column of `/metrics/expanded?type=country`. Both are visits
-  (sessions), not page views and not unique visitors, and the labels say
-  "student visits" for that reason. The front end falls back to summing
-  the per-country rows only when `total_visits` is missing, which happens
-  between a deploy and the next cron run. Community Reach in particular is entirely
+- **Umami** handles page views and feeds the visit counters. It runs
+  either self-hosted or on Umami Cloud: the tracker reads
+  `HUGO_UMAMI_SERVER_URL` and `HUGO_UMAMI_WEBSITE_ID` when set, and
+  `api/daily-cron.js` uses the Umami Cloud API when `UMAMI_API_KEY` is set
+  and otherwise logs in to the self-hosted instance with `UMAMI_BASE_URL`,
+  `UMAMI_USERNAME` and `UMAMI_PASSWORD`. Supabase stores only what the site
+  shows: one row, `country_stats_cache` with `id = 'latest'`, holding a
+  running total of visits and visits per country. Once a day the cron
+  fetches the previous UTC day's visits (`/websites/:id/stats`) and visits
+  per country (`/metrics/expanded?type=country`), adds them to the total
+  and records the day in `last_synced_day`
+  (`supabase/migrations/047_country_stats_running_total.sql`). If runs were
+  missed it catches up day by day, at most 60 days back, and running it
+  twice on the same day adds nothing. Because the total no longer depends
+  on Umami's history, old Umami events can be pruned without changing the
+  numbers. `static/js/country-counter.js` reads the row to render the home
+  page counter and the About page's "Community Reach" section, and
+  `/api/country-stats` is cached at the edge for an hour. Both figures are
+  visits (sessions), not page views and not unique visitors, and the
+  labels say "student visits" for that reason. Community Reach in particular is entirely
   live-rendered from this pipeline, there's no static country list or
   visitor count anywhere in `content/about/_index.md` to hand-edit; the
   numbers and the "sourced live... from Umami Analytics" attribution line

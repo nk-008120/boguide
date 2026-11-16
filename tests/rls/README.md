@@ -6,14 +6,29 @@ highest-numbered file) against a real Postgres engine
 build of actual Postgres) instead of just reading the SQL and reasoning
 about it. No live Supabase project or credentials are needed or used.
 
-Files:
-- `phase0-hardening.test.mjs` -- proves migrations 037-040 do what they
-  claim: the `paper_contributions`/`content_corrections`/`community_solutions`
+Files, all run by `npm test`:
+- `phase0-hardening.test.mjs`: migrations 037 to 040. The
+  `paper_contributions`, `content_corrections` and `community_solutions`
   self-approval bypass is closed, `profiles` column scoping blocks reading
   another user's private fields while `get_my_profile()` still returns the
-  caller's own, the `doubt_reports`/`biolab_*_reports` staff policies work,
-  and BiOLab feedback moderation (`is_removed` + `biolab_feedback_reports`)
-  behaves correctly end to end.
+  caller's own, the `doubt_reports` and `biolab_*_reports` staff policies
+  work, and BiOLab feedback moderation (`is_removed` plus
+  `biolab_feedback_reports`) behaves correctly end to end.
+- `biolive.test.mjs`: BiOLive. Who can read the schedule and
+  registrations, the 24 hour registration cutoff, the staff key gate and
+  its lockout, and that deleting an account removes its registrations.
+- `storage-official-hidden.test.mjs`: migration 044. Storage paths must
+  sit under the user's own folder, a removed protocol's files cannot be
+  re-attached, only seeded protocols are official, and hidden profiles
+  are hidden from everyone except their owner.
+- `write-limits.test.mjs`: migrations 045 and 049 and part of 048. Display name and
+  protocol length checks, rating paths, the source link scheme check,
+  the daily caps on doubts, protocols, feedback and reports, the 049
+  caps on ratings, review rows and BiOLab results, the closed attempt
+  view and pending-count leaks, and the
+  BiOClash results replacement function (not callable by a signed-in
+  user, replaces a round's rows in one step, leaves old rows in place on
+  failure) and the private `bioclash-figures` bucket.
 
 It loads and applies `supabase/schema_baseline.sql` plus every file in
 `supabase/migrations/`, in order, verbatim, against a bootstrap schema that
@@ -28,8 +43,11 @@ client request would.
 
 ```bash
 npm install
-node phase0-hardening.test.mjs
+npm test
 ```
+
+To run one file on its own, use `node <file>`, for example
+`node write-limits.test.mjs`.
 
 ## Bugs this already caught
 

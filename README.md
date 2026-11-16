@@ -77,13 +77,21 @@ BiOHorizon Reports, testimonials and articles. Each BiOHorizon Report (`/biobyte
 
 A childhood ludo variant integrated with biology quizzes to create the first interactive fun and learning game for BiOlogy enthusiasts when they are bored. Special question bank of its own.
 
+### What is the Biology Olympiad?
+
+A plain-language explainer for students who have just heard of the olympiad (`/what-is-the-biology-olympiad/`): what the IBO is, who can take part, what the exams test and how medals are awarded, with links to the official IBO sources it is based on.
+
 ### About, Tribute sections
 
 Visit /about and /tribute
 
-### Home page and site motion (v2.1.0)
+### Navigation
 
-The home page is a single scroll-led page: a hero with an interactive 3-D globe that links to the country-by-country guides, a reel section, the 16-section learning path, and the practice, contribution and community sections. A lighter version of the same visual language (card spotlights, buttons that fill from where the cursor enters, scroll reveals) runs across the rest of the site, with a fuller version on the main landing pages. BiOrchive, the Dashboard and the account page share the look but get no motion at all, and BiOClash is deliberately left out. All of it respects the reduced-motion preference and scales back on touch devices and data-saver connections.
+The navbar has five items: Notes, Past Papers, Country Guides, Competition (BiOClash) and More. More holds everything else (the Biology Olympiad explainer, Doubts, BiOLive, BiOLab, articles, Dashboard, Leaderboard, Games, About, Tribute). Search, Sign in (an account menu once signed in) and the Discord, Instagram, WhatsApp and GitHub icons sit on the right; the icons are hidden on narrow screens and also appear in the footer. The menu is defined in `hugo.toml` under `menu.main`. One site-wide notice is shown above the navbar; its text and link come from `params.notice` in `hugo.toml`, and changing its `id` shows it again to visitors who dismissed the previous one.
+
+### Home page and site motion
+
+The home page opens with a hero in the "Field Guide" style: a three-step card for first-time visitors (with a button that replays the 60-second site tour, which otherwise runs once), the interactive globe that links to the country guides, and four doors into Learn (Notes), Practice (Past Papers), Plan (Country Guides) and Compete (BiOClash). Below that are the reel, Start Here, the 16-section learning path, and the practice, contribution, changelog and community sections. A lighter version of the same visual language (card spotlights, buttons that fill from the pointer, scroll reveals) runs across the rest of the site, with soft background layers on the main landing pages. Topic pages under Notes and BiOrchive share the look with no motion at all, and BiOClash is deliberately left out. Smooth scrolling, magnetic buttons, split-text headings and the cursor fluid effect have been removed. All of it respects the reduced-motion preference; hover-only effects, the heading scramble and the home page loading card run only on devices with a fine pointer.
 
 ---
 
@@ -96,13 +104,13 @@ The home page is a single scroll-led page: a hero with an interactive 3-D globe 
 | Backend | [Supabase](https://supabase.com/): Auth, Postgres, Storage |
 | Serverless Functions | Vercel Functions (12 API routes, the Hobby plan limit) |
 | Hosting | [Vercel](https://vercel.com/) |
-| Analytics | [Umami](https://umami.is/) (self-hosted, Core Web Vitals + country stats), [PostHog](https://posthog.com/) (EU-hosted, product-analytics events only, no session recording), [Google Analytics 4](https://analytics.google.com/) |
+| Analytics | [Umami](https://umami.is/) (self-hosted, or Umami Cloud; page views and the daily visit totals), [PostHog](https://posthog.com/) (EU-hosted, product-analytics events only, no session recording), [Google Analytics 4](https://analytics.google.com/) |
 | Error Tracking | [Sentry](https://sentry.io/) (API layer only, opt-in via `SENTRY_DSN`) |
-| Styling | Tailwind CSS + about 17,600 lines of custom CSS across 37 files |
-| Math Rendering | KaTeX (via Hugo's built-in support) |
+| Styling | Tailwind CSS + about 17,800 lines of custom CSS across 35 files |
+| Math Rendering | KaTeX (via Hugo's built-in support), and MathJax 3.2.2 from jsDelivr on pages that use the `mathjax` shortcode |
 | Interactive Widgets | Plotly, Vanilla JS, SVG |
 | Practice App | [Streamlit](https://streamlit.io/) on Streamlit Community Cloud (the Plant Computational Biology practice app) |
-| Motion | [GSAP](https://gsap.com/) (ScrollTrigger, SplitText, ScrambleText), [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll, a WebGL2 fluid simulation, [d3-geo](https://github.com/d3/d3-geo) for the home page globe. All vendored, bundled and fingerprinted by Hugo Pipes |
+| Motion | [GSAP](https://gsap.com/) (ScrollTrigger, ScrambleText) and [d3-geo](https://github.com/d3/d3-geo) for the home page globe. All vendored, bundled and fingerprinted by Hugo Pipes |
 
 ### Design Identity
 
@@ -282,4 +290,6 @@ Past papers in BiOrchive are not our work, and they are hosted on these terms:
 - **INBO papers** are hosted with permission from HBCSE (Homi Bhabha Centre for Science Education), which runs the Indian olympiad programme. That permission covers BiOGuide; it does not pass on to anyone reusing them, so ask HBCSE before redistributing those.
 - No other olympiad's papers are hosted. A new paper is only added once the question of what licence or permission covers it has a checkable answer, as set out in [CONTRIBUTING_PAPERS.md](CONTRIBUTING_PAPERS.md).
 
-The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms. The fonts in `static/fonts/` are under the SIL Open Font License; each family's licence text is in `static/fonts/licenses/`. So do the third-party libraries in `assets/home/vendor/`, `assets/vendor/` and `static/vendor/` (GSAP, Lenis, d3, 3Dmol.js, the Supabase client) and the Natural Earth map data in `static/data/globe-110m.json`; their licence texts and notices are kept under `static/vendor/`. One of them needs saying plainly: GSAP is free to use but is not open source. It is under GreenSock's own "Standard No Charge" licence, not MIT, so the MIT licence on our code does not extend to the GSAP files and anyone reusing this repository takes GSAP on GreenSock's terms.
+The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms. The fonts in `static/fonts/` are under the SIL Open Font License; each family's licence text is in `static/fonts/licenses/`. So do the third-party libraries in `assets/home/vendor/`, `assets/vendor/` and `static/vendor/` (GSAP, d3, 3Dmol.js, the Supabase client) and the Natural Earth map data in `static/data/globe-110m.json`; their licence texts and notices are kept under `static/vendor/`. One of them needs saying plainly: GSAP is free to use but is not open source. It is under GreenSock's own "Standard No Charge" licence, not MIT, so the MIT licence on our code does not extend to the GSAP files and anyone reusing this repository takes GSAP on GreenSock's terms.
+
+The account avatars in `static/avatars/lydia-*.webp` were drawn by [Lydia K.](https://mitadmissions.org/blogs/author/lakras/) ([@nightlyfieldlog](https://www.instagram.com/nightlyfieldlog/)) and are used with her permission. They are not covered by either of BiOGuide's licences, so do not reuse them without asking her.
