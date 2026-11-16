@@ -1,0 +1,9 @@
+{{- with .Site.Params.notice -}}
+{{- if .text -}}
+<div id="site-notice" class="site-notice" data-notice="{{ .id }}" role="region" aria-label="Site notice" hidden>
+  <p>{{ .text }}{{ with .link }} <a href="{{ . | relURL }}">{{ $.Site.Params.notice.linkText | default "Read more" }}</a>{{ end }}</p>
+  <button type="button" class="site-notice-close" aria-label="Dismiss notice">&times;</button>
+</div>
+<script>(function(){var n=document.getElementById("site-notice");if(!n)return;var k="bioguide-notice-"+n.getAttribute("data-notice");try{if(localStorage.getItem(k)==="1")return}catch(e){}n.hidden=false;n.querySelector(".site-notice-close").addEventListener("click",function(){n.hidden=true;try{localStorage.setItem(k,"1")}catch(e){}})})()</script>
+{{- end -}}
+{{- end -}}

@@ -1,4 +1,9 @@
 <div style="margin-top: 4rem; padding: 1rem; text-align: center; border-top: 1px solid #ccc;">
+  <nav class="site-footer-social" aria-label="BiOGuide community">
+    {{- range slice (dict "name" "Discord" "url" "https://discord.gg/UUkakYdsC" "icon" "discord") (dict "name" "Instagram" "url" "https://www.instagram.com/bioguideofficial/" "icon" "instagram") (dict "name" "WhatsApp" "url" "https://chat.whatsapp.com/Ia9cArydT4hB4PPbFLRmNh" "icon" "whatsapp") (dict "name" "GitHub" "url" "https://github.com/nk-008120/boguide" "icon" "github") }}
+    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .name }}">{{ partial "utils/icon.html" (dict "name" .icon "attributes" "height=20") }}<span>{{ .name }}</span></a>
+    {{- end }}
+  </nav>
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img alt="Creative Commons License" style="border-width:0"
          src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
