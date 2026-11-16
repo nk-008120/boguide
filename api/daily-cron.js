@@ -31,11 +31,41 @@ function dayString(ms) {
   return new Date(ms).toISOString().slice(0, 10);
 }
 
-async function umamiGet(path, params) {
-  const base = (process.env.UMAMI_API_URL || 'https://api.umami.is/v1').replace(/\/$/, '');
-  const res = await fetch(`${base}${path}?${new URLSearchParams(params)}`, {
-    headers: { 'x-umami-api-key': process.env.UMAMI_API_KEY, Accept: 'application/json' }
+let selfHostedToken = null;
+
+async function selfHostedLogin(base) {
+  if (selfHostedToken) return selfHostedToken;
+  const res = await fetch(`${base}/api/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username: process.env.UMAMI_USERNAME, password: process.env.UMAMI_PASSWORD })
   });
+  if (!res.ok) throw new Error(`Umami login failed: ${res.status}`);
+  const data = await res.json();
+  if (!data.token) throw new Error('Umami login response had no token');
+  selfHostedToken = data.token;
+  return selfHostedToken;
+}
+
+function umamiConfigured() {
+  if (!process.env.UMAMI_WEBSITE_ID) return false;
+  if (process.env.UMAMI_API_KEY) return true;
+  return !!(process.env.UMAMI_BASE_URL && process.env.UMAMI_USERNAME && process.env.UMAMI_PASSWORD);
+}
+
+async function umamiGet(path, params) {
+  let url;
+  let headers;
+  if (process.env.UMAMI_API_KEY) {
+    const base = (process.env.UMAMI_API_URL || 'https://api.umami.is/v1').replace(/\/$/, '');
+    url = `${base}${path}`;
+    headers = { 'x-umami-api-key': process.env.UMAMI_API_KEY, Accept: 'application/json' };
+  } else {
+    const base = process.env.UMAMI_BASE_URL.replace(/\/$/, '');
+    url = `${base}/api${path}`;
+    headers = { Authorization: `Bearer ${await selfHostedLogin(base)}`, Accept: 'application/json' };
+  }
+  const res = await fetch(`${url}?${new URLSearchParams(params)}`, { headers });
   if (!res.ok) throw new Error(`Umami request ${path} failed: ${res.status}`);
   return res.json();
 }
@@ -89,8 +119,8 @@ async function runKeepalive() {
 
 async function runSyncCountryStats() {
   const websiteId = process.env.UMAMI_WEBSITE_ID;
-  if (!process.env.UMAMI_API_KEY || !websiteId) {
-    throw new Error('UMAMI_API_KEY / UMAMI_WEBSITE_ID are not configured');
+  if (!umamiConfigured()) {
+    throw new Error('Set UMAMI_WEBSITE_ID with either UMAMI_API_KEY, or UMAMI_BASE_URL, UMAMI_USERNAME and UMAMI_PASSWORD');
   }
 
   const client = getAdminClient();

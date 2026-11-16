@@ -110,6 +110,7 @@ sitemap:
   <p class="account-hint">Pick a profile picture - shown on the leaderboard and in the navbar.</p>
   <div id="account-avatar-grid" class="account-avatar-grid"></div>
   <div class="account-msg" id="account-avatar-msg"></div>
+  <p class="account-hint account-avatar-credit">Avatars drawn by <a href="https://mitadmissions.org/blogs/author/lakras/" target="_blank" rel="noopener">Lydia K.</a>, used with her permission. Follow her work at <a href="https://www.instagram.com/nightlyfieldlog/" target="_blank" rel="noopener">@nightlyfieldlog</a>.</p>
 
   <h3>Profile</h3>
   <form id="account-profile-form" class="account-form">

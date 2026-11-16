@@ -249,6 +249,10 @@ Yes, please do. Open a GitHub Issue or PR on the [repository](https://github.com
 We encrypt your login information using industry standards. There is no reason to be worried about logging in, but follow the standard rules of Password creation, it is a really cool feature where you can track where you stand in the leaderboard, and attempt tests with some purpose attached. Enjoy!
 {{< /faq-item >}}
 
+## Credits
+
+The little characters you can choose as your avatar were drawn by [Lydia K.](https://mitadmissions.org/blogs/author/lakras/), an artist whose illustrations also appear across the MIT Admissions blogs and around MIT's campus, especially at [Random Hall](https://mitguidetoresidences.mit.edu/residences/random-hall). They are used on BiOGuide with her permission. You can follow her work at [@nightlyfieldlog](https://www.instagram.com/nightlyfieldlog/).
+
 ## Licensing
 
 BiOGuide is dual-licensed. Educational content is published under a CC BY-NC-SA 4.0 license. Source code is published separately under the MIT License.

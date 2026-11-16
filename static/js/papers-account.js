@@ -5,9 +5,9 @@
   if (!root) return;
 
   var AVATAR_FILES = [
-    'avatar-01.svg', 'avatar-02.svg', 'avatar-03.svg', 'avatar-04.svg',
-    'avatar-05.svg', 'avatar-06.svg', 'avatar-07.svg', 'avatar-08.svg',
-    'avatar-09.svg', 'avatar-10.svg', 'avatar-11.svg', 'avatar-12.svg'
+    'lydia-01.webp', 'lydia-02.webp', 'lydia-03.webp', 'lydia-04.webp',
+    'lydia-05.webp', 'lydia-06.webp', 'lydia-07.webp', 'lydia-08.webp',
+    'lydia-09.webp', 'lydia-10.webp', 'lydia-11.webp', 'lydia-12.webp'
   ];
 
   var COUNTRIES = [
