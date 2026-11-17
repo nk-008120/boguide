@@ -232,7 +232,13 @@ A prospective competitor fills in only an email and display name on an
 external Google Form; an Apps Script bound to that form's submission
 event posts both to `/api/bioclash-register` with the bearer secret
 `BIOCLASH_REGISTER_SECRET`, kept in the script's Script Properties rather
-than its source. The endpoint checks the input, then calls Supabase's
+than its source. Vercel's Hobby plan allows 12 functions per deployment
+and `api/` already holds 12, so that URL is a rewrite in `vercel.json`
+to `/api/bioclash-admin?route=register`, which hands the request to
+`api/_lib/bioclashRegister.js` before its own secret check; files under
+`api/_lib/` are not deployed as functions. A thirteenth file in `api/`
+fails the deployment after the build succeeds, with no error in the
+build log. The endpoint checks the input, then calls Supabase's
 admin invite, so the service-role key stays in Vercel and the call is
 not subject to the CAPTCHA that public sign-in calls need. An email that
 already has an account gets no new email and is reported back as

@@ -172,7 +172,7 @@ console.log('\n--- account page: next redirect ---');
 
 {
   console.log('\n--- bioclash-register ---');
-  const { register } = require(path.join(REPO_ROOT, 'api/bioclash-register.js'));
+  const { register } = require(path.join(REPO_ROOT, 'api/_lib/bioclashRegister.js'));
   const fakeInviter = (result) => {
     const calls = [];
     return {
@@ -205,6 +205,23 @@ console.log('\n--- account page: next redirect ---');
   check('a display name over 60 characters is refused', out.status === 400 && admin.calls.length === 0);
   out = await register(admin, undefined, redirect);
   check('a missing body is refused, not thrown', out.status === 400);
+
+  const adminHandler = require(path.join(REPO_ROOT, 'api/bioclash-admin.js'));
+  const fakeRes = () => {
+    const r = { code: 0, body: null, headersSent: false };
+    r.status = (c) => { r.code = c; return r; };
+    r.json = (b) => { r.body = b; r.headersSent = true; return r; };
+    return r;
+  };
+  let res = fakeRes();
+  await adminHandler({ method: 'GET', query: { route: 'register' }, headers: {} }, res);
+  check('bioclash-admin hands route=register to the register code', res.code === 405 && res.body.ok === false);
+  const saved = process.env.BIOCLASH_REGISTER_SECRET;
+  process.env.BIOCLASH_REGISTER_SECRET = 'right';
+  res = fakeRes();
+  await adminHandler({ method: 'POST', query: { route: 'register' }, headers: { authorization: 'Bearer wrong' }, body: {} }, res);
+  check('the register route refuses a wrong key', res.code === 401);
+  if (saved === undefined) delete process.env.BIOCLASH_REGISTER_SECRET; else process.env.BIOCLASH_REGISTER_SECRET = saved;
 }
 
 console.log('\n' + (failures === 0 ? 'ALL API AND REDIRECT CHECKS PASSED.' : `${failures} CHECK(S) FAILED.`));

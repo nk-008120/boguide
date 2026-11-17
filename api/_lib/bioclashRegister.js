@@ -1,7 +1,7 @@
-const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { captureError } = require('./_lib/sentry');
-const { verifySecret } = require('./_lib/cronAuth');
-const { rateLimit } = require('./_lib/rateLimit');
+const { getAdminClient } = require('./supabaseAdmin');
+const { captureError } = require('./sentry');
+const { verifySecret } = require('./cronAuth');
+const { rateLimit } = require('./rateLimit');
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_EMAIL = 254;
@@ -39,7 +39,7 @@ async function register(admin, body, redirectTo) {
   return { status: 502, body: { ok: false, error: 'Could not send the invite' }, cause: error };
 }
 
-module.exports = async (req, res) => {
+async function route(req, res) {
   try {
     await handle(req, res);
   } catch (e) {
@@ -47,10 +47,9 @@ module.exports = async (req, res) => {
     await captureError(e, { route: 'bioclash-register' });
     if (!res.headersSent) res.status(500).json({ ok: false, error: 'Internal error' });
   }
-};
+}
 
-module.exports.register = register;
-module.exports.readInput = readInput;
+module.exports = { route, register, readInput };
 
 async function handle(req, res) {
   if (req.method !== 'POST') {

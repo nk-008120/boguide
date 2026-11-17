@@ -1,6 +1,7 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
 const { loadPaper, allBlocks, componentIsCorrect, componentMaxMarks, extensionPenalty, autoGrade } = require('./_lib/bioclash');
 const { verifyCronSecret, verifyAdminSecret } = require('./_lib/cronAuth');
+const { route: registerRoute } = require('./_lib/bioclashRegister');
 const { captureError } = require('./_lib/sentry');
 
 async function runCleanup(req, res, admin) {
@@ -298,6 +299,10 @@ async function runFinalizeRound(req, res, admin) {
 }
 
 module.exports = async (req, res) => {
+  if (req.query && req.query.route === 'register') {
+    await registerRoute(req, res);
+    return;
+  }
   if (req.method !== 'GET' && req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
     return;
