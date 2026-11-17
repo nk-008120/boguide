@@ -171,6 +171,12 @@ html.dark .account-link-btn {
   cursor: default;
   text-decoration: none;
 }
+.account-turnstile {
+  margin-top: 1rem;
+}
+.account-turnstile:empty {
+  display: none;
+}
 .account-msg {
   font-size: 0.85rem;
   min-height: 1.2em;

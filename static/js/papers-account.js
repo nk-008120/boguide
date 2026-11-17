@@ -113,6 +113,71 @@
     el.classList.toggle('account-msg-error', !!isError);
   }
 
+  var TURNSTILE_SITEKEY = window.__TURNSTILE_SITEKEY || '';
+  var CAPTCHA_WAIT = 'Please wait for the security check on this page to finish, then try again.';
+  var turnstileBox = document.getElementById('account-turnstile');
+  var turnstileWidget = null;
+  var turnstileReady = null;
+  var weakPasswordNotice = false;
+
+  function loadTurnstile() {
+    if (!TURNSTILE_SITEKEY || !turnstileBox) return Promise.resolve(false);
+    if (turnstileReady) return turnstileReady;
+    turnstileReady = new Promise(function (resolve) {
+      window.bioTurnstileLoaded = function () {
+        turnstileWidget = window.turnstile.render(turnstileBox, {
+          sitekey: TURNSTILE_SITEKEY,
+          action: 'account',
+          appearance: 'interaction-only'
+        });
+        resolve(true);
+      };
+      var script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=bioTurnstileLoaded';
+      script.async = true;
+      script.onerror = function () { resolve(false); };
+      document.head.appendChild(script);
+    });
+    return turnstileReady;
+  }
+
+  function captchaOptions(options) {
+    if (!TURNSTILE_SITEKEY) return Promise.resolve(options);
+    return loadTurnstile().then(function (ok) {
+      var token = ok && turnstileWidget !== null ? window.turnstile.getResponse(turnstileWidget) : '';
+      if (!token) throw new Error('captcha');
+      options.captchaToken = token;
+      return options;
+    });
+  }
+
+  function resetCaptcha() {
+    if (turnstileWidget !== null && window.turnstile) window.turnstile.reset(turnstileWidget);
+  }
+
+  function isCaptchaError(err) {
+    return !!err && (err.code === 'captcha_failed' || /captcha/i.test(err.message || ''));
+  }
+
+  function withCaptcha(msgEl, options, call) {
+    return captchaOptions(options).then(function (ready) {
+      return Promise.resolve(call(ready)).then(function (result) {
+        resetCaptcha();
+        if (result && isCaptchaError(result.error)) {
+          setMsg(msgEl, CAPTCHA_WAIT, true);
+          return null;
+        }
+        return result;
+      }, function (err) {
+        resetCaptcha();
+        throw err;
+      });
+    }, function () {
+      setMsg(msgEl, CAPTCHA_WAIT, true);
+      return null;
+    });
+  }
+
   var avatarGrid = document.getElementById('account-avatar-grid');
   var avatarMsg = document.getElementById('account-avatar-msg');
   var currentUserId = null;
@@ -199,6 +264,12 @@
     });
     showScreen('loggedIn');
 
+    if (weakPasswordNotice) {
+      weakPasswordNotice = false;
+      setMsg(document.getElementById('account-set-password-msg'), 'Your password is shorter than the new minimum of 10 characters. Please choose a new one here.', true);
+      return;
+    }
+
     var next = getNextParam();
     if (next) window.location.replace(next);
   }
@@ -236,7 +307,10 @@
     var email = loginForm.email.value.trim();
     var password = loginForm.password.value;
     setMsg(msg, 'Logging in…', false);
-    client.auth.signInWithPassword({ email: email, password: password }).then(function (result) {
+    withCaptcha(msg, {}, function (options) {
+      return client.auth.signInWithPassword({ email: email, password: password, options: options });
+    }).then(function (result) {
+      if (!result) return;
       if (result.error) {
         if (/not confirmed/i.test(result.error.message || '')) {
           setMsg(msg, 'Your email is not confirmed yet. Choose "Email me a sign-in code" below to activate your account.', true);
@@ -246,6 +320,7 @@
         return;
       }
       setMsg(msg, '', false);
+      weakPasswordNotice = !!(result.data && result.data.weakPassword);
       refresh();
     });
   });
@@ -257,11 +332,10 @@
     var password = signupForm.password.value;
     var displayName = signupForm.displayName.value.trim();
     setMsg(msg, 'Signing up…', false);
-    client.auth.signUp({
-      email: email,
-      password: password,
-      options: { data: { display_name: displayName } }
+    withCaptcha(msg, { data: { display_name: displayName } }, function (options) {
+      return client.auth.signUp({ email: email, password: password, options: options });
     }).then(function (result) {
+      if (!result) return;
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       if (result.data && result.data.session) {
         if (window.PostHogEvents) window.PostHogEvents.trackSignup();
@@ -277,9 +351,10 @@
     var msg = document.getElementById('account-reset-msg');
     var email = resetForm.email.value.trim();
     setMsg(msg, 'Sending…', false);
-    client.auth.resetPasswordForEmail(email, {
-      redirectTo: window.location.origin + '/account/'
+    withCaptcha(msg, { redirectTo: window.location.origin + '/account/' }, function (options) {
+      return client.auth.resetPasswordForEmail(email, options);
     }).then(function (result) {
+      if (!result) return;
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       setMsg(msg, 'Check your email for a reset link.', false);
     });
@@ -317,12 +392,21 @@
 
   function sendOtp(email) {
     var failure = { ok: false, error: 'Could not send a code right now. Please try again shortly.' };
-    return client.auth.signInWithOtp({
-      email: email,
-      options: { shouldCreateUser: false }
+    return captchaOptions({ shouldCreateUser: false }).then(function (options) {
+      return client.auth.signInWithOtp({ email: email, options: options }).then(function (result) {
+        resetCaptcha();
+        return result;
+      }, function (err) {
+        resetCaptcha();
+        throw err;
+      });
+    }, function () {
+      return { captchaMissing: true };
     }).then(function (result) {
+      if (result.captchaMissing) return { ok: false, error: CAPTCHA_WAIT };
       var err = result.error;
       if (!err) return { ok: true };
+      if (isCaptchaError(err)) return { ok: false, error: CAPTCHA_WAIT };
       var status = err.status || 0;
       if (status === 400 || status === 422) return { ok: true };
       if (status === 429) return { ok: false, error: 'Too many requests. Please wait a minute and try again.' };
@@ -460,7 +544,7 @@
     if (isRecovery) { showScreen('recovery'); return; }
     window.PapersAuth.getSession().then(function (session) {
       if (session) renderLoggedIn(session);
-      else { showScreen('loggedOut'); showForm('login'); }
+      else { showScreen('loggedOut'); showForm('login'); loadTurnstile(); }
     });
   }
 

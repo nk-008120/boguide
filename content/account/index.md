@@ -52,7 +52,7 @@ sitemap:
   <form id="account-signup-form" class="account-form" hidden>
     <label>Display name<input type="text" name="displayName" required maxlength="40" placeholder="Shown on the leaderboard"></label>
     <label>Email<input type="email" name="email" required autocomplete="email"></label>
-    <label>Password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
+    <label>Password <span class="account-hint">(at least 10 characters)</span><input type="password" name="password" required minlength="10" autocomplete="new-password"></label>
     <button type="submit" class="papers-nav-btn papers-nav-next">Sign Up</button>
     <p class="account-consent">By signing up, you agree to our <a href="/privacy/">Privacy Policy</a>.</p>
     <div class="account-msg" id="account-signup-msg"></div>
@@ -82,13 +82,15 @@ sitemap:
     <button type="button" id="account-reset-cancel-btn" class="account-link-btn">Back to log in</button>
     <div class="account-msg" id="account-reset-msg"></div>
   </form>
+
+  <div id="account-turnstile" class="account-turnstile"></div>
 </section>
 
 <section id="account-recovery" class="account-screen" hidden>
   <h2>Set your password</h2>
   <p class="account-hint">You're verified and logged in - just pick a password so you can log in normally next time.</p>
   <form id="account-new-password-form" class="account-form">
-    <label>Password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
+    <label>Password<input type="password" name="password" required minlength="10" autocomplete="new-password"></label>
     <button type="submit" class="papers-nav-btn papers-nav-next">Save Password</button>
     <div class="account-msg" id="account-recovery-msg"></div>
   </form>
@@ -101,7 +103,7 @@ sitemap:
   <h3>Password</h3>
   <p class="account-hint">Signed in with an email code? Set a password if you'd like to log in with one next time.</p>
   <form id="account-set-password-form" class="account-form">
-    <label>New password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
+    <label>New password<input type="password" name="password" required minlength="10" autocomplete="new-password"></label>
     <button type="submit" class="papers-nav-btn papers-nav-next">Save Password</button>
     <div class="account-msg" id="account-set-password-msg"></div>
   </form>

@@ -153,6 +153,7 @@
 <script>
   window.__SUPABASE_URL = {{ getenv "HUGO_SUPABASE_URL" | jsonify | safeJS }};
   window.__SUPABASE_ANON_KEY = {{ getenv "HUGO_SUPABASE_ANON_KEY" | jsonify | safeJS }};
+  window.__TURNSTILE_SITEKEY = {{ getenv "HUGO_TURNSTILE_SITEKEY" | jsonify | safeJS }};
 </script>
 {{- partial "scripts/posthog.html" . }}
 {{- partial "scripts/ga4.html" . }}

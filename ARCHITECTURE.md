@@ -245,6 +245,20 @@ brand-new magic-link arrival lands the user in an authenticated session
 with no password set at all, and needs the same "choose a password now"
 screen a password reset does, just without calling it a reset.
 
+The account page sends a Cloudflare Turnstile token with every Supabase
+call that Supabase's CAPTCHA protection checks: password log in, sign
+up, the email sign-in code and the password reset email. Entering the
+code and changing a password are not checked, since both already need
+a code or a session. The widget only loads when `HUGO_TURNSTILE_SITEKEY`
+is set, so the code can ship before CAPTCHA is switched on in Supabase,
+and it must ship first: once Supabase requires a token, any caller
+without one is refused. That includes the registration Apps Script
+above, which has no browser to solve a challenge in. CAPTCHA stays off
+in Supabase until that script no longer calls `/auth/v1/otp` with the
+anon key. Passwords need at least 10 characters. An existing account
+with a shorter password can still log in and is asked to choose a new
+one.
+
 Grading itself does not have to mean hand-editing the export JSON.
 `tools/bioclash-admin-grade.html` is a self-contained grading console
 that never calls the admin API itself; it only builds the same

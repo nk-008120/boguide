@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** October 11, 2026
+**Last updated:** November 17, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -43,6 +43,7 @@ A few parts of a page are loaded from services we don't run. They don't receive 
 
 - **flagcdn.com** - the small country flag images shown next to names on leaderboards, doubts, and BiOLab.
 - **cdn.plot.ly and cdn.jsdelivr.net** - the charting and maths libraries used by some interactive widgets on notes pages. We pin the exact file and verify it before it runs.
+- **Cloudflare Turnstile** - a security check on the log in, sign up, sign-in code and password reset forms that tells people apart from automated sign-ups. It runs in the background and only asks you to click if something looks unusual. It does not set advertising cookies, and it only loads on the Account page while you are logged out.
 - **Sentry** - if one of our server functions fails, the error is reported to Sentry so we can fix it. Reports contain the error and which function failed, not your profile.
 
 The library that talks to Supabase is served from our own site, not from a third party.
