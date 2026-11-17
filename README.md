@@ -87,7 +87,7 @@ Visit /about and /tribute
 
 ### Navigation
 
-The navbar has five items: Notes, Past Papers, Country Guides, Competition (BiOClash) and More. More holds everything else (the Biology Olympiad explainer, Doubts, BiOLive, BiOLab, articles, Dashboard, Leaderboard, Games, About, Tribute). Search, Sign in (an account menu once signed in) and the Discord, Instagram, WhatsApp and GitHub icons sit on the right; the icons are hidden on narrow screens and also appear in the footer. The menu is defined in `hugo.toml` under `menu.main`. One site-wide notice is shown above the navbar; its text and link come from `params.notice` in `hugo.toml`, and changing its `id` shows it again to visitors who dismissed the previous one.
+The navbar has eight items: Notes, Past Papers, Country Guides, Competition (BiOClash), Live sessions (BiOLive), Doubts, Dashboard and More. More holds everything else (the Biology Olympiad explainer, Articles (BiOBytes), Literature reviews (BiOHorizon), Lab protocols (BiOLab), Leaderboard, Games, About, Tribute). Search, Sign in (an account menu once signed in) and the Discord, Instagram, WhatsApp and GitHub icons sit on the right; the icons are hidden below 1320 px so the links fit, and also appear in the footer. The menu is defined in `hugo.toml` under `menu.main`. One site-wide notice is shown above the navbar; its text and link come from `params.notice` in `hugo.toml`, and changing its `id` shows it again to visitors who dismissed the previous one.
 
 ### Home page and site motion
 

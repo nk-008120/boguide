@@ -43,10 +43,25 @@ ignoreFiles = ['\.enc$']
     weight = 4
 
   [[menu.main]]
+    name = "Live sessions"
+    url = "/live/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Doubts"
+    url = "/doubts/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Dashboard"
+    url = "/dashboard/"
+    weight = 7
+
+  [[menu.main]]
     identifier = "more"
     name = "More"
     url = "#"
-    weight = 5
+    weight = 8
 
   [[menu.main]]
     name = "What is the Biology Olympiad?"
@@ -55,90 +70,78 @@ ignoreFiles = ['\.enc$']
     weight = 1
 
   [[menu.main]]
-    name = "Ask a doubt"
+    name = "Articles"
     parent = "more"
-    url = "/doubts/"
-    weight = 3
+    url = "/biobytes/"
+    weight = 2
 
   [[menu.main]]
-    name = "Live sessions"
+    name = "Literature reviews"
     parent = "more"
-    url = "/live/"
-    weight = 4
+    url = "/biobytes/horizon/"
+    weight = 3
 
   [[menu.main]]
     name = "Lab protocols"
     parent = "more"
     url = "/biolab/"
-    weight = 5
-
-  [[menu.main]]
-    name = "Articles"
-    parent = "more"
-    url = "/biobytes/"
-    weight = 6
-
-  [[menu.main]]
-    name = "Dashboard"
-    parent = "more"
-    url = "/dashboard/"
-    weight = 7
+    weight = 4
 
   [[menu.main]]
     name = "Leaderboard"
     parent = "more"
     url = "/papers/leaderboard/"
-    weight = 7
+    weight = 5
 
   [[menu.main]]
     name = "Games"
     parent = "more"
     url = "/games/"
-    weight = 8
+    weight = 6
 
   [[menu.main]]
     name = "About"
     parent = "more"
     url = "/about/"
-    weight = 9
+    weight = 7
 
   [[menu.main]]
     name = "Tribute"
     parent = "more"
     url = "/tribute/"
-    weight = 10
+    weight = 8
 
   [[menu.main]]
     name = "Search"
-    weight = 6
+    weight = 9
     [menu.main.params]
       type = "search"
 
   [[menu.main]]
     name = "Discord"
     url = "https://discord.gg/UUkakYdsC"
-    weight = 7
+    weight = 10
     [menu.main.params]
       icon = "discord"
 
   [[menu.main]]
     name = "Instagram"
     url = "https://www.instagram.com/bioguideofficial/"
-    weight = 8
+    weight = 11
     [menu.main.params]
       icon = "instagram"
 
   [[menu.main]]
     name = "WhatsApp"
     url = "https://chat.whatsapp.com/Ia9cArydT4hB4PPbFLRmNh"
-    weight = 9
+    weight = 12
     [menu.main.params]
       icon = "whatsapp"
 
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/nk-008120/boguide"
-    weight = 10
+    weight = 13
     [menu.main.params]
       icon = "github"
 

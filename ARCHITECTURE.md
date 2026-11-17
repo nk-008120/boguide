@@ -955,10 +955,16 @@ human's, it just originates from a timer instead of a pointer.
 The navbar is the theme's, overridden in `layouts/partials/navbar.html`
 and `layouts/partials/navbar-title.html` (a home icon and the site name
 in place of the logo). Its items come from `menu.main` in `hugo.toml`:
-five top-level entries (Notes, Past Papers, Country Guides, Competition
-and More), with every other section as a child of More, then Search and
-four icon links (Discord, Instagram, WhatsApp, GitHub) that are hidden
-below 640 px and repeated in `layouts/partials/custom/footer.html`. The
+eight top-level entries (Notes, Past Papers, Country Guides, Competition,
+Live sessions, Doubts, Dashboard and More), with every other section as a
+child of More (Articles for BiOBytes and Literature reviews for BiOHorizon
+are separate entries), then Search and four icon links (Discord,
+Instagram, WhatsApp, GitHub) that are repeated in
+`layouts/partials/custom/footer.html`. Eight links need about 1300 px, so
+`assets/css/custom.css` hides the icons between 768 and 1319 px, moves the
+site name into small type under the home icon between 768 and 1419 px,
+and tightens the link spacing below 1200 px and again below 900 px;
+below 768 px the theme switches to the phone menu. The
 `#nav-account` block shows Sign in, or an account menu with Dashboard,
 Leaderboard and Account once `static/js/papers-nav-account.js` finds a
 session. On phones the same menu is drawn by the theme's sidebar partial,
