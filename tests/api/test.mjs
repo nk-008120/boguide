@@ -170,5 +170,42 @@ console.log('\n--- account page: next redirect ---');
   check('a malformed escape is refused, not thrown', run('%E0%A4%A') === null);
 }
 
+{
+  console.log('\n--- bioclash-register ---');
+  const { register } = require(path.join(REPO_ROOT, 'api/bioclash-register.js'));
+  const fakeInviter = (result) => {
+    const calls = [];
+    return {
+      calls,
+      auth: { admin: { inviteUserByEmail(email, options) { calls.push({ email, options }); return Promise.resolve({ error: result }); } } }
+    };
+  };
+  const redirect = 'https://bioguide.world/account/';
+
+  let admin = fakeInviter(null);
+  let out = await register(admin, { email: '  Someone@Example.com ', display_name: ' Sam ' }, redirect);
+  check('a new email is invited', out.status === 200 && out.body.status === 'invited');
+  check('the email is trimmed and lowercased', admin.calls[0].email === 'someone@example.com');
+  check('the display name and redirect are passed on', admin.calls[0].options.data.display_name === 'Sam' && admin.calls[0].options.redirectTo === redirect);
+
+  admin = fakeInviter({ code: 'email_exists', message: 'A user with this email address has already been registered' });
+  out = await register(admin, { email: 'a@b.co', display_name: 'A' }, redirect);
+  check('an existing account is reported as existing, not as a failure', out.status === 200 && out.body.status === 'existing');
+
+  admin = fakeInviter({ message: 'smtp down' });
+  out = await register(admin, { email: 'a@b.co', display_name: 'A' }, redirect);
+  check('any other invite error is a 502 with the cause kept', out.status === 502 && out.cause && out.cause.message === 'smtp down');
+
+  admin = fakeInviter(null);
+  out = await register(admin, { email: 'not-an-email', display_name: 'A' }, redirect);
+  check('a bad email is refused before Supabase is called', out.status === 400 && admin.calls.length === 0);
+  out = await register(admin, { email: 'a@b.co', display_name: '' }, redirect);
+  check('an empty display name is refused', out.status === 400 && admin.calls.length === 0);
+  out = await register(admin, { email: 'a@b.co', display_name: 'x'.repeat(61) }, redirect);
+  check('a display name over 60 characters is refused', out.status === 400 && admin.calls.length === 0);
+  out = await register(admin, undefined, redirect);
+  check('a missing body is refused, not thrown', out.status === 400);
+}
+
 console.log('\n' + (failures === 0 ? 'ALL API AND REDIRECT CHECKS PASSED.' : `${failures} CHECK(S) FAILED.`));
 if (failures > 0) process.exit(1);

@@ -29,4 +29,4 @@ function verifyAdminSecret(req, res) {
   return verifySecret(req, res, 'BIOCLASH_ADMIN_SECRET');
 }
 
-module.exports = { verifyCronSecret, verifyAdminSecret, timingSafeEqualStrings };
+module.exports = { verifySecret, verifyCronSecret, verifyAdminSecret, timingSafeEqualStrings };

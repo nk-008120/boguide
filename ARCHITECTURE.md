@@ -230,10 +230,15 @@ its content file needing to hardcode one.
 Registration for Season 1 is passwordless by design, not by omission.
 A prospective competitor fills in only an email and display name on an
 external Google Form; an Apps Script bound to that form's submission
-event calls Supabase's public `/auth/v1/otp` endpoint directly with
-`create_user: true`, using the same anon key already shipped in the
-site's own client bundle, no new Vercel endpoint and no admin or
-service-role key ever leaves Supabase. That call sends a magic link
+event posts both to `/api/bioclash-register` with the bearer secret
+`BIOCLASH_REGISTER_SECRET`, kept in the script's Script Properties rather
+than its source. The endpoint checks the input, then calls Supabase's
+admin invite, so the service-role key stays in Vercel and the call is
+not subject to the CAPTCHA that public sign-in calls need. An email that
+already has an account gets no new email and is reported back as
+`existing`. The script originally called the public `/auth/v1/otp`
+endpoint with the anon key, which stops working once Supabase requires a
+CAPTCHA token. The invite sends a sign-in link
 rather than creating a password, since the alternative, collecting a
 password on the form itself, would mean a real account credential sitting
 in the form's response data at rest, a risk not worth taking for a
@@ -252,10 +257,8 @@ code and changing a password are not checked, since both already need
 a code or a session. The widget only loads when `HUGO_TURNSTILE_SITEKEY`
 is set, so the code can ship before CAPTCHA is switched on in Supabase,
 and it must ship first: once Supabase requires a token, any caller
-without one is refused. That includes the registration Apps Script
-above, which has no browser to solve a challenge in. CAPTCHA stays off
-in Supabase until that script no longer calls `/auth/v1/otp` with the
-anon key. Passwords need at least 10 characters. An existing account
+without one is refused, which is why the registration Apps Script above
+goes through the admin invite instead. Passwords need at least 10 characters. An existing account
 with a shorter password can still log in and is asked to choose a new
 one.
 
