@@ -10,6 +10,17 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
     <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
+        <span class="recent-update-date">Nov 18 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Welcome to <a href="https://bioguide.world">BiOGuide v2.2.0</a>. A calmer site: new navigation with search, a quieter home page, less motion and a <a href="/what-is-the-biology-olympiad/">Biology Olympiad explainer</a> for newcomers. BiOClash MB-01 concluded and AP-01 is next, with stronger grading checks and a simpler registration email. Sign-in is protected by Turnstile, write limits cover every student table, and Google Analytics and PostHog now run only if you allow them, changeable any time from Analytics settings in the footer. Exam PDFs moved to Cloudflare R2, halving the repository. Account avatars drawn by Lydia K. Khadija joined the team.</p>
+    </div>
+ </div>
+ <div class="recent-update-card recent-update-newest">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
         <span class="recent-update-date">Oct 26 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
