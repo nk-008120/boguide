@@ -1373,14 +1373,37 @@ vars at build time (`HUGO_POSTHOG_KEY`, `HUGO_GA4_MEASUREMENT_ID`); any of
 them can be disabled entirely just by leaving the corresponding variable
 unset, no code change needed.
 
+GA4 and PostHog only load after consent. `ga4.html` and `posthog.html`
+no longer emit their scripts; they write their settings to
+`window.__ANALYTICS`, and `static/js/analytics-consent.js` shows a bar
+asking the visitor, saves the answer in local storage
+(`bio-analytics-consent-v1`), and injects gtag.js and the fingerprinted
+PostHog file only after Allow. A Global Privacy Control signal counts as
+No thanks. Umami needs no consent, since it sets no cookies, and is
+unchanged. "Analytics settings" in the footer reopens the bar; switching
+from Allow to No thanks deletes the `_ga` cookies and `ph_` storage and
+reloads the page. PostHog's `loaded` callback fires `bio:posthog-ready`,
+and `posthog-events.js` waits for it before sending page events or
+`identify`. Before this change the PostHog init was an inline
+`<script defer>`, and browsers ignore `defer` on inline scripts, so it ran
+before the library had loaded and returned early; PostHog had most likely
+never initialised on the live site. Renaming the storage key asks
+everyone again, which is how a future change to what the tools collect
+should be handled.
+
 ## Error tracking on the API layer
 
 The three analytics tools above cover the Hugo frontend. The Vercel
 serverless functions in `api/` are separate: every handler's existing
-catch block also reports through `api/_lib/sentry.js`, which lazily
-initializes Sentry only if `SENTRY_DSN` is set and no-ops otherwise, so
-error tracking is opt-in and never blocks a response if Sentry itself is
-unreachable. It only captures failures that already result in a 5xx
+catch block also reports through `api/_lib/sentry.js`, which does
+nothing unless `SENTRY_DSN` is set, so error tracking is opt-in. It does
+not use a Sentry SDK: it posts one event per error to Sentry's envelope
+endpoint with `fetch`, with a two second timeout and every failure
+swallowed, so a slow or unreachable Sentry never blocks a response. It
+replaced `@sentry/vercel-edge`, an SDK built for the Edge runtime that
+was loaded inside Node functions and never confirmed to deliver there.
+`node scripts/sentry-test.js` sends one test event with the same code,
+for checking that a DSN works. It only captures failures that already result in a 5xx
 response, not expected 4xx cases like an expired session or a bad
 request, to keep signal-to-noise reasonable. This is scoped to the API
 layer only; the Hugo site itself has no error tracking, since a static

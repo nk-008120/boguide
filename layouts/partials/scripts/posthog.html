@@ -10,20 +10,16 @@
     {{- else with .Value -}}
       {{- with resources.Copy "js/posthog-array.js" . -}}
         {{- $posthogJs := . | fingerprint -}}
-        <script defer src="{{ $posthogJs.RelPermalink }}" integrity="{{ $posthogJs.Data.Integrity }}" crossorigin="anonymous"></script>
+<script>
+  window.__ANALYTICS = window.__ANALYTICS || {};
+  window.__ANALYTICS.posthog = {
+    key: {{ $postHogKey | jsonify | safeJS }},
+    host: {{ $postHogHost | jsonify | safeJS }},
+    src: {{ $posthogJs.RelPermalink | jsonify | safeJS }},
+    integrity: {{ $posthogJs.Data.Integrity | jsonify | safeJS }}
+  };
+</script>
       {{- end -}}
     {{- end -}}
   {{- end -}}
-  <script defer>
-    (function () {
-      if (!window.posthog || !window.posthog.init) return;
-      window.posthog.init({{ $postHogKey | jsonify | safeJS }}, {
-        api_host: {{ $postHogHost | jsonify | safeJS }},
-        autocapture: false,
-        capture_pageview: false,
-        disable_session_recording: true,
-        persistence: 'localStorage'
-      });
-    })();
-  </script>
 {{- end -}}

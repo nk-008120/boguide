@@ -5023,3 +5023,45 @@ html.dark body.notes-scope .topic-prep-links a {
     letter-spacing: 0;
   }
 }
+
+.bio-consent {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  max-width: 40rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #d9d2e6;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: #2e2a35;
+  box-shadow: 0 6px 24px rgba(46, 42, 53, 0.12);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.bio-consent-text { margin: 0; flex: 1 1 18rem; }
+.bio-consent-text a { color: #5f4291; text-decoration: underline; }
+.bio-consent-actions { display: flex; gap: 0.5rem; margin-left: auto; }
+.bio-consent-btn {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #8965c4;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #5f4291;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bio-consent-btn-primary { background: #8965c4; color: #ffffff; }
+.bio-consent-btn:focus-visible { outline: 2px solid #5f4291; outline-offset: 2px; }
+html.dark .bio-consent { background: #1f1c24; color: #ece8f2; border-color: #3d3549; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4); }
+html.dark .bio-consent-text a { color: #c4b0e6; }
+html.dark .bio-consent-btn { color: #c4b0e6; border-color: #a68bd6; }
+html.dark .bio-consent-btn-primary { background: #8965c4; color: #ffffff; border-color: #8965c4; }
+@media print { .bio-consent { display: none; } }

@@ -44,28 +44,39 @@
     trackDashboardRecommendationClicked: trackDashboardRecommendationClicked
   };
 
-  if (window.location.pathname.indexOf('/papers/contribute/') === 0) {
-    capture('contribute_page_viewed');
-  }
-  if (window.location.pathname.indexOf('/dashboard/') === 0) {
-    capture('dashboard_viewed');
+  function onReady() {
+    if (window.location.pathname.indexOf('/papers/contribute/') === 0) {
+      capture('contribute_page_viewed');
+    }
+    if (window.location.pathname.indexOf('/dashboard/') === 0) {
+      capture('dashboard_viewed');
+    }
+    watchSession();
   }
 
-  if (window.PapersAuth) {
-    window.PapersAuth.getSession().then(function (session) {
-      if (session && session.user) {
+  if (window.posthog && window.posthog.__loaded) {
+    onReady();
+  } else {
+    document.addEventListener('bio:posthog-ready', onReady, { once: true });
+  }
+
+  function watchSession() {
+    if (window.PapersAuth) {
+      window.PapersAuth.getSession().then(function (session) {
+        if (session && session.user) {
+          var p = ph();
+          if (p && p.identify) p.identify(session.user.id);
+        }
+      });
+      window.PapersAuth.onChange(function (session) {
         var p = ph();
-        if (p && p.identify) p.identify(session.user.id);
-      }
-    });
-    window.PapersAuth.onChange(function (session) {
-      var p = ph();
-      if (!p) return;
-      if (session && session.user) {
-        if (p.identify) p.identify(session.user.id);
-      } else if (p.reset) {
-        p.reset();
-      }
-    });
+        if (!p) return;
+        if (session && session.user) {
+          if (p.identify) p.identify(session.user.id);
+        } else if (p.reset) {
+          p.reset();
+        }
+      });
+    }
   }
 })();

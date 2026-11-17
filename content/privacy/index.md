@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** November 17, 2026
+**Last updated:** November 18, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -54,15 +54,15 @@ You can read every topic page and attempt every practice question without ever s
 
 ## Cookies and local storage
 
-Your login session is kept in your browser's local storage, not a cookie, so you stay logged in between visits - this is standard behavior for any site with accounts, not a tracking mechanism. Google Analytics 4 sets first-party cookies to recognize return visits; PostHog is configured to use local storage only, not cookies. Neither is used for advertising, and we don't run ad-targeting scripts of any kind.
+Your login session is kept in your browser's local storage, not a cookie, so you stay logged in between visits - this is standard behavior for any site with accounts, not a tracking mechanism. Google Analytics 4 sets first-party cookies to recognize return visits, and PostHog uses local storage, not cookies; both run only if you choose Allow, as explained below. Neither is used for advertising, and we don't run ad-targeting scripts of any kind. Your analytics choice itself is saved in local storage so we don't ask again on every page.
 
 ## Analytics
 
-We use three tools to understand how the site is used. None of them sell data or run advertising:
+We use three tools to understand how the site is used. None of them sell data or run advertising. Umami runs for everyone because it sets no cookies and keeps nothing that identifies you. Google Analytics 4 and PostHog do not load at all until you choose Allow on the bar at the bottom of the page. If you choose No thanks, or ignore the bar, they never load. If your browser sends a Global Privacy Control signal, we treat that as No thanks and don't show the bar. You can change your choice at any time with **Analytics settings** at the bottom of every page; switching to No thanks also deletes the cookies and local storage they set.
 
 - **Umami** (self-hosted, on our own infrastructure) - anonymous page views. No cookies, no personal data. Once a day we add the previous day's total visits and visits per country to a single running total in our main database. That total is what the [About page](/about/#community-reach) shows.
-- **PostHog** (hosted in the EU) - tracks a small set of specific actions, like completing signup or submitting a practice attempt, not full page content or recordings of your session. If you're logged in, these actions are linked to your account so we can understand how account holders actually use the site; if you're not logged in, they're anonymous.
-- **Google Analytics 4** - standard traffic and behavior analytics, using the first-party cookies described above. You can opt out at any time using [Google's browser add-on](https://tools.google.com/dlpage/gaoptout) or by enabling Do Not Track in your browser.
+- **PostHog** (hosted in the EU, only after you choose Allow) - tracks a small set of specific actions, like completing signup or submitting a practice attempt, not full page content or recordings of your session. If you're logged in, these actions are linked to your account so we can understand how account holders actually use the site; if you're not logged in, they're anonymous.
+- **Google Analytics 4** - standard traffic and behavior analytics, using the first-party cookies described above. Only after you choose Allow.
 
 ## BiOLab: protocols, results, and feedback
 
