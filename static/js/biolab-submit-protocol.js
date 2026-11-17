@@ -100,7 +100,7 @@
           var sizeMB = (file.size / (1024 * 1024)).toFixed(1);
           return (
             '<li class="biolab-submit-attachment-item">' +
-            '<span class="biolab-submit-attachment-name">📄 ' + file.name.replace(/</g, '&lt;') + '</span>' +
+            '<span class="biolab-submit-attachment-name">📄 ' + window.bioEscape(file.name) + '</span>' +
             '<span class="biolab-feedback-hint">' + sizeMB + ' MB</span>' +
             '<button type="button" class="biolab-archive-capture-remove" data-idx="' + i + '" aria-label="Remove this file">&times;</button>' +
             '</li>'

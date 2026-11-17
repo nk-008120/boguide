@@ -6,6 +6,6 @@
   "main": "test.mjs",
   "type": "module",
   "scripts": {
-    "test": "node test.mjs"
+    "test": "node test.mjs && node bioclash.test.mjs"
   }
 }

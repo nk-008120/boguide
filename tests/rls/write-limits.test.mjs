@@ -72,12 +72,14 @@ async function main() {
 
   const USER_A = '22222222-2222-2222-2222-222222222222';
   const USER_B = '33333333-3333-3333-3333-333333333333';
+  const USER_C = '44444444-4444-4444-4444-444444444444';
   const LONG_LOCAL = 'a'.repeat(60);
 
   await exec(`
     insert into auth.users (id, email) values
       ('${USER_A}', 'usera@example.com'),
-      ('${USER_B}', 'userb@example.com');
+      ('${USER_B}', 'userb@example.com'),
+      ('${USER_C}', 'userc@example.com');
     insert into auth.users (email) values ('${LONG_LOCAL}@example.com');
     insert into auth.users (email, raw_user_meta_data) values ('blank@example.com', '{"display_name":"   "}');
   `, 'seed-users');
@@ -268,6 +270,28 @@ async function main() {
       !(await rejected(`insert into public.content_corrections (olympiad, year, round_id, problem_id, field, current_value, proposed_value, reason) values ('IBO', '2020', 'r1', 'q1', 'answer', 'old', 'new', 'why')`)));
   });
 
+  await asUser(USER_C, async () => {
+    let accepted = 0;
+    for (let i = 0; i < 300; i++) {
+      const madeUp = '/' + String(i).padStart(3, '0') + 'x'.repeat(286);
+      if (!(await rejected(`insert into public.page_ratings (user_id, page_path, rating) values ('${USER_C}', '${madeUp}', 8)`))) accepted++;
+    }
+    check('the S-8 rating flood, 300 single inserts of made-up 290 character paths, stops at 200', accepted === 200);
+  });
+
+  await asUser(USER_C, async () => {
+    const megabyte = `jsonb_build_object('pad', repeat('x', 1048576))`;
+    check('the S-8 BiOLab flood: a result carrying 1 MB of calibration inputs is rejected',
+      await rejected(`insert into public.biolab_submissions (practical_id, calibration_inputs) values ('${protoId}', ${megabyte})`));
+    let accepted = 0;
+    for (let i = 0; i < 100; i++) {
+      if (!(await rejected(`insert into public.biolab_submissions (practical_id) values ('${protoId}')`))) accepted++;
+    }
+    check('the S-8 BiOLab flood, 100 results in a day, stops at 20', accepted === 20);
+    check('the S-8 correction flood: a 2 MB current value is rejected',
+      await rejected(`insert into public.content_corrections (olympiad, year, round_id, problem_id, field, current_value, proposed_value, reason) values ('IBO', '2020', 'r1', 'q1', 'answer', repeat('c', 2097152), 'new', 'why')`));
+  });
+
   {
     const buckets = (await db.query(`select id, file_size_limit, allowed_mime_types from storage.buckets where id in ('biolab-captures', 'paper-contributions') order by id`)).rows;
     check('result photos are limited to 10 MB images',
@@ -278,8 +302,17 @@ async function main() {
 
   console.log('\n--- leaks ---');
 
-  await db.exec(`insert into public.attempt_reports (user_id, olympiad, year, round_id, round_name, total_correct, total_statements, score_pct, duration_sec) values ('${USER_B}', 'ibo', '2020', 'r1', 'Round 1', 5, 10, 50, 600)`).catch(() => {});
+  await exec(`insert into public.attempt_reports (user_id, olympiad, year, round_id, round_name, total_correct, total_statements, duration_sec) values ('${USER_B}', 'ibo', '2020', 'r1', 'Round 1', 5, 10, 600)`, 'seed-attempt');
+  await db.exec(`set role anon; select set_config('request.jwt.claims', '{}', false);`);
+  try {
+    const visible = await db.query(`select user_id from public.leaderboard_per_round`);
+    check('before hiding, the leaderboard lists the member\'s attempt', visible.rows.some((r) => r.user_id === USER_B));
+  } finally {
+    await db.exec(`reset role;`);
+  }
   await db.exec(`update public.profiles set is_hidden = true where id = '${USER_B}'`);
+  check('the hidden member has an attempt the base view would list, so the leak checks are not empty',
+    (await db.query(`select count(*)::int as n from public.best_attempt_per_round where user_id = '${USER_B}'`)).rows[0].n > 0);
 
   await db.exec(`set role anon; select set_config('request.jwt.claims', '{}', false);`);
   try {
@@ -287,6 +320,12 @@ async function main() {
       await rejected(`select * from public.best_attempt_per_round`));
     check('a logged-out visitor can still read the leaderboard',
       !(await rejected(`select * from public.leaderboard_per_round`)));
+    const anonLb = await db.query(`select user_id from public.leaderboard_per_round`);
+    check('the leaderboard hides a hidden member from a logged-out visitor', !anonLb.rows.some((r) => r.user_id === USER_B));
+    check('a logged-out visitor cannot call the pending-count functions',
+      await rejected(`select public.count_pending_paper_contributions()`) &&
+      await rejected(`select public.count_pending_content_corrections()`) &&
+      await rejected(`select public.count_pending_community_solutions()`));
   } finally {
     await db.exec(`reset role;`);
   }
@@ -298,8 +337,16 @@ async function main() {
     check('the leaderboard still hides a hidden member', !lb.rows.some((r) => r.user_id === USER_B));
     check('a member cannot ask how many pending items another member has',
       await rejected(`select public.count_pending_content_corrections('${USER_B}'::uuid)`));
+    check('a member cannot ask how many pending paper contributions another member has',
+      await rejected(`select public.count_pending_paper_contributions('${USER_B}'::uuid)`));
+    check('a member cannot ask how many pending community solutions another member has',
+      await rejected(`select public.count_pending_community_solutions('${USER_B}'::uuid)`));
     const own = await db.query(`select public.count_pending_content_corrections() as n`);
     check('a member can still count their own pending items', own.rows[0].n === 1);
+    const ownPapers = await db.query(`select public.count_pending_paper_contributions() as n`);
+    const ownSolutions = await db.query(`select public.count_pending_community_solutions() as n`);
+    check('the no-argument counts return only the caller\'s own pending items',
+      ownPapers.rows[0].n === 2 && ownSolutions.rows[0].n === 0);
   });
 
   console.log('\n' + (failures === 0 ? 'ALL WRITE LIMIT CHECKS PASSED.' : `${failures} CHECK(S) FAILED.`));

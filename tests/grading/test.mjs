@@ -6,7 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
 const REPO_ROOT = path.resolve(__dirname, '../..');
 
-const { componentIsCorrect, autoGrade, extensionPenalty, seededShuffle, sanitizeAnswers } =
+const { componentIsCorrect, componentMaxMarks, autoGrade, extensionPenalty, seededShuffle, sanitizeAnswers } =
   require(path.join(REPO_ROOT, 'api/_lib/bioclash.js'));
 const { recompute } = require(path.join(REPO_ROOT, 'api/submit-attempt.js'));
 
@@ -244,6 +244,90 @@ const writtenPaper = { parts: [{ id: 'p', blocks: [{ id: 'w', type: 'question', 
 const writtenResult = autoGrade(writtenPaper, [{ block_id: 'w', answer: { n: '' } }]);
 check('autoGrade counts only the numeric part and marks a blank numeric wrong',
   writtenResult.autoTotal === 1 && writtenResult.autoMarksTotal === 1 && writtenResult.autoCorrect === 0);
+
+const zero = { type: 'numeric', expected: 0 };
+const zeroTol = { type: 'numeric', expected: 0, tolerance: 0.5 };
+check('numeric: non-numeric text is not correct against 0',
+  componentIsCorrect(zero, 'abc') === false &&
+  componentIsCorrect(zero, 'zero') === false &&
+  componentIsCorrect(zero, 'NaN') === false &&
+  componentIsCorrect(zero, 'Infinity') === false);
+check('numeric: NaN and Infinity numbers are not correct against 0, even with a tolerance',
+  componentIsCorrect(zeroTol, NaN) === false &&
+  componentIsCorrect(zeroTol, Infinity) === false &&
+  componentIsCorrect(zeroTol, -Infinity) === false);
+check('numeric: null, undefined, true and an object are not correct against 0',
+  componentIsCorrect(zero, null) === false &&
+  componentIsCorrect(zero, undefined) === false &&
+  componentIsCorrect(zero, true) === false &&
+  componentIsCorrect(zero, {}) === false);
+check('numeric: a blank or non-numeric value is not correct against 0 even with a tolerance',
+  componentIsCorrect(zeroTol, '') === false &&
+  componentIsCorrect(zeroTol, '\t\n') === false &&
+  componentIsCorrect(zeroTol, 'abc') === false);
+check('numeric: -0, "0.0" and " 0 " are still correct against 0',
+  componentIsCorrect(zero, -0) === true &&
+  componentIsCorrect(zero, '0.0') === true &&
+  componentIsCorrect(zero, ' 0 ') === true);
+
+const zeroPaper = { parts: [{ id: 'z', blocks: [{ id: 'zb', type: 'question', components: [
+  { key: 'n1', type: 'numeric', expected: 0, marks: 2 },
+  { key: 'n2', type: 'numeric', expected: 0, marks: 2 },
+  { key: 'n3', type: 'numeric', expected: 0, marks: 2 }
+] }] }] };
+const zeroResult = autoGrade(zeroPaper, [{ block_id: 'zb', answer: { n1: '', n2: 'abc' } }]);
+check('autoGrade earns nothing for blank, non-numeric and missing answers against 0',
+  zeroResult.autoTotal === 3 && zeroResult.autoCorrect === 0 &&
+  zeroResult.autoMarksTotal === 6 && zeroResult.autoMarksEarned === 0);
+
+const zeroRound = { problems: [{ id: 'zp', number: 1, name: 'Zero', statements: [
+  { letter: 'A', type: 'numeric', expected: 0 },
+  { letter: 'B', type: 'numeric', expected: 0 },
+  { letter: 'C', type: 'numeric', expected: 0 },
+  { letter: 'D', type: 'numeric', expected: 0 },
+  { letter: 'E', type: 'numeric', expected: 0 }
+] }] };
+const zeroRecompute = recompute(zeroRound, { zp: { A: '', B: 'abc', C: null, D: NaN, E: 0 } });
+check('recompute: blank, non-numeric, null and NaN are wrong against 0, a real 0 is right',
+  zeroRecompute.totalStatements === 5 && zeroRecompute.totalCorrect === 1);
+
+const writtenComponent = { key: 'w', type: 'free_text_for_others', refersTo: 'm', marksEach: 2 };
+check('written: an unanswered free_text_for_others component is not auto-graded (null)',
+  componentIsCorrect(writtenComponent, undefined) === null &&
+  componentIsCorrect(writtenComponent, null) === null &&
+  componentIsCorrect(writtenComponent, {}) === null);
+
+const mixedPaper = { parts: [{ id: 'mx', blocks: [
+  { id: 'mb', type: 'question', components: [
+    { key: 'm', type: 'mcq', correctKey: 'a', options: [{ key: 'a' }, { key: 'b' }, { key: 'c' }, { key: 'd' }] }
+  ] },
+  { id: 'wb', type: 'question', components: [writtenComponent] }
+] }] };
+const unansweredWritten = autoGrade(mixedPaper, [
+  { block_id: 'mb', answer: { m: 'a' } },
+  { block_id: 'wb', answer: {} }
+]);
+const noWrittenRow = autoGrade(mixedPaper, [{ block_id: 'mb', answer: { m: 'a' } }]);
+check('autoGrade: an unanswered written component adds nothing to the auto totals',
+  unansweredWritten.autoTotal === 1 && unansweredWritten.autoCorrect === 1 &&
+  unansweredWritten.autoMarksTotal === 1 && unansweredWritten.autoMarksEarned === 1);
+check('autoGrade: a written block with no saved row at all gives the same totals',
+  JSON.stringify(noWrittenRow) === JSON.stringify(unansweredWritten));
+check('an unanswered written component still keeps its full marks for manual grading',
+  componentMaxMarks(mixedPaper, writtenComponent) === 2 * 3);
+
+const writtenSanitized = sanitizeAnswers(mixedPaper.parts[0].blocks[1], { w: null });
+check('sanitizeAnswers drops an unanswered written component instead of refusing the save',
+  !writtenSanitized.error && !('w' in writtenSanitized.answers));
+
+const freeResponseRound = { problems: [{ id: 'fr', number: 1, name: 'Written', statements: [
+  { letter: 'A', answer: true },
+  { letter: 'B', type: 'free_response' }
+] }] };
+const frUnanswered = recompute(freeResponseRound, { fr: { A: true } });
+check('recompute: an unanswered free_response statement is left out of the totals',
+  frUnanswered.totalStatements === 1 && frUnanswered.totalCorrect === 1 &&
+  frUnanswered.perQuestion[0].total === 1);
 
 console.log('\n--- sanitizeAnswers ---');
 

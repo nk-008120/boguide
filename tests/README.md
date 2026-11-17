@@ -19,7 +19,8 @@ project or credentials.
 Three smaller suites need no database at all:
 
 - `grading/`: the grading functions behind BiOClash and BiOrchive,
-  including blank numeric answers, unanswered written questions and the
+  including blank and non-numeric answers against an expected 0,
+  unanswered written questions and the
   answer sanitiser used by the save and lock handlers.
 - `vault/`: the BiOClash paper vault and the plaintext guard.
 - `api/`: the account deletion handler's file cleanup, with a fake
