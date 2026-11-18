@@ -35,7 +35,7 @@
 {{- if or (hasPrefix $path "/biolab/") (hasPrefix $path "/doubts/") -}}{{ $extraStyles = $extraStyles | append "css/biolab.css" }}{{- end -}}
 {{- if hasPrefix $path "/resources/" -}}{{ $extraStyles = $extraStyles | append "css/challenges.css" }}{{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
-{{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
+{{- if and (hasPrefix $path "/games/") (ne $path "/games/") -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}{{ $extraStyles = $extraStyles | append "css/contribute.css" }}{{- end -}}
 {{- if or (hasPrefix $path "/biobytes/testimonials/") (hasPrefix $path "/biobytes/articles/") -}}{{ $extraStyles = $extraStyles | append "css/page-toc.css" }}{{- end -}}
 {{- if hasPrefix $path "/olympiad-programmes/" -}}{{ $extraStyles = $extraStyles | append "css/outline-guide.css" }}{{- end -}}

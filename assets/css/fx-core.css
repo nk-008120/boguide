@@ -102,7 +102,6 @@ html.favourite body.home-v2 {
   --fx-grain: 0.08;
 }
 
-html.lenis,
 body.fx-t .hv-load {
   position: fixed;
   z-index: 9999;
