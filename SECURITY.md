@@ -84,7 +84,11 @@ Every response carries HSTS, `X-Content-Type-Options: nosniff`, same-origin
 framing only, and a strict referrer policy, all set in `vercel.json`. A small Content Security Policy is enforced: no plugins, no `<base>`
 rewriting, and no framing by other sites. The full policy is still sent in
 report-only mode, because the site relies on inline scripts. Treat that
-part as a work in progress, not a control.
+part as a work in progress, not a control. Browsers send what it would
+have blocked to a separate Sentry project (`report-uri` and
+`Reporting-Endpoints`), which is rate limited so a flood of reports cannot
+use up the error quota, and those reports are what the policy will be
+tightened from.
 
 Third-party code is pinned. The Supabase client is served from our own
 site with an integrity hash, and the Plotly and MathJax tags name an exact
