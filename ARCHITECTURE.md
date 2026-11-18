@@ -1329,8 +1329,17 @@ thread.
   page's theme class, and it has no dark variant: the widgets' internal
   colours are fixed and light. Button and slider colours inside each
   file read `var(--sim-accent, ...)`. Colours used inside diagrams were
-  left alone because many carry meaning. A new widget should copy the
-  `<link>` line from an existing one. `ibo2022-sim.html`,
+  left alone because many carry meaning.
+- 125 of those pages also link `static/sim/sim-base.css` directly before
+  their inline `<style>`. It holds the shared shell (`body`,
+  `.widget-container` without its width, `h3`, `.subtitle`), so each
+  page keeps only `.widget-container { max-width: ...; }` and, where it
+  differs, `.subtitle { margin-bottom: 1rem; }`. The cascade order is
+  base shell, then the page's own rules, then `sim-fx.css`. The other 17
+  template pages keep the shell inline because their shell rules differ
+  from the shared text; moving one of them needs a visual check. A new
+  widget should copy both `<link>` lines from an existing converted
+  page, such as `static/hardy-weinberg-calculator.html`. `ibo2022-sim.html`,
   `rotating-grid-game.html` and `bioclash-admin-grade.html` do not use
   the template and were not changed.
 - Measure with a production build, not the dev server. On a desktop
