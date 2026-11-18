@@ -758,6 +758,44 @@ const gradedSeed = () => ({
   res = await call(adminHandler, { action: 'finalize-round', paperId: 'zz-open', seasonYear: 2026, seasonWeight: 1, dryRun: true }, { headers: adm });
   check('a single participant gets a z-score of 0, not NaN', res.code === 200 && res.body.results[0].zScore === 0);
 }
+console.log('\n--- shared helpers keep the response shapes ---');
+{
+  const VIEW_KEYS = 'attemptId,status,endAt,fullscreenExits,visibilityLosses,paperTitle,watermark,sessionToken,totalPages,reachedFinalPage,extensionBlocksUsed,maxExtensionBlocks,extensionBlockMinutes,extensionCostSchedule,blocks';
+  const STATE_KEYS = 'attemptId,status,startedAt,endAt,submittedAt,fullscreenExits,visibilityLosses,paperTitle,watermark,sessionToken,totalPages,reachedFinalPage,extensionBlocksUsed,maxExtensionBlocks,extensionBlockMinutes,extensionCostSchedule,blocks';
+  const { res } = await begin();
+  check('start-attempt sends its fields in the same order as before', Object.keys(res.body).join() === VIEW_KEYS);
+  const stateRes = await call(state, { paperId: 'zz-open' });
+  check('attempt-state sends its fields in the same order as before', Object.keys(stateRes.body).join() === STATE_KEYS && stateRes.body.submittedAt === null);
+
+  currentDb = makeDb();
+  let r = await call(start, { paperId: 'zz-allow' });
+  check('the allowlist refusal body is unchanged', r.code === 403 && JSON.stringify(r.body) === '{"error":"This paper is not available yet."}');
+
+  const CLOSE_KEYS = 'status,submitted_at,auto_score_correct,auto_score_total,auto_marks_earned,auto_marks_total';
+  const endAt = iso(-MINUTE);
+  currentDb = makeDb(seedAttempt({ end_at: endAt }));
+  await call(start, { paperId: 'zz-open' });
+  const close = currentDb.log.filter((e) => e.table === 'bioclash_attempts' && e.op === 'update' && e.payload.status === 'submitted');
+  check('the expiry close writes the same columns in the same order, once', close.length === 1 && Object.keys(close[0].payload).join() === CLOSE_KEYS && close[0].payload.submitted_at === endAt);
+
+  currentDb = makeDb(seedAttempt({}));
+  r = await call(saveDraft, { paperId: 'zz-open', blockId: 'a1', componentAnswers: {}, sessionToken: 'wrong' });
+  check('the superseded body is unchanged', r.code === 409 && JSON.stringify(r.body) === '{"error":"This attempt is now active in another tab or device.","reason":"superseded"}');
+  currentDb = makeDb(seedAttempt({ end_at: iso(-MINUTE) }));
+  r = await call(extension, { paperId: 'zz-open', sessionToken: 'sess-1' });
+  check('the expiry body is unchanged', r.code === 409 && JSON.stringify(r.body) === '{"error":"Time has expired"}');
+  currentDb = makeDb();
+  r = await call(lockBlock, { paperId: 'zz-open', blockId: 'b1', componentAnswers: {}, sessionToken: 'sess-1' });
+  check('the no-attempt body is unchanged', r.code === 409 && JSON.stringify(r.body) === '{"error":"No active attempt"}');
+  currentDb = makeDb(seedAttempt({}));
+  currentDb.fail['bioclash_attempts:select'] = 'lookup failed';
+  r = await call(saveDraft, { paperId: 'zz-open', blockId: 'a1', componentAnswers: {}, sessionToken: 'sess-1' });
+  check('a failed attempt lookup is still a 500 that does not echo the cause', r.code === 500 && JSON.stringify(r.body) === '{"error":"Could not save draft"}');
+  currentDb = makeDb(seedAttempt({ extension_blocks_used: 2 }));
+  r = await call(extension, { paperId: 'zz-open', sessionToken: 'sess-1' });
+  check('request-extension still refuses when no extension blocks are left', r.code === 409 && r.body.error === 'No extension blocks remaining for this round.');
+}
+
 if (savedCron === undefined) delete process.env.CRON_SECRET; else process.env.CRON_SECRET = savedCron;
 if (savedAdmin === undefined) delete process.env.BIOCLASH_ADMIN_SECRET; else process.env.BIOCLASH_ADMIN_SECRET = savedAdmin;
 

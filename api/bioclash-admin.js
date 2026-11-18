@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, allBlocks, componentIsCorrect, componentMaxMarks, extensionPenalty, autoGrade } = require('./_lib/bioclash');
+const { loadPaper, allBlocks, componentIsCorrect, componentMaxMarks, extensionPenalty, closeAttempt } = require('./_lib/bioclash');
 const { verifyCronSecret, verifyAdminSecret } = require('./_lib/cronAuth');
 const { route: registerRoute } = require('./_lib/bioclashRegister');
 const { captureError } = require('./_lib/sentry');
@@ -23,20 +23,7 @@ async function runCleanup(req, res, admin) {
       .select('block_id, answer')
       .eq('attempt_id', attempt.id);
 
-    const { autoCorrect, autoTotal, autoMarksEarned, autoMarksTotal } = autoGrade(paper, blocks || []);
-
-    const { error: updateError } = await admin
-      .from('bioclash_attempts')
-      .update({
-        status: 'submitted',
-        submitted_at: attempt.end_at,
-        auto_score_correct: autoCorrect,
-        auto_score_total: autoTotal,
-        auto_marks_earned: autoMarksEarned,
-        auto_marks_total: autoMarksTotal
-      })
-      .eq('id', attempt.id)
-      .eq('status', 'in_progress');
+    const { error: updateError } = await closeAttempt(admin, paper, attempt.id, blocks || [], attempt.end_at);
     if (!updateError) submitted += 1;
   }
 

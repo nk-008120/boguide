@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, autoGrade, computeTotalPages, authenticate } = require('./_lib/bioclash');
+const { loadPaper, closeAttempt, computeTotalPages, authenticate } = require('./_lib/bioclash');
 const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
@@ -47,20 +47,7 @@ module.exports = async (req, res) => {
       .eq('attempt_id', attempt.id);
     if (attemptBlocksError) throw attemptBlocksError;
 
-    const { autoCorrect, autoTotal, autoMarksEarned, autoMarksTotal } = autoGrade(paper, attemptBlocks);
-
-    const { error: updateError } = await admin
-      .from('bioclash_attempts')
-      .update({
-        status: 'submitted',
-        submitted_at: new Date().toISOString(),
-        auto_score_correct: autoCorrect,
-        auto_score_total: autoTotal,
-        auto_marks_earned: autoMarksEarned,
-        auto_marks_total: autoMarksTotal
-      })
-      .eq('id', attempt.id)
-      .eq('status', 'in_progress');
+    const { autoCorrect, autoTotal, error: updateError } = await closeAttempt(admin, paper, attempt.id, attemptBlocks, new Date().toISOString());
     if (updateError) throw updateError;
 
     res.status(200).json({

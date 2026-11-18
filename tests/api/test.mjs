@@ -1,4 +1,4 @@
-import { createRequire } from 'node:module';
+import { createRequire, Module } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
@@ -6,6 +6,14 @@ import path from 'node:path';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
 const REPO_ROOT = path.resolve(__dirname, '../..');
+
+const fakeSupabase = { admin: null, anon: null };
+const supabaseAdminPath = require.resolve(path.join(REPO_ROOT, 'api/_lib/supabaseAdmin.js'));
+const supabaseStub = new Module(supabaseAdminPath);
+supabaseStub.filename = supabaseAdminPath;
+supabaseStub.loaded = true;
+supabaseStub.exports = { getAdminClient: () => fakeSupabase.admin, getAnonClient: () => fakeSupabase.anon };
+require.cache[supabaseAdminPath] = supabaseStub;
 
 let failures = 0;
 function check(name, cond) {
@@ -222,6 +230,51 @@ console.log('\n--- account page: next redirect ---');
   await adminHandler({ method: 'POST', query: { route: 'register' }, headers: { authorization: 'Bearer wrong' }, body: {} }, res);
   check('the register route refuses a wrong key', res.code === 401);
   if (saved === undefined) delete process.env.BIOCLASH_REGISTER_SECRET; else process.env.BIOCLASH_REGISTER_SECRET = saved;
+}
+
+console.log('\n--- submit-attempt: daily cap ---');
+{
+  const submitAttempt = require(path.join(REPO_ROOT, 'api/submit-attempt.js'));
+  const quiet = console.error;
+  console.error = () => {};
+  const makeClients = (counts) => {
+    const calls = { rpc: [], inserts: 0 };
+    fakeSupabase.anon = { auth: { getUser: (token) => Promise.resolve(token === 'good' ? { data: { user: { id: ME } }, error: null } : { data: { user: null }, error: new Error('bad') }) } };
+    fakeSupabase.admin = {
+      rpc(_name, args) {
+        calls.rpc.push(args);
+        const action = args.p_key.split(':')[1];
+        return Promise.resolve({ data: counts[action] || 1, error: null });
+      },
+      from() {
+        return { insert() { calls.inserts++; return Promise.resolve({ error: null }); } };
+      }
+    };
+    return calls;
+  };
+  const send = async (body) => {
+    const r = { code: 0, body: null, headersSent: false };
+    r.status = (c) => { r.code = c; return r; };
+    r.json = (b) => { r.body = b; r.headersSent = true; return r; };
+    await submitAttempt({ method: 'POST', headers: { authorization: 'Bearer good' }, body }, r);
+    return r;
+  };
+
+  let calls = makeClients({ 'papers-submit-attempt-day': 101 });
+  let res = await send({ olympiad: 'ibo', year: '2020', roundId: 'r1', answers: {} });
+  check('the 101st saved attempt in a day is refused with a clean 429 JSON error',
+    res.code === 429 && res.body.error === 'Daily limit of saved attempts reached. Please try again tomorrow.' && calls.inserts === 0);
+  const day = calls.rpc.find((a) => a.p_key === ME + ':papers-submit-attempt-day');
+  check('the daily cap is counted per user over a 24 hour window', !!day && day.p_window_ms === 86400000);
+
+  calls = makeClients({ 'papers-submit-attempt-day': 100 });
+  res = await send({ olympiad: 'ibo', year: '2020', roundId: 'r1', answers: null });
+  check('the 100th attempt in a day is still let through to validation', res.code === 400 && res.body.error === 'Invalid request body' && calls.rpc.length === 2);
+
+  calls = makeClients({ 'papers-submit-attempt': 11, 'papers-submit-attempt-day': 1 });
+  res = await send({ olympiad: 'ibo', year: '2020', roundId: 'r1', answers: {} });
+  check('the per-minute limit still answers first', res.code === 429 && res.body.error === 'Too many requests' && calls.rpc.length === 1);
+  console.error = quiet;
 }
 
 console.log('\n' + (failures === 0 ? 'ALL API AND REDIRECT CHECKS PASSED.' : `${failures} CHECK(S) FAILED.`));

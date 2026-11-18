@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, authenticate, sanitizeAnswers, raiseCounters, signBlockFigures } = require('./_lib/bioclash');
+const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, authenticate, sanitizeAnswers, raiseCounters, signBlockFigures, loadActiveAttempt } = require('./_lib/bioclash');
 const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
@@ -34,27 +34,12 @@ module.exports = async (req, res) => {
 
     const admin = getAdminClient();
 
-    const { data: attempt, error: attemptError } = await admin
-      .from('bioclash_attempts')
-      .select('id, status, end_at, active_session_token')
-      .eq('user_id', userId)
-      .eq('paper_id', paperId)
-      .maybeSingle();
-    if (attemptError) throw attemptError;
-    if (!attempt || attempt.status !== 'in_progress') {
-      res.status(409).json({ error: 'No active attempt' });
+    const active = await loadActiveAttempt(admin, userId, paperId, sessionToken);
+    if (!active.attempt) {
+      res.status(active.status).json(active.body);
       return;
     }
-
-    if (new Date(attempt.end_at).getTime() <= Date.now()) {
-      res.status(409).json({ error: 'Time has expired' });
-      return;
-    }
-
-    if (!sessionToken || sessionToken !== attempt.active_session_token) {
-      res.status(409).json({ error: 'This attempt is now active in another tab or device.', reason: 'superseded' });
-      return;
-    }
+    const attempt = active.attempt;
 
     const { data: lockedRow, error: lockError } = await admin
       .from('bioclash_attempt_blocks')

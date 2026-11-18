@@ -332,6 +332,92 @@ function autoGrade(paper, attemptBlockRows) {
   return { autoCorrect, autoTotal, autoMarksEarned, autoMarksTotal };
 }
 
+async function closeAttempt(admin, paper, attemptId, blockRows, submittedAt) {
+  const grade = autoGrade(paper, blockRows);
+  const { error } = await admin
+    .from('bioclash_attempts')
+    .update({
+      status: 'submitted',
+      submitted_at: submittedAt,
+      auto_score_correct: grade.autoCorrect,
+      auto_score_total: grade.autoTotal,
+      auto_marks_earned: grade.autoMarksEarned,
+      auto_marks_total: grade.autoMarksTotal
+    })
+    .eq('id', attemptId)
+    .eq('status', 'in_progress');
+  return { ...grade, error };
+}
+
+async function closeIfExpired(admin, paper, attempt, blockRows) {
+  if (attempt.status === 'in_progress' && new Date(attempt.end_at).getTime() <= Date.now()) {
+    await closeAttempt(admin, paper, attempt.id, blockRows, attempt.end_at);
+    attempt.status = 'submitted';
+  }
+}
+
+async function hasPaperAccess(admin, paper, paperId, userId) {
+  if (paper.accessMode !== 'allowlist') return true;
+  const { data: accessRow, error: accessError } = await admin
+    .from('bioclash_paper_access')
+    .select('id')
+    .eq('paper_id', paperId)
+    .eq('user_id', userId)
+    .maybeSingle();
+  if (accessError) throw accessError;
+  return !!accessRow;
+}
+
+async function attemptView(admin, paper, paperId, userId, attempt, attemptBlocks, sessionToken, withTimes) {
+  const blocks = attemptBlocks.map((row) => {
+    const paperBlock = findBlock(paper, row.block_id);
+    return {
+      ...toClientBlock(paperBlock, userId),
+      status: row.status,
+      answer: row.answer
+    };
+  });
+  const view = { attemptId: attempt.id, status: attempt.status };
+  if (withTimes) view.startedAt = attempt.started_at;
+  view.endAt = attempt.end_at;
+  if (withTimes) view.submittedAt = attempt.submitted_at || null;
+  return Object.assign(view, {
+    fullscreenExits: attempt.fullscreen_exits,
+    visibilityLosses: attempt.visibility_losses,
+    paperTitle: paper.title,
+    watermark: watermarkCode(userId, paperId),
+    sessionToken,
+    totalPages: computeTotalPages(paper),
+    reachedFinalPage: !!attempt.reached_final_page,
+    extensionBlocksUsed: attempt.extension_blocks_used || 0,
+    maxExtensionBlocks: paper.maxExtensionBlocks || 0,
+    extensionBlockMinutes: paper.extensionBlockMinutes || 0,
+    extensionCostSchedule: paper.extensionCostSchedule || [],
+    blocks: await signBlockFigures(admin, blocks)
+  });
+}
+
+async function loadActiveAttempt(admin, userId, paperId, sessionToken, extraColumns) {
+  const columns = 'id, status, end_at, active_session_token' + (extraColumns ? ', ' + extraColumns : '');
+  const { data: attempt, error: attemptError } = await admin
+    .from('bioclash_attempts')
+    .select(columns)
+    .eq('user_id', userId)
+    .eq('paper_id', paperId)
+    .maybeSingle();
+  if (attemptError) throw attemptError;
+  if (!attempt || attempt.status !== 'in_progress') {
+    return { status: 409, body: { error: 'No active attempt' } };
+  }
+  if (new Date(attempt.end_at).getTime() <= Date.now()) {
+    return { status: 409, body: { error: 'Time has expired' } };
+  }
+  if (!sessionToken || sessionToken !== attempt.active_session_token) {
+    return { status: 409, body: { error: 'This attempt is now active in another tab or device.', reason: 'superseded' } };
+  }
+  return { attempt };
+}
+
 function extensionPenalty(paper, blocksUsed) {
   const schedule = paper.extensionCostSchedule || [];
   return schedule.slice(0, blocksUsed).reduce((a, b) => a + b, 0);
@@ -359,6 +445,11 @@ module.exports = {
   raiseCounters,
   signBlockFigures,
   autoGrade,
+  closeAttempt,
+  closeIfExpired,
+  hasPaperAccess,
+  attemptView,
+  loadActiveAttempt,
   extensionPenalty,
   rateLimit,
   authenticate,
