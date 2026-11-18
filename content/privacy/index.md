@@ -96,6 +96,16 @@ If you'd rather not have something you submitted to BiOLab shown publicly, the s
 - **Zoom** - the session itself runs on Zoom, a third-party service with its own privacy policy. The Zoom link is sent by email and is not stored on BiOGuide. A session may be recorded by the host and shared by email with the students registered for it; the host will say so at the start.
 - **Your control** - you can pull out of a session any time before it starts, which deletes that registration. Deleting your account removes all of your registrations.
 
+## Donations
+
+Donating is optional and has nothing to do with your account. If you [donate](/support/), here is what that involves:
+
+- **What we keep** - your name, email address, the amount and date of your donation, and how you chose to appear on the supporters list. Nothing else.
+- **What it's for** - only the emails promised on the [Support page](/support/): your receipt, a note each time your donation is spent with its invoice, and a yearly summary. You are never added to a mailing list.
+- **Who sees it** - BiOGuide staff who handle donations, and whoever processes the payment. Your name and amount appear publicly only if you chose that, and you can change or remove the listing at any time.
+- **Payment details** - while donations are arranged by email, we never ask for card numbers or passwords by email. Once a donation platform is in place, card and bank details go to its payment processor and never reach us.
+- **Your control** - email **resourcerepository4boguide@gmail.com** to stop the emails, change your listing, or have your donor record deleted. We may keep the amount and date without your name where we need it to account for money already spent.
+
 ## Deleting your data
 
 If you have an account, you can delete it yourself at any time: log in, go to the [Account page](/account/), and use **Delete my account** at the bottom of your profile. This permanently and immediately removes your login, profile, avatar/country/education/about, all leaderboard/attempt history, your doubts, your BiOLab results and feedback, your contributions, and your BiOLive registrations - it cannot be undone. The files you uploaded go with them: result photos, doubt photos, and contributed PDFs are deleted from storage straight after the account is removed. If removing a file fails, we are alerted automatically and delete it by hand.

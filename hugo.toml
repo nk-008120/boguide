@@ -118,30 +118,37 @@ ignoreFiles = ['\.enc$']
       type = "search"
 
   [[menu.main]]
+    name = "Support BiOGuide"
+    url = "/support/"
+    weight = 10
+    [menu.main.params]
+      icon = "heart"
+
+  [[menu.main]]
     name = "Discord"
     url = "https://discord.gg/UUkakYdsC"
-    weight = 10
+    weight = 11
     [menu.main.params]
       icon = "discord"
 
   [[menu.main]]
     name = "Instagram"
     url = "https://www.instagram.com/bioguideofficial/"
-    weight = 11
+    weight = 12
     [menu.main.params]
       icon = "instagram"
 
   [[menu.main]]
     name = "WhatsApp"
     url = "https://chat.whatsapp.com/Ia9cArydT4hB4PPbFLRmNh"
-    weight = 12
+    weight = 13
     [menu.main.params]
       icon = "whatsapp"
 
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/nk-008120/boguide"
-    weight = 13
+    weight = 14
     [menu.main.params]
       icon = "github"
 
