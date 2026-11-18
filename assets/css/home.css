@@ -1172,23 +1172,6 @@ html.hv-js .home-v2 [data-reveal] {
   white-space: nowrap;
 }
 
-.home-v2 .hv .hv-path {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.home-v2 .hv .hv-path li {
-  margin: 0;
-  padding: 0;
-  min-width: 0;
-}
-.home-v2 .hv .hv-path li:nth-child(3n + 2) {
-  margin-top: 1.4rem;
-  margin-bottom: -1.4rem;
-}
 .home-v2 .hv .hv-tile {
   --px: 50%;
   --py: 0%;
@@ -1221,51 +1204,6 @@ html.hv-js .home-v2 [data-reveal] {
   letter-spacing: 0.1em;
   color: var(--fx-accent);
   padding-top: 0.2rem;
-}
-.home-v2 .hv-tile-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  min-width: 0;
-}
-.home-v2 .hv-tile-title {
-  font-family: var(--fx-serif);
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.15;
-  color: var(--fx-ink);
-}
-.home-v2 .hv-tile-sub {
-  font-size: 0.84rem;
-  line-height: 1.5;
-  color: var(--fx-muted);
-}
-.home-v2 .hv-tag {
-  grid-column: 2;
-  justify-self: start;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-family: var(--fx-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--fx-accent-2);
-}
-.home-v2 .hv-tag::before {
-  content: "";
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: currentColor;
-}
-.home-v2 .hv .hv-tile--soon {
-  border-style: dashed;
-  background: transparent;
-}
-.home-v2 .hv .hv-tile--soon .hv-tile-title,
-.home-v2 .hv .hv-tile--soon .hv-tile-n {
-  color: var(--fx-muted);
 }
 
 .home-v2 .hv .hv-folders {
@@ -1627,13 +1565,6 @@ html.hv-js .home-v2 [data-reveal] {
   .home-v2 .hv-bento {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .home-v2 .hv .hv-path {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .home-v2 .hv .hv-path li:nth-child(3n + 2) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
   .home-v2 .hv .hv-row {
     grid-template-columns: 8rem 1fr;
   }
@@ -1674,8 +1605,7 @@ html.hv-js .home-v2 [data-reveal] {
   .home-v2 .hv-start,
   .home-v2 .hv-bento,
   .home-v2 .hv-quad,
-  .home-v2 .hv-duo,
-  .home-v2 .hv .hv-path {
+  .home-v2 .hv-duo {
     grid-template-columns: 1fr;
   }
   .home-v2 .hv .hv-frame--wide {

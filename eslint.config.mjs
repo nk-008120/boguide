@@ -14,6 +14,19 @@ const rules = {
   eqeqeq: ['error', 'smart']
 };
 
+const ESCAPE_NAME = '/^(esc|escape(html|attr|text)?|esc(html|attr))$/i';
+const USE_BIO_ESCAPE = 'Use window.bioEscape from static/js/bio-escape.js instead of a local HTML escape.';
+
+const escapeRules = {
+  'no-restricted-syntax': [
+    'error',
+    { selector: `FunctionDeclaration[id.name=${ESCAPE_NAME}]`, message: USE_BIO_ESCAPE },
+    { selector: `VariableDeclarator[id.name=${ESCAPE_NAME}][init.type=/FunctionExpression$/]`, message: USE_BIO_ESCAPE },
+    { selector: 'Literal[regex.pattern=/^\\[[^\\]]*[<>][^\\]]*\\]$/]', message: USE_BIO_ESCAPE },
+    { selector: "CallExpression[callee.property.name=/^replace(All)?$/][arguments.0.regex.pattern=/^[<>&]$/][arguments.1.value=/^&[a-z#0-9]+;$/]", message: USE_BIO_ESCAPE }
+  ]
+};
+
 export default [
   {
     ignores: [
@@ -67,7 +80,11 @@ export default [
         $3Dmol: 'readonly'
       }
     },
-    rules
+    rules: { ...rules, ...escapeRules }
+  },
+  {
+    files: ['static/js/bio-escape.js'],
+    rules: { 'no-restricted-syntax': 'off' }
   },
   {
     files: ['assets/js/core/**/*.js'],

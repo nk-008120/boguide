@@ -712,77 +712,11 @@ html.dark .olympiad-hero-content p {
   color: #d1d1d1;
 }
 
-.olympiad-compact-cards {
-  display: flex;
-  gap: 1rem;
-  max-width: 760px;
-  margin: 0 auto 1.5rem;
-}
-.olympiad-compact-card {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem 1rem;
-  background: var(--bg, #fff);
-  border: 1.5px solid rgba(137, 101, 196, 0.2);
-  border-radius: var(--radius-lg);
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.olympiad-compact-card:hover {
-  border-color: var(--primary);
-  box-shadow: 0 4px 16px rgba(137, 101, 196, 0.12);
-}
-.olympiad-compact-flag {
-  font-size: 1.75rem;
-  flex-shrink: 0;
-}
-.olympiad-compact-body h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin: 0;
-}
-.olympiad-compact-body p {
-  font-size: 0.8rem;
-  margin: 0.15rem 0 0;
-  opacity: 0.7;
-  line-height: 1.35;
-}
-.olympiad-compact-arrow {
-  margin-left: auto;
-  font-size: 1.1rem;
-  color: var(--primary);
-  opacity: 0.5;
-  transition: opacity 0.2s;
-}
-.olympiad-compact-card:hover .olympiad-compact-arrow {
-  opacity: 1;
-}
-html.dark .olympiad-compact-card {
-  background: #1e1e1e;
-  border-color: rgba(201, 183, 232, 0.2);
-  color: #e5e5e5;
-}
-html.dark .olympiad-compact-card:hover {
-  border-color: #c9b7e8;
-}
-html.dark .olympiad-compact-body h4 {
-  color: #c9b7e8;
-}
-html.dark .olympiad-compact-body p {
-  color: #b0b0b0;
-}
 @media (max-width: 640px) {
   .olympiad-hero-card {
     flex-direction: column;
     text-align: center;
     padding: 1.25rem;
-  }
-  .olympiad-compact-cards {
-    flex-direction: column;
   }
 }
 
@@ -1275,98 +1209,6 @@ html.dark .topic-prep-links a:hover {
   background: rgba(201, 183, 232, 0.16);
 }
 
-.custom-tooltip-box {
-  position: fixed;
-  top: 80px;                     
-  left: 20px;                    
-  background: var(--bg, #ffffff);
-  color: var(--text, #1a1a1a);
-  padding: 1rem 1.2rem;
-  border-radius: var(--radius-md);
-  width: max-content;
-  max-width: 320px;
-  box-shadow: var(--shadow, 0 8px 25px rgba(0, 0, 0, 0.15));
-  border: 2px solid var(--accent, #aa3bff);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: translateY(-10px);
-  pointer-events: none;
-  font-family: var(--sans, system-ui, sans-serif);
-}
-
-.custom-tooltip-box.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.custom-tooltip-box .close-btn {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  background: none;
-  border: none;
-  color: var(--text-secondary, #888);
-  font-size: 18px;
-  cursor: pointer;
-  padding: 0 4px;
-  line-height: 1;
-  transition: color 0.2s;
-}
-
-.custom-tooltip-box .close-btn:hover {
-  color: var(--text, #1a1a1a);
-}
-
-.custom-tooltip-box .tooltip-link {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 6px 16px;
-  background: var(--accent, #aa3bff);
-  color: white;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: all 0.2s;
-  border: none;
-}
-
-.custom-tooltip-box .tooltip-link:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
-  text-decoration: none;
-  color: white;
-}
-
-.custom-tooltip-box .tooltip-text {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  padding-right: 20px;
-}
-
-.custom-tooltip-box .tooltip-text strong {
-  color: var(--accent, #aa3bff);
-}
-
-html.dark .custom-tooltip-box {
-  background: #1e1e2e;
-  color: #e2e8f0;
-  border-color: var(--accent, #c084fc);
-}
-
-html.dark .custom-tooltip-box .tooltip-link {
-  background: var(--accent, #c084fc);
-  color: #1a1a1a;
-}
-
-html.dark .custom-tooltip-box .tooltip-link:hover {
-  color: #1a1a1a;
-}
-
 html.favourite body {
   background:
     radial-gradient(circle at 14% 10%, rgba(92, 122, 88, 0.32), transparent 52%),
@@ -1689,7 +1531,6 @@ html.dark .hextra-search-input-wrapper {
   .hextra-toc,
   .hextra-footer,
   #boguide-toc,
-  .custom-tooltip-box,
   [data-toggle-animation="show"],
   #backToTop {
     display: none !important;
@@ -4186,15 +4027,39 @@ html.dark .nav-account-list a:focus-visible {
   flex-shrink: 0;
 }
 nav.hextra-max-navbar-width > a[class*="hx:text-current"] {
-  padding: 0.4rem 0.35rem;
+  padding: 0.3rem 0.25rem;
   flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+nav.hextra-max-navbar-width > a[class*="hx:text-current"]:hover,
+nav.hextra-max-navbar-width > a[class*="hx:text-current"]:focus-visible {
+  opacity: 1;
+  color: #8965c4;
 }
 nav.hextra-max-navbar-width > a[class*="hx:text-current"] > svg {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
+}
+nav.hextra-max-navbar-width > a[href="/support/"] {
+  color: #b3477d;
+  opacity: 1;
+}
+html.dark nav.hextra-max-navbar-width > a[href="/support/"] {
+  color: #e48bb6;
+}
+@media (max-width: 1319px) {
+  nav.hextra-max-navbar-width > a[class*="hx:text-current"] {
+    padding: 0.25rem 0.15rem;
+  }
+  nav.hextra-max-navbar-width > a[class*="hx:text-current"] > svg {
+    height: 15px;
+    width: 15px;
+  }
 }
 @media (max-width: 639px) {
-  nav.hextra-max-navbar-width > a[class*="hx:text-current"] {
+  nav.hextra-max-navbar-width > a[title="WhatsApp"],
+  nav.hextra-max-navbar-width > a[title="GitHub"] {
     display: none;
   }
 }
@@ -4206,11 +4071,6 @@ nav.hextra-max-navbar-width > a[class*="hx:text-current"] > svg {
   .nav-signin {
     padding: 0.25rem 0.7rem;
     font-size: 0.8rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1319px) {
-  nav.hextra-max-navbar-width > a[class*="hx:text-current"] {
-    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1419px) {

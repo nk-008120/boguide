@@ -369,11 +369,6 @@ a.fp-report:hover {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.fp-badge-live {
-  background: linear-gradient(135deg, #8965c4, #5c7a58);
-  border-color: transparent;
-  color: #ffffff;
-}
 .fp-report-soon {
   border-style: dashed;
   padding-top: 1.2rem;
@@ -404,9 +399,6 @@ html.dark .fp-report-title,
 html.dark .fp-report-cta,
 html.dark .fp-badge {
   color: #c9b7e8;
-}
-html.dark .fp-badge-live {
-  color: #ffffff;
 }
 html.dark a.fp-report:hover {
   border-color: #c9b7e8;

@@ -47,6 +47,19 @@ exam), that action goes through a Vercel function using the
 service-role client instead, which bypasses RLS deliberately and
 re-derives or re-validates the result server-side.
 
+Migrations are applied by hand in the Supabase SQL editor, so nothing in
+the database records which ones have run, and some settings (bucket
+limits, auth options) live only in the dashboard. Once a month, run
+`node scripts/schema-export.mjs` with `SUPABASE_DB_URL` in `.env`. It
+reads the live catalog in a read-only transaction (tables, columns, RLS
+flags, policies, function body hashes, triggers and storage buckets),
+writes production-snapshot.md into the supabase folder, and lists every name that
+exists in production but in no migration, or in the migrations but not in
+production, which usually means a migration that was never applied.
+Commit the snapshot each time, so the git history shows when production
+changed. It uses the catalog instead of `supabase db dump` because the
+dump needs Docker.
+
 ## The repository is public, and that is a decision
 
 BiOGuide is public on GitHub on purpose, under MIT for the code and a
@@ -120,12 +133,17 @@ A few specific mechanisms worth calling out:
   (`static/js/bioclash-attempt.js`) posts that token back; if a different
   tab or device starts a new session, the old one is told it has been
   superseded and locked out. This is what stops the same account running
-  two tabs against the same exam.
+  two tabs against the same exam. `save-draft`, `lock-block` and
+  `request-extension` all go through `loadActiveAttempt()` in
+  `api/_lib/bioclash.js`, which refuses with a 409 unless the attempt is in
+  progress, not yet expired, and held by the token sent.
 - **Server-side score authority.** Nothing the client submits is trusted
   as a final score. `autoGrade()` recomputes correctness from the stored
   answers against the server's own copy of the paper at submit time, both
   for a normal submission and for the cleanup job that auto-grades
-  attempts abandoned mid-exam.
+  attempts abandoned mid-exam. Every path that closes an attempt (submit,
+  an expired attempt found by `start-attempt` or `attempt-state`, and
+  cleanup) writes the grade through one helper, `closeAttempt()`.
 - **Optimistic concurrency, not locks.** Actions like locking a block or
   requesting a time extension condition their update on the exact state
   they last read (`.eq('status', expectedStatus)` style checks) and treat

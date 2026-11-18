@@ -160,13 +160,6 @@ body.fx .gl-cta {
 body.fx .gl-feature:hover .gl-cta {
   --fx-r: 150%;
 }
-body.fx .gl-soon {
-  font-family: var(--fx-mono);
-  font-size: 0.74rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--fx-muted);
-}
 
 @media (max-width: 720px) {
   body.fx .gl-feature {
