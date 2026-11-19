@@ -114,53 +114,146 @@
   }
 
   var TURNSTILE_SITEKEY = window.__TURNSTILE_SITEKEY || '';
-  var CAPTCHA_WAIT = 'Please wait for the security check on this page to finish, then try again.';
+  var CAPTCHA_WAIT = 'The security check did not finish. Please try again.';
+  var CAPTCHA_CHECKING = 'Running a quick security check…';
+  var CAPTCHA_INTERACT = 'Please complete the security check below. We will continue as soon as it passes.';
+  var CAPTCHA_BLOCKED = 'The security check could not load. If you use an ad or content blocker, allow challenges.cloudflare.com on this page and reload it.';
+  var CAPTCHA_FAILED = 'The security check failed. Reload the page and try again, or try another browser.';
+  var CAPTCHA_TIMEOUT_MS = 45000;
   var turnstileBox = document.getElementById('account-turnstile');
   var turnstileWidget = null;
   var turnstileReady = null;
+  var captchaToken = '';
+  var captchaState = 'idle';
+  var captchaWaiters = [];
   var weakPasswordNotice = false;
+
+  function settleCaptchaWaiters() {
+    var waiters = captchaWaiters;
+    captchaWaiters = [];
+    waiters.forEach(function (w) { w(); });
+  }
 
   function loadTurnstile() {
     if (!TURNSTILE_SITEKEY || !turnstileBox) return Promise.resolve(false);
     if (turnstileReady) return turnstileReady;
+    captchaState = 'loading';
     turnstileReady = new Promise(function (resolve) {
       window.bioTurnstileLoaded = function () {
-        turnstileWidget = window.turnstile.render(turnstileBox, {
-          sitekey: TURNSTILE_SITEKEY,
-          action: 'account',
-          appearance: 'interaction-only'
-        });
-        resolve(true);
+        try {
+          turnstileWidget = window.turnstile.render(turnstileBox, {
+            sitekey: TURNSTILE_SITEKEY,
+            action: 'account',
+            appearance: 'interaction-only',
+            'refresh-expired': 'auto',
+            callback: function (token) {
+              captchaToken = token;
+              captchaState = 'ready';
+              settleCaptchaWaiters();
+            },
+            'expired-callback': function () {
+              captchaToken = '';
+              captchaState = 'loading';
+            },
+            'before-interactive-callback': function () {
+              captchaState = 'interactive';
+              settleCaptchaWaiters();
+            },
+            'after-interactive-callback': function () {
+              if (captchaState === 'interactive') captchaState = 'loading';
+            },
+            'error-callback': function () {
+              captchaToken = '';
+              captchaState = 'error';
+              settleCaptchaWaiters();
+            }
+          });
+          resolve(true);
+        } catch (err) {
+          captchaState = 'error';
+          resolve(false);
+        }
       };
       var script = document.createElement('script');
       script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=bioTurnstileLoaded';
       script.async = true;
-      script.onerror = function () { resolve(false); };
+      script.onerror = function () {
+        captchaState = 'blocked';
+        resolve(false);
+        settleCaptchaWaiters();
+      };
       document.head.appendChild(script);
     });
     return turnstileReady;
   }
 
-  function captchaOptions(options) {
+  function waitForCaptcha(msgEl) {
+    return new Promise(function (resolve, reject) {
+      var timer = null;
+      function check() {
+        if (captchaToken) {
+          clearTimeout(timer);
+          var token = captchaToken;
+          captchaToken = '';
+          resolve(token);
+          return;
+        }
+        if (captchaState === 'blocked') { clearTimeout(timer); reject(new Error(CAPTCHA_BLOCKED)); return; }
+        if (captchaState === 'error') {
+          clearTimeout(timer);
+          resetCaptcha();
+          reject(new Error(CAPTCHA_FAILED));
+          return;
+        }
+        if (msgEl) {
+          if (captchaState === 'interactive') {
+            setMsg(msgEl, CAPTCHA_INTERACT, false);
+            if (turnstileBox.scrollIntoView) turnstileBox.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          } else {
+            setMsg(msgEl, CAPTCHA_CHECKING, false);
+          }
+        }
+        captchaWaiters.push(check);
+      }
+      timer = setTimeout(function () {
+        captchaWaiters = captchaWaiters.filter(function (w) { return w !== check; });
+        reject(new Error(captchaState === 'interactive' ? CAPTCHA_INTERACT : CAPTCHA_WAIT));
+      }, CAPTCHA_TIMEOUT_MS);
+      check();
+    });
+  }
+
+  function captchaOptions(options, msgEl) {
     if (!TURNSTILE_SITEKEY) return Promise.resolve(options);
-    return loadTurnstile().then(function (ok) {
-      var token = ok && turnstileWidget !== null ? window.turnstile.getResponse(turnstileWidget) : '';
-      if (!token) throw new Error('captcha');
+    return loadTurnstile().then(function () {
+      return waitForCaptcha(msgEl);
+    }).then(function (token) {
       options.captchaToken = token;
       return options;
     });
   }
 
   function resetCaptcha() {
-    if (turnstileWidget !== null && window.turnstile) window.turnstile.reset(turnstileWidget);
+    captchaToken = '';
+    if (turnstileWidget !== null && window.turnstile) {
+      captchaState = 'loading';
+      window.turnstile.reset(turnstileWidget);
+    }
   }
 
   function isCaptchaError(err) {
     return !!err && (err.code === 'captcha_failed' || /captcha/i.test(err.message || ''));
   }
 
-  function withCaptcha(msgEl, options, call) {
-    return captchaOptions(options).then(function (ready) {
+  function withCaptcha(msgEl, options, call, workingText) {
+    if (msgEl.dataset.busy) {
+      setMsg(msgEl, captchaState === 'interactive' ? CAPTCHA_INTERACT : CAPTCHA_CHECKING, false);
+      return Promise.resolve(null);
+    }
+    msgEl.dataset.busy = '1';
+    function done(value) { delete msgEl.dataset.busy; return value; }
+    return captchaOptions(options, msgEl).then(function (ready) {
+      if (workingText) setMsg(msgEl, workingText, false);
       return Promise.resolve(call(ready)).then(function (result) {
         resetCaptcha();
         if (result && isCaptchaError(result.error)) {
@@ -172,9 +265,12 @@
         resetCaptcha();
         throw err;
       });
-    }, function () {
-      setMsg(msgEl, CAPTCHA_WAIT, true);
+    }, function (err) {
+      setMsg(msgEl, (err && err.message) || CAPTCHA_WAIT, true);
       return null;
+    }).then(done, function (err) {
+      done();
+      throw err;
     });
   }
 
@@ -309,7 +405,7 @@
     setMsg(msg, 'Logging in…', false);
     withCaptcha(msg, {}, function (options) {
       return client.auth.signInWithPassword({ email: email, password: password, options: options });
-    }).then(function (result) {
+    }, 'Logging in…').then(function (result) {
       if (!result) return;
       if (result.error) {
         if (/not confirmed/i.test(result.error.message || '')) {
@@ -334,7 +430,7 @@
     setMsg(msg, 'Signing up…', false);
     withCaptcha(msg, { data: { display_name: displayName } }, function (options) {
       return client.auth.signUp({ email: email, password: password, options: options });
-    }).then(function (result) {
+    }, 'Signing up…').then(function (result) {
       if (!result) return;
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       if (result.data && result.data.session) {
@@ -353,7 +449,7 @@
     setMsg(msg, 'Sending…', false);
     withCaptcha(msg, { redirectTo: window.location.origin + '/account/' }, function (options) {
       return client.auth.resetPasswordForEmail(email, options);
-    }).then(function (result) {
+    }, 'Sending…').then(function (result) {
       if (!result) return;
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       setMsg(msg, 'Check your email for a reset link.', false);
@@ -390,9 +486,10 @@
     otpTimer = setInterval(tick, 1000);
   }
 
-  function sendOtp(email) {
+  function sendOtp(email, msgEl, workingText) {
     var failure = { ok: false, error: 'Could not send a code right now. Please try again shortly.' };
-    return captchaOptions({ shouldCreateUser: false }).then(function (options) {
+    return captchaOptions({ shouldCreateUser: false }, msgEl).then(function (options) {
+      if (msgEl && workingText) setMsg(msgEl, workingText, false);
       return client.auth.signInWithOtp({ email: email, options: options }).then(function (result) {
         resetCaptcha();
         return result;
@@ -400,10 +497,10 @@
         resetCaptcha();
         throw err;
       });
-    }, function () {
-      return { captchaMissing: true };
+    }, function (err) {
+      return { captchaMissing: (err && err.message) || CAPTCHA_WAIT };
     }).then(function (result) {
-      if (result.captchaMissing) return { ok: false, error: CAPTCHA_WAIT };
+      if (result.captchaMissing) return { ok: false, error: result.captchaMissing };
       var err = result.error;
       if (!err) return { ok: true };
       if (isCaptchaError(err)) return { ok: false, error: CAPTCHA_WAIT };
@@ -433,7 +530,7 @@
     var sendBtn = document.getElementById('account-otp-send-btn');
     setMsg(otpRequestMsg, 'Sending…', false);
     sendBtn.disabled = true;
-    sendOtp(email).then(function (result) {
+    sendOtp(email, otpRequestMsg, 'Sending…').then(function (result) {
       sendBtn.disabled = false;
       if (!result.ok) { setMsg(otpRequestMsg, result.error, true); return; }
       setMsg(otpRequestMsg, '', false);
@@ -454,7 +551,7 @@
     if (otpResendBtn.disabled || !otpEmail) return;
     otpResendBtn.disabled = true;
     setMsg(otpVerifyMsg, 'Sending a new code…', false);
-    sendOtp(otpEmail).then(function (result) {
+    sendOtp(otpEmail, otpVerifyMsg, 'Sending a new code…').then(function (result) {
       if (!result.ok) {
         setMsg(otpVerifyMsg, result.error, true);
         otpResendBtn.disabled = false;
