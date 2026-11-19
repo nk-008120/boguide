@@ -114,17 +114,20 @@
   }
 
   var TURNSTILE_SITEKEY = window.__TURNSTILE_SITEKEY || '';
-  var CAPTCHA_WAIT = 'The security check did not finish. Please try again.';
+  var CAPTCHA_WAIT = 'The security check did not finish. Reload the page and try again.';
   var CAPTCHA_CHECKING = 'Running a quick security check…';
-  var CAPTCHA_INTERACT = 'Please complete the security check below. We will continue as soon as it passes.';
+  var CAPTCHA_INTERACT = 'Please tick the security check box below. We will continue as soon as it passes.';
+  var CAPTCHA_SLOW = 'The security check is taking longer than usual. If a box appears below, tick it. Otherwise please keep this page open.';
   var CAPTCHA_BLOCKED = 'The security check could not load. If you use an ad or content blocker, allow challenges.cloudflare.com on this page and reload it.';
-  var CAPTCHA_FAILED = 'The security check failed. Reload the page and try again, or try another browser.';
-  var CAPTCHA_TIMEOUT_MS = 45000;
+  var CAPTCHA_UNSUPPORTED = 'Your browser is not supported by the security check. Please update it or try another browser.';
+  var CAPTCHA_SLOW_MS = 20000;
+  var CAPTCHA_GIVE_UP_MS = 180000;
   var turnstileBox = document.getElementById('account-turnstile');
   var turnstileWidget = null;
   var turnstileReady = null;
   var captchaToken = '';
   var captchaState = 'idle';
+  var captchaErrorCode = '';
   var captchaWaiters = [];
   var weakPasswordNotice = false;
 
@@ -132,6 +135,10 @@
     var waiters = captchaWaiters;
     captchaWaiters = [];
     waiters.forEach(function (w) { w(); });
+  }
+
+  function withCode(text) {
+    return captchaErrorCode ? text + ' (Cloudflare code ' + captchaErrorCode + ')' : text;
   }
 
   function loadTurnstile() {
@@ -144,10 +151,12 @@
           turnstileWidget = window.turnstile.render(turnstileBox, {
             sitekey: TURNSTILE_SITEKEY,
             action: 'account',
-            appearance: 'interaction-only',
+            appearance: 'always',
+            retry: 'auto',
             'refresh-expired': 'auto',
             callback: function (token) {
               captchaToken = token;
+              captchaErrorCode = '';
               captchaState = 'ready';
               settleCaptchaWaiters();
             },
@@ -162,16 +171,21 @@
             'after-interactive-callback': function () {
               if (captchaState === 'interactive') captchaState = 'loading';
             },
-            'error-callback': function () {
-              captchaToken = '';
-              captchaState = 'error';
+            'unsupported-callback': function () {
+              captchaState = 'unsupported';
               settleCaptchaWaiters();
+            },
+            'error-callback': function (code) {
+              captchaToken = '';
+              captchaErrorCode = String(code || '');
+              return true;
             }
           });
           resolve(true);
         } catch (err) {
-          captchaState = 'error';
+          captchaState = 'blocked';
           resolve(false);
+          settleCaptchaWaiters();
         }
       };
       var script = document.createElement('script');
@@ -189,36 +203,41 @@
 
   function waitForCaptcha(msgEl) {
     return new Promise(function (resolve, reject) {
-      var timer = null;
+      var slow = false;
+      var slowTimer = null;
+      var giveUpTimer = null;
+      function finish() {
+        clearTimeout(slowTimer);
+        clearTimeout(giveUpTimer);
+        captchaWaiters = captchaWaiters.filter(function (w) { return w !== check; });
+      }
+      function show() {
+        if (!msgEl) return;
+        if (captchaState === 'interactive') {
+          setMsg(msgEl, CAPTCHA_INTERACT, false);
+          if (turnstileBox.scrollIntoView) turnstileBox.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        } else {
+          setMsg(msgEl, slow ? withCode(CAPTCHA_SLOW) : CAPTCHA_CHECKING, false);
+        }
+      }
       function check() {
         if (captchaToken) {
-          clearTimeout(timer);
+          finish();
           var token = captchaToken;
           captchaToken = '';
           resolve(token);
           return;
         }
-        if (captchaState === 'blocked') { clearTimeout(timer); reject(new Error(CAPTCHA_BLOCKED)); return; }
-        if (captchaState === 'error') {
-          clearTimeout(timer);
-          resetCaptcha();
-          reject(new Error(CAPTCHA_FAILED));
-          return;
-        }
-        if (msgEl) {
-          if (captchaState === 'interactive') {
-            setMsg(msgEl, CAPTCHA_INTERACT, false);
-            if (turnstileBox.scrollIntoView) turnstileBox.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-          } else {
-            setMsg(msgEl, CAPTCHA_CHECKING, false);
-          }
-        }
+        if (captchaState === 'blocked') { finish(); reject(new Error(CAPTCHA_BLOCKED)); return; }
+        if (captchaState === 'unsupported') { finish(); reject(new Error(CAPTCHA_UNSUPPORTED)); return; }
+        show();
         captchaWaiters.push(check);
       }
-      timer = setTimeout(function () {
-        captchaWaiters = captchaWaiters.filter(function (w) { return w !== check; });
-        reject(new Error(captchaState === 'interactive' ? CAPTCHA_INTERACT : CAPTCHA_WAIT));
-      }, CAPTCHA_TIMEOUT_MS);
+      slowTimer = setTimeout(function () { slow = true; show(); }, CAPTCHA_SLOW_MS);
+      giveUpTimer = setTimeout(function () {
+        finish();
+        reject(new Error(withCode(CAPTCHA_WAIT)));
+      }, CAPTCHA_GIVE_UP_MS);
       check();
     });
   }
